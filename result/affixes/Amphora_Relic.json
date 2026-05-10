@@ -1,0 +1,616 @@
+{
+  "affixes": [
+    {
+      "family_key": "SanctumBossIncreasedDamageTaken",
+      "kind": "prefix",
+      "template": "Bosses take #% increased Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Challenger's",
+          "text": "Bosses take (11-15)% increased Damage",
+          "stats": [
+            {
+              "id": "map_sanctum_boss_damage_taken_+%",
+              "max": 15,
+              "min": 11
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Usurper's",
+          "text": "Bosses take (16-20)% increased Damage",
+          "stats": [
+            {
+              "id": "map_sanctum_boss_damage_taken_+%",
+              "max": 20,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "Regicidal",
+          "text": "Bosses take (21-30)% increased Damage",
+          "stats": [
+            {
+              "id": "map_sanctum_boss_damage_taken_+%",
+              "max": 30,
+              "min": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumBossReducedDamage",
+      "kind": "prefix",
+      "template": "Bosses deal #% reduced Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Aegis",
+          "text": "Bosses deal 5% reduced Damage",
+          "stats": [
+            {
+              "id": "map_sanctum_boss_sanctum_damage_+%",
+              "max": -5,
+              "min": -5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumBossReducedDamage",
+      "kind": "prefix",
+      "template": "Bosses deal #% reduced Damage",
+      "tiers": [
+        {
+          "level": 60,
+          "name": "Vanguard",
+          "text": "Bosses deal (7-6)% reduced Damage",
+          "stats": [
+            {
+              "id": "map_sanctum_boss_sanctum_damage_+%",
+              "max": -6,
+              "min": -7
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "Phalanx",
+          "text": "Bosses deal (10-8)% reduced Damage",
+          "stats": [
+            {
+              "id": "map_sanctum_boss_sanctum_damage_+%",
+              "max": -8,
+              "min": -10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumGuardsIncreasedDamageTaken",
+      "kind": "prefix",
+      "template": "[Rarity|Rare] Monsters take #% increased Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Transgressor's",
+          "text": "[Rarity|Rare] Monsters take (11-15)% increased Damage",
+          "stats": [
+            {
+              "id": "map_sanctum_guard_damage_taken_+%",
+              "max": 15,
+              "min": 11
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Violator's",
+          "text": "[Rarity|Rare] Monsters take (16-20)% increased Damage",
+          "stats": [
+            {
+              "id": "map_sanctum_guard_damage_taken_+%",
+              "max": 20,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "Disgrace's",
+          "text": "[Rarity|Rare] Monsters take (21-30)% increased Damage",
+          "stats": [
+            {
+              "id": "map_sanctum_guard_damage_taken_+%",
+              "max": 30,
+              "min": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumGuardsReducedDamage",
+      "kind": "prefix",
+      "template": "[Rarity|Rare] Monsters deal #% reduced Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Bulwark",
+          "text": "[Rarity|Rare] Monsters deal 5% reduced Damage",
+          "stats": [
+            {
+              "id": "map_sanctum_guard_sanctum_damage_+%",
+              "max": -5,
+              "min": -5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumGuardsReducedDamage",
+      "kind": "prefix",
+      "template": "[Rarity|Rare] Monsters deal #% reduced Damage",
+      "tiers": [
+        {
+          "level": 60,
+          "name": "Bastion",
+          "text": "[Rarity|Rare] Monsters deal (7-6)% reduced Damage",
+          "stats": [
+            {
+              "id": "map_sanctum_guard_sanctum_damage_+%",
+              "max": -6,
+              "min": -7
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "Citadel",
+          "text": "[Rarity|Rare] Monsters deal (10-8)% reduced Damage",
+          "stats": [
+            {
+              "id": "map_sanctum_guard_sanctum_damage_+%",
+              "max": -8,
+              "min": -10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMaximumHonour",
+      "kind": "prefix",
+      "template": "#% increased maximum [Honour]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Honourable",
+          "text": "(17-20)% increased maximum [Honour]",
+          "stats": [
+            {
+              "id": "sanctum_max_honour_+%",
+              "max": 20,
+              "min": 17
+            }
+          ]
+        },
+        {
+          "level": 40,
+          "name": "Moral",
+          "text": "(21-24)% increased maximum [Honour]",
+          "stats": [
+            {
+              "id": "sanctum_max_honour_+%",
+              "max": 24,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "Principled",
+          "text": "(25-30)% increased maximum [Honour]",
+          "stats": [
+            {
+              "id": "sanctum_max_honour_+%",
+              "max": 30,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 67,
+          "name": "Respected",
+          "text": "(31-35)% increased maximum [Honour]",
+          "stats": [
+            {
+              "id": "sanctum_max_honour_+%",
+              "max": 35,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 76,
+          "name": "Venerable",
+          "text": "(36-45)% increased maximum [Honour]",
+          "stats": [
+            {
+              "id": "sanctum_max_honour_+%",
+              "max": 45,
+              "min": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMerchantExtraOptions",
+      "kind": "prefix",
+      "template": "The Merchant has an additional Choice",
+      "tiers": [
+        {
+          "level": 60,
+          "name": "Plentiful",
+          "text": "The Merchant has an additional Choice",
+          "stats": [
+            {
+              "id": "sanctum_merchant_additional_options",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumResolveRecovery",
+      "kind": "prefix",
+      "template": "#% increased [Honour] restored",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Revitalising",
+          "text": "(16-20)% increased [Honour] restored",
+          "stats": [
+            {
+              "id": "sanctum_honour_restored_+%",
+              "max": 20,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "name": "Galvanising",
+          "text": "(21-24)% increased [Honour] restored",
+          "stats": [
+            {
+              "id": "sanctum_honour_restored_+%",
+              "max": 24,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Enlivening",
+          "text": "(25-29)% increased [Honour] restored",
+          "stats": [
+            {
+              "id": "sanctum_honour_restored_+%",
+              "max": 29,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "Emboldening",
+          "text": "(30-34)% increased [Honour] restored",
+          "stats": [
+            {
+              "id": "sanctum_honour_restored_+%",
+              "max": 34,
+              "min": 30
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "name": "Brightening",
+          "text": "(35-45)% increased [Honour] restored",
+          "stats": [
+            {
+              "id": "sanctum_honour_restored_+%",
+              "max": 45,
+              "min": 35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumHonourResistance",
+      "kind": "suffix",
+      "template": "+#% to [HonourResistance|Honour Resistance]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Worth",
+          "text": "+(15-20)% to [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_honour_resistance_%",
+              "max": 20,
+              "min": 15
+            }
+          ]
+        },
+        {
+          "level": 40,
+          "name": "of Deserving",
+          "text": "+(21-25)% to [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_honour_resistance_%",
+              "max": 25,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Justification",
+          "text": "+(26-30)% to [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_honour_resistance_%",
+              "max": 30,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 67,
+          "name": "of Entitlement",
+          "text": "+(31-35)% to [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_honour_resistance_%",
+              "max": 35,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 76,
+          "name": "of Merit",
+          "text": "+(36-40)% to [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_honour_resistance_%",
+              "max": 40,
+              "min": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMaximumResolveOnBossKill",
+      "kind": "suffix",
+      "template": "Restore # [Honour] on killing a Boss",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Empowerment",
+          "text": "Restore (40-59) [Honour] on killing a Boss",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_boss_kill",
+              "max": 59,
+              "min": 40
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of Championship",
+          "text": "Restore (60-79) [Honour] on killing a Boss",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_boss_kill",
+              "max": 79,
+              "min": 60
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of Victory",
+          "text": "Restore (80-99) [Honour] on killing a Boss",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_boss_kill",
+              "max": 99,
+              "min": 80
+            }
+          ]
+        },
+        {
+          "level": 72,
+          "name": "of Conquest",
+          "text": "Restore (100-119) [Honour] on killing a Boss",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_boss_kill",
+              "max": 119,
+              "min": 100
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "of Triumph",
+          "text": "Restore (120-150) [Honour] on killing a Boss",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_boss_kill",
+              "max": 150,
+              "min": 120
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMaximumResolveOnFountainUse",
+      "kind": "suffix",
+      "template": "Restore # [Honour] on venerating a Maraketh Shrine",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Refreshment",
+          "text": "Restore (25-35) [Honour] on venerating a Maraketh Shrine",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_fountain_use",
+              "max": 35,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of Convalescence",
+          "text": "Restore (30-39) [Honour] on venerating a Maraketh Shrine",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_fountain_use",
+              "max": 39,
+              "min": 30
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of Youth",
+          "text": "Restore (40-49) [Honour] on venerating a Maraketh Shrine",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_fountain_use",
+              "max": 49,
+              "min": 40
+            }
+          ]
+        },
+        {
+          "level": 72,
+          "name": "of Freshness",
+          "text": "Restore (50-59) [Honour] on venerating a Maraketh Shrine",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_fountain_use",
+              "max": 59,
+              "min": 50
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "of Bloom",
+          "text": "Restore (60-75) [Honour] on venerating a Maraketh Shrine",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_fountain_use",
+              "max": 75,
+              "min": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMerchantReducedCosts",
+      "kind": "suffix",
+      "template": "#% reduced Merchant Prices",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Charity",
+          "text": "(7-6)% reduced Merchant Prices",
+          "stats": [
+            {
+              "id": "sanctum_merchant_gold_cost_+%",
+              "max": -6,
+              "min": -7
+            }
+          ]
+        },
+        {
+          "level": 74,
+          "name": "of Diplomacy",
+          "text": "(10-8)% reduced Merchant Prices",
+          "stats": [
+            {
+              "id": "sanctum_merchant_gold_cost_+%",
+              "max": -8,
+              "min": -10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumRevealExtraRoomEachFloor",
+      "kind": "suffix",
+      "template": "# additional Rooms are revealed on the Trial Map",
+      "tiers": [
+        {
+          "level": 76,
+          "name": "of Clairvoyance",
+          "text": "2 additional Rooms are revealed on the Trial Map",
+          "stats": [
+            {
+              "id": "sanctum_map_reveal_extra_room_each_floor",
+              "max": 2,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumRevealExtraRoomEachFloor",
+      "kind": "suffix",
+      "template": "An additional Room is revealed on the Trial Map",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Illumination",
+          "text": "An additional Room is revealed on the Trial Map",
+          "stats": [
+            {
+              "id": "sanctum_map_reveal_extra_room_each_floor",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "category": "Relics",
+  "label": "Amphora Relic",
+  "slug": "Amphora_Relic"
+}

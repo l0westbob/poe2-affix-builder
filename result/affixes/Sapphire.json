@@ -1,0 +1,1128 @@
+{
+  "affixes": [
+    {
+      "family_key": "AilmentEffect",
+      "kind": "prefix",
+      "template": "#% increased [BuffMagnitude|Magnitude] of [Ailments] you inflict",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Acrimonious",
+          "text": "(5-15)% increased [BuffMagnitude|Magnitude] of [Ailments] you inflict",
+          "stats": [
+            {
+              "id": "ailment_effect_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "AllDamage",
+      "kind": "prefix",
+      "template": "#% increased Damage if you have Consumed a [Corpse] [Recently]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Necromantic",
+          "text": "(10-20)% increased Damage if you have Consumed a [Corpse] [Recently]",
+          "stats": [
+            {
+              "id": "damage_+%_if_you_have_consumed_a_corpse_recently",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "AreaOfEffect",
+      "kind": "prefix",
+      "template": "#% increased Area of Effect",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Blasting",
+          "text": "(4-6)% increased Area of Effect",
+          "stats": [
+            {
+              "id": "base_skill_area_of_effect_+%",
+              "max": 6,
+              "min": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ColdDamagePercentage",
+      "kind": "prefix",
+      "template": "#% increased [Cold] Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Chilling",
+          "text": "(5-15)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ColdResistancePenetration",
+      "kind": "prefix",
+      "template": "Damage [Penetration|Penetrates] #% [Resistances|Cold Resistance]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Numbing",
+          "text": "Damage [Penetration|Penetrates] (5-10)% [Resistances|Cold Resistance]",
+          "stats": [
+            {
+              "id": "base_reduce_enemy_cold_resistance_%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalAilmentEffect",
+      "kind": "prefix",
+      "template": "#% increased [BuffMagnitude|Magnitude] of [DamagingAilments|Damaging Ailments] you inflict with [Critical|Critical Hits]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Rancorous",
+          "text": "(10-20)% increased [BuffMagnitude|Magnitude] of [DamagingAilments|Damaging Ailments] you inflict with [Critical|Critical Hits]",
+          "stats": [
+            {
+              "id": "critical_hit_damaging_ailment_effect_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CurseAreaOfEffect",
+      "kind": "prefix",
+      "template": "#% increased Area of Effect of [Curse|Curses]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Expanding",
+          "text": "(8-12)% increased Area of Effect of [Curse|Curses]",
+          "stats": [
+            {
+              "id": "curse_area_of_effect_+%",
+              "max": 12,
+              "min": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CurseEffectiveness",
+      "kind": "prefix",
+      "template": "#% increased [Curse] [BuffMagnitude|Magnitudes]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Hexing",
+          "text": "(2-4)% increased [Curse] [BuffMagnitude|Magnitudes]",
+          "stats": [
+            {
+              "id": "curse_effect_+%",
+              "max": 4,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "DamageForm",
+      "kind": "prefix",
+      "template": "#% increased Damage while [Shapeshift|Shapeshifted]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Bestial",
+          "text": "(5-15)% increased Damage while [Shapeshift|Shapeshifted]",
+          "stats": [
+            {
+              "id": "damage_+%_while_shapeshifted",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "DamageForm",
+      "kind": "prefix",
+      "template": "#% increased Damage with [Plant|Plant] Skills",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Overgrown",
+          "text": "(5-15)% increased Damage with [Plant|Plant] Skills",
+          "stats": [
+            {
+              "id": "plant_skill_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "DamageWithTriggeredSpells",
+      "kind": "prefix",
+      "template": "[Trigger|Triggered] [Spell|Spells] deal #% increased [Spell] Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Triggered",
+          "text": "[Trigger|Triggered] [Spell|Spells] deal (10-18)% increased [Spell] Damage",
+          "stats": [
+            {
+              "id": "triggered_spell_spell_damage_+%",
+              "max": 18,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ElementalDamagePercent",
+      "kind": "prefix",
+      "template": "#% increased [ElementalDamage|Elemental Damage]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Prismatic",
+          "text": "(5-15)% increased [ElementalDamage|Elemental Damage]",
+          "stats": [
+            {
+              "id": "elemental_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "EnergyShieldDelay",
+      "kind": "prefix",
+      "template": "#% [FasterESRechargeStart|faster start of Energy Shield Recharge]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Serene",
+          "text": "(10-15)% [FasterESRechargeStart|faster start of Energy Shield Recharge]",
+          "stats": [
+            {
+              "id": "energy_shield_delay_-%",
+              "max": 15,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "EnergyShieldPercent",
+      "kind": "prefix",
+      "template": "#% increased maximum [EnergyShield|Energy Shield]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Shimmering",
+          "text": "(10-20)% increased maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "maximum_energy_shield_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "EnergyShieldRegeneration",
+      "kind": "prefix",
+      "template": "#% increased [ESRechargeRate|Energy Shield Recharge Rate]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Fevered",
+          "text": "(10-20)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
+          "stats": [
+            {
+              "id": "energy_shield_recharge_rate_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FocusEnergyShield",
+      "kind": "prefix",
+      "template": "#% increased [EnergyShield|Energy Shield] from Equipped [Focus]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Focusing",
+          "text": "(30-50)% increased [EnergyShield|Energy Shield] from Equipped [Focus]",
+          "stats": [
+            {
+              "id": "energy_shield_from_focus_+%",
+              "max": 50,
+              "min": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IgniteEffect",
+      "kind": "prefix",
+      "template": "#% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Burning",
+          "text": "(5-15)% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "base_ignite_effect_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedChaosDamage",
+      "kind": "prefix",
+      "template": "#% increased [Chaos] Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Chaotic",
+          "text": "(6-12)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 12,
+              "min": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MinionDamage",
+      "kind": "prefix",
+      "template": "[Minion|Minions] deal #% increased Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Authoritative",
+          "text": "[Minion|Minions] deal (5-15)% increased Damage",
+          "stats": [
+            {
+              "id": "minion_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "OfferingLife",
+      "kind": "prefix",
+      "template": "[Offering|Offerings] have #% increased Maximum Life",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Sacrificial",
+          "text": "[Offering|Offerings] have (15-25)% increased Maximum Life",
+          "stats": [
+            {
+              "id": "offering_life_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "PresenceRadius",
+      "kind": "prefix",
+      "template": "#% increased [Presence|Presence] Area of Effect",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Iconic",
+          "text": "(15-25)% increased [Presence|Presence] Area of Effect",
+          "stats": [
+            {
+              "id": "presence_area_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ShockEffect",
+      "kind": "prefix",
+      "template": "#% increased [BuffMagnitude|Magnitude] of [Shock|Shock] you inflict",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Jolting",
+          "text": "(10-15)% increased [BuffMagnitude|Magnitude] of [Shock|Shock] you inflict",
+          "stats": [
+            {
+              "id": "shock_effect_+%",
+              "max": 15,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponCasterDamagePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Spell] Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Mystic",
+          "text": "(5-15)% increased [Spell] Damage",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WitheredEffect",
+      "kind": "prefix",
+      "template": "#% increased [Withered|Withered] [BuffMagnitude|Magnitude]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Withering",
+          "text": "(5-10)% increased [Withered|Withered] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "withered_magnitude_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "AilmentChance",
+      "kind": "suffix",
+      "template": "#% increased chance to inflict [Ailments]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Ailing",
+          "text": "(5-15)% increased chance to inflict [Ailments]",
+          "stats": [
+            {
+              "id": "ailment_chance_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "AilmentThresholdfromEnergyShield",
+      "kind": "suffix",
+      "template": "Gain additional [AilmentThreshold|Ailment Threshold] equal to #% of maximum [EnergyShield|Energy Shield]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Inuring",
+          "text": "Gain additional [AilmentThreshold|Ailment Threshold] equal to (5-15)% of maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "ailment_threshold_+_from_%_maximum_energy_shield",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "BaseCurseDuration",
+      "kind": "suffix",
+      "template": "#% increased [Curse] Duration",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Continuation",
+          "text": "(15-25)% increased [Curse] Duration",
+          "stats": [
+            {
+              "id": "base_curse_duration_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeChanceIncrease",
+      "kind": "suffix",
+      "template": "#% increased [Critical|Critical Hit] Chance",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Annihilation",
+          "text": "(5-15)% increased [Critical|Critical Hit] Chance",
+          "stats": [
+            {
+              "id": "critical_strike_chance_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeMultiplier",
+      "kind": "suffix",
+      "template": "#% increased [CriticalDamageBonus|Critical Damage Bonus]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Potency",
+          "text": "(10-20)% increased [CriticalDamageBonus|Critical Damage Bonus]",
+          "stats": [
+            {
+              "id": "base_critical_strike_multiplier_+",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CurseDelay",
+      "kind": "suffix",
+      "template": "#% faster [Curse] Activation",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Chanting",
+          "text": "(15-5)% faster [Curse] Activation",
+          "stats": [
+            {
+              "id": "curse_delay_+%",
+              "max": -5,
+              "min": -15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "DamageRemovedFromManaBeforeLife",
+      "kind": "suffix",
+      "template": "#% of Damage is taken from Mana before Life",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Mind",
+          "text": "(2-4)% of Damage is taken from Mana before Life",
+          "stats": [
+            {
+              "id": "base_damage_removed_from_mana_before_life_%",
+              "max": 4,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "DamageTakenGainedAsLife",
+      "kind": "suffix",
+      "template": "#% of Damage taken [Recoup|Recouped] as Life",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Infusion",
+          "text": "(2-3)% of Damage taken [Recoup|Recouped] as Life",
+          "stats": [
+            {
+              "id": "damage_taken_goes_to_life_over_4_seconds_%",
+              "max": 3,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "DamagingAilmentDuration",
+      "kind": "suffix",
+      "template": "#% increased Duration of [DamagingAilments|Damaging Ailments] on Enemies",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Suffusion",
+          "text": "(5-10)% increased Duration of [DamagingAilments|Damaging Ailments] on Enemies",
+          "stats": [
+            {
+              "id": "damaging_ailment_duration_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "DebuffTime",
+      "kind": "suffix",
+      "template": "[Debuff|Debuffs] on you expire #% faster",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Diminishing",
+          "text": "[Debuff|Debuffs] on you expire (5-10)% faster",
+          "stats": [
+            {
+              "id": "debuff_time_passed_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "Energy",
+      "kind": "suffix",
+      "template": "[Meta] Skills gain #% increased [Energy]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Generation",
+          "text": "[Meta] Skills gain (4-8)% increased [Energy]",
+          "stats": [
+            {
+              "id": "energy_generated_+%",
+              "max": 8,
+              "min": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FasterAilmentDamage",
+      "kind": "suffix",
+      "template": "[DamagingAilments|Damaging Ailments] deal damage #% faster",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Decrepifying",
+          "text": "[DamagingAilments|Damaging Ailments] deal damage (3-7)% faster",
+          "stats": [
+            {
+              "id": "damaging_ailments_deal_damage_+%_faster",
+              "max": 7,
+              "min": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FormCritMultiplier",
+      "kind": "suffix",
+      "template": "#% increased [CriticalDamageBonus|Critical Spell Damage Bonus]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Unmaking",
+          "text": "(10-20)% increased [CriticalDamageBonus|Critical Spell Damage Bonus]",
+          "stats": [
+            {
+              "id": "base_spell_critical_strike_multiplier_+",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FreezeDamageIncrease",
+      "kind": "suffix",
+      "template": "#% increased [Freeze|Freeze] Buildup",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Freezing",
+          "text": "(10-20)% increased [Freeze|Freeze] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_freeze_multiplier_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FreezeThreshold",
+      "kind": "suffix",
+      "template": "#% increased [FreezeThreshold|Freeze Threshold]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Snowbreathing",
+          "text": "(18-32)% increased [FreezeThreshold|Freeze Threshold]",
+          "stats": [
+            {
+              "id": "freeze_threshold_+%",
+              "max": 32,
+              "min": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IgniteChanceIncrease",
+      "kind": "suffix",
+      "template": "#% increased [Flammability] [BuffMagnitude|Magnitude]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Ignition",
+          "text": "(10-20)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedCastSpeed",
+      "kind": "suffix",
+      "template": "#% increased Cast Speed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Enchanting",
+          "text": "(2-4)% increased Cast Speed",
+          "stats": [
+            {
+              "id": "base_cast_speed_+%",
+              "max": 4,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedChillDuration",
+      "kind": "suffix",
+      "template": "#% increased [Chill|Chill] Duration on Enemies",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Frost",
+          "text": "(15-25)% increased [Chill|Chill] Duration on Enemies",
+          "stats": [
+            {
+              "id": "chill_duration_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ManaGainedOnKillPercentage",
+      "kind": "suffix",
+      "template": "Recover #% of maximum Mana on Kill",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Osmosis",
+          "text": "Recover (1-2)% of maximum Mana on Kill",
+          "stats": [
+            {
+              "id": "maximum_mana_%_gained_on_kill",
+              "max": 2,
+              "min": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ManaRegeneration",
+      "kind": "suffix",
+      "template": "#% increased Mana Regeneration Rate",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Energy",
+          "text": "(5-15)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MaximumColdResist",
+      "kind": "suffix",
+      "template": "+#% to [MaximumResistances|Maximum Cold Resistance]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Kraken",
+          "text": "+1% to [MaximumResistances|Maximum Cold Resistance]",
+          "stats": [
+            {
+              "id": "base_maximum_cold_damage_resistance_%",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MaximumLifeOnKillPercent",
+      "kind": "suffix",
+      "template": "Recover #% of maximum Life on Kill",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Success",
+          "text": "Recover (1-2)% of maximum Life on Kill",
+          "stats": [
+            {
+              "id": "recover_%_maximum_life_on_kill",
+              "max": 2,
+              "min": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MinionAttackSpeedAndCastSpeed",
+      "kind": "suffix",
+      "template": "[Minion|Minions] have #% increased [Attack] and Cast Speed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Orchestration",
+          "text": "[Minion|Minions] have (2-4)% increased [Attack] and Cast Speed",
+          "stats": [
+            {
+              "id": "minion_attack_and_cast_speed_+%",
+              "max": 4,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MinionChaosResistance",
+      "kind": "suffix",
+      "template": "[Minion|Minions] have +#% to [Chaos] [Resistances|Resistance]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Righteousness",
+          "text": "[Minion|Minions] have +(7-13)% to [Chaos] [Resistances|Resistance]",
+          "stats": [
+            {
+              "id": "minion_chaos_resistance_%",
+              "max": 13,
+              "min": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MinionCriticalStrikeChance",
+      "kind": "suffix",
+      "template": "[Minion|Minions] have #% increased [Critical|Critical Hit Chance]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Marshalling",
+          "text": "[Minion|Minions] have (10-20)% increased [Critical|Critical Hit Chance]",
+          "stats": [
+            {
+              "id": "minion_critical_strike_chance_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MinionCriticalStrikeMultiplier",
+      "kind": "suffix",
+      "template": "[Minion|Minions] have #% increased [CriticalDamageBonus|Critical Damage Bonus]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Gripping",
+          "text": "[Minion|Minions] have (15-25)% increased [CriticalDamageBonus|Critical Damage Bonus]",
+          "stats": [
+            {
+              "id": "minion_critical_strike_multiplier_+",
+              "max": 25,
+              "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MinionElementalResistances",
+      "kind": "suffix",
+      "template": "[Minion|Minions] have +#% to all Elemental [Resistances]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Acclimatisation",
+          "text": "[Minion|Minions] have +(5-10)% to all Elemental [Resistances]",
+          "stats": [
+            {
+              "id": "minion_elemental_resistance_%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "OfferingDuration",
+      "kind": "suffix",
+      "template": "[Offering] Skills have #% increased Duration",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Offering",
+          "text": "[Offering] Skills have (15-25)% increased Duration",
+          "stats": [
+            {
+              "id": "offering_duration_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "QuarterstaffFreezeBuildup",
+      "kind": "suffix",
+      "template": "#% increased [Freeze] Buildup with [Quarterstaff|Quarterstaves]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Glaciers",
+          "text": "(10-20)% increased [Freeze] Buildup with [Quarterstaff|Quarterstaves]",
+          "stats": [
+            {
+              "id": "quarterstaff_hit_damage_freeze_multiplier_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ShockChanceIncrease",
+      "kind": "suffix",
+      "template": "#% increased chance to [Shock]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Shocking",
+          "text": "(10-20)% increased chance to [Shock]",
+          "stats": [
+            {
+              "id": "shock_chance_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ShockDuration",
+      "kind": "suffix",
+      "template": "#% increased [Shock] Duration",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Paralyzing",
+          "text": "(15-25)% increased [Shock] Duration",
+          "stats": [
+            {
+              "id": "shock_duration_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SkillEffectDuration",
+      "kind": "suffix",
+      "template": "#% increased Skill Effect Duration",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Lengthening",
+          "text": "(5-10)% increased Skill Effect Duration",
+          "stats": [
+            {
+              "id": "skill_effect_duration_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponSpeed",
+      "kind": "suffix",
+      "template": "#% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Wild",
+          "text": "(2-4)% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
+          "stats": [
+            {
+              "id": "skill_speed_+%_while_shapeshifted",
+              "max": 4,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpellCriticalStrikeChanceIncrease",
+      "kind": "suffix",
+      "template": "#% increased [Critical|Critical Hit Chance] for [Spell|Spells]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Annihilating",
+          "text": "(5-15)% increased [Critical|Critical Hit Chance] for [Spell|Spells]",
+          "stats": [
+            {
+              "id": "spell_critical_strike_chance_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "StunThresholdfromEnergyShield",
+      "kind": "suffix",
+      "template": "Gain additional [StunThreshold|Stun Threshold] equal to #% of maximum [EnergyShield|Energy Shield]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Barriers",
+          "text": "Gain additional [StunThreshold|Stun Threshold] equal to (5-15)% of maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "stun_threshold_+_from_%_maximum_energy_shield",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "category": "Jewels",
+  "label": "Sapphire",
+  "slug": "Sapphire"
+}

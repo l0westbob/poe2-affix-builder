@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "source": "https://poe2db.tw/us/Modifiers",
+  "started_at_utc": "2026-05-10T08:02:10.368034+00:00",
+  "finished_at_utc": "2026-05-10T08:03:01.775133+00:00",
+  "duration_seconds": 51.407,
+  "items_fetched": 78,
+  "affixes_fetched": 1967,
+  "tiers_fetched": 9098,
+  "snapshot_sha256": "9648dfeadd5000f3f40851e1e5e31d16337b2f2cabd59e99b5159e784eb4dbb3",
+  "snapshot_path": "config/poe2db_snapshot.json"
+}

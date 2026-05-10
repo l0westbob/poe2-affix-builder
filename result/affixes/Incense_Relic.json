@@ -1,0 +1,549 @@
+{
+  "affixes": [
+    {
+      "family_key": "SanctumAdditionalKeyChance",
+      "kind": "prefix",
+      "template": "When you gain a [SekhemaKeys|Key] #% chance to gain another",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Pilferer's",
+          "text": "When you gain a [SekhemaKeys|Key] (7-9)% chance to gain another",
+          "stats": [
+            {
+              "id": "sanctum_additional_key_chance_%",
+              "max": 9,
+              "min": 7
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Picklock's",
+          "text": "When you gain a [SekhemaKeys|Key] (10-12)% chance to gain another",
+          "stats": [
+            {
+              "id": "sanctum_additional_key_chance_%",
+              "max": 12,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "Thief's",
+          "text": "When you gain a [SekhemaKeys|Key] (13-16)% chance to gain another",
+          "stats": [
+            {
+              "id": "sanctum_additional_key_chance_%",
+              "max": 16,
+              "min": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumChanceToPreventHonourDeath",
+      "kind": "prefix",
+      "template": "#% chance if you were to lose all your [Honour] to have # [Honour] instead",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Cheater's",
+          "text": "(5-8)% chance if you were to lose all your [Honour] to have 1 [Honour] instead",
+          "stats": [
+            {
+              "id": "sanctum_chance_to_prevent_zero_honour_%",
+              "max": 8,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "Deceiver's",
+          "text": "(9-12)% chance if you were to lose all your [Honour] to have 1 [Honour] instead",
+          "stats": [
+            {
+              "id": "sanctum_chance_to_prevent_zero_honour_%",
+              "max": 12,
+              "min": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumKeyUpgradeChance",
+      "kind": "prefix",
+      "template": "#% chance for each of your [SekhemaKeys|Keys] to upgrade on completing a Floor",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Enhancing",
+          "text": "(3-4)% chance for each of your [SekhemaKeys|Keys] to upgrade on completing a Floor",
+          "stats": [
+            {
+              "id": "sanctum_chance_to_upgrade_key_on_floor_completed_%",
+              "max": 4,
+              "min": 3
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Reforging",
+          "text": "(5-6)% chance for each of your [SekhemaKeys|Keys] to upgrade on completing a Floor",
+          "stats": [
+            {
+              "id": "sanctum_chance_to_upgrade_key_on_floor_completed_%",
+              "max": 6,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 77,
+          "name": "Upgrading",
+          "text": "(7-9)% chance for each of your [SekhemaKeys|Keys] to upgrade on completing a Floor",
+          "stats": [
+            {
+              "id": "sanctum_chance_to_upgrade_key_on_floor_completed_%",
+              "max": 9,
+              "min": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMonsterSpeed",
+      "kind": "prefix",
+      "template": "Monsters have #% reduced [Attack], Cast and Movement Speed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Time-warping",
+          "text": "Monsters have 4% reduced [Attack], Cast and Movement Speed",
+          "stats": [
+            {
+              "id": "map_monster_attack_cast_and_movement_speed_+%",
+              "max": -4,
+              "min": -4
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Chronomancy",
+          "text": "Monsters have 5% reduced [Attack], Cast and Movement Speed",
+          "stats": [
+            {
+              "id": "map_monster_attack_cast_and_movement_speed_+%",
+              "max": -5,
+              "min": -5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMonsterSpeed",
+      "kind": "prefix",
+      "template": "Monsters have #% reduced [Attack], Cast and Movement Speed",
+      "tiers": [
+        {
+          "level": 78,
+          "name": "Temporal",
+          "text": "Monsters have (7-6)% reduced [Attack], Cast and Movement Speed",
+          "stats": [
+            {
+              "id": "map_monster_attack_cast_and_movement_speed_+%",
+              "max": -6,
+              "min": -7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMonstersIncreasedDamageTaken",
+      "kind": "prefix",
+      "template": "Monsters take #% increased Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Crushing",
+          "text": "Monsters take (11-15)% increased Damage",
+          "stats": [
+            {
+              "id": "map_monster_damage_taken_+%",
+              "max": 15,
+              "min": 11
+            }
+          ]
+        },
+        {
+          "level": 56,
+          "name": "Punishing",
+          "text": "Monsters take (16-20)% increased Damage",
+          "stats": [
+            {
+              "id": "map_monster_damage_taken_+%",
+              "max": 20,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 77,
+          "name": "Annihilating",
+          "text": "Monsters take (21-30)% increased Damage",
+          "stats": [
+            {
+              "id": "map_monster_damage_taken_+%",
+              "max": 30,
+              "min": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMonstersReducedDamage",
+      "kind": "prefix",
+      "template": "Monsters deal #% reduced Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Resilient",
+          "text": "Monsters deal 6% reduced Damage",
+          "stats": [
+            {
+              "id": "map_monsters_damage_+%",
+              "max": -6,
+              "min": -6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMonstersReducedDamage",
+      "kind": "prefix",
+      "template": "Monsters deal #% reduced Damage",
+      "tiers": [
+        {
+          "level": 56,
+          "name": "Fortified",
+          "text": "Monsters deal (8-7)% reduced Damage",
+          "stats": [
+            {
+              "id": "map_monsters_damage_+%",
+              "max": -7,
+              "min": -8
+            }
+          ]
+        },
+        {
+          "level": 77,
+          "name": "Impenetrable",
+          "text": "Monsters deal (12-9)% reduced Damage",
+          "stats": [
+            {
+              "id": "map_monsters_damage_+%",
+              "max": -9,
+              "min": -12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumAvoidAfflictionChance",
+      "kind": "suffix",
+      "template": "#% chance to Avoid gaining an [Afflictions|Affliction]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Dignity",
+          "text": "(6-7)% chance to Avoid gaining an [Afflictions|Affliction]",
+          "stats": [
+            {
+              "id": "sanctum_avoid_affliction_chance_%",
+              "max": 7,
+              "min": 6
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Prestige",
+          "text": "(8-9)% chance to Avoid gaining an [Afflictions|Affliction]",
+          "stats": [
+            {
+              "id": "sanctum_avoid_affliction_chance_%",
+              "max": 9,
+              "min": 8
+            }
+          ]
+        },
+        {
+          "level": 69,
+          "name": "of Glory",
+          "text": "(10-11)% chance to Avoid gaining an [Afflictions|Affliction]",
+          "stats": [
+            {
+              "id": "sanctum_avoid_affliction_chance_%",
+              "max": 11,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "of Honour",
+          "text": "(12-15)% chance to Avoid gaining an [Afflictions|Affliction]",
+          "stats": [
+            {
+              "id": "sanctum_avoid_affliction_chance_%",
+              "max": 15,
+              "min": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumGoldOnRoomCompletion",
+      "kind": "suffix",
+      "template": "Gain # [SacredWater|Sacred Water] when you complete a Room",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Well",
+          "text": "Gain (11-15) [SacredWater|Sacred Water] when you complete a Room",
+          "stats": [
+            {
+              "id": "gain_x_sanctum_gold_on_room_completion",
+              "max": 15,
+              "min": 11
+            }
+          ]
+        },
+        {
+          "level": 56,
+          "name": "of the Fountain",
+          "text": "Gain (16-20) [SacredWater|Sacred Water] when you complete a Room",
+          "stats": [
+            {
+              "id": "gain_x_sanctum_gold_on_room_completion",
+              "max": 20,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 77,
+          "name": "of the Oasis",
+          "text": "Gain (21-30) [SacredWater|Sacred Water] when you complete a Room",
+          "stats": [
+            {
+              "id": "gain_x_sanctum_gold_on_room_completion",
+              "max": 30,
+              "min": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumHonourOnGainKey",
+      "kind": "suffix",
+      "template": "Restore # [Honour] on picking up a [SekhemaKeys|Key]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Donation",
+          "text": "Restore (25-35) [Honour] on picking up a [SekhemaKeys|Key]",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_gain_key",
+              "max": 35,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of Offering",
+          "text": "Restore (30-39) [Honour] on picking up a [SekhemaKeys|Key]",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_gain_key",
+              "max": 39,
+              "min": 30
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of Entrusting",
+          "text": "Restore (40-49) [Honour] on picking up a [SekhemaKeys|Key]",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_gain_key",
+              "max": 49,
+              "min": 40
+            }
+          ]
+        },
+        {
+          "level": 72,
+          "name": "of Bestowing",
+          "text": "Restore (50-59) [Honour] on picking up a [SekhemaKeys|Key]",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_gain_key",
+              "max": 59,
+              "min": 50
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "of Bequeathing",
+          "text": "Restore (60-75) [Honour] on picking up a [SekhemaKeys|Key]",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_gain_key",
+              "max": 75,
+              "min": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMaximumHonourResistance",
+      "kind": "suffix",
+      "template": "+#% to Maximum [HonourResistance|Honour Resistance]",
+      "tiers": [
+        {
+          "level": 60,
+          "name": "of Excellence",
+          "text": "+(2-3)% to Maximum [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_additional_max_honour_resistance_%",
+              "max": 3,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "of Brilliance",
+          "text": "+(4-5)% to Maximum [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_additional_max_honour_resistance_%",
+              "max": 5,
+              "min": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumResolveOnRoomComplete",
+      "kind": "suffix",
+      "template": "Restore # [Honour] on room completion",
+      "tiers": [
+        {
+          "level": 60,
+          "name": "of Progress",
+          "text": "Restore (10-14) [Honour] on room completion",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_room_completion",
+              "max": 14,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "of Advancement",
+          "text": "Restore (15-19) [Honour] on room completion",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_room_completion",
+              "max": 19,
+              "min": 15
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "of Headway",
+          "text": "Restore (20-24) [Honour] on room completion",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_room_completion",
+              "max": 24,
+              "min": 20
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "name": "of Betterment",
+          "text": "Restore (25-30) [Honour] on room completion",
+          "stats": [
+            {
+              "id": "sanctum_restore_honour_on_room_completion",
+              "max": 30,
+              "min": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumRevealExtraRoomEachFloor",
+      "kind": "suffix",
+      "template": "# additional Rooms are revealed on the Trial Map",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Illumination",
+          "text": "(2-3) additional Rooms are revealed on the Trial Map",
+          "stats": [
+            {
+              "id": "sanctum_map_reveal_extra_room_each_floor",
+              "max": 3,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 76,
+          "name": "of Clairvoyance",
+          "text": "4 additional Rooms are revealed on the Trial Map",
+          "stats": [
+            {
+              "id": "sanctum_map_reveal_extra_room_each_floor",
+              "max": 4,
+              "min": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "category": "Relics",
+  "label": "Incense Relic",
+  "slug": "Incense_Relic"
+}

@@ -1,0 +1,1400 @@
+{
+  "affixes": [
+    {
+      "family_key": "MapGainRarityOnKill",
+      "kind": "prefix",
+      "template": "MapGainRarityOnKill1",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "MapGainRarityOnKill1",
+          "text": "",
+          "stats": [
+            {
+              "id": "dummy_stat_display_nothing",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterAdditionalPacks",
+      "kind": "prefix",
+      "template": "Area contains # additional packs of Beasts #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Beastly",
+          "text": "Area contains (6-8) additional packs of Beasts 10% increased [Waystone|Waystones] found in Area 5% increased Pack size",
+          "stats": [
+            {
+              "id": "map_monster_additional_beasts_packs",
+              "max": 8,
+              "min": 6
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 5,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterAdditionalPacks",
+      "kind": "prefix",
+      "template": "Area contains # additional packs of Bramble Monsters #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Brambled",
+          "text": "Area contains (6-8) additional packs of Bramble Monsters 10% increased [Waystone|Waystones] found in Area 5% increased Pack size",
+          "stats": [
+            {
+              "id": "map_monster_additional_bramble_packs",
+              "max": 8,
+              "min": 6
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 5,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterAdditionalPacks",
+      "kind": "prefix",
+      "template": "Area contains # additional packs of Ezomyte Monsters #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Rusted",
+          "text": "Area contains (6-8) additional packs of Ezomyte Monsters 10% increased [Waystone|Waystones] found in Area 5% increased Pack size",
+          "stats": [
+            {
+              "id": "map_monster_additional_ezomyte_packs",
+              "max": 8,
+              "min": 6
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 5,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterAdditionalPacks",
+      "kind": "prefix",
+      "template": "Area contains # additional packs of Faridun Monsters #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Faridun's",
+          "text": "Area contains (6-8) additional packs of Faridun Monsters 10% increased [Waystone|Waystones] found in Area 10% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_monster_additional_faridun_packs",
+              "max": 8,
+              "min": 6
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 10,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterAdditionalPacks",
+      "kind": "prefix",
+      "template": "Area contains # additional packs of Iron Guards #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Rare] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Baron's",
+          "text": "Area contains (6-8) additional packs of Iron Guards 10% increased [Waystone|Waystones] found in Area 13% increased number of [Rarity|Rare] Monsters",
+          "stats": [
+            {
+              "id": "map_monster_additional_baron_packs",
+              "max": 8,
+              "min": 6
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_number_of_rare_packs_+%",
+              "max": 13,
+              "min": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterAdditionalPacks",
+      "kind": "prefix",
+      "template": "Area contains # additional packs of Plagued Monsters #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Perennial's",
+          "text": "Area contains (6-8) additional packs of Plagued Monsters 10% increased [Waystone|Waystones] found in Area 10% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_monster_additional_perennial_packs",
+              "max": 8,
+              "min": 6
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 10,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterAdditionalPacks",
+      "kind": "prefix",
+      "template": "Area contains # additional packs of Transcended Monsters #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Rare] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Doryani's",
+          "text": "Area contains (6-8) additional packs of Transcended Monsters 10% increased [Waystone|Waystones] found in Area 13% increased number of [Rarity|Rare] Monsters",
+          "stats": [
+            {
+              "id": "map_monster_additional_doryani_packs",
+              "max": 8,
+              "min": 6
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_number_of_rare_packs_+%",
+              "max": 13,
+              "min": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterAdditionalPacks",
+      "kind": "prefix",
+      "template": "Area contains # additional packs of Undead #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Hallowed",
+          "text": "Area contains (6-8) additional packs of Undead 10% increased [Waystone|Waystones] found in Area 10% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_monster_additional_undead_packs",
+              "max": 8,
+              "min": 6
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 10,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterAdditionalPacks",
+      "kind": "prefix",
+      "template": "Area contains # additional packs of Vaal Monsters #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Magic] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Sacrificial",
+          "text": "Area contains (6-8) additional packs of Vaal Monsters 10% increased [Waystone|Waystones] found in Area 18% increased number of [Rarity|Magic] Monsters",
+          "stats": [
+            {
+              "id": "map_monster_additional_vaal_packs",
+              "max": 8,
+              "min": 6
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_number_of_magic_packs_+%",
+              "max": 18,
+              "min": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterChaosDamage",
+      "kind": "prefix",
+      "template": "Monsters deal #% of Damage as Extra Chaos #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Profane",
+          "text": "Monsters deal (15-20)% of Damage as Extra Chaos 15% increased [Waystone|Waystones] found in Area 23% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_monsters_%_all_damage_to_gain_as_chaos",
+              "max": 20,
+              "min": 15
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 23,
+              "min": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterColdDamage",
+      "kind": "prefix",
+      "template": "Monsters deal #% of Damage as Extra Cold #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Frostbitten",
+          "text": "Monsters deal (15-20)% of Damage as Extra Cold 15% increased [Waystone|Waystones] found in Area 22% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_monsters_%_all_damage_to_gain_as_cold",
+              "max": 20,
+              "min": 15
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 22,
+              "min": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterDamage",
+      "kind": "prefix",
+      "template": "#% increased Monster Damage #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Rare] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Painful",
+          "text": "(15-20)% increased Monster Damage 20% increased [Waystone|Waystones] found in Area 28% increased number of [Rarity|Rare] Monsters",
+          "stats": [
+            {
+              "id": "map_monsters_damage_+%",
+              "max": 20,
+              "min": 15
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 20,
+              "min": 20
+            },
+            {
+              "id": "map_number_of_rare_packs_+%",
+              "max": 28,
+              "min": 28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterFireDamage",
+      "kind": "prefix",
+      "template": "Monsters deal #% of Damage as Extra Fire #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Magic] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Infernal",
+          "text": "Monsters deal (15-20)% of Damage as Extra Fire 15% increased [Waystone|Waystones] found in Area 28% increased number of [Rarity|Magic] Monsters",
+          "stats": [
+            {
+              "id": "map_monsters_%_all_damage_to_gain_as_fire",
+              "max": 20,
+              "min": 15
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_number_of_magic_packs_+%",
+              "max": 28,
+              "min": 28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterLife",
+      "kind": "prefix",
+      "template": "#% more Monster Life #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Rare] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Tough",
+          "text": "(20-29)% more Monster Life 15% increased [Waystone|Waystones] found in Area 26% increased number of [Rarity|Rare] Monsters",
+          "stats": [
+            {
+              "id": "map_monsters_life_+%",
+              "max": 29,
+              "min": 20
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_number_of_rare_packs_+%",
+              "max": 26,
+              "min": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterLightningDamage",
+      "kind": "prefix",
+      "template": "Monsters deal #% of Damage as Extra Lightning #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Thunderous",
+          "text": "Monsters deal (15-20)% of Damage as Extra Lightning 15% increased [Waystone|Waystones] found in Area 10% increased Pack size",
+          "stats": [
+            {
+              "id": "map_monsters_%_all_damage_to_gain_as_lightning",
+              "max": 20,
+              "min": 15
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 10,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersAccuracy",
+      "kind": "prefix",
+      "template": "Monsters have #% increased Accuracy Rating #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Precise",
+          "text": "Monsters have (15-25)% increased Accuracy Rating 10% increased [Waystone|Waystones] found in Area 7% increased Pack size",
+          "stats": [
+            {
+              "id": "map_monsters_accuracy_rating_+%",
+              "max": 25,
+              "min": 15
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 7,
+              "min": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersArmoured",
+      "kind": "prefix",
+      "template": "Monsters are [MonsterExtraArmour#|Armoured] #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Rare] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Enduring",
+          "text": "Monsters are [MonsterExtraArmour1|Armoured] 15% increased [Waystone|Waystones] found in Area 22% increased number of [Rarity|Rare] Monsters",
+          "stats": [
+            {
+              "id": "map_monsters_additional_strength_ratio_%_for_armour",
+              "max": 50,
+              "min": 50
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_number_of_rare_packs_+%",
+              "max": 22,
+              "min": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersCurseEffectOnSelfFinal",
+      "kind": "prefix",
+      "template": "#% less [BuffEffect|effect] of [Curse|Curses] on Monsters #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Hexwarded",
+          "text": "(30-20)% less [BuffEffect|effect] of [Curse|Curses] on Monsters 10% increased [Waystone|Waystones] found in Area 16% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_monsters_curse_effect_on_self_+%_final",
+              "max": -20,
+              "min": -30
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 16,
+              "min": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersEnergyShield",
+      "kind": "prefix",
+      "template": "Monsters gain #% of maximum Life as Extra maximum [EnergyShield|Energy Shield] #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Buffering",
+          "text": "Monsters gain 20% of maximum Life as Extra maximum [EnergyShield|Energy Shield] 15% increased [Waystone|Waystones] found in Area 17% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_monsters_maximum_life_%_to_add_to_maximum_energy_shield",
+              "max": 20,
+              "min": 20
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 17,
+              "min": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersEvasive",
+      "kind": "prefix",
+      "template": "Monsters are [MonsterExtraEvasion#|Evasive] #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Evasive",
+          "text": "Monsters are [MonsterExtraEvasion1|Evasive] 15% increased [Waystone|Waystones] found in Area 9% increased Pack size",
+          "stats": [
+            {
+              "id": "map_monsters_additional_dexterity_ratio_%_for_evasion",
+              "max": 50,
+              "min": 50
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 9,
+              "min": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersStealChargesOnHit",
+      "kind": "prefix",
+      "template": "Monsters have #% chance to steal Power, Frenzy and Endurance charges on Hit #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Enervating",
+          "text": "Monsters have (10-15)% chance to steal Power, Frenzy and Endurance charges on Hit 10% increased [Waystone|Waystones] found in Area 7% increased Pack size",
+          "stats": [
+            {
+              "id": "map_monsters_steal_charges",
+              "max": 15,
+              "min": 10
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 7,
+              "min": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapPlayerElementalWeakness",
+      "kind": "prefix",
+      "template": "Players are periodically [Curse|Cursed] with [ElementalWeakness|Elemental Weakness] #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Eroding",
+          "text": "Players are periodically [Curse|Cursed] with [ElementalWeakness|Elemental Weakness] 20% increased [Waystone|Waystones] found in Area 23% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_elemental_weakness_curse_zones",
+              "max": 1,
+              "min": 1
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 20,
+              "min": 20
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 23,
+              "min": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapPlayerEnfeeblement",
+      "kind": "prefix",
+      "template": "Players are periodically [Curse|Cursed] with [Enfeeble] #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Magic] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Enfeebling",
+          "text": "Players are periodically [Curse|Cursed] with [Enfeeble] 20% increased [Waystone|Waystones] found in Area 36% increased number of [Rarity|Magic] Monsters",
+          "stats": [
+            {
+              "id": "map_enfeeble_curse_zones",
+              "max": 1,
+              "min": 1
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 20,
+              "min": 20
+            },
+            {
+              "id": "map_number_of_magic_packs_+%",
+              "max": 36,
+              "min": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapPlayerTemporalChains",
+      "kind": "prefix",
+      "template": "Players are periodically [Curse|Cursed] with [TemporalChains|Temporal Chains] #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Slowing",
+          "text": "Players are periodically [Curse|Cursed] with [TemporalChains|Temporal Chains] 20% increased [Waystone|Waystones] found in Area 11% increased Pack size",
+          "stats": [
+            {
+              "id": "map_temporal_chains_curse_zones",
+              "max": 1,
+              "min": 1
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 20,
+              "min": 20
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 11,
+              "min": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapSpreadGroundEffect",
+      "kind": "prefix",
+      "template": "Area has patches of [ChilledGround|Chilled Ground] #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Sleet",
+          "text": "Area has patches of [ChilledGround|Chilled Ground] 15% increased [Waystone|Waystones] found in Area 20% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_ground_ice_base_magnitude",
+              "max": 30,
+              "min": 30
+            },
+            {
+              "id": "map_ground_effect_patches_per_100_tiles",
+              "max": 3,
+              "min": 3
+            },
+            {
+              "id": "map_ground_effect_radius",
+              "max": 26,
+              "min": 26
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 20,
+              "min": 20
+            },
+            {
+              "id": "ground_ice_art_variation",
+              "max": 1014,
+              "min": 1014
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapSpreadGroundEffect",
+      "kind": "prefix",
+      "template": "Area has patches of [IgnitedGround|Ignited Ground] #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Magic] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Flaming",
+          "text": "Area has patches of [IgnitedGround|Ignited Ground] 15% increased [Waystone|Waystones] found in Area 33% increased number of [Rarity|Magic] Monsters",
+          "stats": [
+            {
+              "id": "map_base_ground_fire_damage_to_deal_per_10_seconds",
+              "max": 2000,
+              "min": 2000
+            },
+            {
+              "id": "map_ground_effect_patches_per_100_tiles",
+              "max": 4,
+              "min": 4
+            },
+            {
+              "id": "map_ground_effect_radius",
+              "max": 20,
+              "min": 20
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_number_of_magic_packs_+%",
+              "max": 33,
+              "min": 33
+            },
+            {
+              "id": "ground_fire_art_variation",
+              "max": 1033,
+              "min": 1033
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapSpreadGroundEffect",
+      "kind": "prefix",
+      "template": "Area has patches of [ShockedGround|Shocked Ground] #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Shocking",
+          "text": "Area has patches of [ShockedGround|Shocked Ground] 15% increased [Waystone|Waystones] found in Area 10% increased Pack size",
+          "stats": [
+            {
+              "id": "map_ground_lightning",
+              "max": 1,
+              "min": 1
+            },
+            {
+              "id": "map_ground_effect_patches_per_100_tiles",
+              "max": 5,
+              "min": 5
+            },
+            {
+              "id": "map_ground_effect_radius",
+              "max": 17,
+              "min": 17
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "ground_lightning_art_variation",
+              "max": 1011,
+              "min": 1011
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapSuffixesNullified",
+      "kind": "prefix",
+      "template": "MapSuffixesNullified1",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "MapSuffixesNullified1",
+          "text": "",
+          "stats": [
+            {
+              "id": "dummy_stat_display_nothing",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapWildwoodWispEmpowered",
+      "kind": "prefix",
+      "template": "MapWildwoodWispEmpowered1",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "MapWildwoodWispEmpowered1",
+          "text": "",
+          "stats": [
+            {
+              "id": "dummy_stat_display_nothing",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapBleeding",
+      "kind": "suffix",
+      "template": "Monsters have #% chance to inflict [Bleeding] on [HitDamage|Hit] #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Magic] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Puncturing",
+          "text": "Monsters have (5-10)% chance to inflict [Bleeding] on [HitDamage|Hit] 10% increased [Waystone|Waystones] found in Area 27% increased number of [Rarity|Magic] Monsters",
+          "stats": [
+            {
+              "id": "map_monsters_chance_to_inflict_bleeding_%",
+              "max": 10,
+              "min": 5
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_number_of_magic_packs_+%",
+              "max": 27,
+              "min": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterAreaOfEffect",
+      "kind": "suffix",
+      "template": "Monsters have #% increased Area of Effect #% increased [Waystone|Waystones] found in Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Giants",
+          "text": "Monsters have 50% increased Area of Effect 20% increased [Waystone|Waystones] found in Area",
+          "stats": [
+            {
+              "id": "map_monsters_area_of_effect_+%",
+              "max": 50,
+              "min": 50
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 20,
+              "min": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterCriticalStrikesAndDamage",
+      "kind": "suffix",
+      "template": "Monsters have #% increased [Critical|Critical Hit] Chance +#% to Monster [CriticalDamageBonus|Critical Damage Bonus] #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Destruction",
+          "text": "Monsters have (140-180)% increased [Critical|Critical Hit] Chance +(16-20)% to Monster [CriticalDamageBonus|Critical Damage Bonus] 15% increased [Waystone|Waystones] found in Area 10% increased Pack size",
+          "stats": [
+            {
+              "id": "map_monsters_critical_strike_chance_+%",
+              "max": 180,
+              "min": 140
+            },
+            {
+              "id": "map_monsters_critical_strike_multiplier_+",
+              "max": 20,
+              "min": 16
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 10,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterMultipleProjectiles",
+      "kind": "suffix",
+      "template": "Monsters fire # additional Projectiles #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Splitting",
+          "text": "Monsters fire 2 additional Projectiles 25% increased [Waystone|Waystones] found in Area 14% increased Pack size",
+          "stats": [
+            {
+              "id": "map_monsters_additional_number_of_projecitles",
+              "max": 2,
+              "min": 2
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 25,
+              "min": 25
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 14,
+              "min": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersAilmentChance",
+      "kind": "suffix",
+      "template": "Monsters inflict #% increased [Flammability] [BuffMagnitude|Magnitude] Monsters have #% increased Freeze Buildup Monsters have #% increased Shock Chance #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Overpowering",
+          "text": "Monsters inflict 75% increased [Flammability] [BuffMagnitude|Magnitude] Monsters have 75% increased Freeze Buildup Monsters have 75% increased Shock Chance 15% increased [Waystone|Waystones] found in Area 18% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_monsters_ignite_chance_+%",
+              "max": 75,
+              "min": 75
+            },
+            {
+              "id": "map_monsters_hit_damage_freeze_multiplier_+%",
+              "max": 75,
+              "min": 75
+            },
+            {
+              "id": "map_monsters_shock_chance_+%",
+              "max": 75,
+              "min": 75
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 18,
+              "min": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersAllResistances",
+      "kind": "suffix",
+      "template": "+#% Monster Elemental Resistances #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Prism",
+          "text": "+(20-29)% Monster Elemental Resistances 10% increased [Waystone|Waystones] found in Area 18% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_monsters_additional_elemental_resistance",
+              "max": 29,
+              "min": 20
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 18,
+              "min": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersArmourBreak",
+      "kind": "suffix",
+      "template": "Monsters [ArmourBreak|Break Armour] equal to #% of [Physical|Physical Damage] dealt #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Rare] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Shattering",
+          "text": "Monsters [ArmourBreak|Break Armour] equal to (20-25)% of [Physical|Physical Damage] dealt 10% increased [Waystone|Waystones] found in Area 21% increased number of [Rarity|Rare] Monsters",
+          "stats": [
+            {
+              "id": "map_monsters_armour_break_physical_damage_%_dealt_as_armour_break",
+              "max": 25,
+              "min": 20
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_number_of_rare_packs_+%",
+              "max": 21,
+              "min": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersBaseSelfCriticalMultiplier",
+      "kind": "suffix",
+      "template": "Monsters take #% reduced Extra Damage from [Critical|Critical Hits] #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Rare] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Obstruction",
+          "text": "Monsters take (15-19)% reduced Extra Damage from [Critical|Critical Hits] 10% increased [Waystone|Waystones] found in Area 24% increased number of [Rarity|Rare] Monsters",
+          "stats": [
+            {
+              "id": "map_monsters_base_self_critical_strike_multiplier_-%",
+              "max": 19,
+              "min": 15
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_number_of_rare_packs_+%",
+              "max": 24,
+              "min": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersElementalPenetration",
+      "kind": "suffix",
+      "template": "Monster Damage Penetrates #% Elemental Resistances #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Penetration",
+          "text": "Monster Damage Penetrates (7-9)% Elemental Resistances 20% increased [Waystone|Waystones] found in Area 25% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_monsters_penetrate_elemental_resistances_%",
+              "max": 9,
+              "min": 7
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 20,
+              "min": 20
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 25,
+              "min": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersStunAndAilmentThreshold",
+      "kind": "suffix",
+      "template": "Monsters have #% increased Stun Threshold Monsters have #% increased Ailment Threshold #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Magic] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Unwavering",
+          "text": "Monsters have (30-39)% increased Stun Threshold Monsters have (30-39)% increased Ailment Threshold 10% increased [Waystone|Waystones] found in Area 30% increased number of [Rarity|Magic] Monsters",
+          "stats": [
+            {
+              "id": "map_monsters_stun_threshold_+%",
+              "max": 39,
+              "min": 30
+            },
+            {
+              "id": "map_monsters_ailment_threshold_+%",
+              "max": 39,
+              "min": 30
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_number_of_magic_packs_+%",
+              "max": 30,
+              "min": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonstersStunBuildup",
+      "kind": "suffix",
+      "template": "Monsters have #% increased Stun Buildup #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Magic] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Impact",
+          "text": "Monsters have 75% increased Stun Buildup 15% increased [Waystone|Waystones] found in Area 30% increased number of [Rarity|Magic] Monsters",
+          "stats": [
+            {
+              "id": "map_monsters_hit_damage_stun_multiplier_+%",
+              "max": 75,
+              "min": 75
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_number_of_magic_packs_+%",
+              "max": 30,
+              "min": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapPlayerCooldownRecovery",
+      "kind": "suffix",
+      "template": "Players have #% less Cooldown Recovery Rate #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Fatigue",
+          "text": "Players have (20-15)% less Cooldown Recovery Rate 15% increased [Waystone|Waystones] found in Area 19% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_player_cooldown_speed_+%_final",
+              "max": -15,
+              "min": -20
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 19,
+              "min": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapPlayerMaxResists",
+      "kind": "suffix",
+      "template": "-#% maximum Player Resistances #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Exposure",
+          "text": "-(6-4)% maximum Player Resistances 25% increased [Waystone|Waystones] found in Area 13% increased Pack size",
+          "stats": [
+            {
+              "id": "map_additional_player_maximum_resistances_%",
+              "max": -4,
+              "min": -6
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 25,
+              "min": 25
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 13,
+              "min": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapPlayerReducedRegen",
+      "kind": "suffix",
+      "template": "Players have #% less Recovery Rate of Life and [EnergyShield|Energy Shield] #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Smothering",
+          "text": "Players have (29-20)% less Recovery Rate of Life and [EnergyShield|Energy Shield] 20% increased [Waystone|Waystones] found in Area 22% increased [Rarity] of Items found in this Area",
+          "stats": [
+            {
+              "id": "map_player_life_and_es_recovery_speed_+%_final",
+              "max": -20,
+              "min": -29
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 20,
+              "min": 20
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 22,
+              "min": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapPlayersGainReducedFlaskCharges",
+      "kind": "suffix",
+      "template": "Players gain #% reduced [Flask] Charges #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Drought",
+          "text": "Players gain (24-20)% reduced [Flask] Charges 15% increased [Waystone|Waystones] found in Area 9% increased Pack size",
+          "stats": [
+            {
+              "id": "map_player_charges_gained_+%",
+              "max": -20,
+              "min": -24
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 9,
+              "min": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapPoisoning",
+      "kind": "suffix",
+      "template": "Monsters have #% chance to [Poison] on [HitDamage|Hit] #% increased [Waystone|Waystones] found in Area #% increased Pack size",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Venom",
+          "text": "Monsters have (10-20)% chance to [Poison] on [HitDamage|Hit] 10% increased [Waystone|Waystones] found in Area 7% increased Pack size",
+          "stats": [
+            {
+              "id": "map_monsters_chance_to_poison_on_hit_%",
+              "max": 20,
+              "min": 10
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 7,
+              "min": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapRareMonstersAdditionalModifier",
+      "kind": "suffix",
+      "template": "Rare Monsters have # additional Modifier #% increased [Waystone|Waystones] found in Area #% increased number of [Rarity|Rare] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Nemeses",
+          "text": "Rare Monsters have 1 additional Modifier 10% increased [Waystone|Waystones] found in Area 25% increased number of [Rarity|Rare] Monsters",
+          "stats": [
+            {
+              "id": "map_rare_monster_num_additional_modifiers",
+              "max": 1,
+              "min": 1
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "map_number_of_rare_packs_+%",
+              "max": 25,
+              "min": 25
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "category": "Waystones",
+  "label": "Waystones(Low)",
+  "slug": "Waystones_low_tier"
+}

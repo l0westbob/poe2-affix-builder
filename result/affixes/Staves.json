@@ -1,0 +1,2522 @@
+{
+  "affixes": [
+    {
+      "family_key": "ColdDamage",
+      "kind": "prefix",
+      "template": "[Gain] #% of Damage as Extra [Cold] Damage",
+      "tiers": [
+        {
+          "level": 5,
+          "name": "Malignant",
+          "text": "[Gain] (26-30)% of Damage as Extra [Cold] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_cold",
+              "max": 30,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Pernicious",
+          "text": "[Gain] (31-36)% of Damage as Extra [Cold] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_cold",
+              "max": 36,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Destructive",
+          "text": "[Gain] (37-42)% of Damage as Extra [Cold] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_cold",
+              "max": 42,
+              "min": 37
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Malicious",
+          "text": "[Gain] (43-48)% of Damage as Extra [Cold] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_cold",
+              "max": 48,
+              "min": 43
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Ruthless",
+          "text": "[Gain] (49-54)% of Damage as Extra [Cold] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_cold",
+              "max": 54,
+              "min": 49
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "name": "Frostbound",
+          "text": "[Gain] (55-60)% of Damage as Extra [Cold] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_cold",
+              "max": 60,
+              "min": 55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FireDamage",
+      "kind": "prefix",
+      "template": "[Gain] #% of Damage as Extra [Fire] Damage",
+      "tiers": [
+        {
+          "level": 5,
+          "name": "Fervent",
+          "text": "[Gain] (26-30)% of Damage as Extra [Fire] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_fire",
+              "max": 30,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Ardent",
+          "text": "[Gain] (31-36)% of Damage as Extra [Fire] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_fire",
+              "max": 36,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Fanatic's",
+          "text": "[Gain] (37-42)% of Damage as Extra [Fire] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_fire",
+              "max": 42,
+              "min": 37
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Zealot's",
+          "text": "[Gain] (43-48)% of Damage as Extra [Fire] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_fire",
+              "max": 48,
+              "min": 43
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Infernal",
+          "text": "[Gain] (49-54)% of Damage as Extra [Fire] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_fire",
+              "max": 54,
+              "min": 49
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "name": "Flamebound",
+          "text": "[Gain] (55-60)% of Damage as Extra [Fire] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_fire",
+              "max": 60,
+              "min": 55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedMana",
+      "kind": "prefix",
+      "template": "+# to maximum Mana",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Beryl",
+          "text": "+(20-28) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 28,
+              "min": 20
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Cobalt",
+          "text": "+(29-48) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 48,
+              "min": 29
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Azure",
+          "text": "+(49-68) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 68,
+              "min": 49
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "name": "Sapphire",
+          "text": "+(69-108) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 108,
+              "min": 69
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Cerulean",
+          "text": "+(109-128) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 128,
+              "min": 109
+            }
+          ]
+        },
+        {
+          "level": 38,
+          "name": "Aqua",
+          "text": "+(129-158) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 158,
+              "min": 129
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Opalescent",
+          "text": "+(159-178) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 178,
+              "min": 159
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "Gentian",
+          "text": "+(179-208) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 208,
+              "min": 179
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Chalybeous",
+          "text": "+(209-248) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 248,
+              "min": 209
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "name": "Mazarine",
+          "text": "+(249-298) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 298,
+              "min": 249
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Blue",
+          "text": "+(299-328) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 328,
+              "min": 299
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "LightningDamage",
+      "kind": "prefix",
+      "template": "[Gain] #% of Damage as Extra [Lightning] Damage",
+      "tiers": [
+        {
+          "level": 5,
+          "name": "Deadly",
+          "text": "[Gain] (26-30)% of Damage as Extra [Lightning] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_lightning",
+              "max": 30,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Lethal",
+          "text": "[Gain] (31-36)% of Damage as Extra [Lightning] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_lightning",
+              "max": 36,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Fatal",
+          "text": "[Gain] (37-42)% of Damage as Extra [Lightning] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_lightning",
+              "max": 42,
+              "min": 37
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Vorpal",
+          "text": "[Gain] (43-48)% of Damage as Extra [Lightning] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_lightning",
+              "max": 48,
+              "min": 43
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Electrifying",
+          "text": "[Gain] (49-54)% of Damage as Extra [Lightning] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_lightning",
+              "max": 54,
+              "min": 49
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "name": "Stormbound",
+          "text": "[Gain] (55-60)% of Damage as Extra [Lightning] Damage",
+          "stats": [
+            {
+              "id": "non_skill_base_all_damage_%_to_gain_as_lightning",
+              "max": 60,
+              "min": 55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpellDamageAndMana",
+      "kind": "prefix",
+      "template": "#% increased [Spell] Damage +# to maximum Mana",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Caster's",
+          "text": "(30-38)% increased [Spell] Damage +(34-40) to maximum Mana",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 38,
+              "min": 30
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 40,
+              "min": 34
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "name": "Conjuror's",
+          "text": "(39-48)% increased [Spell] Damage +(41-48) to maximum Mana",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 48,
+              "min": 39
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 48,
+              "min": 41
+            }
+          ]
+        },
+        {
+          "level": 23,
+          "name": "Wizard's",
+          "text": "(49-58)% increased [Spell] Damage +(49-56) to maximum Mana",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 58,
+              "min": 49
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 56,
+              "min": 49
+            }
+          ]
+        },
+        {
+          "level": 38,
+          "name": "Warlock's",
+          "text": "(59-68)% increased [Spell] Damage +(57-66) to maximum Mana",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 68,
+              "min": 59
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 66,
+              "min": 57
+            }
+          ]
+        },
+        {
+          "level": 48,
+          "name": "Mage's",
+          "text": "(69-78)% increased [Spell] Damage +(67-74) to maximum Mana",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 78,
+              "min": 69
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 74,
+              "min": 67
+            }
+          ]
+        },
+        {
+          "level": 63,
+          "name": "Archmage's",
+          "text": "(79-88)% increased [Spell] Damage +(75-82) to maximum Mana",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 88,
+              "min": 79
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 82,
+              "min": 75
+            }
+          ]
+        },
+        {
+          "level": 79,
+          "name": "Lich's",
+          "text": "(89-98)% increased [Spell] Damage +(83-90) to maximum Mana",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 98,
+              "min": 89
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 90,
+              "min": 83
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponCasterDamagePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Spell] Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Apprentice's",
+          "text": "(50-68)% increased [Spell] Damage",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 68,
+              "min": 50
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Adept's",
+          "text": "(69-88)% increased [Spell] Damage",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 88,
+              "min": 69
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Scholar's",
+          "text": "(89-108)% increased [Spell] Damage",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 108,
+              "min": 89
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Professor's",
+          "text": "(109-128)% increased [Spell] Damage",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 128,
+              "min": 109
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Occultist's",
+          "text": "(129-148)% increased [Spell] Damage",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 148,
+              "min": 129
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Incanter's",
+          "text": "(149-188)% increased [Spell] Damage",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 188,
+              "min": 149
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Glyphic",
+          "text": "(189-208)% increased [Spell] Damage",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 208,
+              "min": 189
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "name": "Runic",
+          "text": "(209-238)% increased [Spell] Damage",
+          "stats": [
+            {
+              "id": "spell_damage_+%",
+              "max": 238,
+              "min": 209
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Chaos] Damage",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Impure",
+          "text": "(50-68)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 68,
+              "min": 50
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Tainted",
+          "text": "(69-88)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 88,
+              "min": 69
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Clouded",
+          "text": "(89-108)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 108,
+              "min": 89
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Darkened",
+          "text": "(109-128)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 128,
+              "min": 109
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Malignant",
+          "text": "(129-148)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 148,
+              "min": 129
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Vile",
+          "text": "(149-188)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 188,
+              "min": 149
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Twisted",
+          "text": "(189-208)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 208,
+              "min": 189
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "Malevolent",
+          "text": "(209-238)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 238,
+              "min": 209
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Cold] Damage",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Bitter",
+          "text": "(50-68)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 68,
+              "min": 50
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Biting",
+          "text": "(69-88)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 88,
+              "min": 69
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Alpine",
+          "text": "(89-108)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 108,
+              "min": 89
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Snowy",
+          "text": "(109-128)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 128,
+              "min": 109
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Hailing",
+          "text": "(129-148)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 148,
+              "min": 129
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Arctic",
+          "text": "(149-188)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 188,
+              "min": 149
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Crystalline",
+          "text": "(189-208)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 208,
+              "min": 189
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "Cryomancer's",
+          "text": "(209-238)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 238,
+              "min": 209
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Fire] Damage",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Searing",
+          "text": "(50-68)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 68,
+              "min": 50
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Sizzling",
+          "text": "(69-88)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 88,
+              "min": 69
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Blistering",
+          "text": "(89-108)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 108,
+              "min": 89
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Cauterising",
+          "text": "(109-128)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 128,
+              "min": 109
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Smoldering",
+          "text": "(129-148)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 148,
+              "min": 129
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Magmatic",
+          "text": "(149-188)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 188,
+              "min": 149
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Volcanic",
+          "text": "(189-208)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 208,
+              "min": 189
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "Pyromancer's",
+          "text": "(209-238)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 238,
+              "min": 209
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Lightning] Damage",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Charged",
+          "text": "(50-68)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 68,
+              "min": 50
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Hissing",
+          "text": "(69-88)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 88,
+              "min": 69
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Bolting",
+          "text": "(89-108)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 108,
+              "min": 89
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Coursing",
+          "text": "(109-128)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 128,
+              "min": 109
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Striking",
+          "text": "(129-148)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 148,
+              "min": 129
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Smiting",
+          "text": "(149-188)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 188,
+              "min": 149
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Ionising",
+          "text": "(189-208)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 208,
+              "min": 189
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "Electromancer's",
+          "text": "(209-238)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 238,
+              "min": 209
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Spell] [Physical] Damage",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Punishing",
+          "text": "(50-68)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 68,
+              "min": 50
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Unforgiving",
+          "text": "(69-88)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 88,
+              "min": 69
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Vengeful",
+          "text": "(89-108)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 108,
+              "min": 89
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Sadistic",
+          "text": "(109-128)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 128,
+              "min": 109
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Pitiless",
+          "text": "(129-148)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 148,
+              "min": 129
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Agonising",
+          "text": "(149-188)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 188,
+              "min": 149
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Oppressor's",
+          "text": "(189-208)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 208,
+              "min": 189
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "Torturer's",
+          "text": "(209-238)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 238,
+              "min": 209
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeMultiplier",
+      "kind": "suffix",
+      "template": "#% increased [CriticalDamageBonus|Critical Spell Damage Bonus]",
+      "tiers": [
+        {
+          "level": 8,
+          "name": "of Ire",
+          "text": "(15-21)% increased [CriticalDamageBonus|Critical Spell Damage Bonus]",
+          "stats": [
+            {
+              "id": "base_spell_critical_strike_multiplier_+",
+              "max": 21,
+              "min": 15
+            }
+          ]
+        },
+        {
+          "level": 21,
+          "name": "of Anger",
+          "text": "(23-29)% increased [CriticalDamageBonus|Critical Spell Damage Bonus]",
+          "stats": [
+            {
+              "id": "base_spell_critical_strike_multiplier_+",
+              "max": 29,
+              "min": 23
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "name": "of Rage",
+          "text": "(30-36)% increased [CriticalDamageBonus|Critical Spell Damage Bonus]",
+          "stats": [
+            {
+              "id": "base_spell_critical_strike_multiplier_+",
+              "max": 36,
+              "min": 30
+            }
+          ]
+        },
+        {
+          "level": 44,
+          "name": "of Fury",
+          "text": "(38-44)% increased [CriticalDamageBonus|Critical Spell Damage Bonus]",
+          "stats": [
+            {
+              "id": "base_spell_critical_strike_multiplier_+",
+              "max": 44,
+              "min": 38
+            }
+          ]
+        },
+        {
+          "level": 59,
+          "name": "of Ferocity",
+          "text": "(45-51)% increased [CriticalDamageBonus|Critical Spell Damage Bonus]",
+          "stats": [
+            {
+              "id": "base_spell_critical_strike_multiplier_+",
+              "max": 51,
+              "min": 45
+            }
+          ]
+        },
+        {
+          "level": 73,
+          "name": "of Destruction",
+          "text": "(53-59)% increased [CriticalDamageBonus|Critical Spell Damage Bonus]",
+          "stats": [
+            {
+              "id": "base_spell_critical_strike_multiplier_+",
+              "max": 59,
+              "min": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FreezeDamageIncrease",
+      "kind": "suffix",
+      "template": "#% increased [Freeze|Freeze] Buildup",
+      "tiers": [
+        {
+          "level": 15,
+          "name": "of Freezing",
+          "text": "(31-40)% increased [Freeze|Freeze] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_freeze_multiplier_+%",
+              "max": 40,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "name": "of Bleakness",
+          "text": "(41-50)% increased [Freeze|Freeze] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_freeze_multiplier_+%",
+              "max": 50,
+              "min": 41
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of the Glacier",
+          "text": "(51-60)% increased [Freeze|Freeze] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_freeze_multiplier_+%",
+              "max": 60,
+              "min": 51
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of the Hyperboreal",
+          "text": "(61-70)% increased [Freeze|Freeze] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_freeze_multiplier_+%",
+              "max": 70,
+              "min": 61
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "of the Arctic",
+          "text": "(71-80)% increased [Freeze|Freeze] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_freeze_multiplier_+%",
+              "max": 80,
+              "min": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IgniteChanceIncrease",
+      "kind": "suffix",
+      "template": "#% increased [Flammability] [BuffMagnitude|Magnitude]",
+      "tiers": [
+        {
+          "level": 15,
+          "name": "of Ignition",
+          "text": "(51-60)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 60,
+              "min": 51
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "name": "of Scorching",
+          "text": "(61-70)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 70,
+              "min": 61
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of Incineration",
+          "text": "(71-80)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 80,
+              "min": 71
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of Combustion",
+          "text": "(81-90)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 90,
+              "min": 81
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "of Conflagration",
+          "text": "(91-100)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 100,
+              "min": 91
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all [Chaos|Chaos] [Spell|Spell] Skills",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "of Anarchy",
+          "text": "+1 to Level of all [Chaos|Chaos] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "chaos_spell_skill_gem_level_+",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "name": "of Turmoil",
+          "text": "+2 to Level of all [Chaos|Chaos] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "chaos_spell_skill_gem_level_+",
+              "max": 2,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of Armageddon",
+          "text": "+7 to Level of all [Chaos|Chaos] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "chaos_spell_skill_gem_level_+",
+              "max": 7,
+              "min": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all [Cold|Cold] [Spell|Spell] Skills",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "of Snow",
+          "text": "+1 to Level of all [Cold|Cold] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "cold_spell_skill_gem_level_+",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "name": "of Sleet",
+          "text": "+2 to Level of all [Cold|Cold] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "cold_spell_skill_gem_level_+",
+              "max": 2,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of Frostbite",
+          "text": "+7 to Level of all [Cold|Cold] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "cold_spell_skill_gem_level_+",
+              "max": 7,
+              "min": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all [Fire|Fire] [Spell|Spell] Skills",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "of Coals",
+          "text": "+1 to Level of all [Fire|Fire] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "fire_spell_skill_gem_level_+",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "name": "of Cinders",
+          "text": "+2 to Level of all [Fire|Fire] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "fire_spell_skill_gem_level_+",
+              "max": 2,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of Inferno",
+          "text": "+7 to Level of all [Fire|Fire] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "fire_spell_skill_gem_level_+",
+              "max": 7,
+              "min": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all [Lightning|Lightning] [Spell|Spell] Skills",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "of Sparks",
+          "text": "+1 to Level of all [Lightning|Lightning] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "lightning_spell_skill_gem_level_+",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "name": "of Static",
+          "text": "+2 to Level of all [Lightning|Lightning] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "lightning_spell_skill_gem_level_+",
+              "max": 2,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of Thunder",
+          "text": "+7 to Level of all [Lightning|Lightning] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "lightning_spell_skill_gem_level_+",
+              "max": 7,
+              "min": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all [Physical|Physical] [Spell|Spell] Skills",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "of Agony",
+          "text": "+1 to Level of all [Physical|Physical] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "physical_spell_skill_gem_level_+",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "name": "of Suffering",
+          "text": "+2 to Level of all [Physical|Physical] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "physical_spell_skill_gem_level_+",
+              "max": 2,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of Grief",
+          "text": "+7 to Level of all [Physical|Physical] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "physical_spell_skill_gem_level_+",
+              "max": 7,
+              "min": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all [Spell|Spell] Skills",
+      "tiers": [
+        {
+          "level": 5,
+          "name": "of the Mage",
+          "text": "+2 to Level of all [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "spell_skill_gem_level_+",
+              "max": 2,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "name": "of the Enchanter",
+          "text": "+3 to Level of all [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "spell_skill_gem_level_+",
+              "max": 3,
+              "min": 3
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of the Evoker",
+          "text": "+4 to Level of all [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "spell_skill_gem_level_+",
+              "max": 4,
+              "min": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all [Chaos|Chaos] [Spell|Spell] Skills",
+      "tiers": [
+        {
+          "level": 36,
+          "name": "of Ruin",
+          "text": "+(3-4) to Level of all [Chaos|Chaos] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "chaos_spell_skill_gem_level_+",
+              "max": 4,
+              "min": 3
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Havoc",
+          "text": "+(5-6) to Level of all [Chaos|Chaos] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "chaos_spell_skill_gem_level_+",
+              "max": 6,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all [Cold|Cold] [Spell|Spell] Skills",
+      "tiers": [
+        {
+          "level": 36,
+          "name": "of Ice",
+          "text": "+(3-4) to Level of all [Cold|Cold] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "cold_spell_skill_gem_level_+",
+              "max": 4,
+              "min": 3
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Rime",
+          "text": "+(5-6) to Level of all [Cold|Cold] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "cold_spell_skill_gem_level_+",
+              "max": 6,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all [Fire|Fire] [Spell|Spell] Skills",
+      "tiers": [
+        {
+          "level": 36,
+          "name": "of Flames",
+          "text": "+(3-4) to Level of all [Fire|Fire] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "fire_spell_skill_gem_level_+",
+              "max": 4,
+              "min": 3
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Immolation",
+          "text": "+(5-6) to Level of all [Fire|Fire] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "fire_spell_skill_gem_level_+",
+              "max": 6,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all [Lightning|Lightning] [Spell|Spell] Skills",
+      "tiers": [
+        {
+          "level": 36,
+          "name": "of Electricity",
+          "text": "+(3-4) to Level of all [Lightning|Lightning] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "lightning_spell_skill_gem_level_+",
+              "max": 4,
+              "min": 3
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Voltage",
+          "text": "+(5-6) to Level of all [Lightning|Lightning] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "lightning_spell_skill_gem_level_+",
+              "max": 6,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all [Physical|Physical] [Spell|Spell] Skills",
+      "tiers": [
+        {
+          "level": 36,
+          "name": "of Torment",
+          "text": "+(3-4) to Level of all [Physical|Physical] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "physical_spell_skill_gem_level_+",
+              "max": 4,
+              "min": 3
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Desolation",
+          "text": "+(5-6) to Level of all [Physical|Physical] [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "physical_spell_skill_gem_level_+",
+              "max": 6,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all [Spell|Spell] Skills",
+      "tiers": [
+        {
+          "level": 78,
+          "name": "of the Sorcerer",
+          "text": "+(5-6) to Level of all [Spell|Spell] Skills",
+          "stats": [
+            {
+              "id": "spell_skill_gem_level_+",
+              "max": 6,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedCastSpeed",
+      "kind": "suffix",
+      "template": "#% increased Cast Speed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Talent",
+          "text": "(14-19)% increased Cast Speed",
+          "stats": [
+            {
+              "id": "base_cast_speed_+%",
+              "max": 19,
+              "min": 14
+            }
+          ]
+        },
+        {
+          "level": 15,
+          "name": "of Nimbleness",
+          "text": "(20-25)% increased Cast Speed",
+          "stats": [
+            {
+              "id": "base_cast_speed_+%",
+              "max": 25,
+              "min": 20
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "name": "of Expertise",
+          "text": "(26-31)% increased Cast Speed",
+          "stats": [
+            {
+              "id": "base_cast_speed_+%",
+              "max": 31,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of Sortilege",
+          "text": "(32-37)% increased Cast Speed",
+          "stats": [
+            {
+              "id": "base_cast_speed_+%",
+              "max": 37,
+              "min": 32
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of Legerdemain",
+          "text": "(38-43)% increased Cast Speed",
+          "stats": [
+            {
+              "id": "base_cast_speed_+%",
+              "max": 43,
+              "min": 38
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "of Prestidigitation",
+          "text": "(44-49)% increased Cast Speed",
+          "stats": [
+            {
+              "id": "base_cast_speed_+%",
+              "max": 49,
+              "min": 44
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "name": "of Finesse",
+          "text": "(50-52)% increased Cast Speed",
+          "stats": [
+            {
+              "id": "base_cast_speed_+%",
+              "max": 52,
+              "min": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "Intelligence",
+      "kind": "suffix",
+      "template": "+# to [Intelligence|Intelligence]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Pupil",
+          "text": "+(5-8) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 8,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "name": "of the Student",
+          "text": "+(9-12) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 12,
+              "min": 9
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "name": "of the Prodigy",
+          "text": "+(13-16) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 16,
+              "min": 13
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "of the Augur",
+          "text": "+(17-20) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 20,
+              "min": 17
+            }
+          ]
+        },
+        {
+          "level": 44,
+          "name": "of the Philosopher",
+          "text": "+(21-24) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 24,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of the Sage",
+          "text": "+(25-27) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 27,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 66,
+          "name": "of the Savant",
+          "text": "+(28-30) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 30,
+              "min": 28
+            }
+          ]
+        },
+        {
+          "level": 74,
+          "name": "of the Virtuoso",
+          "text": "+(31-33) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 33,
+              "min": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "LifeGainedFromEnemyDeath",
+      "kind": "suffix",
+      "template": "Gain # Life per enemy killed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Success",
+          "text": "Gain (4-6) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 6,
+              "min": 4
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "name": "of Victory",
+          "text": "Gain (7-9) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 9,
+              "min": 7
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "name": "of Triumph",
+          "text": "Gain (10-18) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 18,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "of Conquest",
+          "text": "Gain (19-28) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 28,
+              "min": 19
+            }
+          ]
+        },
+        {
+          "level": 44,
+          "name": "of Vanquishing",
+          "text": "Gain (29-40) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 40,
+              "min": 29
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Valour",
+          "text": "Gain (41-53) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 53,
+              "min": 41
+            }
+          ]
+        },
+        {
+          "level": 66,
+          "name": "of Glory",
+          "text": "Gain (54-68) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 68,
+              "min": 54
+            }
+          ]
+        },
+        {
+          "level": 77,
+          "name": "of Legend",
+          "text": "Gain (69-84) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 84,
+              "min": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "LightRadiusAndManaRegeneration",
+      "kind": "suffix",
+      "template": "#% increased [LightRadius|Light Radius] #% increased Mana Regeneration Rate",
+      "tiers": [
+        {
+          "level": 8,
+          "name": "of Warmth",
+          "text": "5% increased [LightRadius|Light Radius] (8-12)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "light_radius_+%",
+              "max": 5,
+              "min": 5
+            },
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 12,
+              "min": 8
+            }
+          ]
+        },
+        {
+          "level": 15,
+          "name": "of Kindling",
+          "text": "10% increased [LightRadius|Light Radius] (13-17)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "light_radius_+%",
+              "max": 10,
+              "min": 10
+            },
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 17,
+              "min": 13
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "name": "of the Hearth",
+          "text": "15% increased [LightRadius|Light Radius] (18-22)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "light_radius_+%",
+              "max": 15,
+              "min": 15
+            },
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 22,
+              "min": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "LocalAttributeRequirements",
+      "kind": "suffix",
+      "template": "#% reduced [Attributes|Attribute] Requirements",
+      "tiers": [
+        {
+          "level": 24,
+          "name": "of the Worthy",
+          "text": "15% reduced [Attributes|Attribute] Requirements",
+          "stats": [
+            {
+              "id": "local_attribute_requirements_+%",
+              "max": -15,
+              "min": -15
+            }
+          ]
+        },
+        {
+          "level": 32,
+          "name": "of the Apt",
+          "text": "20% reduced [Attributes|Attribute] Requirements",
+          "stats": [
+            {
+              "id": "local_attribute_requirements_+%",
+              "max": -20,
+              "min": -20
+            }
+          ]
+        },
+        {
+          "level": 40,
+          "name": "of the Talented",
+          "text": "25% reduced [Attributes|Attribute] Requirements",
+          "stats": [
+            {
+              "id": "local_attribute_requirements_+%",
+              "max": -25,
+              "min": -25
+            }
+          ]
+        },
+        {
+          "level": 52,
+          "name": "of the Skilled",
+          "text": "30% reduced [Attributes|Attribute] Requirements",
+          "stats": [
+            {
+              "id": "local_attribute_requirements_+%",
+              "max": -30,
+              "min": -30
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of the Proficient",
+          "text": "35% reduced [Attributes|Attribute] Requirements",
+          "stats": [
+            {
+              "id": "local_attribute_requirements_+%",
+              "max": -35,
+              "min": -35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ManaGainedFromEnemyDeath",
+      "kind": "suffix",
+      "template": "Gain # Mana per enemy killed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Absorption",
+          "text": "Gain (2-3) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 3,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "name": "of Osmosis",
+          "text": "Gain (4-5) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 5,
+              "min": 4
+            }
+          ]
+        },
+        {
+          "level": 23,
+          "name": "of Infusion",
+          "text": "Gain (6-9) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 9,
+              "min": 6
+            }
+          ]
+        },
+        {
+          "level": 34,
+          "name": "of Enveloping",
+          "text": "Gain (10-14) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 14,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of Consumption",
+          "text": "Gain (15-20) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 20,
+              "min": 15
+            }
+          ]
+        },
+        {
+          "level": 56,
+          "name": "of Siphoning",
+          "text": "Gain (21-27) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 27,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 67,
+          "name": "of Devouring",
+          "text": "Gain (28-35) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 35,
+              "min": 28
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "of Assimilation",
+          "text": "Gain (36-45) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 45,
+              "min": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ManaRegeneration",
+      "kind": "suffix",
+      "template": "#% increased Mana Regeneration Rate",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Excitement",
+          "text": "(15-29)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 29,
+              "min": 15
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "name": "of Joy",
+          "text": "(30-44)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 44,
+              "min": 30
+            }
+          ]
+        },
+        {
+          "level": 29,
+          "name": "of Elation",
+          "text": "(45-59)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 59,
+              "min": 45
+            }
+          ]
+        },
+        {
+          "level": 42,
+          "name": "of Bliss",
+          "text": "(60-74)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 74,
+              "min": 60
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Euphoria",
+          "text": "(75-89)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 89,
+              "min": 75
+            }
+          ]
+        },
+        {
+          "level": 79,
+          "name": "of Nirvana",
+          "text": "(90-104)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 104,
+              "min": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ShockChanceIncrease",
+      "kind": "suffix",
+      "template": "#% increased chance to [Shock]",
+      "tiers": [
+        {
+          "level": 15,
+          "name": "of Shocking",
+          "text": "(51-60)% increased chance to [Shock]",
+          "stats": [
+            {
+              "id": "shock_chance_+%",
+              "max": 60,
+              "min": 51
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "name": "of Zapping",
+          "text": "(61-70)% increased chance to [Shock]",
+          "stats": [
+            {
+              "id": "shock_chance_+%",
+              "max": 70,
+              "min": 61
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of Electrocution",
+          "text": "(71-80)% increased chance to [Shock]",
+          "stats": [
+            {
+              "id": "shock_chance_+%",
+              "max": 80,
+              "min": 71
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of Voltages",
+          "text": "(81-90)% increased chance to [Shock]",
+          "stats": [
+            {
+              "id": "shock_chance_+%",
+              "max": 90,
+              "min": 81
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "of the Thunderbolt",
+          "text": "(91-100)% increased chance to [Shock]",
+          "stats": [
+            {
+              "id": "shock_chance_+%",
+              "max": 100,
+              "min": 91
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpellCriticalStrikeChanceIncrease",
+      "kind": "suffix",
+      "template": "#% increased [Critical|Critical Hit Chance] for [Spell|Spells]",
+      "tiers": [
+        {
+          "level": 11,
+          "name": "of Menace",
+          "text": "(40-49)% increased [Critical|Critical Hit Chance] for [Spell|Spells]",
+          "stats": [
+            {
+              "id": "spell_critical_strike_chance_+%",
+              "max": 49,
+              "min": 40
+            }
+          ]
+        },
+        {
+          "level": 21,
+          "name": "of Havoc",
+          "text": "(50-59)% increased [Critical|Critical Hit Chance] for [Spell|Spells]",
+          "stats": [
+            {
+              "id": "spell_critical_strike_chance_+%",
+              "max": 59,
+              "min": 50
+            }
+          ]
+        },
+        {
+          "level": 28,
+          "name": "of Disaster",
+          "text": "(60-69)% increased [Critical|Critical Hit Chance] for [Spell|Spells]",
+          "stats": [
+            {
+              "id": "spell_critical_strike_chance_+%",
+              "max": 69,
+              "min": 60
+            }
+          ]
+        },
+        {
+          "level": 41,
+          "name": "of Calamity",
+          "text": "(70-79)% increased [Critical|Critical Hit Chance] for [Spell|Spells]",
+          "stats": [
+            {
+              "id": "spell_critical_strike_chance_+%",
+              "max": 79,
+              "min": 70
+            }
+          ]
+        },
+        {
+          "level": 59,
+          "name": "of Ruin",
+          "text": "(80-89)% increased [Critical|Critical Hit Chance] for [Spell|Spells]",
+          "stats": [
+            {
+              "id": "spell_critical_strike_chance_+%",
+              "max": 89,
+              "min": 80
+            }
+          ]
+        },
+        {
+          "level": 76,
+          "name": "of Unmaking",
+          "text": "(90-109)% increased [Critical|Critical Hit Chance] for [Spell|Spells]",
+          "stats": [
+            {
+              "id": "spell_critical_strike_chance_+%",
+              "max": 109,
+              "min": 90
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "category": "Two Handed Weapons",
+  "label": "Staves",
+  "slug": "Staves"
+}

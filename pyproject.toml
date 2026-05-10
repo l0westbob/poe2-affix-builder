@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poe-affix-builder"
+version = "0.1.0"
+description = "Build PoE2 affix files from data/poe2 mods.json"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+  "demjson3>=3.0.6",
+  "httpx>=0.27",
+  "selectolax>=0.3.28",
+]
+
+[project.scripts]
+poe-affix-build = "poe_affix_builder.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

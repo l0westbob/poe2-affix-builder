@@ -1,0 +1,2816 @@
+{
+  "affixes": [
+    {
+      "family_key": "BaseLocalDefences",
+      "kind": "prefix",
+      "template": "+# to [Armour|Armour]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Lacquered",
+          "text": "+(16-27) to [Armour|Armour]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 27,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Studded",
+          "text": "+(28-50) to [Armour|Armour]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 50,
+              "min": 28
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Ribbed",
+          "text": "+(51-68) to [Armour|Armour]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 68,
+              "min": 51
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "name": "Fortified",
+          "text": "+(69-82) to [Armour|Armour]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 82,
+              "min": 69
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Plated",
+          "text": "+(83-102) to [Armour|Armour]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 102,
+              "min": 83
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Carapaced",
+          "text": "+(103-122) to [Armour|Armour]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 122,
+              "min": 103
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "Encased",
+          "text": "+(123-160) to [Armour|Armour]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 160,
+              "min": 123
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Enveloped",
+          "text": "+(161-202) to [Armour|Armour]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 202,
+              "min": 161
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "name": "Abating",
+          "text": "+(203-225) to [Armour|Armour]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 225,
+              "min": 203
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "Unmoving",
+          "text": "+(226-256) to [Armour|Armour]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 256,
+              "min": 226
+            }
+          ]
+        },
+        {
+          "level": 79,
+          "name": "Impervious",
+          "text": "+(257-276) to [Armour|Armour]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 276,
+              "min": 257
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "BaseLocalDefences",
+      "kind": "prefix",
+      "template": "+# to [Armour|Armour] +# to [Evasion] Rating",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Supple",
+          "text": "+(8-14) to [Armour|Armour] +(6-9) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 14,
+              "min": 8
+            },
+            {
+              "id": "local_base_evasion_rating",
+              "max": 9,
+              "min": 6
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Pliant",
+          "text": "+(15-35) to [Armour|Armour] +(10-30) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 35,
+              "min": 15
+            },
+            {
+              "id": "local_base_evasion_rating",
+              "max": 30,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Flexible",
+          "text": "+(36-53) to [Armour|Armour] +(31-46) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 53,
+              "min": 36
+            },
+            {
+              "id": "local_base_evasion_rating",
+              "max": 46,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Durable",
+          "text": "+(54-65) to [Armour|Armour] +(47-57) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 65,
+              "min": 54
+            },
+            {
+              "id": "local_base_evasion_rating",
+              "max": 57,
+              "min": 47
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "Sturdy",
+          "text": "+(66-78) to [Armour|Armour] +(58-69) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 78,
+              "min": 66
+            },
+            {
+              "id": "local_base_evasion_rating",
+              "max": 69,
+              "min": 58
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Resilient",
+          "text": "+(79-98) to [Armour|Armour] +(70-88) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 98,
+              "min": 79
+            },
+            {
+              "id": "local_base_evasion_rating",
+              "max": 88,
+              "min": 70
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "name": "Adaptable",
+          "text": "+(99-117) to [Armour|Armour] +(89-107) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 117,
+              "min": 99
+            },
+            {
+              "id": "local_base_evasion_rating",
+              "max": 107,
+              "min": 89
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "Versatile",
+          "text": "+(118-138) to [Armour|Armour] +(108-126) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 138,
+              "min": 118
+            },
+            {
+              "id": "local_base_evasion_rating",
+              "max": 126,
+              "min": 108
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "BaseLocalDefences",
+      "kind": "prefix",
+      "template": "+# to [Armour|Armour] +# to maximum [EnergyShield|Energy Shield]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Blessed",
+          "text": "+(8-14) to [Armour|Armour] +(5-8) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 14,
+              "min": 8
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 8,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Anointed",
+          "text": "+(15-35) to [Armour|Armour] +(9-15) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 35,
+              "min": 15
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 15,
+              "min": 9
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Sanctified",
+          "text": "+(36-53) to [Armour|Armour] +(16-21) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 53,
+              "min": 36
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 21,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Hallowed",
+          "text": "+(54-65) to [Armour|Armour] +(22-25) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 65,
+              "min": 54
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 25,
+              "min": 22
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "Beatified",
+          "text": "+(66-78) to [Armour|Armour] +(26-29) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 78,
+              "min": 66
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 29,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Consecrated",
+          "text": "+(79-98) to [Armour|Armour] +(30-36) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 98,
+              "min": 79
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 36,
+              "min": 30
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "name": "Saintly",
+          "text": "+(99-117) to [Armour|Armour] +(37-42) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 117,
+              "min": 99
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 42,
+              "min": 37
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "Godly",
+          "text": "+(118-138) to [Armour|Armour] +(43-48) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_physical_damage_reduction_rating",
+              "max": 138,
+              "min": 118
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 48,
+              "min": 43
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "BaseLocalDefences",
+      "kind": "prefix",
+      "template": "+# to [Evasion] Rating",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Agile",
+          "text": "+(11-18) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 18,
+              "min": 11
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Dancer's",
+          "text": "+(19-39) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 39,
+              "min": 19
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Acrobat's",
+          "text": "+(40-56) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 56,
+              "min": 40
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "name": "Fleet",
+          "text": "+(57-70) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 70,
+              "min": 57
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Blurred",
+          "text": "+(71-88) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 88,
+              "min": 71
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Phased",
+          "text": "+(89-107) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 107,
+              "min": 89
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "Vaporous",
+          "text": "+(108-142) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 142,
+              "min": 108
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Elusory",
+          "text": "+(143-181) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 181,
+              "min": 143
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "name": "Adroit",
+          "text": "+(182-204) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 204,
+              "min": 182
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "Lissome",
+          "text": "+(205-232) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 232,
+              "min": 205
+            }
+          ]
+        },
+        {
+          "level": 79,
+          "name": "Fugitive",
+          "text": "+(233-251) to [Evasion] Rating",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 251,
+              "min": 233
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "BaseLocalDefences",
+      "kind": "prefix",
+      "template": "+# to [Evasion] Rating +# to maximum [EnergyShield|Energy Shield]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Will-o-wisp's",
+          "text": "+(6-9) to [Evasion] Rating +(5-8) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 9,
+              "min": 6
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 8,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Nymph's",
+          "text": "+(10-30) to [Evasion] Rating +(9-15) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 30,
+              "min": 10
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 15,
+              "min": 9
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Sylph's",
+          "text": "+(31-46) to [Evasion] Rating +(16-21) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 46,
+              "min": 31
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 21,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Cherub's",
+          "text": "+(47-57) to [Evasion] Rating +(22-25) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 57,
+              "min": 47
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 25,
+              "min": 22
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "Spirit's",
+          "text": "+(58-69) to [Evasion] Rating +(26-29) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 69,
+              "min": 58
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 29,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Eidolon's",
+          "text": "+(70-88) to [Evasion] Rating +(30-36) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 88,
+              "min": 70
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 36,
+              "min": 30
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "name": "Apparition's",
+          "text": "+(89-107) to [Evasion] Rating +(37-42) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 107,
+              "min": 89
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 42,
+              "min": 37
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "Banshee's",
+          "text": "+(108-126) to [Evasion] Rating +(43-48) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_base_evasion_rating",
+              "max": 126,
+              "min": 108
+            },
+            {
+              "id": "local_energy_shield",
+              "max": 48,
+              "min": 43
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "BaseLocalDefences",
+      "kind": "prefix",
+      "template": "+# to maximum [EnergyShield|Energy Shield]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Shining",
+          "text": "+(10-17) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_energy_shield",
+              "max": 17,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Glimmering",
+          "text": "+(18-24) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_energy_shield",
+              "max": 24,
+              "min": 18
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Glittering",
+          "text": "+(25-30) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_energy_shield",
+              "max": 30,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "name": "Glowing",
+          "text": "+(31-35) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_energy_shield",
+              "max": 35,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Radiating",
+          "text": "+(36-41) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_energy_shield",
+              "max": 41,
+              "min": 36
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Pulsing",
+          "text": "+(42-47) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_energy_shield",
+              "max": 47,
+              "min": 42
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "Blazing",
+          "text": "+(48-60) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_energy_shield",
+              "max": 60,
+              "min": 48
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Dazzling",
+          "text": "+(61-73) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_energy_shield",
+              "max": 73,
+              "min": 61
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "name": "Scintillating",
+          "text": "+(74-80) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_energy_shield",
+              "max": 80,
+              "min": 74
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Incandescent",
+          "text": "+(81-90) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_energy_shield",
+              "max": 90,
+              "min": 81
+            }
+          ]
+        },
+        {
+          "level": 79,
+          "name": "Resplendent",
+          "text": "+(91-96) to maximum [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_energy_shield",
+              "max": 96,
+              "min": 91
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "BaseSpirit",
+      "kind": "prefix",
+      "template": "+# to [Spirit|Spirit]",
+      "tiers": [
+        {
+          "level": 16,
+          "name": "Lady's",
+          "text": "+(30-33) to [Spirit|Spirit]",
+          "stats": [
+            {
+              "id": "base_spirit_from_equipment",
+              "max": 33,
+              "min": 30
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "name": "Baronness'",
+          "text": "+(34-37) to [Spirit|Spirit]",
+          "stats": [
+            {
+              "id": "base_spirit_from_equipment",
+              "max": 37,
+              "min": 34
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Viscountess'",
+          "text": "+(38-42) to [Spirit|Spirit]",
+          "stats": [
+            {
+              "id": "base_spirit_from_equipment",
+              "max": 42,
+              "min": 38
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Marchioness'",
+          "text": "+(43-46) to [Spirit|Spirit]",
+          "stats": [
+            {
+              "id": "base_spirit_from_equipment",
+              "max": 46,
+              "min": 43
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "Countess'",
+          "text": "+(47-50) to [Spirit|Spirit]",
+          "stats": [
+            {
+              "id": "base_spirit_from_equipment",
+              "max": 50,
+              "min": 47
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Duchess'",
+          "text": "+(51-53) to [Spirit|Spirit]",
+          "stats": [
+            {
+              "id": "base_spirit_from_equipment",
+              "max": 53,
+              "min": 51
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "name": "Princess'",
+          "text": "+(54-56) to [Spirit|Spirit]",
+          "stats": [
+            {
+              "id": "base_spirit_from_equipment",
+              "max": 56,
+              "min": 54
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "Queen's",
+          "text": "+(57-61) to [Spirit|Spirit]",
+          "stats": [
+            {
+              "id": "base_spirit_from_equipment",
+              "max": 61,
+              "min": 57
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "DefencesPercent",
+      "kind": "prefix",
+      "template": "#% increased [Evasion] and [EnergyShield|Energy Shield]",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Shadowy",
+          "text": "(15-26)% increased [Evasion] and [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_evasion_and_energy_shield_+%",
+              "max": 26,
+              "min": 15
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Ethereal",
+          "text": "(27-42)% increased [Evasion] and [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_evasion_and_energy_shield_+%",
+              "max": 42,
+              "min": 27
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Unworldly",
+          "text": "(43-55)% increased [Evasion] and [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_evasion_and_energy_shield_+%",
+              "max": 55,
+              "min": 43
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Ephemeral",
+          "text": "(56-67)% increased [Evasion] and [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_evasion_and_energy_shield_+%",
+              "max": 67,
+              "min": 56
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "Evanescent",
+          "text": "(68-79)% increased [Evasion] and [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_evasion_and_energy_shield_+%",
+              "max": 79,
+              "min": 68
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Unreal",
+          "text": "(80-91)% increased [Evasion] and [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_evasion_and_energy_shield_+%",
+              "max": 91,
+              "min": 80
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "name": "Incorporeal",
+          "text": "(92-100)% increased [Armour|Armour], [Evasion|Evasion] and [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_armour_and_evasion_and_energy_shield_+%",
+              "max": 100,
+              "min": 92
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "Ascendant",
+          "text": "(101-110)% increased [Armour|Armour], [Evasion|Evasion] and [EnergyShield|Energy Shield]",
+          "stats": [
+            {
+              "id": "local_armour_and_evasion_and_energy_shield_+%",
+              "max": 110,
+              "min": 101
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedLife",
+      "kind": "prefix",
+      "template": "+# to maximum Life",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Hale",
+          "text": "+(10-19) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 19,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Healthy",
+          "text": "+(20-29) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 29,
+              "min": 20
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Sanguine",
+          "text": "+(30-39) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 39,
+              "min": 30
+            }
+          ]
+        },
+        {
+          "level": 24,
+          "name": "Stalwart",
+          "text": "+(40-59) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 59,
+              "min": 40
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Stout",
+          "text": "+(60-69) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 69,
+              "min": 60
+            }
+          ]
+        },
+        {
+          "level": 38,
+          "name": "Robust",
+          "text": "+(70-84) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 84,
+              "min": 70
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Rotund",
+          "text": "+(85-99) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 99,
+              "min": 85
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "Virile",
+          "text": "+(100-119) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 119,
+              "min": 100
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Athlete's",
+          "text": "+(120-149) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 149,
+              "min": 120
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "name": "Fecund",
+          "text": "+(150-174) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 174,
+              "min": 150
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Vigorous",
+          "text": "+(175-189) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 189,
+              "min": 175
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "Rapturous",
+          "text": "+(190-199) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 199,
+              "min": 190
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "name": "Prime",
+          "text": "+(200-214) to maximum Life",
+          "stats": [
+            {
+              "id": "base_maximum_life",
+              "max": 214,
+              "min": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "Thorns",
+      "kind": "prefix",
+      "template": "# to # [Physical|Physical] [Thorns|Thorns] damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Thorny",
+          "text": "(1-2) to (3-4) [Physical|Physical] [Thorns|Thorns] damage",
+          "stats": [
+            {
+              "id": "thorns_minimum_base_physical_damage",
+              "max": 2,
+              "min": 1
+            },
+            {
+              "id": "thorns_maximum_base_physical_damage",
+              "max": 4,
+              "min": 3
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "name": "Spiny",
+          "text": "(5-7) to (7-10) [Physical|Physical] [Thorns|Thorns] damage",
+          "stats": [
+            {
+              "id": "thorns_minimum_base_physical_damage",
+              "max": 7,
+              "min": 5
+            },
+            {
+              "id": "thorns_maximum_base_physical_damage",
+              "max": 10,
+              "min": 7
+            }
+          ]
+        },
+        {
+          "level": 19,
+          "name": "Barbed",
+          "text": "(11-16) to (15-23) [Physical|Physical] [Thorns|Thorns] damage",
+          "stats": [
+            {
+              "id": "thorns_minimum_base_physical_damage",
+              "max": 16,
+              "min": 11
+            },
+            {
+              "id": "thorns_maximum_base_physical_damage",
+              "max": 23,
+              "min": 15
+            }
+          ]
+        },
+        {
+          "level": 38,
+          "name": "Pointed",
+          "text": "(24-35) to (35-53) [Physical|Physical] [Thorns|Thorns] damage",
+          "stats": [
+            {
+              "id": "thorns_minimum_base_physical_damage",
+              "max": 35,
+              "min": 24
+            },
+            {
+              "id": "thorns_maximum_base_physical_damage",
+              "max": 53,
+              "min": 35
+            }
+          ]
+        },
+        {
+          "level": 48,
+          "name": "Spiked",
+          "text": "(40-60) to (61-92) [Physical|Physical] [Thorns|Thorns] damage",
+          "stats": [
+            {
+              "id": "thorns_minimum_base_physical_damage",
+              "max": 60,
+              "min": 40
+            },
+            {
+              "id": "thorns_maximum_base_physical_damage",
+              "max": 92,
+              "min": 61
+            }
+          ]
+        },
+        {
+          "level": 63,
+          "name": "Edged",
+          "text": "(64-97) to (97-145) [Physical|Physical] [Thorns|Thorns] damage",
+          "stats": [
+            {
+              "id": "thorns_minimum_base_physical_damage",
+              "max": 97,
+              "min": 64
+            },
+            {
+              "id": "thorns_maximum_base_physical_damage",
+              "max": 145,
+              "min": 97
+            }
+          ]
+        },
+        {
+          "level": 74,
+          "name": "Jagged",
+          "text": "(101-151) to (146-220) [Physical|Physical] [Thorns|Thorns] damage",
+          "stats": [
+            {
+              "id": "thorns_minimum_base_physical_damage",
+              "max": 151,
+              "min": 101
+            },
+            {
+              "id": "thorns_maximum_base_physical_damage",
+              "max": 220,
+              "min": 146
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ArmourAppliesToElementalDamage",
+      "kind": "suffix",
+      "template": "+#% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Covering",
+          "text": "+(14-19)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+          "stats": [
+            {
+              "id": "armour_%_applies_to_fire_cold_lightning_damage",
+              "max": 19,
+              "min": 14
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "of Sheathing",
+          "text": "+(20-25)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+          "stats": [
+            {
+              "id": "armour_%_applies_to_fire_cold_lightning_damage",
+              "max": 25,
+              "min": 20
+            }
+          ]
+        },
+        {
+          "level": 36,
+          "name": "of Lining",
+          "text": "+(26-31)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+          "stats": [
+            {
+              "id": "armour_%_applies_to_fire_cold_lightning_damage",
+              "max": 31,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 48,
+          "name": "of Padding",
+          "text": "+(32-37)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+          "stats": [
+            {
+              "id": "armour_%_applies_to_fire_cold_lightning_damage",
+              "max": 37,
+              "min": 32
+            }
+          ]
+        },
+        {
+          "level": 66,
+          "name": "of Furring",
+          "text": "+(38-43)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+          "stats": [
+            {
+              "id": "armour_%_applies_to_fire_cold_lightning_damage",
+              "max": 43,
+              "min": 38
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of Thermokryptance",
+          "text": "+(44-50)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+          "stats": [
+            {
+              "id": "armour_%_applies_to_fire_cold_lightning_damage",
+              "max": 50,
+              "min": 44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ChaosResistance",
+      "kind": "suffix",
+      "template": "+#% to [Resistances|Chaos Resistance]",
+      "tiers": [
+        {
+          "level": 16,
+          "name": "of the Lost",
+          "text": "+(4-7)% to [Resistances|Chaos Resistance]",
+          "stats": [
+            {
+              "id": "base_chaos_damage_resistance_%",
+              "max": 7,
+              "min": 4
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "name": "of Banishment",
+          "text": "+(8-11)% to [Resistances|Chaos Resistance]",
+          "stats": [
+            {
+              "id": "base_chaos_damage_resistance_%",
+              "max": 11,
+              "min": 8
+            }
+          ]
+        },
+        {
+          "level": 44,
+          "name": "of Eviction",
+          "text": "+(12-15)% to [Resistances|Chaos Resistance]",
+          "stats": [
+            {
+              "id": "base_chaos_damage_resistance_%",
+              "max": 15,
+              "min": 12
+            }
+          ]
+        },
+        {
+          "level": 56,
+          "name": "of Expulsion",
+          "text": "+(16-19)% to [Resistances|Chaos Resistance]",
+          "stats": [
+            {
+              "id": "base_chaos_damage_resistance_%",
+              "max": 19,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 68,
+          "name": "of Exile",
+          "text": "+(20-23)% to [Resistances|Chaos Resistance]",
+          "stats": [
+            {
+              "id": "base_chaos_damage_resistance_%",
+              "max": 23,
+              "min": 20
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of Bameth",
+          "text": "+(24-27)% to [Resistances|Chaos Resistance]",
+          "stats": [
+            {
+              "id": "base_chaos_damage_resistance_%",
+              "max": 27,
+              "min": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ColdResistance",
+      "kind": "suffix",
+      "template": "+#% to [Resistances|Cold Resistance]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Seal",
+          "text": "+(6-10)% to [Resistances|Cold Resistance]",
+          "stats": [
+            {
+              "id": "base_cold_damage_resistance_%",
+              "max": 10,
+              "min": 6
+            }
+          ]
+        },
+        {
+          "level": 14,
+          "name": "of the Penguin",
+          "text": "+(11-15)% to [Resistances|Cold Resistance]",
+          "stats": [
+            {
+              "id": "base_cold_damage_resistance_%",
+              "max": 15,
+              "min": 11
+            }
+          ]
+        },
+        {
+          "level": 26,
+          "name": "of the Narwhal",
+          "text": "+(16-20)% to [Resistances|Cold Resistance]",
+          "stats": [
+            {
+              "id": "base_cold_damage_resistance_%",
+              "max": 20,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 38,
+          "name": "of the Yeti",
+          "text": "+(21-25)% to [Resistances|Cold Resistance]",
+          "stats": [
+            {
+              "id": "base_cold_damage_resistance_%",
+              "max": 25,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "name": "of the Walrus",
+          "text": "+(26-30)% to [Resistances|Cold Resistance]",
+          "stats": [
+            {
+              "id": "base_cold_damage_resistance_%",
+              "max": 30,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of the Polar Bear",
+          "text": "+(31-35)% to [Resistances|Cold Resistance]",
+          "stats": [
+            {
+              "id": "base_cold_damage_resistance_%",
+              "max": 35,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 71,
+          "name": "of the Ice",
+          "text": "+(36-40)% to [Resistances|Cold Resistance]",
+          "stats": [
+            {
+              "id": "base_cold_damage_resistance_%",
+              "max": 40,
+              "min": 36
+            }
+          ]
+        },
+        {
+          "level": 82,
+          "name": "of Haast",
+          "text": "+(41-45)% to [Resistances|Cold Resistance]",
+          "stats": [
+            {
+              "id": "base_cold_damage_resistance_%",
+              "max": 45,
+              "min": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "Dexterity",
+      "kind": "suffix",
+      "template": "+# to [Dexterity|Dexterity]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Mongoose",
+          "text": "+(5-8) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 8,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "name": "of the Lynx",
+          "text": "+(9-12) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 12,
+              "min": 9
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "name": "of the Fox",
+          "text": "+(13-16) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 16,
+              "min": 13
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "of the Falcon",
+          "text": "+(17-20) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 20,
+              "min": 17
+            }
+          ]
+        },
+        {
+          "level": 44,
+          "name": "of the Panther",
+          "text": "+(21-24) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 24,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of the Leopard",
+          "text": "+(25-27) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 27,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 66,
+          "name": "of the Jaguar",
+          "text": "+(28-30) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 30,
+              "min": 28
+            }
+          ]
+        },
+        {
+          "level": 74,
+          "name": "of the Phantom",
+          "text": "+(31-33) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 33,
+              "min": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "EnergyShieldDelay",
+      "kind": "suffix",
+      "template": "#% [FasterESRechargeStart|faster start of Energy Shield Recharge]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Impatience",
+          "text": "(26-30)% [FasterESRechargeStart|faster start of Energy Shield Recharge]",
+          "stats": [
+            {
+              "id": "energy_shield_delay_-%",
+              "max": 30,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "of Restlessness",
+          "text": "(31-35)% [FasterESRechargeStart|faster start of Energy Shield Recharge]",
+          "stats": [
+            {
+              "id": "energy_shield_delay_-%",
+              "max": 35,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 36,
+          "name": "of Fretfulness",
+          "text": "(36-40)% [FasterESRechargeStart|faster start of Energy Shield Recharge]",
+          "stats": [
+            {
+              "id": "energy_shield_delay_-%",
+              "max": 40,
+              "min": 36
+            }
+          ]
+        },
+        {
+          "level": 48,
+          "name": "of Motivation",
+          "text": "(41-45)% [FasterESRechargeStart|faster start of Energy Shield Recharge]",
+          "stats": [
+            {
+              "id": "energy_shield_delay_-%",
+              "max": 45,
+              "min": 41
+            }
+          ]
+        },
+        {
+          "level": 66,
+          "name": "of Excitement",
+          "text": "(46-50)% [FasterESRechargeStart|faster start of Energy Shield Recharge]",
+          "stats": [
+            {
+              "id": "energy_shield_delay_-%",
+              "max": 50,
+              "min": 46
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of Anticipation",
+          "text": "(51-55)% [FasterESRechargeStart|faster start of Energy Shield Recharge]",
+          "stats": [
+            {
+              "id": "energy_shield_delay_-%",
+              "max": 55,
+              "min": 51
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "EvasionAppliesToDeflection",
+      "kind": "suffix",
+      "template": "Gain [Deflect|Deflection Rating] equal to #% of [Evasion|Evasion Rating]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Deflecting",
+          "text": "Gain [Deflect|Deflection Rating] equal to (8-11)% of [Evasion|Evasion Rating]",
+          "stats": [
+            {
+              "id": "base_deflection_rating_%_of_evasion_rating",
+              "max": 11,
+              "min": 8
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "of Bending",
+          "text": "Gain [Deflect|Deflection Rating] equal to (12-14)% of [Evasion|Evasion Rating]",
+          "stats": [
+            {
+              "id": "base_deflection_rating_%_of_evasion_rating",
+              "max": 14,
+              "min": 12
+            }
+          ]
+        },
+        {
+          "level": 36,
+          "name": "of Curvation",
+          "text": "Gain [Deflect|Deflection Rating] equal to (15-17)% of [Evasion|Evasion Rating]",
+          "stats": [
+            {
+              "id": "base_deflection_rating_%_of_evasion_rating",
+              "max": 17,
+              "min": 15
+            }
+          ]
+        },
+        {
+          "level": 48,
+          "name": "of Diversion",
+          "text": "Gain [Deflect|Deflection Rating] equal to (18-20)% of [Evasion|Evasion Rating]",
+          "stats": [
+            {
+              "id": "base_deflection_rating_%_of_evasion_rating",
+              "max": 20,
+              "min": 18
+            }
+          ]
+        },
+        {
+          "level": 66,
+          "name": "of Flexure",
+          "text": "Gain [Deflect|Deflection Rating] equal to (21-23)% of [Evasion|Evasion Rating]",
+          "stats": [
+            {
+              "id": "base_deflection_rating_%_of_evasion_rating",
+              "max": 23,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of Warping",
+          "text": "Gain [Deflect|Deflection Rating] equal to (24-26)% of [Evasion|Evasion Rating]",
+          "stats": [
+            {
+              "id": "base_deflection_rating_%_of_evasion_rating",
+              "max": 26,
+              "min": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FireResistance",
+      "kind": "suffix",
+      "template": "+#% to [Resistances|Fire Resistance]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Whelpling",
+          "text": "+(6-10)% to [Resistances|Fire Resistance]",
+          "stats": [
+            {
+              "id": "base_fire_damage_resistance_%",
+              "max": 10,
+              "min": 6
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "name": "of the Salamander",
+          "text": "+(11-15)% to [Resistances|Fire Resistance]",
+          "stats": [
+            {
+              "id": "base_fire_damage_resistance_%",
+              "max": 15,
+              "min": 11
+            }
+          ]
+        },
+        {
+          "level": 24,
+          "name": "of the Drake",
+          "text": "+(16-20)% to [Resistances|Fire Resistance]",
+          "stats": [
+            {
+              "id": "base_fire_damage_resistance_%",
+              "max": 20,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 36,
+          "name": "of the Kiln",
+          "text": "+(21-25)% to [Resistances|Fire Resistance]",
+          "stats": [
+            {
+              "id": "base_fire_damage_resistance_%",
+              "max": 25,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 48,
+          "name": "of the Furnace",
+          "text": "+(26-30)% to [Resistances|Fire Resistance]",
+          "stats": [
+            {
+              "id": "base_fire_damage_resistance_%",
+              "max": 30,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of the Volcano",
+          "text": "+(31-35)% to [Resistances|Fire Resistance]",
+          "stats": [
+            {
+              "id": "base_fire_damage_resistance_%",
+              "max": 35,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 71,
+          "name": "of Magma",
+          "text": "+(36-40)% to [Resistances|Fire Resistance]",
+          "stats": [
+            {
+              "id": "base_fire_damage_resistance_%",
+              "max": 40,
+              "min": 36
+            }
+          ]
+        },
+        {
+          "level": 82,
+          "name": "of Tzteosh",
+          "text": "+(41-45)% to [Resistances|Fire Resistance]",
+          "stats": [
+            {
+              "id": "base_fire_damage_resistance_%",
+              "max": 45,
+              "min": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "Intelligence",
+      "kind": "suffix",
+      "template": "+# to [Intelligence|Intelligence]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Pupil",
+          "text": "+(5-8) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 8,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "name": "of the Student",
+          "text": "+(9-12) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 12,
+              "min": 9
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "name": "of the Prodigy",
+          "text": "+(13-16) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 16,
+              "min": 13
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "of the Augur",
+          "text": "+(17-20) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 20,
+              "min": 17
+            }
+          ]
+        },
+        {
+          "level": 44,
+          "name": "of the Philosopher",
+          "text": "+(21-24) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 24,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of the Sage",
+          "text": "+(25-27) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 27,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 66,
+          "name": "of the Savant",
+          "text": "+(28-30) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 30,
+              "min": 28
+            }
+          ]
+        },
+        {
+          "level": 74,
+          "name": "of the Virtuoso",
+          "text": "+(31-33) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 33,
+              "min": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "LifeRegeneration",
+      "kind": "suffix",
+      "template": "# Life Regeneration per second",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Newt",
+          "text": "(1-2) Life Regeneration per second",
+          "stats": [
+            {
+              "id": "base_life_regeneration_rate_per_minute",
+              "max": 120,
+              "min": 60
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "of the Lizard",
+          "text": "(2.1-3) Life Regeneration per second",
+          "stats": [
+            {
+              "id": "base_life_regeneration_rate_per_minute",
+              "max": 180,
+              "min": 126
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "name": "of the Flatworm",
+          "text": "(3.1-4) Life Regeneration per second",
+          "stats": [
+            {
+              "id": "base_life_regeneration_rate_per_minute",
+              "max": 240,
+              "min": 186
+            }
+          ]
+        },
+        {
+          "level": 17,
+          "name": "of the Starfish",
+          "text": "(4.1-6) Life Regeneration per second",
+          "stats": [
+            {
+              "id": "base_life_regeneration_rate_per_minute",
+              "max": 360,
+              "min": 246
+            }
+          ]
+        },
+        {
+          "level": 26,
+          "name": "of the Hydra",
+          "text": "(6.1-9) Life Regeneration per second",
+          "stats": [
+            {
+              "id": "base_life_regeneration_rate_per_minute",
+              "max": 540,
+              "min": 366
+            }
+          ]
+        },
+        {
+          "level": 35,
+          "name": "of the Troll",
+          "text": "(9.1-13) Life Regeneration per second",
+          "stats": [
+            {
+              "id": "base_life_regeneration_rate_per_minute",
+              "max": 780,
+              "min": 546
+            }
+          ]
+        },
+        {
+          "level": 47,
+          "name": "of Convalescence",
+          "text": "(13.1-18) Life Regeneration per second",
+          "stats": [
+            {
+              "id": "base_life_regeneration_rate_per_minute",
+              "max": 1080,
+              "min": 786
+            }
+          ]
+        },
+        {
+          "level": 58,
+          "name": "of Recuperation",
+          "text": "(18.1-23) Life Regeneration per second",
+          "stats": [
+            {
+              "id": "base_life_regeneration_rate_per_minute",
+              "max": 1380,
+              "min": 1086
+            }
+          ]
+        },
+        {
+          "level": 68,
+          "name": "of Resurgence",
+          "text": "(23.1-29) Life Regeneration per second",
+          "stats": [
+            {
+              "id": "base_life_regeneration_rate_per_minute",
+              "max": 1740,
+              "min": 1386
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "of Immortality",
+          "text": "(29.1-33) Life Regeneration per second",
+          "stats": [
+            {
+              "id": "base_life_regeneration_rate_per_minute",
+              "max": 1980,
+              "min": 1746
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of the Phoenix",
+          "text": "(33.1-36) Life Regeneration per second",
+          "stats": [
+            {
+              "id": "base_life_regeneration_rate_per_minute",
+              "max": 2160,
+              "min": 1986
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "LightningResistance",
+      "kind": "suffix",
+      "template": "+#% to [Resistances|Lightning Resistance]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Cloud",
+          "text": "+(6-10)% to [Resistances|Lightning Resistance]",
+          "stats": [
+            {
+              "id": "base_lightning_damage_resistance_%",
+              "max": 10,
+              "min": 6
+            }
+          ]
+        },
+        {
+          "level": 13,
+          "name": "of the Squall",
+          "text": "+(11-15)% to [Resistances|Lightning Resistance]",
+          "stats": [
+            {
+              "id": "base_lightning_damage_resistance_%",
+              "max": 15,
+              "min": 11
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "name": "of the Storm",
+          "text": "+(16-20)% to [Resistances|Lightning Resistance]",
+          "stats": [
+            {
+              "id": "base_lightning_damage_resistance_%",
+              "max": 20,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 37,
+          "name": "of the Thunderhead",
+          "text": "+(21-25)% to [Resistances|Lightning Resistance]",
+          "stats": [
+            {
+              "id": "base_lightning_damage_resistance_%",
+              "max": 25,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 49,
+          "name": "of the Tempest",
+          "text": "+(26-30)% to [Resistances|Lightning Resistance]",
+          "stats": [
+            {
+              "id": "base_lightning_damage_resistance_%",
+              "max": 30,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of the Maelstrom",
+          "text": "+(31-35)% to [Resistances|Lightning Resistance]",
+          "stats": [
+            {
+              "id": "base_lightning_damage_resistance_%",
+              "max": 35,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 71,
+          "name": "of the Lightning",
+          "text": "+(36-40)% to [Resistances|Lightning Resistance]",
+          "stats": [
+            {
+              "id": "base_lightning_damage_resistance_%",
+              "max": 40,
+              "min": 36
+            }
+          ]
+        },
+        {
+          "level": 82,
+          "name": "of Ephij",
+          "text": "+(41-45)% to [Resistances|Lightning Resistance]",
+          "stats": [
+            {
+              "id": "base_lightning_damage_resistance_%",
+              "max": 45,
+              "min": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "LocalAttributeRequirements",
+      "kind": "suffix",
+      "template": "#% reduced [Attributes|Attribute] Requirements",
+      "tiers": [
+        {
+          "level": 24,
+          "name": "of the Worthy",
+          "text": "15% reduced [Attributes|Attribute] Requirements",
+          "stats": [
+            {
+              "id": "local_attribute_requirements_+%",
+              "max": -15,
+              "min": -15
+            }
+          ]
+        },
+        {
+          "level": 32,
+          "name": "of the Apt",
+          "text": "20% reduced [Attributes|Attribute] Requirements",
+          "stats": [
+            {
+              "id": "local_attribute_requirements_+%",
+              "max": -20,
+              "min": -20
+            }
+          ]
+        },
+        {
+          "level": 40,
+          "name": "of the Talented",
+          "text": "25% reduced [Attributes|Attribute] Requirements",
+          "stats": [
+            {
+              "id": "local_attribute_requirements_+%",
+              "max": -25,
+              "min": -25
+            }
+          ]
+        },
+        {
+          "level": 52,
+          "name": "of the Skilled",
+          "text": "30% reduced [Attributes|Attribute] Requirements",
+          "stats": [
+            {
+              "id": "local_attribute_requirements_+%",
+              "max": -30,
+              "min": -30
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of the Proficient",
+          "text": "35% reduced [Attributes|Attribute] Requirements",
+          "stats": [
+            {
+              "id": "local_attribute_requirements_+%",
+              "max": -35,
+              "min": -35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ReducedAilmentDuration",
+      "kind": "suffix",
+      "template": "#% reduced Duration of [Bleeding] on You",
+      "tiers": [
+        {
+          "level": 21,
+          "name": "of Sealing",
+          "text": "(40-36)% reduced Duration of [Bleeding] on You",
+          "stats": [
+            {
+              "id": "self_bleed_duration_+%",
+              "max": -36,
+              "min": -40
+            }
+          ]
+        },
+        {
+          "level": 37,
+          "name": "of Alleviation",
+          "text": "(45-41)% reduced Duration of [Bleeding] on You",
+          "stats": [
+            {
+              "id": "self_bleed_duration_+%",
+              "max": -41,
+              "min": -45
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "name": "of Allaying",
+          "text": "(50-46)% reduced Duration of [Bleeding] on You",
+          "stats": [
+            {
+              "id": "self_bleed_duration_+%",
+              "max": -46,
+              "min": -50
+            }
+          ]
+        },
+        {
+          "level": 64,
+          "name": "of Assuaging",
+          "text": "(55-51)% reduced Duration of [Bleeding] on You",
+          "stats": [
+            {
+              "id": "self_bleed_duration_+%",
+              "max": -51,
+              "min": -55
+            }
+          ]
+        },
+        {
+          "level": 76,
+          "name": "of Staunching",
+          "text": "(60-56)% reduced Duration of [Bleeding] on You",
+          "stats": [
+            {
+              "id": "self_bleed_duration_+%",
+              "max": -56,
+              "min": -60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ReducedAilmentDuration",
+      "kind": "suffix",
+      "template": "#% reduced [Ignite|Ignite] Duration on you",
+      "tiers": [
+        {
+          "level": 21,
+          "name": "of Damping",
+          "text": "(36-40)% reduced [Ignite|Ignite] Duration on you",
+          "stats": [
+            {
+              "id": "base_self_ignite_duration_-%",
+              "max": 40,
+              "min": 36
+            }
+          ]
+        },
+        {
+          "level": 37,
+          "name": "of Quashing",
+          "text": "(41-45)% reduced [Ignite|Ignite] Duration on you",
+          "stats": [
+            {
+              "id": "base_self_ignite_duration_-%",
+              "max": 45,
+              "min": 41
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "name": "of Quelling",
+          "text": "(46-50)% reduced [Ignite|Ignite] Duration on you",
+          "stats": [
+            {
+              "id": "base_self_ignite_duration_-%",
+              "max": 50,
+              "min": 46
+            }
+          ]
+        },
+        {
+          "level": 64,
+          "name": "of Quenching",
+          "text": "(51-55)% reduced [Ignite|Ignite] Duration on you",
+          "stats": [
+            {
+              "id": "base_self_ignite_duration_-%",
+              "max": 55,
+              "min": 51
+            }
+          ]
+        },
+        {
+          "level": 76,
+          "name": "of Dousing",
+          "text": "(56-60)% reduced [Ignite|Ignite] Duration on you",
+          "stats": [
+            {
+              "id": "base_self_ignite_duration_-%",
+              "max": 60,
+              "min": 56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ReducedAilmentDuration",
+      "kind": "suffix",
+      "template": "#% reduced [Poison|Poison] Duration on you",
+      "tiers": [
+        {
+          "level": 21,
+          "name": "of the Antitoxin",
+          "text": "(40-36)% reduced [Poison|Poison] Duration on you",
+          "stats": [
+            {
+              "id": "self_poison_duration_+%",
+              "max": -36,
+              "min": -40
+            }
+          ]
+        },
+        {
+          "level": 37,
+          "name": "of the Remedy",
+          "text": "(45-41)% reduced [Poison|Poison] Duration on you",
+          "stats": [
+            {
+              "id": "self_poison_duration_+%",
+              "max": -41,
+              "min": -45
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "name": "of the Cure",
+          "text": "(50-46)% reduced [Poison|Poison] Duration on you",
+          "stats": [
+            {
+              "id": "self_poison_duration_+%",
+              "max": -46,
+              "min": -50
+            }
+          ]
+        },
+        {
+          "level": 64,
+          "name": "of the Panacea",
+          "text": "(55-51)% reduced [Poison|Poison] Duration on you",
+          "stats": [
+            {
+              "id": "self_poison_duration_+%",
+              "max": -51,
+              "min": -55
+            }
+          ]
+        },
+        {
+          "level": 76,
+          "name": "of the Antidote",
+          "text": "(60-56)% reduced [Poison|Poison] Duration on you",
+          "stats": [
+            {
+              "id": "self_poison_duration_+%",
+              "max": -56,
+              "min": -60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "Strength",
+      "kind": "suffix",
+      "template": "+# to [Strength|Strength]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Brute",
+          "text": "+(5-8) to [Strength|Strength]",
+          "stats": [
+            {
+              "id": "additional_strength",
+              "max": 8,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "name": "of the Wrestler",
+          "text": "+(9-12) to [Strength|Strength]",
+          "stats": [
+            {
+              "id": "additional_strength",
+              "max": 12,
+              "min": 9
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "name": "of the Bear",
+          "text": "+(13-16) to [Strength|Strength]",
+          "stats": [
+            {
+              "id": "additional_strength",
+              "max": 16,
+              "min": 13
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "of the Lion",
+          "text": "+(17-20) to [Strength|Strength]",
+          "stats": [
+            {
+              "id": "additional_strength",
+              "max": 20,
+              "min": 17
+            }
+          ]
+        },
+        {
+          "level": 44,
+          "name": "of the Gorilla",
+          "text": "+(21-24) to [Strength|Strength]",
+          "stats": [
+            {
+              "id": "additional_strength",
+              "max": 24,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of the Goliath",
+          "text": "+(25-27) to [Strength|Strength]",
+          "stats": [
+            {
+              "id": "additional_strength",
+              "max": 27,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 66,
+          "name": "of the Leviathan",
+          "text": "+(28-30) to [Strength|Strength]",
+          "stats": [
+            {
+              "id": "additional_strength",
+              "max": 30,
+              "min": 28
+            }
+          ]
+        },
+        {
+          "level": 74,
+          "name": "of the Titan",
+          "text": "+(31-33) to [Strength|Strength]",
+          "stats": [
+            {
+              "id": "additional_strength",
+              "max": 33,
+              "min": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "StunThreshold",
+      "kind": "suffix",
+      "template": "+# to [StunThreshold|Stun Threshold]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Thick Skin",
+          "text": "+(6-11) to [StunThreshold|Stun Threshold]",
+          "stats": [
+            {
+              "id": "stun_threshold_+",
+              "max": 11,
+              "min": 6
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "of Reinforced Skin",
+          "text": "+(12-29) to [StunThreshold|Stun Threshold]",
+          "stats": [
+            {
+              "id": "stun_threshold_+",
+              "max": 29,
+              "min": 12
+            }
+          ]
+        },
+        {
+          "level": 15,
+          "name": "of Stone Skin",
+          "text": "+(30-49) to [StunThreshold|Stun Threshold]",
+          "stats": [
+            {
+              "id": "stun_threshold_+",
+              "max": 49,
+              "min": 30
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "name": "of Iron Skin",
+          "text": "+(50-72) to [StunThreshold|Stun Threshold]",
+          "stats": [
+            {
+              "id": "stun_threshold_+",
+              "max": 72,
+              "min": 50
+            }
+          ]
+        },
+        {
+          "level": 29,
+          "name": "of Steel Skin",
+          "text": "+(73-97) to [StunThreshold|Stun Threshold]",
+          "stats": [
+            {
+              "id": "stun_threshold_+",
+              "max": 97,
+              "min": 73
+            }
+          ]
+        },
+        {
+          "level": 36,
+          "name": "of Granite Skin",
+          "text": "+(98-124) to [StunThreshold|Stun Threshold]",
+          "stats": [
+            {
+              "id": "stun_threshold_+",
+              "max": 124,
+              "min": 98
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of Platinum Skin",
+          "text": "+(125-163) to [StunThreshold|Stun Threshold]",
+          "stats": [
+            {
+              "id": "stun_threshold_+",
+              "max": 163,
+              "min": 125
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "of Adamantite Skin",
+          "text": "+(164-206) to [StunThreshold|Stun Threshold]",
+          "stats": [
+            {
+              "id": "stun_threshold_+",
+              "max": 206,
+              "min": 164
+            }
+          ]
+        },
+        {
+          "level": 63,
+          "name": "of Corundum Skin",
+          "text": "+(207-253) to [StunThreshold|Stun Threshold]",
+          "stats": [
+            {
+              "id": "stun_threshold_+",
+              "max": 253,
+              "min": 207
+            }
+          ]
+        },
+        {
+          "level": 72,
+          "name": "of Obsidian Skin",
+          "text": "+(254-304) to [StunThreshold|Stun Threshold]",
+          "stats": [
+            {
+              "id": "stun_threshold_+",
+              "max": 304,
+              "min": 254
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "category": "Body Armours",
+  "label": "Body Armours(str_dex_int)",
+  "slug": "Body_Armours_str_dex_int"
+}

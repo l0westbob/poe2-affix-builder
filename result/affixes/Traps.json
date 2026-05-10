@@ -1,0 +1,1898 @@
+{
+  "affixes": [
+    {
+      "family_key": "IncreasedMana",
+      "kind": "prefix",
+      "template": "+# to maximum Mana",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Beryl",
+          "text": "+(10-14) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 14,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Cobalt",
+          "text": "+(15-24) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 24,
+              "min": 15
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Azure",
+          "text": "+(25-34) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 34,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "name": "Teal",
+          "text": "+(35-54) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 54,
+              "min": 35
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Cerulean",
+          "text": "+(55-64) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 64,
+              "min": 55
+            }
+          ]
+        },
+        {
+          "level": 38,
+          "name": "Aqua",
+          "text": "+(65-79) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 79,
+              "min": 65
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Opalescent",
+          "text": "+(80-89) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 89,
+              "min": 80
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "Gentian",
+          "text": "+(90-104) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 104,
+              "min": 90
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Chalybeous",
+          "text": "+(105-124) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 124,
+              "min": 105
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "name": "Mazarine",
+          "text": "+(125-149) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 149,
+              "min": 125
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Blue",
+          "text": "+(150-164) to maximum Mana",
+          "stats": [
+            {
+              "id": "base_maximum_mana",
+              "max": 164,
+              "min": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "TrapDamageAndMana",
+      "kind": "prefix",
+      "template": "#% increased [Trap] Damage +# to maximum Mana",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Sapper's",
+          "text": "(15-19)% increased [Trap] Damage +(17-20) to maximum Mana",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 19,
+              "min": 15
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 20,
+              "min": 17
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "name": "Saboteur's",
+          "text": "(20-24)% increased [Trap] Damage +(21-24) to maximum Mana",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 24,
+              "min": 20
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 24,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 23,
+          "name": "Tinkerer's",
+          "text": "(25-29)% increased [Trap] Damage +(25-28) to maximum Mana",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 29,
+              "min": 25
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 28,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 35,
+          "name": "Mechanic's",
+          "text": "(30-34)% increased [Trap] Damage +(29-33) to maximum Mana",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 34,
+              "min": 30
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 33,
+              "min": 29
+            }
+          ]
+        },
+        {
+          "level": 48,
+          "name": "Engineer's",
+          "text": "(35-39)% increased [Trap] Damage +(34-37) to maximum Mana",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 39,
+              "min": 35
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 37,
+              "min": 34
+            }
+          ]
+        },
+        {
+          "level": 63,
+          "name": "Inventor's",
+          "text": "(40-44)% increased [Trap] Damage +(38-41) to maximum Mana",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 44,
+              "min": 40
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 41,
+              "min": 38
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "Artificer's",
+          "text": "(45-49)% increased [Trap] Damage +(42-45) to maximum Mana",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 49,
+              "min": 45
+            },
+            {
+              "id": "base_maximum_mana",
+              "max": 45,
+              "min": 42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponCasterDamagePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Trap] Damage",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Explosive",
+          "text": "(25-34)% increased [Trap] Damage",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 34,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Eviscerating",
+          "text": "(35-44)% increased [Trap] Damage",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 44,
+              "min": 35
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Crippling",
+          "text": "(45-54)% increased [Trap] Damage",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 54,
+              "min": 45
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Disabling",
+          "text": "(55-64)% increased [Trap] Damage",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 64,
+              "min": 55
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Decimating",
+          "text": "(65-74)% increased [Trap] Damage",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 74,
+              "min": 65
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Demolishing",
+          "text": "(75-89)% increased [Trap] Damage",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 89,
+              "min": 75
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Obliterating",
+          "text": "(90-104)% increased [Trap] Damage",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 104,
+              "min": 90
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "Shattering",
+          "text": "(105-119)% increased [Trap] Damage",
+          "stats": [
+            {
+              "id": "trap_damage_+%",
+              "max": 119,
+              "min": 105
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Chaos] Damage",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Impure",
+          "text": "(25-34)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 34,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Tainted",
+          "text": "(35-44)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 44,
+              "min": 35
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Clouded",
+          "text": "(45-54)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 54,
+              "min": 45
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Darkened",
+          "text": "(55-64)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 64,
+              "min": 55
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Malignant",
+          "text": "(65-74)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 74,
+              "min": 65
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Vile",
+          "text": "(75-89)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 89,
+              "min": 75
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Twisted",
+          "text": "(90-104)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 104,
+              "min": 90
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "Malevolent",
+          "text": "(105-119)% increased [Chaos] Damage",
+          "stats": [
+            {
+              "id": "chaos_damage_+%",
+              "max": 119,
+              "min": 105
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Cold] Damage",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Bitter",
+          "text": "(25-34)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 34,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Biting",
+          "text": "(35-44)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 44,
+              "min": 35
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Alpine",
+          "text": "(45-54)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 54,
+              "min": 45
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Snowy",
+          "text": "(55-64)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 64,
+              "min": 55
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Hailing",
+          "text": "(65-74)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 74,
+              "min": 65
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Arctic",
+          "text": "(75-89)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 89,
+              "min": 75
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Crystalline",
+          "text": "(90-104)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 104,
+              "min": 90
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "Cryomancer's",
+          "text": "(105-119)% increased [Cold] Damage",
+          "stats": [
+            {
+              "id": "cold_damage_+%",
+              "max": 119,
+              "min": 105
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Fire] Damage",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Searing",
+          "text": "(25-34)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 34,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Sizzling",
+          "text": "(35-44)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 44,
+              "min": 35
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Blistering",
+          "text": "(45-54)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 54,
+              "min": 45
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Cauterising",
+          "text": "(55-64)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 64,
+              "min": 55
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Smoldering",
+          "text": "(65-74)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 74,
+              "min": 65
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Magmatic",
+          "text": "(75-89)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 89,
+              "min": 75
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Volcanic",
+          "text": "(90-104)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 104,
+              "min": 90
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "Pyromancer's",
+          "text": "(105-119)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 119,
+              "min": 105
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Lightning] Damage",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Charged",
+          "text": "(25-34)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 34,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Hissing",
+          "text": "(35-44)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 44,
+              "min": 35
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Bolting",
+          "text": "(45-54)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 54,
+              "min": 45
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Coursing",
+          "text": "(55-64)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 64,
+              "min": 55
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Striking",
+          "text": "(65-74)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 74,
+              "min": 65
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Smiting",
+          "text": "(75-89)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 89,
+              "min": 75
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Ionising",
+          "text": "(90-104)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 104,
+              "min": 90
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "Electromancer's",
+          "text": "(105-119)% increased [Lightning] Damage",
+          "stats": [
+            {
+              "id": "lightning_damage_+%",
+              "max": 119,
+              "min": 105
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "kind": "prefix",
+      "template": "#% increased [Spell] [Physical] Damage",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Punishing",
+          "text": "(25-34)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 34,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "name": "Unforgiving",
+          "text": "(35-44)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 44,
+              "min": 35
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "name": "Vengeful",
+          "text": "(45-54)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 54,
+              "min": 45
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "Sadistic",
+          "text": "(55-64)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 64,
+              "min": 55
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Pitiless",
+          "text": "(65-74)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 74,
+              "min": 65
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "Agonising",
+          "text": "(75-89)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 89,
+              "min": 75
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Oppressor's",
+          "text": "(90-104)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 104,
+              "min": 90
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "Torturer's",
+          "text": "(105-119)% increased [Spell] [Physical] Damage",
+          "stats": [
+            {
+              "id": "spell_physical_damage_+%",
+              "max": 119,
+              "min": 105
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeChanceIncrease",
+      "kind": "suffix",
+      "template": "#% increased [Critical|Critical Hit Chance] with Traps",
+      "tiers": [
+        {
+          "level": 11,
+          "name": "of Menace",
+          "text": "(10-19)% increased [Critical|Critical Hit Chance] with Traps",
+          "stats": [
+            {
+              "id": "trap_critical_strike_chance_+%",
+              "max": 19,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 21,
+          "name": "of Havoc",
+          "text": "(20-39)% increased [Critical|Critical Hit Chance] with Traps",
+          "stats": [
+            {
+              "id": "trap_critical_strike_chance_+%",
+              "max": 39,
+              "min": 20
+            }
+          ]
+        },
+        {
+          "level": 28,
+          "name": "of Disaster",
+          "text": "(40-59)% increased [Critical|Critical Hit Chance] with Traps",
+          "stats": [
+            {
+              "id": "trap_critical_strike_chance_+%",
+              "max": 59,
+              "min": 40
+            }
+          ]
+        },
+        {
+          "level": 41,
+          "name": "of Calamity",
+          "text": "(60-79)% increased [Critical|Critical Hit Chance] with Traps",
+          "stats": [
+            {
+              "id": "trap_critical_strike_chance_+%",
+              "max": 79,
+              "min": 60
+            }
+          ]
+        },
+        {
+          "level": 59,
+          "name": "of Ruin",
+          "text": "(80-99)% increased [Critical|Critical Hit Chance] with Traps",
+          "stats": [
+            {
+              "id": "trap_critical_strike_chance_+%",
+              "max": 99,
+              "min": 80
+            }
+          ]
+        },
+        {
+          "level": 76,
+          "name": "of Unmaking",
+          "text": "(100-109)% increased [Critical|Critical Hit Chance] with Traps",
+          "stats": [
+            {
+              "id": "trap_critical_strike_chance_+%",
+              "max": 109,
+              "min": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeMultiplier",
+      "kind": "suffix",
+      "template": "+#% to [CriticalDamageBonus|Critical Damage Bonus] with Traps",
+      "tiers": [
+        {
+          "level": 8,
+          "name": "of Ire",
+          "text": "+(10-14)% to [CriticalDamageBonus|Critical Damage Bonus] with Traps",
+          "stats": [
+            {
+              "id": "trap_critical_strike_multiplier_+",
+              "max": 14,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 21,
+          "name": "of Anger",
+          "text": "+(15-19)% to [CriticalDamageBonus|Critical Damage Bonus] with Traps",
+          "stats": [
+            {
+              "id": "trap_critical_strike_multiplier_+",
+              "max": 19,
+              "min": 15
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "name": "of Rage",
+          "text": "+(20-24)% to [CriticalDamageBonus|Critical Damage Bonus] with Traps",
+          "stats": [
+            {
+              "id": "trap_critical_strike_multiplier_+",
+              "max": 24,
+              "min": 20
+            }
+          ]
+        },
+        {
+          "level": 44,
+          "name": "of Fury",
+          "text": "+(25-29)% to [CriticalDamageBonus|Critical Damage Bonus] with Traps",
+          "stats": [
+            {
+              "id": "trap_critical_strike_multiplier_+",
+              "max": 29,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 59,
+          "name": "of Ferocity",
+          "text": "+(30-34)% to [CriticalDamageBonus|Critical Damage Bonus] with Traps",
+          "stats": [
+            {
+              "id": "trap_critical_strike_multiplier_+",
+              "max": 34,
+              "min": 30
+            }
+          ]
+        },
+        {
+          "level": 73,
+          "name": "of Destruction",
+          "text": "+(35-39)% to [CriticalDamageBonus|Critical Damage Bonus] with Traps",
+          "stats": [
+            {
+              "id": "trap_critical_strike_multiplier_+",
+              "max": 39,
+              "min": 35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "Dexterity",
+      "kind": "suffix",
+      "template": "+# to [Dexterity|Dexterity]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Mongoose",
+          "text": "+(5-8) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 8,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "name": "of the Lynx",
+          "text": "+(9-12) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 12,
+              "min": 9
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "name": "of the Fox",
+          "text": "+(13-16) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 16,
+              "min": 13
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "of the Falcon",
+          "text": "+(17-20) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 20,
+              "min": 17
+            }
+          ]
+        },
+        {
+          "level": 44,
+          "name": "of the Panther",
+          "text": "+(21-24) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 24,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of the Leopard",
+          "text": "+(25-27) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 27,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 66,
+          "name": "of the Jaguar",
+          "text": "+(28-30) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 30,
+              "min": 28
+            }
+          ]
+        },
+        {
+          "level": 74,
+          "name": "of the Phantom",
+          "text": "+(31-33) to [Dexterity|Dexterity]",
+          "stats": [
+            {
+              "id": "additional_dexterity",
+              "max": 33,
+              "min": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FreezeDamageIncrease",
+      "kind": "suffix",
+      "template": "#% increased [Freeze|Freeze] Buildup",
+      "tiers": [
+        {
+          "level": 15,
+          "name": "of Freezing",
+          "text": "(31-40)% increased [Freeze|Freeze] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_freeze_multiplier_+%",
+              "max": 40,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "name": "of Bleakness",
+          "text": "(41-50)% increased [Freeze|Freeze] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_freeze_multiplier_+%",
+              "max": 50,
+              "min": 41
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of the Glacier",
+          "text": "(51-60)% increased [Freeze|Freeze] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_freeze_multiplier_+%",
+              "max": 60,
+              "min": 51
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of the Hyperboreal",
+          "text": "(61-70)% increased [Freeze|Freeze] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_freeze_multiplier_+%",
+              "max": 70,
+              "min": 61
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "of the Arctic",
+          "text": "(71-80)% increased [Freeze|Freeze] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_freeze_multiplier_+%",
+              "max": 80,
+              "min": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IgniteChanceIncrease",
+      "kind": "suffix",
+      "template": "#% increased [Flammability] [BuffMagnitude|Magnitude]",
+      "tiers": [
+        {
+          "level": 15,
+          "name": "of Ignition",
+          "text": "(51-60)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 60,
+              "min": 51
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "name": "of Scorching",
+          "text": "(61-70)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 70,
+              "min": 61
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of Incineration",
+          "text": "(71-80)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 80,
+              "min": 71
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of Combustion",
+          "text": "(81-90)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 90,
+              "min": 81
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "of Conflagration",
+          "text": "(91-100)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 100,
+              "min": 91
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "kind": "suffix",
+      "template": "+# to Level of all Trap Skill Gems",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "of Explosives",
+          "text": "+1 to Level of all Trap Skill Gems",
+          "stats": [
+            {
+              "id": "trap_skill_gem_level_+",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "name": "of Shrapnel",
+          "text": "+2 to Level of all Trap Skill Gems",
+          "stats": [
+            {
+              "id": "trap_skill_gem_level_+",
+              "max": 2,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 36,
+          "name": "of Sabotage",
+          "text": "+3 to Level of all Trap Skill Gems",
+          "stats": [
+            {
+              "id": "trap_skill_gem_level_+",
+              "max": 3,
+              "min": 3
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Detonation",
+          "text": "+4 to Level of all Trap Skill Gems",
+          "stats": [
+            {
+              "id": "trap_skill_gem_level_+",
+              "max": 4,
+              "min": 4
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of Pyrotechnics",
+          "text": "+5 to Level of all Trap Skill Gems",
+          "stats": [
+            {
+              "id": "trap_skill_gem_level_+",
+              "max": 5,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "Intelligence",
+      "kind": "suffix",
+      "template": "+# to [Intelligence|Intelligence]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Pupil",
+          "text": "+(5-8) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 8,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "name": "of the Student",
+          "text": "+(9-12) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 12,
+              "min": 9
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "name": "of the Prodigy",
+          "text": "+(13-16) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 16,
+              "min": 13
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "of the Augur",
+          "text": "+(17-20) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 20,
+              "min": 17
+            }
+          ]
+        },
+        {
+          "level": 44,
+          "name": "of the Philosopher",
+          "text": "+(21-24) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 24,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of the Sage",
+          "text": "+(25-27) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 27,
+              "min": 25
+            }
+          ]
+        },
+        {
+          "level": 66,
+          "name": "of the Savant",
+          "text": "+(28-30) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 30,
+              "min": 28
+            }
+          ]
+        },
+        {
+          "level": 74,
+          "name": "of the Virtuoso",
+          "text": "+(31-33) to [Intelligence|Intelligence]",
+          "stats": [
+            {
+              "id": "additional_intelligence",
+              "max": 33,
+              "min": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "LifeGainedFromEnemyDeath",
+      "kind": "suffix",
+      "template": "Gain # Life per enemy killed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Success",
+          "text": "Gain (4-6) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 6,
+              "min": 4
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "name": "of Victory",
+          "text": "Gain (7-9) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 9,
+              "min": 7
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "name": "of Triumph",
+          "text": "Gain (10-18) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 18,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "of Conquest",
+          "text": "Gain (19-28) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 28,
+              "min": 19
+            }
+          ]
+        },
+        {
+          "level": 44,
+          "name": "of Vanquishing",
+          "text": "Gain (29-40) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 40,
+              "min": 29
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Valour",
+          "text": "Gain (41-53) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 53,
+              "min": 41
+            }
+          ]
+        },
+        {
+          "level": 66,
+          "name": "of Glory",
+          "text": "Gain (54-68) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 68,
+              "min": 54
+            }
+          ]
+        },
+        {
+          "level": 77,
+          "name": "of Legend",
+          "text": "Gain (69-84) Life per enemy killed",
+          "stats": [
+            {
+              "id": "base_life_gained_on_enemy_death",
+              "max": 84,
+              "min": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ManaGainedFromEnemyDeath",
+      "kind": "suffix",
+      "template": "Gain # Mana per enemy killed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Absorption",
+          "text": "Gain (2-3) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 3,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "name": "of Osmosis",
+          "text": "Gain (4-5) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 5,
+              "min": 4
+            }
+          ]
+        },
+        {
+          "level": 23,
+          "name": "of Infusion",
+          "text": "Gain (6-9) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 9,
+              "min": 6
+            }
+          ]
+        },
+        {
+          "level": 34,
+          "name": "of Enveloping",
+          "text": "Gain (10-14) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 14,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of Consumption",
+          "text": "Gain (15-20) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 20,
+              "min": 15
+            }
+          ]
+        },
+        {
+          "level": 56,
+          "name": "of Siphoning",
+          "text": "Gain (21-27) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 27,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 67,
+          "name": "of Devouring",
+          "text": "Gain (28-35) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 35,
+              "min": 28
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "of Assimilation",
+          "text": "Gain (36-45) Mana per enemy killed",
+          "stats": [
+            {
+              "id": "base_mana_gained_on_enemy_death",
+              "max": 45,
+              "min": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ManaRegeneration",
+      "kind": "suffix",
+      "template": "#% increased Mana Regeneration Rate",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Excitement",
+          "text": "(10-19)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 19,
+              "min": 10
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "name": "of Joy",
+          "text": "(20-29)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 29,
+              "min": 20
+            }
+          ]
+        },
+        {
+          "level": 29,
+          "name": "of Elation",
+          "text": "(30-39)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 39,
+              "min": 30
+            }
+          ]
+        },
+        {
+          "level": 42,
+          "name": "of Bliss",
+          "text": "(40-49)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 49,
+              "min": 40
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Euphoria",
+          "text": "(50-59)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 59,
+              "min": 50
+            }
+          ]
+        },
+        {
+          "level": 79,
+          "name": "of Nirvana",
+          "text": "(60-69)% increased Mana Regeneration Rate",
+          "stats": [
+            {
+              "id": "mana_regeneration_rate_+%",
+              "max": 69,
+              "min": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ShockChanceIncrease",
+      "kind": "suffix",
+      "template": "#% increased chance to [Shock]",
+      "tiers": [
+        {
+          "level": 15,
+          "name": "of Shocking",
+          "text": "(51-60)% increased chance to [Shock]",
+          "stats": [
+            {
+              "id": "shock_chance_+%",
+              "max": 60,
+              "min": 51
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "name": "of Zapping",
+          "text": "(61-70)% increased chance to [Shock]",
+          "stats": [
+            {
+              "id": "shock_chance_+%",
+              "max": 70,
+              "min": 61
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of Electrocution",
+          "text": "(71-80)% increased chance to [Shock]",
+          "stats": [
+            {
+              "id": "shock_chance_+%",
+              "max": 80,
+              "min": 71
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "of Voltages",
+          "text": "(81-90)% increased chance to [Shock]",
+          "stats": [
+            {
+              "id": "shock_chance_+%",
+              "max": 90,
+              "min": 81
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "of the Thunderbolt",
+          "text": "(91-100)% increased chance to [Shock]",
+          "stats": [
+            {
+              "id": "shock_chance_+%",
+              "max": 100,
+              "min": 91
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "TrapAndMineThrowSpeed",
+      "kind": "suffix",
+      "template": "TBD",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "TBD",
+          "text": "",
+          "stats": [
+            {
+              "id": "trap_throwing_speed_+%",
+              "max": 0,
+              "min": 0
+            }
+          ]
+        },
+        {
+          "level": 15,
+          "name": "TBD",
+          "text": "",
+          "stats": [
+            {
+              "id": "trap_throwing_speed_+%",
+              "max": 0,
+              "min": 0
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "name": "TBD",
+          "text": "",
+          "stats": [
+            {
+              "id": "trap_throwing_speed_+%",
+              "max": 0,
+              "min": 0
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "TBD",
+          "text": "",
+          "stats": [
+            {
+              "id": "trap_throwing_speed_+%",
+              "max": 0,
+              "min": 0
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "name": "TBD",
+          "text": "",
+          "stats": [
+            {
+              "id": "trap_throwing_speed_+%",
+              "max": 0,
+              "min": 0
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "TBD",
+          "text": "",
+          "stats": [
+            {
+              "id": "trap_throwing_speed_+%",
+              "max": 0,
+              "min": 0
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "name": "TBD",
+          "text": "",
+          "stats": [
+            {
+              "id": "trap_throwing_speed_+%",
+              "max": 0,
+              "min": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "category": "Two Handed Weapons",
+  "label": "Traps",
+  "slug": "Traps"
+}
