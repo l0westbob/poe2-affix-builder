@@ -248,3 +248,61 @@ def group_affixes(normal_rows: Iterable[Dict[str, Any]]) -> list[dict[str, Any]]
         tiers = sorted(grouped[key], key=lambda t: (int(t.get("level") or 0), str(t.get("name") or ""), str(t.get("text") or "")))
         affixes.append({"kind": kind, "family_key": group, "template": template, "tiers": tiers})
     return affixes
+
+
+def extract_modifier_sections(modsview: Dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
+    sections: dict[str, list[dict[str, Any]]] = {}
+    for key, value in modsview.items():
+        if not isinstance(value, list) or not value:
+            continue
+        rows = [row for row in value if isinstance(row, dict) and "ModGenerationTypeID" in row]
+        if not rows:
+            continue
+        sections[key] = group_affixes(rows)
+    return sections
+
+
+_REQUIRES_LEVEL_RE = re.compile(r"Requires:\s*Level\s+(\d+)")
+
+
+def extract_item_bases_from_page(html: str) -> list[dict[str, Any]]:
+    tree = SelectolaxHTMLParser(html)
+    root = tree.root
+
+    item_tab = None
+    for pane in root.css("div.tab-content > div.tab-pane"):
+        pane_id = (pane.attributes.get("id") or "").strip()
+        if pane_id.endswith("Item"):
+            item_tab = pane
+            break
+
+    if item_tab is None:
+        return []
+
+    bases: list[dict[str, Any]] = []
+    seen_names: set[str] = set()
+    for anchor in item_tab.css("div.flex-grow-1 a.whiteitem[href]"):
+        name = (anchor.text() or "").strip()
+        if not name or name in seen_names:
+            continue
+        seen_names.add(name)
+
+        href = (anchor.attributes.get("href") or "").strip()
+        required_level = None
+        parent = anchor.parent
+        if parent is not None:
+            requirements = parent.css_first("div.requirements")
+            if requirements is not None:
+                match = _REQUIRES_LEVEL_RE.search(requirements.text(separator=" ", strip=True))
+                if match:
+                    required_level = _to_int(match.group(1))
+
+        bases.append(
+            {
+                "name": name,
+                "href": to_abs_no_fragment(href) if href else "",
+                "required_level": required_level,
+            }
+        )
+
+    return bases

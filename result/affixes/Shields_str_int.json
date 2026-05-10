@@ -1,1881 +1,3821 @@
 {
-  "affixes": [
-    {
-      "family_key": "BaseLocalDefences",
-      "kind": "prefix",
-      "template": "+# to [Armour|Armour] +# to maximum [EnergyShield|Energy Shield]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Blessed",
-          "text": "+(8-14) to [Armour|Armour] +(5-8) to maximum [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_base_physical_damage_reduction_rating",
-              "max": 14,
-              "min": 8
-            },
-            {
-              "id": "local_energy_shield",
-              "max": 8,
-              "min": 5
-            }
-          ]
-        },
-        {
-          "level": 16,
-          "name": "Anointed",
-          "text": "+(15-35) to [Armour|Armour] +(9-15) to maximum [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_base_physical_damage_reduction_rating",
-              "max": 35,
-              "min": 15
-            },
-            {
-              "id": "local_energy_shield",
-              "max": 15,
-              "min": 9
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "Sanctified",
-          "text": "+(36-53) to [Armour|Armour] +(16-21) to maximum [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_base_physical_damage_reduction_rating",
-              "max": 53,
-              "min": 36
-            },
-            {
-              "id": "local_energy_shield",
-              "max": 21,
-              "min": 16
-            }
-          ]
-        },
-        {
-          "level": 46,
-          "name": "Hallowed",
-          "text": "+(54-65) to [Armour|Armour] +(22-25) to maximum [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_base_physical_damage_reduction_rating",
-              "max": 65,
-              "min": 54
-            },
-            {
-              "id": "local_energy_shield",
-              "max": 25,
-              "min": 22
-            }
-          ]
-        },
-        {
-          "level": 54,
-          "name": "Beatified",
-          "text": "+(66-78) to [Armour|Armour] +(26-29) to maximum [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_base_physical_damage_reduction_rating",
-              "max": 78,
-              "min": 66
-            },
-            {
-              "id": "local_energy_shield",
-              "max": 29,
-              "min": 26
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "Consecrated",
-          "text": "+(79-98) to [Armour|Armour] +(30-36) to maximum [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_base_physical_damage_reduction_rating",
-              "max": 98,
-              "min": 79
-            },
-            {
-              "id": "local_energy_shield",
-              "max": 36,
-              "min": 30
-            }
-          ]
-        },
-        {
-          "level": 65,
-          "name": "Saintly",
-          "text": "+(99-117) to [Armour|Armour] +(37-42) to maximum [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_base_physical_damage_reduction_rating",
-              "max": 117,
-              "min": 99
-            },
-            {
-              "id": "local_energy_shield",
-              "max": 42,
-              "min": 37
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "DefencesPercent",
-      "kind": "prefix",
-      "template": "#% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
-      "tiers": [
-        {
-          "level": 2,
-          "name": "Infixed",
-          "text": "(15-26)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 26,
-              "min": 15
-            }
-          ]
-        },
-        {
-          "level": 16,
-          "name": "Ingrained",
-          "text": "(27-42)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 42,
-              "min": 27
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "Instilled",
-          "text": "(43-55)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 55,
-              "min": 43
-            }
-          ]
-        },
-        {
-          "level": 46,
-          "name": "Infused",
-          "text": "(56-67)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 67,
-              "min": 56
-            }
-          ]
-        },
-        {
-          "level": 54,
-          "name": "Inculcated",
-          "text": "(68-79)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 79,
-              "min": 68
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "Interpolated",
-          "text": "(80-91)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 91,
-              "min": 80
-            }
-          ]
-        },
-        {
-          "level": 65,
-          "name": "Inspired",
-          "text": "(92-100)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 100,
-              "min": 92
-            }
-          ]
-        },
-        {
-          "level": 75,
-          "name": "Interpermeated",
-          "text": "(101-110)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 110,
-              "min": 101
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "DefencesPercentAndStunThreshold",
-      "kind": "prefix",
-      "template": "#% increased [Armour|Armour] and [EnergyShield|Energy Shield] +# to [StunThreshold|Stun Threshold]",
-      "tiers": [
-        {
-          "level": 10,
-          "name": "Defender's",
-          "text": "(6-13)% increased [Armour|Armour] and [EnergyShield|Energy Shield] +(8-13) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 13,
-              "min": 6
-            },
-            {
-              "id": "stun_threshold_+",
-              "max": 13,
-              "min": 8
-            }
-          ]
-        },
-        {
-          "level": 19,
-          "name": "Protector's",
-          "text": "(14-20)% increased [Armour|Armour] and [EnergyShield|Energy Shield] +(14-24) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 20,
-              "min": 14
-            },
-            {
-              "id": "stun_threshold_+",
-              "max": 24,
-              "min": 14
-            }
-          ]
-        },
-        {
-          "level": 38,
-          "name": "Keeper's",
-          "text": "(21-26)% increased [Armour|Armour] and [EnergyShield|Energy Shield] +(25-40) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 26,
-              "min": 21
-            },
-            {
-              "id": "stun_threshold_+",
-              "max": 40,
-              "min": 25
-            }
-          ]
-        },
-        {
-          "level": 48,
-          "name": "Guardian's",
-          "text": "(27-32)% increased [Armour|Armour] and [EnergyShield|Energy Shield] +(41-63) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 32,
-              "min": 27
-            },
-            {
-              "id": "stun_threshold_+",
-              "max": 63,
-              "min": 41
-            }
-          ]
-        },
-        {
-          "level": 63,
-          "name": "Warden's",
-          "text": "(33-38)% increased [Armour|Armour] and [EnergyShield|Energy Shield] +(64-94) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 38,
-              "min": 33
-            },
-            {
-              "id": "stun_threshold_+",
-              "max": 94,
-              "min": 64
-            }
-          ]
-        },
-        {
-          "level": 74,
-          "name": "Sentinel's",
-          "text": "(39-42)% increased [Armour|Armour] and [EnergyShield|Energy Shield] +(95-136) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "local_armour_and_energy_shield_+%",
-              "max": 42,
-              "min": 39
-            },
-            {
-              "id": "stun_threshold_+",
-              "max": 136,
-              "min": 95
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IncreasedLife",
-      "kind": "prefix",
-      "template": "+# to maximum Life",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Hale",
-          "text": "+(10-19) to maximum Life",
-          "stats": [
-            {
-              "id": "base_maximum_life",
-              "max": 19,
-              "min": 10
-            }
-          ]
-        },
-        {
-          "level": 6,
-          "name": "Healthy",
-          "text": "+(20-29) to maximum Life",
-          "stats": [
-            {
-              "id": "base_maximum_life",
-              "max": 29,
-              "min": 20
-            }
-          ]
-        },
-        {
-          "level": 16,
-          "name": "Sanguine",
-          "text": "+(30-39) to maximum Life",
-          "stats": [
-            {
-              "id": "base_maximum_life",
-              "max": 39,
-              "min": 30
-            }
-          ]
-        },
-        {
-          "level": 24,
-          "name": "Stalwart",
-          "text": "+(40-59) to maximum Life",
-          "stats": [
-            {
-              "id": "base_maximum_life",
-              "max": 59,
-              "min": 40
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "Stout",
-          "text": "+(60-69) to maximum Life",
-          "stats": [
-            {
-              "id": "base_maximum_life",
-              "max": 69,
-              "min": 60
-            }
-          ]
-        },
-        {
-          "level": 38,
-          "name": "Robust",
-          "text": "+(70-84) to maximum Life",
-          "stats": [
-            {
-              "id": "base_maximum_life",
-              "max": 84,
-              "min": 70
-            }
-          ]
-        },
-        {
-          "level": 46,
-          "name": "Rotund",
-          "text": "+(85-99) to maximum Life",
-          "stats": [
-            {
-              "id": "base_maximum_life",
-              "max": 99,
-              "min": 85
-            }
-          ]
-        },
-        {
-          "level": 54,
-          "name": "Virile",
-          "text": "+(100-119) to maximum Life",
-          "stats": [
-            {
-              "id": "base_maximum_life",
-              "max": 119,
-              "min": 100
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "Athlete's",
-          "text": "+(120-149) to maximum Life",
-          "stats": [
-            {
-              "id": "base_maximum_life",
-              "max": 149,
-              "min": 120
-            }
-          ]
-        },
-        {
-          "level": 65,
-          "name": "Fecund",
-          "text": "+(150-174) to maximum Life",
-          "stats": [
-            {
-              "id": "base_maximum_life",
-              "max": 174,
-              "min": 150
-            }
-          ]
-        },
-        {
-          "level": 70,
-          "name": "Vigorous",
-          "text": "+(175-189) to maximum Life",
-          "stats": [
-            {
-              "id": "base_maximum_life",
-              "max": 189,
-              "min": 175
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IncreasedShieldBlockPercentage",
-      "kind": "prefix",
-      "template": "#% increased [Block] chance",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Steadfast",
-          "text": "(15-19)% increased [Block] chance",
-          "stats": [
-            {
-              "id": "local_block_chance_+%",
-              "max": 19,
-              "min": 15
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "Unrelenting",
-          "text": "(20-24)% increased [Block] chance",
-          "stats": [
-            {
-              "id": "local_block_chance_+%",
-              "max": 24,
-              "min": 20
-            }
-          ]
-        },
-        {
-          "level": 65,
-          "name": "Adamant",
-          "text": "(25-30)% increased [Block] chance",
-          "stats": [
-            {
-              "id": "local_block_chance_+%",
-              "max": 30,
-              "min": 25
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "Thorns",
-      "kind": "prefix",
-      "template": "# to # [Physical|Physical] [Thorns|Thorns] damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Thorny",
-          "text": "(1-2) to (3-4) [Physical|Physical] [Thorns|Thorns] damage",
-          "stats": [
-            {
-              "id": "thorns_minimum_base_physical_damage",
-              "max": 2,
-              "min": 1
-            },
-            {
-              "id": "thorns_maximum_base_physical_damage",
-              "max": 4,
-              "min": 3
-            }
-          ]
-        },
-        {
-          "level": 10,
-          "name": "Spiny",
-          "text": "(5-7) to (7-10) [Physical|Physical] [Thorns|Thorns] damage",
-          "stats": [
-            {
-              "id": "thorns_minimum_base_physical_damage",
-              "max": 7,
-              "min": 5
-            },
-            {
-              "id": "thorns_maximum_base_physical_damage",
-              "max": 10,
-              "min": 7
-            }
-          ]
-        },
-        {
-          "level": 19,
-          "name": "Barbed",
-          "text": "(11-16) to (15-23) [Physical|Physical] [Thorns|Thorns] damage",
-          "stats": [
-            {
-              "id": "thorns_minimum_base_physical_damage",
-              "max": 16,
-              "min": 11
-            },
-            {
-              "id": "thorns_maximum_base_physical_damage",
-              "max": 23,
-              "min": 15
-            }
-          ]
-        },
-        {
-          "level": 38,
-          "name": "Pointed",
-          "text": "(24-35) to (35-53) [Physical|Physical] [Thorns|Thorns] damage",
-          "stats": [
-            {
-              "id": "thorns_minimum_base_physical_damage",
-              "max": 35,
-              "min": 24
-            },
-            {
-              "id": "thorns_maximum_base_physical_damage",
-              "max": 53,
-              "min": 35
-            }
-          ]
-        },
-        {
-          "level": 48,
-          "name": "Spiked",
-          "text": "(40-60) to (61-92) [Physical|Physical] [Thorns|Thorns] damage",
-          "stats": [
-            {
-              "id": "thorns_minimum_base_physical_damage",
-              "max": 60,
-              "min": 40
-            },
-            {
-              "id": "thorns_maximum_base_physical_damage",
-              "max": 92,
-              "min": 61
-            }
-          ]
-        },
-        {
-          "level": 63,
-          "name": "Edged",
-          "text": "(64-97) to (97-145) [Physical|Physical] [Thorns|Thorns] damage",
-          "stats": [
-            {
-              "id": "thorns_minimum_base_physical_damage",
-              "max": 97,
-              "min": 64
-            },
-            {
-              "id": "thorns_maximum_base_physical_damage",
-              "max": 145,
-              "min": 97
-            }
-          ]
-        },
-        {
-          "level": 74,
-          "name": "Jagged",
-          "text": "(101-151) to (146-220) [Physical|Physical] [Thorns|Thorns] damage",
-          "stats": [
-            {
-              "id": "thorns_minimum_base_physical_damage",
-              "max": 151,
-              "min": 101
-            },
-            {
-              "id": "thorns_maximum_base_physical_damage",
-              "max": 220,
-              "min": 146
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AllResistances",
-      "kind": "suffix",
-      "template": "+#% to all [ElementalDamage|Elemental] [Resistances]",
-      "tiers": [
-        {
-          "level": 12,
-          "name": "of the Crystal",
-          "text": "+(3-5)% to all [ElementalDamage|Elemental] [Resistances]",
-          "stats": [
-            {
-              "id": "base_resist_all_elements_%",
-              "max": 5,
-              "min": 3
-            }
-          ]
-        },
-        {
-          "level": 26,
-          "name": "of the Prism",
-          "text": "+(6-8)% to all [ElementalDamage|Elemental] [Resistances]",
-          "stats": [
-            {
-              "id": "base_resist_all_elements_%",
-              "max": 8,
-              "min": 6
-            }
-          ]
-        },
-        {
-          "level": 40,
-          "name": "of the Kaleidoscope",
-          "text": "+(9-11)% to all [ElementalDamage|Elemental] [Resistances]",
-          "stats": [
-            {
-              "id": "base_resist_all_elements_%",
-              "max": 11,
-              "min": 9
-            }
-          ]
-        },
-        {
-          "level": 54,
-          "name": "of Variegation",
-          "text": "+(12-14)% to all [ElementalDamage|Elemental] [Resistances]",
-          "stats": [
-            {
-              "id": "base_resist_all_elements_%",
-              "max": 14,
-              "min": 12
-            }
-          ]
-        },
-        {
-          "level": 68,
-          "name": "of the Rainbow",
-          "text": "+(15-16)% to all [ElementalDamage|Elemental] [Resistances]",
-          "stats": [
-            {
-              "id": "base_resist_all_elements_%",
-              "max": 16,
-              "min": 15
-            }
-          ]
-        },
-        {
-          "level": 80,
-          "name": "of the Span",
-          "text": "+(17-18)% to all [ElementalDamage|Elemental] [Resistances]",
-          "stats": [
-            {
-              "id": "base_resist_all_elements_%",
-              "max": 18,
-              "min": 17
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ArmourAppliesToElementalDamage",
-      "kind": "suffix",
-      "template": "+#% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Covering",
-          "text": "+(14-19)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
-          "stats": [
-            {
-              "id": "armour_%_applies_to_fire_cold_lightning_damage",
-              "max": 19,
-              "min": 14
-            }
-          ]
-        },
-        {
-          "level": 16,
-          "name": "of Sheathing",
-          "text": "+(20-25)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
-          "stats": [
-            {
-              "id": "armour_%_applies_to_fire_cold_lightning_damage",
-              "max": 25,
-              "min": 20
-            }
-          ]
-        },
-        {
-          "level": 36,
-          "name": "of Lining",
-          "text": "+(26-31)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
-          "stats": [
-            {
-              "id": "armour_%_applies_to_fire_cold_lightning_damage",
-              "max": 31,
-              "min": 26
-            }
-          ]
-        },
-        {
-          "level": 48,
-          "name": "of Padding",
-          "text": "+(32-37)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
-          "stats": [
-            {
-              "id": "armour_%_applies_to_fire_cold_lightning_damage",
-              "max": 37,
-              "min": 32
-            }
-          ]
-        },
-        {
-          "level": 66,
-          "name": "of Furring",
-          "text": "+(38-43)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
-          "stats": [
-            {
-              "id": "armour_%_applies_to_fire_cold_lightning_damage",
-              "max": 43,
-              "min": 38
-            }
-          ]
-        },
-        {
-          "level": 81,
-          "name": "of Thermokryptance",
-          "text": "+(44-50)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
-          "stats": [
-            {
-              "id": "armour_%_applies_to_fire_cold_lightning_damage",
-              "max": 50,
-              "min": 44
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ChaosResistance",
-      "kind": "suffix",
-      "template": "+#% to [Resistances|Chaos Resistance]",
-      "tiers": [
-        {
-          "level": 16,
-          "name": "of the Lost",
-          "text": "+(4-7)% to [Resistances|Chaos Resistance]",
-          "stats": [
-            {
-              "id": "base_chaos_damage_resistance_%",
-              "max": 7,
-              "min": 4
-            }
-          ]
-        },
-        {
-          "level": 30,
-          "name": "of Banishment",
-          "text": "+(8-11)% to [Resistances|Chaos Resistance]",
-          "stats": [
-            {
-              "id": "base_chaos_damage_resistance_%",
-              "max": 11,
-              "min": 8
-            }
-          ]
-        },
-        {
-          "level": 44,
-          "name": "of Eviction",
-          "text": "+(12-15)% to [Resistances|Chaos Resistance]",
-          "stats": [
-            {
-              "id": "base_chaos_damage_resistance_%",
-              "max": 15,
-              "min": 12
-            }
-          ]
-        },
-        {
-          "level": 56,
-          "name": "of Expulsion",
-          "text": "+(16-19)% to [Resistances|Chaos Resistance]",
-          "stats": [
-            {
-              "id": "base_chaos_damage_resistance_%",
-              "max": 19,
-              "min": 16
-            }
-          ]
-        },
-        {
-          "level": 68,
-          "name": "of Exile",
-          "text": "+(20-23)% to [Resistances|Chaos Resistance]",
-          "stats": [
-            {
-              "id": "base_chaos_damage_resistance_%",
-              "max": 23,
-              "min": 20
-            }
-          ]
-        },
-        {
-          "level": 81,
-          "name": "of Bameth",
-          "text": "+(24-27)% to [Resistances|Chaos Resistance]",
-          "stats": [
-            {
-              "id": "base_chaos_damage_resistance_%",
-              "max": 27,
-              "min": 24
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ColdResistance",
-      "kind": "suffix",
-      "template": "+#% to [Resistances|Cold Resistance]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Seal",
-          "text": "+(6-10)% to [Resistances|Cold Resistance]",
-          "stats": [
-            {
-              "id": "base_cold_damage_resistance_%",
-              "max": 10,
-              "min": 6
-            }
-          ]
-        },
-        {
-          "level": 14,
-          "name": "of the Penguin",
-          "text": "+(11-15)% to [Resistances|Cold Resistance]",
-          "stats": [
-            {
-              "id": "base_cold_damage_resistance_%",
-              "max": 15,
-              "min": 11
-            }
-          ]
-        },
-        {
-          "level": 26,
-          "name": "of the Narwhal",
-          "text": "+(16-20)% to [Resistances|Cold Resistance]",
-          "stats": [
-            {
-              "id": "base_cold_damage_resistance_%",
-              "max": 20,
-              "min": 16
-            }
-          ]
-        },
-        {
-          "level": 38,
-          "name": "of the Yeti",
-          "text": "+(21-25)% to [Resistances|Cold Resistance]",
-          "stats": [
-            {
-              "id": "base_cold_damage_resistance_%",
-              "max": 25,
-              "min": 21
-            }
-          ]
-        },
-        {
-          "level": 50,
-          "name": "of the Walrus",
-          "text": "+(26-30)% to [Resistances|Cold Resistance]",
-          "stats": [
-            {
-              "id": "base_cold_damage_resistance_%",
-              "max": 30,
-              "min": 26
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "of the Polar Bear",
-          "text": "+(31-35)% to [Resistances|Cold Resistance]",
-          "stats": [
-            {
-              "id": "base_cold_damage_resistance_%",
-              "max": 35,
-              "min": 31
-            }
-          ]
-        },
-        {
-          "level": 71,
-          "name": "of the Ice",
-          "text": "+(36-40)% to [Resistances|Cold Resistance]",
-          "stats": [
-            {
-              "id": "base_cold_damage_resistance_%",
-              "max": 40,
-              "min": 36
-            }
-          ]
-        },
-        {
-          "level": 82,
-          "name": "of Haast",
-          "text": "+(41-45)% to [Resistances|Cold Resistance]",
-          "stats": [
-            {
-              "id": "base_cold_damage_resistance_%",
-              "max": 45,
-              "min": 41
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "EnergyShieldRegeneration",
-      "kind": "suffix",
-      "template": "#% increased [ESRechargeRate|Energy Shield Recharge Rate]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Enlivening",
-          "text": "(26-30)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
-          "stats": [
-            {
-              "id": "energy_shield_recharge_rate_+%",
-              "max": 30,
-              "min": 26
-            }
-          ]
-        },
-        {
-          "level": 16,
-          "name": "of Diffusion",
-          "text": "(31-35)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
-          "stats": [
-            {
-              "id": "energy_shield_recharge_rate_+%",
-              "max": 35,
-              "min": 31
-            }
-          ]
-        },
-        {
-          "level": 36,
-          "name": "of Dispersal",
-          "text": "(36-40)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
-          "stats": [
-            {
-              "id": "energy_shield_recharge_rate_+%",
-              "max": 40,
-              "min": 36
-            }
-          ]
-        },
-        {
-          "level": 48,
-          "name": "of Buffering",
-          "text": "(41-45)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
-          "stats": [
-            {
-              "id": "energy_shield_recharge_rate_+%",
-              "max": 45,
-              "min": 41
-            }
-          ]
-        },
-        {
-          "level": 66,
-          "name": "of Ardour",
-          "text": "(46-50)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
-          "stats": [
-            {
-              "id": "energy_shield_recharge_rate_+%",
-              "max": 50,
-              "min": 46
-            }
-          ]
-        },
-        {
-          "level": 81,
-          "name": "of Suffusion",
-          "text": "(51-55)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
-          "stats": [
-            {
-              "id": "energy_shield_recharge_rate_+%",
-              "max": 55,
-              "min": 51
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "FireResistance",
-      "kind": "suffix",
-      "template": "+#% to [Resistances|Fire Resistance]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Whelpling",
-          "text": "+(6-10)% to [Resistances|Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_fire_damage_resistance_%",
-              "max": 10,
-              "min": 6
-            }
-          ]
-        },
-        {
-          "level": 12,
-          "name": "of the Salamander",
-          "text": "+(11-15)% to [Resistances|Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_fire_damage_resistance_%",
-              "max": 15,
-              "min": 11
-            }
-          ]
-        },
-        {
-          "level": 24,
-          "name": "of the Drake",
-          "text": "+(16-20)% to [Resistances|Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_fire_damage_resistance_%",
-              "max": 20,
-              "min": 16
-            }
-          ]
-        },
-        {
-          "level": 36,
-          "name": "of the Kiln",
-          "text": "+(21-25)% to [Resistances|Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_fire_damage_resistance_%",
-              "max": 25,
-              "min": 21
-            }
-          ]
-        },
-        {
-          "level": 48,
-          "name": "of the Furnace",
-          "text": "+(26-30)% to [Resistances|Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_fire_damage_resistance_%",
-              "max": 30,
-              "min": 26
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "of the Volcano",
-          "text": "+(31-35)% to [Resistances|Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_fire_damage_resistance_%",
-              "max": 35,
-              "min": 31
-            }
-          ]
-        },
-        {
-          "level": 71,
-          "name": "of Magma",
-          "text": "+(36-40)% to [Resistances|Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_fire_damage_resistance_%",
-              "max": 40,
-              "min": 36
-            }
-          ]
-        },
-        {
-          "level": 82,
-          "name": "of Tzteosh",
-          "text": "+(41-45)% to [Resistances|Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_fire_damage_resistance_%",
-              "max": 45,
-              "min": 41
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "Intelligence",
-      "kind": "suffix",
-      "template": "+# to [Intelligence|Intelligence]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Pupil",
-          "text": "+(5-8) to [Intelligence|Intelligence]",
-          "stats": [
-            {
-              "id": "additional_intelligence",
-              "max": 8,
-              "min": 5
-            }
-          ]
-        },
-        {
-          "level": 11,
-          "name": "of the Student",
-          "text": "+(9-12) to [Intelligence|Intelligence]",
-          "stats": [
-            {
-              "id": "additional_intelligence",
-              "max": 12,
-              "min": 9
-            }
-          ]
-        },
-        {
-          "level": 22,
-          "name": "of the Prodigy",
-          "text": "+(13-16) to [Intelligence|Intelligence]",
-          "stats": [
-            {
-              "id": "additional_intelligence",
-              "max": 16,
-              "min": 13
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "of the Augur",
-          "text": "+(17-20) to [Intelligence|Intelligence]",
-          "stats": [
-            {
-              "id": "additional_intelligence",
-              "max": 20,
-              "min": 17
-            }
-          ]
-        },
-        {
-          "level": 44,
-          "name": "of the Philosopher",
-          "text": "+(21-24) to [Intelligence|Intelligence]",
-          "stats": [
-            {
-              "id": "additional_intelligence",
-              "max": 24,
-              "min": 21
-            }
-          ]
-        },
-        {
-          "level": 55,
-          "name": "of the Sage",
-          "text": "+(25-27) to [Intelligence|Intelligence]",
-          "stats": [
-            {
-              "id": "additional_intelligence",
-              "max": 27,
-              "min": 25
-            }
-          ]
-        },
-        {
-          "level": 66,
-          "name": "of the Savant",
-          "text": "+(28-30) to [Intelligence|Intelligence]",
-          "stats": [
-            {
-              "id": "additional_intelligence",
-              "max": 30,
-              "min": 28
-            }
-          ]
-        },
-        {
-          "level": 74,
-          "name": "of the Virtuoso",
-          "text": "+(31-33) to [Intelligence|Intelligence]",
-          "stats": [
-            {
-              "id": "additional_intelligence",
-              "max": 33,
-              "min": 31
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "LightningResistance",
-      "kind": "suffix",
-      "template": "+#% to [Resistances|Lightning Resistance]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Cloud",
-          "text": "+(6-10)% to [Resistances|Lightning Resistance]",
-          "stats": [
-            {
-              "id": "base_lightning_damage_resistance_%",
-              "max": 10,
-              "min": 6
-            }
-          ]
-        },
-        {
-          "level": 13,
-          "name": "of the Squall",
-          "text": "+(11-15)% to [Resistances|Lightning Resistance]",
-          "stats": [
-            {
-              "id": "base_lightning_damage_resistance_%",
-              "max": 15,
-              "min": 11
-            }
-          ]
-        },
-        {
-          "level": 25,
-          "name": "of the Storm",
-          "text": "+(16-20)% to [Resistances|Lightning Resistance]",
-          "stats": [
-            {
-              "id": "base_lightning_damage_resistance_%",
-              "max": 20,
-              "min": 16
-            }
-          ]
-        },
-        {
-          "level": 37,
-          "name": "of the Thunderhead",
-          "text": "+(21-25)% to [Resistances|Lightning Resistance]",
-          "stats": [
-            {
-              "id": "base_lightning_damage_resistance_%",
-              "max": 25,
-              "min": 21
-            }
-          ]
-        },
-        {
-          "level": 49,
-          "name": "of the Tempest",
-          "text": "+(26-30)% to [Resistances|Lightning Resistance]",
-          "stats": [
-            {
-              "id": "base_lightning_damage_resistance_%",
-              "max": 30,
-              "min": 26
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "of the Maelstrom",
-          "text": "+(31-35)% to [Resistances|Lightning Resistance]",
-          "stats": [
-            {
-              "id": "base_lightning_damage_resistance_%",
-              "max": 35,
-              "min": 31
-            }
-          ]
-        },
-        {
-          "level": 71,
-          "name": "of the Lightning",
-          "text": "+(36-40)% to [Resistances|Lightning Resistance]",
-          "stats": [
-            {
-              "id": "base_lightning_damage_resistance_%",
-              "max": 40,
-              "min": 36
-            }
-          ]
-        },
-        {
-          "level": 82,
-          "name": "of Ephij",
-          "text": "+(41-45)% to [Resistances|Lightning Resistance]",
-          "stats": [
-            {
-              "id": "base_lightning_damage_resistance_%",
-              "max": 45,
-              "min": 41
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "LocalAttributeRequirements",
-      "kind": "suffix",
-      "template": "#% reduced [Attributes|Attribute] Requirements",
-      "tiers": [
-        {
-          "level": 24,
-          "name": "of the Worthy",
-          "text": "15% reduced [Attributes|Attribute] Requirements",
-          "stats": [
-            {
-              "id": "local_attribute_requirements_+%",
-              "max": -15,
-              "min": -15
-            }
-          ]
-        },
-        {
-          "level": 32,
-          "name": "of the Apt",
-          "text": "20% reduced [Attributes|Attribute] Requirements",
-          "stats": [
-            {
-              "id": "local_attribute_requirements_+%",
-              "max": -20,
-              "min": -20
-            }
-          ]
-        },
-        {
-          "level": 40,
-          "name": "of the Talented",
-          "text": "25% reduced [Attributes|Attribute] Requirements",
-          "stats": [
-            {
-              "id": "local_attribute_requirements_+%",
-              "max": -25,
-              "min": -25
-            }
-          ]
-        },
-        {
-          "level": 52,
-          "name": "of the Skilled",
-          "text": "30% reduced [Attributes|Attribute] Requirements",
-          "stats": [
-            {
-              "id": "local_attribute_requirements_+%",
-              "max": -30,
-              "min": -30
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "of the Proficient",
-          "text": "35% reduced [Attributes|Attribute] Requirements",
-          "stats": [
-            {
-              "id": "local_attribute_requirements_+%",
-              "max": -35,
-              "min": -35
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MaximumChaosResistance",
-      "kind": "suffix",
-      "template": "+#% to [MaximumResistances|Maximum Chaos Resistance]",
-      "tiers": [
-        {
-          "level": 68,
-          "name": "of Regularity",
-          "text": "+1% to [MaximumResistances|Maximum Chaos Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_chaos_damage_resistance_%",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        },
-        {
-          "level": 75,
-          "name": "of Concord",
-          "text": "+2% to [MaximumResistances|Maximum Chaos Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_chaos_damage_resistance_%",
-              "max": 2,
-              "min": 2
-            }
-          ]
-        },
-        {
-          "level": 81,
-          "name": "of Harmony",
-          "text": "+3% to [MaximumResistances|Maximum Chaos Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_chaos_damage_resistance_%",
-              "max": 3,
-              "min": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MaximumColdResist",
-      "kind": "suffix",
-      "template": "+#% to [MaximumResistances|Maximum Cold Resistance]",
-      "tiers": [
-        {
-          "level": 68,
-          "name": "of Furs",
-          "text": "+1% to [MaximumResistances|Maximum Cold Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_cold_damage_resistance_%",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        },
-        {
-          "level": 75,
-          "name": "of the Tundra",
-          "text": "+2% to [MaximumResistances|Maximum Cold Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_cold_damage_resistance_%",
-              "max": 2,
-              "min": 2
-            }
-          ]
-        },
-        {
-          "level": 81,
-          "name": "of the Mammoth",
-          "text": "+3% to [MaximumResistances|Maximum Cold Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_cold_damage_resistance_%",
-              "max": 3,
-              "min": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MaximumFireResist",
-      "kind": "suffix",
-      "template": "+#% to [MaximumResistances|Maximum Fire Resistance]",
-      "tiers": [
-        {
-          "level": 68,
-          "name": "of the Bushfire",
-          "text": "+1% to [MaximumResistances|Maximum Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_fire_damage_resistance_%",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        },
-        {
-          "level": 75,
-          "name": "of the Molten Core",
-          "text": "+2% to [MaximumResistances|Maximum Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_fire_damage_resistance_%",
-              "max": 2,
-              "min": 2
-            }
-          ]
-        },
-        {
-          "level": 81,
-          "name": "of the Solar Storm",
-          "text": "+3% to [MaximumResistances|Maximum Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_fire_damage_resistance_%",
-              "max": 3,
-              "min": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MaximumLightningResistance",
-      "kind": "suffix",
-      "template": "+#% to [MaximumResistances|Maximum Lightning Resistance]",
-      "tiers": [
-        {
-          "level": 68,
-          "name": "of Impedance",
-          "text": "+1% to [MaximumResistances|Maximum Lightning Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_lightning_damage_resistance_%",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        },
-        {
-          "level": 75,
-          "name": "of Shockproofing",
-          "text": "+2% to [MaximumResistances|Maximum Lightning Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_lightning_damage_resistance_%",
-              "max": 2,
-              "min": 2
-            }
-          ]
-        },
-        {
-          "level": 81,
-          "name": "of the Lightning Rod",
-          "text": "+3% to [MaximumResistances|Maximum Lightning Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_lightning_damage_resistance_%",
-              "max": 3,
-              "min": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MaximumResistances",
-      "kind": "suffix",
-      "template": "+#% to all [MaximumResistances|Maximum Elemental Resistances]",
-      "tiers": [
-        {
-          "level": 75,
-          "name": "of the Deathless",
-          "text": "+1% to all [MaximumResistances|Maximum Elemental Resistances]",
-          "stats": [
-            {
-              "id": "additional_maximum_all_elemental_resistances_%",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        },
-        {
-          "level": 81,
-          "name": "of the Everlasting",
-          "text": "+2% to all [MaximumResistances|Maximum Elemental Resistances]",
-          "stats": [
-            {
-              "id": "additional_maximum_all_elemental_resistances_%",
-              "max": 2,
-              "min": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "Strength",
-      "kind": "suffix",
-      "template": "+# to [Strength|Strength]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Brute",
-          "text": "+(5-8) to [Strength|Strength]",
-          "stats": [
-            {
-              "id": "additional_strength",
-              "max": 8,
-              "min": 5
-            }
-          ]
-        },
-        {
-          "level": 11,
-          "name": "of the Wrestler",
-          "text": "+(9-12) to [Strength|Strength]",
-          "stats": [
-            {
-              "id": "additional_strength",
-              "max": 12,
-              "min": 9
-            }
-          ]
-        },
-        {
-          "level": 22,
-          "name": "of the Bear",
-          "text": "+(13-16) to [Strength|Strength]",
-          "stats": [
-            {
-              "id": "additional_strength",
-              "max": 16,
-              "min": 13
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "of the Lion",
-          "text": "+(17-20) to [Strength|Strength]",
-          "stats": [
-            {
-              "id": "additional_strength",
-              "max": 20,
-              "min": 17
-            }
-          ]
-        },
-        {
-          "level": 44,
-          "name": "of the Gorilla",
-          "text": "+(21-24) to [Strength|Strength]",
-          "stats": [
-            {
-              "id": "additional_strength",
-              "max": 24,
-              "min": 21
-            }
-          ]
-        },
-        {
-          "level": 55,
-          "name": "of the Goliath",
-          "text": "+(25-27) to [Strength|Strength]",
-          "stats": [
-            {
-              "id": "additional_strength",
-              "max": 27,
-              "min": 25
-            }
-          ]
-        },
-        {
-          "level": 66,
-          "name": "of the Leviathan",
-          "text": "+(28-30) to [Strength|Strength]",
-          "stats": [
-            {
-              "id": "additional_strength",
-              "max": 30,
-              "min": 28
-            }
-          ]
-        },
-        {
-          "level": 74,
-          "name": "of the Titan",
-          "text": "+(31-33) to [Strength|Strength]",
-          "stats": [
-            {
-              "id": "additional_strength",
-              "max": 33,
-              "min": 31
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "StunThreshold",
-      "kind": "suffix",
-      "template": "+# to [StunThreshold|Stun Threshold]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Thick Skin",
-          "text": "+(6-11) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "stun_threshold_+",
-              "max": 11,
-              "min": 6
-            }
-          ]
-        },
-        {
-          "level": 8,
-          "name": "of Reinforced Skin",
-          "text": "+(12-29) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "stun_threshold_+",
-              "max": 29,
-              "min": 12
-            }
-          ]
-        },
-        {
-          "level": 15,
-          "name": "of Stone Skin",
-          "text": "+(30-49) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "stun_threshold_+",
-              "max": 49,
-              "min": 30
-            }
-          ]
-        },
-        {
-          "level": 22,
-          "name": "of Iron Skin",
-          "text": "+(50-72) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "stun_threshold_+",
-              "max": 72,
-              "min": 50
-            }
-          ]
-        },
-        {
-          "level": 29,
-          "name": "of Steel Skin",
-          "text": "+(73-97) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "stun_threshold_+",
-              "max": 97,
-              "min": 73
-            }
-          ]
-        },
-        {
-          "level": 36,
-          "name": "of Granite Skin",
-          "text": "+(98-124) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "stun_threshold_+",
-              "max": 124,
-              "min": 98
-            }
-          ]
-        },
-        {
-          "level": 45,
-          "name": "of Platinum Skin",
-          "text": "+(125-163) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "stun_threshold_+",
-              "max": 163,
-              "min": 125
-            }
-          ]
-        },
-        {
-          "level": 54,
-          "name": "of Adamantite Skin",
-          "text": "+(164-206) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "stun_threshold_+",
-              "max": 206,
-              "min": 164
-            }
-          ]
-        },
-        {
-          "level": 63,
-          "name": "of Corundum Skin",
-          "text": "+(207-253) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "stun_threshold_+",
-              "max": 253,
-              "min": 207
-            }
-          ]
-        },
-        {
-          "level": 72,
-          "name": "of Obsidian Skin",
-          "text": "+(254-304) to [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "stun_threshold_+",
-              "max": 304,
-              "min": 254
-            }
-          ]
-        }
-      ]
-    }
-  ],
   "category": "Off-hand",
   "label": "Shields(str_int)",
+  "modifier_sections": {
+    "bonded": [
+      {
+        "family_key": "AdeptRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneDexterity\" href=\"Adept_Rune\">Adept Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneDexterityGreater\" href=\"Greater_Adept_Rune\">Greater Adept Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneDexterityLesser\" href=\"Lesser_Adept_Rune\">Lesser Adept Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "BodyRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLife\" href=\"Body_Rune\">Body Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeGreater\" href=\"Greater_Body_Rune\">Greater Body Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeLesser\" href=\"Lesser_Body_Rune\">Lesser Body Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "DesertRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFire\" href=\"Desert_Rune\">Desert Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFireGreater\" href=\"Greater_Desert_Rune\">Greater Desert Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFireLesser\" href=\"Lesser_Desert_Rune\">Lesser Desert Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "GlacialRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneCold\" href=\"Glacial_Rune\">Glacial Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneColdGreater\" href=\"Greater_Glacial_Rune\">Greater Glacial Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneColdLesser\" href=\"Lesser_Glacial_Rune\">Lesser Glacial Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "InspirationRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecovery\" href=\"Inspiration_Rune\">Inspiration Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecoveryGreater\" href=\"Greater_Inspiration_Rune\">Greater Inspiration Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecoveryLesser\" href=\"Lesser_Inspiration_Rune\">Lesser Inspiration Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "IronRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhance\" href=\"Iron_Rune\">Iron Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhanceGreater\" href=\"Greater_Iron_Rune\">Greater Iron Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhanceLesser\" href=\"Lesser_Iron_Rune\">Lesser Iron Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "MindRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneMana\" href=\"Mind_Rune\">Mind Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaGreater\" href=\"Greater_Mind_Rune\">Greater Mind Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaLesser\" href=\"Lesser_Mind_Rune\">Lesser Mind Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "OxIdol",
+        "kind": "gen0",
+        "template": "# chance for Damage of Enemies Hitting you to be Unlucky",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanOx\" href=\"Ox_Idol\">Ox Idol</a>",
+            "text": "10% chance for Damage of Enemies Hitting you to be Unlucky"
+          }
+        ]
+      },
+      {
+        "family_key": "RebirthRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecovery\" href=\"Rebirth_Rune\">Rebirth Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecoveryGreater\" href=\"Greater_Rebirth_Rune\">Greater Rebirth Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecoveryLesser\" href=\"Lesser_Rebirth_Rune\">Lesser Rebirth Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "ResolveRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneIntelligence\" href=\"Resolve_Rune\">Resolve Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneIntelligenceGreater\" href=\"Greater_Resolve_Rune\">Greater Resolve Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneIntelligenceLesser\" href=\"Lesser_Resolve_Rune\">Lesser Resolve Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "RobustRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStrength\" href=\"Robust_Rune\">Robust Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStrengthGreater\" href=\"Greater_Robust_Rune\">Greater Robust Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStrengthLesser\" href=\"Lesser_Robust_Rune\">Lesser Robust Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "RuneofAlacrity",
+        "kind": "gen0",
+        "template": "# increased Elemental Ailment Threshold",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial3\" href=\"Greater_Rune_of_Alacrity\">Greater Rune of Alacrity</a>",
+            "text": "15% increased Elemental Ailment Threshold"
+          }
+        ]
+      },
+      {
+        "family_key": "RuneofLeadership",
+        "kind": "gen0",
+        "template": "Minions have # to all Elemental Resistances",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial1\" href=\"Greater_Rune_of_Leadership\">Greater Rune of Leadership</a>",
+            "text": "Minions have +10% to all Elemental Resistances"
+          }
+        ]
+      },
+      {
+        "family_key": "RuneofNobility",
+        "kind": "gen0",
+        "template": "# reduced Shock duration on you",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial4\" href=\"Greater_Rune_of_Nobility\">Greater Rune of Nobility</a>",
+            "text": "10% reduced Shock duration on you"
+          }
+        ]
+      },
+      {
+        "family_key": "RuneofTithing",
+        "kind": "gen0",
+        "template": "# increased Thorns damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial2\" href=\"Greater_Rune_of_Tithing\">Greater Rune of Tithing</a>",
+            "text": "15% increased Thorns damage"
+          }
+        ]
+      },
+      {
+        "family_key": "StoneRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStun\" href=\"Stone_Rune\">Stone Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStunGreater\" href=\"Greater_Stone_Rune\">Greater Stone Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStunLesser\" href=\"Lesser_Stone_Rune\">Lesser Stone Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "StormRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightning\" href=\"Storm_Rune\">Storm Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightningGreater\" href=\"Greater_Storm_Rune\">Greater Storm Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightningLesser\" href=\"Lesser_Storm_Rune\">Lesser Storm Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "VisionRune",
+        "kind": "gen0",
+        "template": "# to maximum Life# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracy\" href=\"Vision_Rune\">Vision Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracyGreater\" href=\"Greater_Vision_Rune\">Greater Vision Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracyLesser\" href=\"Lesser_Vision_Rune\">Lesser Vision Rune</a>",
+            "text": "+10 to maximum Life+10 to maximum Mana"
+          }
+        ]
+      }
+    ],
+    "corrupted": [
+      {
+        "family_key": "DefencesPercent",
+        "kind": "gen5",
+        "template": "#% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionLocalIncreasedArmourAndEnergyShield1",
+            "text": "(75-125)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 125,
+                "min": 75
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "GainLifeOnBlock",
+        "kind": "gen5",
+        "template": "# Life gained when you [Block|Block]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionGainLifeOnBlock1",
+            "text": "(40-55) Life gained when you [Block|Block]",
+            "stats": [
+              {
+                "id": "life_gained_on_block",
+                "max": 55,
+                "min": 40
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "GainManaOnBlock",
+        "kind": "gen5",
+        "template": "# Mana gained when you [Block|Block]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionGainManaOnBlock1",
+            "text": "(20-30) Mana gained when you [Block|Block]",
+            "stats": [
+              {
+                "id": "mana_gained_on_block",
+                "max": 30,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedShieldBlockPercentage",
+        "kind": "gen5",
+        "template": "#% increased [Block] chance",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionLocalBlockChance1",
+            "text": "(15-19)% increased [Block] chance",
+            "stats": [
+              {
+                "id": "local_block_chance_+%",
+                "max": 19,
+                "min": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LocalAttributeRequirements",
+        "kind": "gen5",
+        "template": "#% increased [Attributes|Attribute] Requirements",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionReducedLocalAttributeRequirements1",
+            "text": "100% increased [Attributes|Attribute] Requirements",
+            "stats": [
+              {
+                "id": "local_attribute_requirements_+%",
+                "max": 100,
+                "min": 100
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MaximumBlockChance",
+        "kind": "gen5",
+        "template": "+#% to maximum [Block] chance",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionMaximumBlockChance1",
+            "text": "+(4-6)% to maximum [Block] chance",
+            "stats": [
+              {
+                "id": "additional_maximum_block_%",
+                "max": 6,
+                "min": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Thorns",
+        "kind": "gen5",
+        "template": "#% increased [Thorns|Thorns] damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionThornsDamageIncrease1",
+            "text": "(120-200)% increased [Thorns|Thorns] damage",
+            "stats": [
+              {
+                "id": "thorns_damage_+%",
+                "max": 200,
+                "min": 120
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "desecrated": [
+      {
+        "family_key": "ArmourAppliesToChaosDamage",
+        "kind": "suffix",
+        "template": "+#% of [Armour] also applies to [Chaos|Chaos Damage]",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Kurgal",
+            "text": "+(23-31)% of [Armour] also applies to [Chaos|Chaos Damage]",
+            "stats": [
+              {
+                "id": "base_armour_%_applies_to_chaos_damage",
+                "max": 31,
+                "min": 23
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ChanceToTakeCriticalStrike",
+        "kind": "suffix",
+        "template": "[HitDamage|Hits] have #% reduced [Critical|Critical Hit] Chance against you",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Ulaman",
+            "text": "[HitDamage|Hits] have (25-17)% reduced [Critical|Critical Hit] Chance against you",
+            "stats": [
+              {
+                "id": "base_enemy_critical_strike_chance_+%_against_self",
+                "max": -17,
+                "min": -25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ColdAndChaosDamageResistance",
+        "kind": "suffix",
+        "template": "+#% to Cold and Chaos Resistances",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Kurgal",
+            "text": "+(13-17)% to Cold and Chaos Resistances",
+            "stats": [
+              {
+                "id": "cold_and_chaos_damage_resistance_%",
+                "max": 17,
+                "min": 13
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "DamageTakenGainedAsLife",
+        "kind": "suffix",
+        "template": "#% of Damage taken [Recoup|Recouped] as Life",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Amanamu",
+            "text": "(10-20)% of Damage taken [Recoup|Recouped] as Life",
+            "stats": [
+              {
+                "id": "damage_taken_goes_to_life_over_4_seconds_%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Dexterity|Intelligence",
+        "kind": "suffix",
+        "template": "+# to [Dexterity|Dexterity] and [Intelligence|Intelligence]",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Kurgal",
+            "text": "+(9-15) to [Dexterity|Dexterity] and [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_dexterity_and_intelligence",
+                "max": 15,
+                "min": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "EnergyShieldRechargeRateIfBlockedRecently",
+        "kind": "suffix",
+        "template": "#% increased [ESRecharge|Energy Shield Recharge Rate] if you've [Block|Blocked] [Recently]",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Kurgal",
+            "text": "(40-50)% increased [ESRecharge|Energy Shield Recharge Rate] if you've [Block|Blocked] [Recently]",
+            "stats": [
+              {
+                "id": "energy_shield_recharge_rate_+%_if_blocked_recently",
+                "max": 50,
+                "min": 40
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "FireAndChaosDamageResistance",
+        "kind": "suffix",
+        "template": "+#% to Fire and Chaos Resistances",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Amanamu",
+            "text": "+(13-17)% to Fire and Chaos Resistances",
+            "stats": [
+              {
+                "id": "fire_and_chaos_damage_resistance_%",
+                "max": 17,
+                "min": 13
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "GainManaOnBlock",
+        "kind": "suffix",
+        "template": "# Mana gained when you [Block|Block]",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Kurgal",
+            "text": "(6-12) Mana gained when you [Block|Block]",
+            "stats": [
+              {
+                "id": "mana_gained_on_block",
+                "max": 12,
+                "min": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "HeavyStunDecayRate",
+        "kind": "suffix",
+        "template": "Your [HeavyStunPlayer|Heavy Stun] buildup empties #% faster",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Amanamu",
+            "text": "Your [HeavyStunPlayer|Heavy Stun] buildup empties (30-40)% faster",
+            "stats": [
+              {
+                "id": "heavy_stun_poise_decay_rate_+%",
+                "max": 40,
+                "min": 30
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LightningAndChaosDamageResistance",
+        "kind": "suffix",
+        "template": "+#% to Lightning and Chaos Resistances",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Ulaman",
+            "text": "+(13-17)% to Lightning and Chaos Resistances",
+            "stats": [
+              {
+                "id": "lightning_and_chaos_damage_resistance_%",
+                "max": 17,
+                "min": 13
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MaximumBlockChance",
+        "kind": "suffix",
+        "template": "+#% to maximum [Block] chance",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Ulaman",
+            "text": "+(1-2)% to maximum [Block] chance",
+            "stats": [
+              {
+                "id": "additional_maximum_block_%",
+                "max": 2,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MaximumResistances",
+        "kind": "suffix",
+        "template": "+#% to all maximum Resistances",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Amanamu",
+            "text": "+1% to all maximum Resistances",
+            "stats": [
+              {
+                "id": "additional_maximum_all_resistances_%",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ParriedDebuff",
+        "kind": "suffix",
+        "template": "#% increased [ParriedDebuff|Parried Debuff] [BuffMagnitude|Magnitude]",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Ulaman",
+            "text": "(20-30)% increased [ParriedDebuff|Parried Debuff] [BuffMagnitude|Magnitude]",
+            "stats": [
+              {
+                "id": "parried_magnitude_+%",
+                "max": 30,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ParriedDebuff",
+        "kind": "suffix",
+        "template": "#% increased [ParriedDebuff|Parried Debuff] [BuffMagnitude|Magnitude]",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Ulaman",
+            "text": "(20-30)% increased [ParriedDebuff|Parried Debuff] [BuffMagnitude|Magnitude]",
+            "stats": [
+              {
+                "id": "parried_magnitude_+%",
+                "max": 30,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "PercentDamageGoesToMana",
+        "kind": "suffix",
+        "template": "#% of Damage taken [Recoup|Recouped] as Mana",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Kurgal",
+            "text": "(10-20)% of Damage taken [Recoup|Recouped] as Mana",
+            "stats": [
+              {
+                "id": "damage_taken_goes_to_mana_%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "PhysicalDamageTakenAsLightningWhileActiveBlocking|BlockDamageTakenWhileActiveBlocking",
+        "kind": "suffix",
+        "template": "#% of [Physical] Damage taken as [Lightning] while your [Shield] is raised You take #% of damage from [Block|Blocked] [HitDamage|Hits] with a raised [Shield]",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Ulaman",
+            "text": "(30-40)% of [Physical] Damage taken as [Lightning] while your [Shield] is raised You take (8-15)% of damage from [Block|Blocked] [HitDamage|Hits] with a raised [Shield]",
+            "stats": [
+              {
+                "id": "physical_hit_and_dot_damage_%_taken_as_lightning_while_active_blocking",
+                "max": 40,
+                "min": 30
+              },
+              {
+                "id": "block_%_damage_taken_while_active_blocking",
+                "max": 15,
+                "min": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ReducedCurseEffect",
+        "kind": "suffix",
+        "template": "#% reduced [BuffEffect|effect] of [Curse|Curses] on you",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Amanamu",
+            "text": "(35-25)% reduced [BuffEffect|effect] of [Curse|Curses] on you",
+            "stats": [
+              {
+                "id": "curse_effect_on_self_+%",
+                "max": -25,
+                "min": -35
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ShieldSkillsStunningAlsoFullyBreaksArmour",
+        "kind": "suffix",
+        "template": "[HitDamage|Hits] with [Shield] Skills which [HeavyStun|Heavy Stun] enemies break fully [ArmourBreak|Break Armour]",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Amanamu",
+            "text": "[HitDamage|Hits] with [Shield] Skills which [HeavyStun|Heavy Stun] enemies break fully [ArmourBreak|Break Armour]",
+            "stats": [
+              {
+                "id": "fully_break_enemies_armour_on_heavy_stun_with_shield_skills",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Strength|Dexterity",
+        "kind": "suffix",
+        "template": "+# to [Strength|Strength] and [Dexterity|Dexterity]",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Ulaman",
+            "text": "+(9-15) to [Strength|Strength] and [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_strength_and_dexterity",
+                "max": 15,
+                "min": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Strength|Intelligence",
+        "kind": "suffix",
+        "template": "+# to [Strength|Strength] and [Intelligence|Intelligence]",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Amanamu",
+            "text": "+(9-15) to [Strength|Strength] and [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_strength_and_intelligence",
+                "max": 15,
+                "min": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "essence": [
+      {
+        "family_key": "DefencesPercent",
+        "kind": "prefix",
+        "template": "#% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+        "tiers": [
+          {
+            "level": 16,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceDefences\" href=\"Lesser_Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssenceLesser.webp\" alt=\"DefencesEssenceLesser\" height=\"16\" />Lesser Essence of Enhancement</a>",
+            "text": "(27-42)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 42,
+                "min": 27
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceDefences\" href=\"Lesser_Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssenceLesser.webp\" alt=\"DefencesEssenceLesser\" height=\"16\" />Lesser Essence of Enhancement</a>",
+            "text": "(27-42)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 42,
+                "min": 27
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceDefences\" href=\"Lesser_Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssenceLesser.webp\" alt=\"DefencesEssenceLesser\" height=\"16\" />Lesser Essence of Enhancement</a>",
+            "text": "(27-42)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 42,
+                "min": 27
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceDefences\" href=\"Lesser_Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssenceLesser.webp\" alt=\"DefencesEssenceLesser\" height=\"16\" />Lesser Essence of Enhancement</a>",
+            "text": "(27-42)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 42,
+                "min": 27
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceDefences\" href=\"Lesser_Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssenceLesser.webp\" alt=\"DefencesEssenceLesser\" height=\"16\" />Lesser Essence of Enhancement</a>",
+            "text": "(27-42)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 42,
+                "min": 27
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceDefences\" href=\"Lesser_Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssenceLesser.webp\" alt=\"DefencesEssenceLesser\" height=\"16\" />Lesser Essence of Enhancement</a>",
+            "text": "(27-42)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 42,
+                "min": 27
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceDefences\" href=\"Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssence.webp\" alt=\"DefencesEssence\" height=\"16\" />Essence of Enhancement</a>",
+            "text": "(56-67)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 67,
+                "min": 56
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceDefences\" href=\"Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssence.webp\" alt=\"DefencesEssence\" height=\"16\" />Essence of Enhancement</a>",
+            "text": "(56-67)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 67,
+                "min": 56
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceDefences\" href=\"Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssence.webp\" alt=\"DefencesEssence\" height=\"16\" />Essence of Enhancement</a>",
+            "text": "(56-67)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 67,
+                "min": 56
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceDefences\" href=\"Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssence.webp\" alt=\"DefencesEssence\" height=\"16\" />Essence of Enhancement</a>",
+            "text": "(56-67)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 67,
+                "min": 56
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceDefences\" href=\"Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssence.webp\" alt=\"DefencesEssence\" height=\"16\" />Essence of Enhancement</a>",
+            "text": "(56-67)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 67,
+                "min": 56
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceDefences\" href=\"Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssence.webp\" alt=\"DefencesEssence\" height=\"16\" />Essence of Enhancement</a>",
+            "text": "(56-67)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 67,
+                "min": 56
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceDefences\" href=\"Greater_Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterDefencesEssence.webp\" alt=\"GreaterDefencesEssence\" height=\"16\" />Greater Essence of Enhancement</a>",
+            "text": "(68-79)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 79,
+                "min": 68
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceDefences\" href=\"Greater_Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterDefencesEssence.webp\" alt=\"GreaterDefencesEssence\" height=\"16\" />Greater Essence of Enhancement</a>",
+            "text": "(68-79)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 79,
+                "min": 68
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceDefences\" href=\"Greater_Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterDefencesEssence.webp\" alt=\"GreaterDefencesEssence\" height=\"16\" />Greater Essence of Enhancement</a>",
+            "text": "(68-79)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 79,
+                "min": 68
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceDefences\" href=\"Greater_Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterDefencesEssence.webp\" alt=\"GreaterDefencesEssence\" height=\"16\" />Greater Essence of Enhancement</a>",
+            "text": "(68-79)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 79,
+                "min": 68
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceDefences\" href=\"Greater_Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterDefencesEssence.webp\" alt=\"GreaterDefencesEssence\" height=\"16\" />Greater Essence of Enhancement</a>",
+            "text": "(68-79)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 79,
+                "min": 68
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceDefences\" href=\"Greater_Essence_of_Enhancement\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterDefencesEssence.webp\" alt=\"GreaterDefencesEssence\" height=\"16\" />Greater Essence of Enhancement</a>",
+            "text": "(68-79)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 79,
+                "min": 68
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "EssenceAbyss",
+        "kind": "prefix",
+        "template": "Bears the [MarkofAbyssalLord|Mark of the Abyssal Lord]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyCorruptedEssenceAbyss\" href=\"Essence_of_the_Abyss\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AbyssalEssence.webp\" alt=\"AbyssalEssence\" height=\"16\" />Essence of the Abyss</a>",
+            "text": "Bears the [MarkofAbyssalLord|Mark of the Abyssal Lord]",
+            "stats": [
+              {
+                "id": "essence_abyss_guaranteed_pick",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedLife",
+        "kind": "prefix",
+        "template": "+# to maximum Life",
+        "tiers": [
+          {
+            "level": 16,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceLife\" href=\"Lesser_Essence_of_the_Body\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LifeEssenceLesser.webp\" alt=\"LifeEssenceLesser\" height=\"16\" />Lesser Essence of the Body</a>",
+            "text": "+(30-39) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 39,
+                "min": 30
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceLife\" href=\"Essence_of_the_Body\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LifeEssence.webp\" alt=\"LifeEssence\" height=\"16\" />Essence of the Body</a>",
+            "text": "+(85-99) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 99,
+                "min": 85
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceLife\" href=\"Greater_Essence_of_the_Body\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterLifeEssence.webp\" alt=\"GreaterLifeEssence\" height=\"16\" />Greater Essence of the Body</a>",
+            "text": "+(100-119) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 119,
+                "min": 100
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedShieldBlockPercentage",
+        "kind": "prefix",
+        "template": "#% increased [Block] chance",
+        "tiers": [
+          {
+            "level": 33,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyCorruptedEssenceHysteria\" href=\"Essence_of_Hysteria\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/CorruptedEssenceHysteria.webp\" alt=\"CorruptedEssenceHysteria\" height=\"16\" />Essence of Hysteria</a>",
+            "text": "(20-24)% increased [Block] chance",
+            "stats": [
+              {
+                "id": "local_block_chance_+%",
+                "max": 24,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ChaosResistance",
+        "kind": "suffix",
+        "template": "+#% to [Resistances|Chaos Resistance]",
+        "tiers": [
+          {
+            "level": 16,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceChaos\" href=\"Lesser_Essence_of_Ruin\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ChaosEssenceLesser.webp\" alt=\"ChaosEssenceLesser\" height=\"16\" />Lesser Essence of Ruin</a>",
+            "text": "+(4-7)% to [Resistances|Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_chaos_damage_resistance_%",
+                "max": 7,
+                "min": 4
+              }
+            ]
+          },
+          {
+            "level": 30,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceChaos\" href=\"Essence_of_Ruin\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ChaosEssence.webp\" alt=\"ChaosEssence\" height=\"16\" />Essence of Ruin</a>",
+            "text": "+(8-11)% to [Resistances|Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_chaos_damage_resistance_%",
+                "max": 11,
+                "min": 8
+              }
+            ]
+          },
+          {
+            "level": 56,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceChaos\" href=\"Greater_Essence_of_Ruin\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterChaosEssence.webp\" alt=\"GreaterChaosEssence\" height=\"16\" />Greater Essence of Ruin</a>",
+            "text": "+(16-19)% to [Resistances|Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_chaos_damage_resistance_%",
+                "max": 19,
+                "min": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ColdResistance",
+        "kind": "suffix",
+        "template": "+#% to [Resistances|Cold Resistance]",
+        "tiers": [
+          {
+            "level": 14,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceColdResist\" href=\"Lesser_Essence_of_Thawing\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ColdResistanceEssenceLesser.webp\" alt=\"ColdResistanceEssenceLesser\" height=\"16\" />Lesser Essence of Thawing</a>",
+            "text": "+(11-15)% to [Resistances|Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_cold_damage_resistance_%",
+                "max": 15,
+                "min": 11
+              }
+            ]
+          },
+          {
+            "level": 38,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceColdResist\" href=\"Essence_of_Thawing\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ColdResistanceEssence.webp\" alt=\"ColdResistanceEssence\" height=\"16\" />Essence of Thawing</a>",
+            "text": "+(21-25)% to [Resistances|Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_cold_damage_resistance_%",
+                "max": 25,
+                "min": 21
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceColdResist\" href=\"Greater_Essence_of_Thawing\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterColdResistanceEssence.webp\" alt=\"GreaterColdResistanceEssence\" height=\"16\" />Greater Essence of Thawing</a>",
+            "text": "+(31-35)% to [Resistances|Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_cold_damage_resistance_%",
+                "max": 35,
+                "min": 31
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Dexterity",
+        "kind": "suffix",
+        "template": "+# to [Dexterity|Dexterity]",
+        "tiers": [
+          {
+            "level": 11,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceAttribute\" href=\"Lesser_Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssenceLesser.webp\" alt=\"AttributeEssenceLesser\" height=\"16\" />Lesser Essence of the Infinite</a>",
+            "text": "+(9-12) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 12,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceAttribute\" href=\"Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssence.webp\" alt=\"AttributeEssence\" height=\"16\" />Essence of the Infinite</a>",
+            "text": "+(17-20) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 20,
+                "min": 17
+              }
+            ]
+          },
+          {
+            "level": 55,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceAttribute\" href=\"Greater_Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterAttributeEssence.webp\" alt=\"GreaterAttributeEssence\" height=\"16\" />Greater Essence of the Infinite</a>",
+            "text": "+(25-27) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 27,
+                "min": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "EssenceAbyss",
+        "kind": "suffix",
+        "template": "Bears the [MarkofAbyssalLord|Mark of the Abyssal Lord]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyCorruptedEssenceAbyss\" href=\"Essence_of_the_Abyss\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AbyssalEssence.webp\" alt=\"AbyssalEssence\" height=\"16\" />Essence of the Abyss</a>",
+            "text": "Bears the [MarkofAbyssalLord|Mark of the Abyssal Lord]",
+            "stats": [
+              {
+                "id": "essence_abyss_guaranteed_pick",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "FireResistance",
+        "kind": "suffix",
+        "template": "+#% to [Resistances|Fire Resistance]",
+        "tiers": [
+          {
+            "level": 12,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceFireResist\" href=\"Lesser_Essence_of_Insulation\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/FireResistanceEssenceLesser.webp\" alt=\"FireResistanceEssenceLesser\" height=\"16\" />Lesser Essence of Insulation</a>",
+            "text": "+(11-15)% to [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_fire_damage_resistance_%",
+                "max": 15,
+                "min": 11
+              }
+            ]
+          },
+          {
+            "level": 36,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceFireResist\" href=\"Essence_of_Insulation\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/FireResistanceEssence.webp\" alt=\"FireResistanceEssence\" height=\"16\" />Essence of Insulation</a>",
+            "text": "+(21-25)% to [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_fire_damage_resistance_%",
+                "max": 25,
+                "min": 21
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceFireResist\" href=\"Greater_Essence_of_Insulation\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterFireResistanceEssence.webp\" alt=\"GreaterFireResistanceEssence\" height=\"16\" />Greater Essence of Insulation</a>",
+            "text": "+(31-35)% to [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_fire_damage_resistance_%",
+                "max": 35,
+                "min": 31
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Intelligence",
+        "kind": "suffix",
+        "template": "+# to [Intelligence|Intelligence]",
+        "tiers": [
+          {
+            "level": 11,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceAttribute\" href=\"Lesser_Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssenceLesser.webp\" alt=\"AttributeEssenceLesser\" height=\"16\" />Lesser Essence of the Infinite</a>",
+            "text": "+(9-12) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 12,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceAttribute\" href=\"Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssence.webp\" alt=\"AttributeEssence\" height=\"16\" />Essence of the Infinite</a>",
+            "text": "+(17-20) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 20,
+                "min": 17
+              }
+            ]
+          },
+          {
+            "level": 55,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceAttribute\" href=\"Greater_Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterAttributeEssence.webp\" alt=\"GreaterAttributeEssence\" height=\"16\" />Greater Essence of the Infinite</a>",
+            "text": "+(25-27) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 27,
+                "min": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LightningResistance",
+        "kind": "suffix",
+        "template": "+#% to [Resistances|Lightning Resistance]",
+        "tiers": [
+          {
+            "level": 13,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceLightningResist\" href=\"Lesser_Essence_of_Grounding\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LightningResistanceEssenceLesser.webp\" alt=\"LightningResistanceEssenceLesser\" height=\"16\" />Lesser Essence of Grounding</a>",
+            "text": "+(11-15)% to [Resistances|Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_lightning_damage_resistance_%",
+                "max": 15,
+                "min": 11
+              }
+            ]
+          },
+          {
+            "level": 37,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceLightningResist\" href=\"Essence_of_Grounding\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LightningResistanceEssence.webp\" alt=\"LightningResistanceEssence\" height=\"16\" />Essence of Grounding</a>",
+            "text": "+(21-25)% to [Resistances|Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_lightning_damage_resistance_%",
+                "max": 25,
+                "min": 21
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceLightningResist\" href=\"Greater_Essence_of_Grounding\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterLightningResistanceEssence.webp\" alt=\"GreaterLightningResistanceEssence\" height=\"16\" />Greater Essence of Grounding</a>",
+            "text": "+(31-35)% to [Resistances|Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_lightning_damage_resistance_%",
+                "max": 35,
+                "min": 31
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Strength",
+        "kind": "suffix",
+        "template": "+# to [Strength|Strength]",
+        "tiers": [
+          {
+            "level": 11,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceAttribute\" href=\"Lesser_Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssenceLesser.webp\" alt=\"AttributeEssenceLesser\" height=\"16\" />Lesser Essence of the Infinite</a>",
+            "text": "+(9-12) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 12,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceAttribute\" href=\"Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssence.webp\" alt=\"AttributeEssence\" height=\"16\" />Essence of the Infinite</a>",
+            "text": "+(17-20) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 20,
+                "min": 17
+              }
+            ]
+          },
+          {
+            "level": 55,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceAttribute\" href=\"Greater_Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterAttributeEssence.webp\" alt=\"GreaterAttributeEssence\" height=\"16\" />Greater Essence of the Infinite</a>",
+            "text": "+(25-27) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 27,
+                "min": 25
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normal": [
+      {
+        "family_key": "BaseLocalDefences",
+        "kind": "prefix",
+        "template": "+# to [Armour|Armour] +# to maximum [EnergyShield|Energy Shield]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Blessed",
+            "text": "+(8-14) to [Armour|Armour] +(5-8) to maximum [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_base_physical_damage_reduction_rating",
+                "max": 14,
+                "min": 8
+              },
+              {
+                "id": "local_energy_shield",
+                "max": 8,
+                "min": 5
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "Anointed",
+            "text": "+(15-35) to [Armour|Armour] +(9-15) to maximum [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_base_physical_damage_reduction_rating",
+                "max": 35,
+                "min": 15
+              },
+              {
+                "id": "local_energy_shield",
+                "max": 15,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "Sanctified",
+            "text": "+(36-53) to [Armour|Armour] +(16-21) to maximum [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_base_physical_damage_reduction_rating",
+                "max": 53,
+                "min": 36
+              },
+              {
+                "id": "local_energy_shield",
+                "max": 21,
+                "min": 16
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "Hallowed",
+            "text": "+(54-65) to [Armour|Armour] +(22-25) to maximum [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_base_physical_damage_reduction_rating",
+                "max": 65,
+                "min": 54
+              },
+              {
+                "id": "local_energy_shield",
+                "max": 25,
+                "min": 22
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "Beatified",
+            "text": "+(66-78) to [Armour|Armour] +(26-29) to maximum [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_base_physical_damage_reduction_rating",
+                "max": 78,
+                "min": 66
+              },
+              {
+                "id": "local_energy_shield",
+                "max": 29,
+                "min": 26
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "Consecrated",
+            "text": "+(79-98) to [Armour|Armour] +(30-36) to maximum [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_base_physical_damage_reduction_rating",
+                "max": 98,
+                "min": 79
+              },
+              {
+                "id": "local_energy_shield",
+                "max": 36,
+                "min": 30
+              }
+            ]
+          },
+          {
+            "level": 65,
+            "name": "Saintly",
+            "text": "+(99-117) to [Armour|Armour] +(37-42) to maximum [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_base_physical_damage_reduction_rating",
+                "max": 117,
+                "min": 99
+              },
+              {
+                "id": "local_energy_shield",
+                "max": 42,
+                "min": 37
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "DefencesPercent",
+        "kind": "prefix",
+        "template": "#% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+        "tiers": [
+          {
+            "level": 2,
+            "name": "Infixed",
+            "text": "(15-26)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 26,
+                "min": 15
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "Ingrained",
+            "text": "(27-42)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 42,
+                "min": 27
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "Instilled",
+            "text": "(43-55)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 55,
+                "min": 43
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "Infused",
+            "text": "(56-67)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 67,
+                "min": 56
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "Inculcated",
+            "text": "(68-79)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 79,
+                "min": 68
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "Interpolated",
+            "text": "(80-91)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 91,
+                "min": 80
+              }
+            ]
+          },
+          {
+            "level": 65,
+            "name": "Inspired",
+            "text": "(92-100)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 100,
+                "min": 92
+              }
+            ]
+          },
+          {
+            "level": 75,
+            "name": "Interpermeated",
+            "text": "(101-110)% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 110,
+                "min": 101
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "DefencesPercentAndStunThreshold",
+        "kind": "prefix",
+        "template": "#% increased [Armour|Armour] and [EnergyShield|Energy Shield] +# to [StunThreshold|Stun Threshold]",
+        "tiers": [
+          {
+            "level": 10,
+            "name": "Defender's",
+            "text": "(6-13)% increased [Armour|Armour] and [EnergyShield|Energy Shield] +(8-13) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 13,
+                "min": 6
+              },
+              {
+                "id": "stun_threshold_+",
+                "max": 13,
+                "min": 8
+              }
+            ]
+          },
+          {
+            "level": 19,
+            "name": "Protector's",
+            "text": "(14-20)% increased [Armour|Armour] and [EnergyShield|Energy Shield] +(14-24) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 20,
+                "min": 14
+              },
+              {
+                "id": "stun_threshold_+",
+                "max": 24,
+                "min": 14
+              }
+            ]
+          },
+          {
+            "level": 38,
+            "name": "Keeper's",
+            "text": "(21-26)% increased [Armour|Armour] and [EnergyShield|Energy Shield] +(25-40) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 26,
+                "min": 21
+              },
+              {
+                "id": "stun_threshold_+",
+                "max": 40,
+                "min": 25
+              }
+            ]
+          },
+          {
+            "level": 48,
+            "name": "Guardian's",
+            "text": "(27-32)% increased [Armour|Armour] and [EnergyShield|Energy Shield] +(41-63) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 32,
+                "min": 27
+              },
+              {
+                "id": "stun_threshold_+",
+                "max": 63,
+                "min": 41
+              }
+            ]
+          },
+          {
+            "level": 63,
+            "name": "Warden's",
+            "text": "(33-38)% increased [Armour|Armour] and [EnergyShield|Energy Shield] +(64-94) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 38,
+                "min": 33
+              },
+              {
+                "id": "stun_threshold_+",
+                "max": 94,
+                "min": 64
+              }
+            ]
+          },
+          {
+            "level": 74,
+            "name": "Sentinel's",
+            "text": "(39-42)% increased [Armour|Armour] and [EnergyShield|Energy Shield] +(95-136) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "local_armour_and_energy_shield_+%",
+                "max": 42,
+                "min": 39
+              },
+              {
+                "id": "stun_threshold_+",
+                "max": 136,
+                "min": 95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedLife",
+        "kind": "prefix",
+        "template": "+# to maximum Life",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Hale",
+            "text": "+(10-19) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 19,
+                "min": 10
+              }
+            ]
+          },
+          {
+            "level": 6,
+            "name": "Healthy",
+            "text": "+(20-29) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 29,
+                "min": 20
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "Sanguine",
+            "text": "+(30-39) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 39,
+                "min": 30
+              }
+            ]
+          },
+          {
+            "level": 24,
+            "name": "Stalwart",
+            "text": "+(40-59) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 59,
+                "min": 40
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "Stout",
+            "text": "+(60-69) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 69,
+                "min": 60
+              }
+            ]
+          },
+          {
+            "level": 38,
+            "name": "Robust",
+            "text": "+(70-84) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 84,
+                "min": 70
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "Rotund",
+            "text": "+(85-99) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 99,
+                "min": 85
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "Virile",
+            "text": "+(100-119) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 119,
+                "min": 100
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "Athlete's",
+            "text": "+(120-149) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 149,
+                "min": 120
+              }
+            ]
+          },
+          {
+            "level": 65,
+            "name": "Fecund",
+            "text": "+(150-174) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 174,
+                "min": 150
+              }
+            ]
+          },
+          {
+            "level": 70,
+            "name": "Vigorous",
+            "text": "+(175-189) to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "max": 189,
+                "min": 175
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedShieldBlockPercentage",
+        "kind": "prefix",
+        "template": "#% increased [Block] chance",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Steadfast",
+            "text": "(15-19)% increased [Block] chance",
+            "stats": [
+              {
+                "id": "local_block_chance_+%",
+                "max": 19,
+                "min": 15
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "Unrelenting",
+            "text": "(20-24)% increased [Block] chance",
+            "stats": [
+              {
+                "id": "local_block_chance_+%",
+                "max": 24,
+                "min": 20
+              }
+            ]
+          },
+          {
+            "level": 65,
+            "name": "Adamant",
+            "text": "(25-30)% increased [Block] chance",
+            "stats": [
+              {
+                "id": "local_block_chance_+%",
+                "max": 30,
+                "min": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Thorns",
+        "kind": "prefix",
+        "template": "# to # [Physical|Physical] [Thorns|Thorns] damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Thorny",
+            "text": "(1-2) to (3-4) [Physical|Physical] [Thorns|Thorns] damage",
+            "stats": [
+              {
+                "id": "thorns_minimum_base_physical_damage",
+                "max": 2,
+                "min": 1
+              },
+              {
+                "id": "thorns_maximum_base_physical_damage",
+                "max": 4,
+                "min": 3
+              }
+            ]
+          },
+          {
+            "level": 10,
+            "name": "Spiny",
+            "text": "(5-7) to (7-10) [Physical|Physical] [Thorns|Thorns] damage",
+            "stats": [
+              {
+                "id": "thorns_minimum_base_physical_damage",
+                "max": 7,
+                "min": 5
+              },
+              {
+                "id": "thorns_maximum_base_physical_damage",
+                "max": 10,
+                "min": 7
+              }
+            ]
+          },
+          {
+            "level": 19,
+            "name": "Barbed",
+            "text": "(11-16) to (15-23) [Physical|Physical] [Thorns|Thorns] damage",
+            "stats": [
+              {
+                "id": "thorns_minimum_base_physical_damage",
+                "max": 16,
+                "min": 11
+              },
+              {
+                "id": "thorns_maximum_base_physical_damage",
+                "max": 23,
+                "min": 15
+              }
+            ]
+          },
+          {
+            "level": 38,
+            "name": "Pointed",
+            "text": "(24-35) to (35-53) [Physical|Physical] [Thorns|Thorns] damage",
+            "stats": [
+              {
+                "id": "thorns_minimum_base_physical_damage",
+                "max": 35,
+                "min": 24
+              },
+              {
+                "id": "thorns_maximum_base_physical_damage",
+                "max": 53,
+                "min": 35
+              }
+            ]
+          },
+          {
+            "level": 48,
+            "name": "Spiked",
+            "text": "(40-60) to (61-92) [Physical|Physical] [Thorns|Thorns] damage",
+            "stats": [
+              {
+                "id": "thorns_minimum_base_physical_damage",
+                "max": 60,
+                "min": 40
+              },
+              {
+                "id": "thorns_maximum_base_physical_damage",
+                "max": 92,
+                "min": 61
+              }
+            ]
+          },
+          {
+            "level": 63,
+            "name": "Edged",
+            "text": "(64-97) to (97-145) [Physical|Physical] [Thorns|Thorns] damage",
+            "stats": [
+              {
+                "id": "thorns_minimum_base_physical_damage",
+                "max": 97,
+                "min": 64
+              },
+              {
+                "id": "thorns_maximum_base_physical_damage",
+                "max": 145,
+                "min": 97
+              }
+            ]
+          },
+          {
+            "level": 74,
+            "name": "Jagged",
+            "text": "(101-151) to (146-220) [Physical|Physical] [Thorns|Thorns] damage",
+            "stats": [
+              {
+                "id": "thorns_minimum_base_physical_damage",
+                "max": 151,
+                "min": 101
+              },
+              {
+                "id": "thorns_maximum_base_physical_damage",
+                "max": 220,
+                "min": 146
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AllResistances",
+        "kind": "suffix",
+        "template": "+#% to all [ElementalDamage|Elemental] [Resistances]",
+        "tiers": [
+          {
+            "level": 12,
+            "name": "of the Crystal",
+            "text": "+(3-5)% to all [ElementalDamage|Elemental] [Resistances]",
+            "stats": [
+              {
+                "id": "base_resist_all_elements_%",
+                "max": 5,
+                "min": 3
+              }
+            ]
+          },
+          {
+            "level": 26,
+            "name": "of the Prism",
+            "text": "+(6-8)% to all [ElementalDamage|Elemental] [Resistances]",
+            "stats": [
+              {
+                "id": "base_resist_all_elements_%",
+                "max": 8,
+                "min": 6
+              }
+            ]
+          },
+          {
+            "level": 40,
+            "name": "of the Kaleidoscope",
+            "text": "+(9-11)% to all [ElementalDamage|Elemental] [Resistances]",
+            "stats": [
+              {
+                "id": "base_resist_all_elements_%",
+                "max": 11,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "of Variegation",
+            "text": "+(12-14)% to all [ElementalDamage|Elemental] [Resistances]",
+            "stats": [
+              {
+                "id": "base_resist_all_elements_%",
+                "max": 14,
+                "min": 12
+              }
+            ]
+          },
+          {
+            "level": 68,
+            "name": "of the Rainbow",
+            "text": "+(15-16)% to all [ElementalDamage|Elemental] [Resistances]",
+            "stats": [
+              {
+                "id": "base_resist_all_elements_%",
+                "max": 16,
+                "min": 15
+              }
+            ]
+          },
+          {
+            "level": 80,
+            "name": "of the Span",
+            "text": "+(17-18)% to all [ElementalDamage|Elemental] [Resistances]",
+            "stats": [
+              {
+                "id": "base_resist_all_elements_%",
+                "max": 18,
+                "min": 17
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ArmourAppliesToElementalDamage",
+        "kind": "suffix",
+        "template": "+#% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Covering",
+            "text": "+(14-19)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+            "stats": [
+              {
+                "id": "armour_%_applies_to_fire_cold_lightning_damage",
+                "max": 19,
+                "min": 14
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "of Sheathing",
+            "text": "+(20-25)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+            "stats": [
+              {
+                "id": "armour_%_applies_to_fire_cold_lightning_damage",
+                "max": 25,
+                "min": 20
+              }
+            ]
+          },
+          {
+            "level": 36,
+            "name": "of Lining",
+            "text": "+(26-31)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+            "stats": [
+              {
+                "id": "armour_%_applies_to_fire_cold_lightning_damage",
+                "max": 31,
+                "min": 26
+              }
+            ]
+          },
+          {
+            "level": 48,
+            "name": "of Padding",
+            "text": "+(32-37)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+            "stats": [
+              {
+                "id": "armour_%_applies_to_fire_cold_lightning_damage",
+                "max": 37,
+                "min": 32
+              }
+            ]
+          },
+          {
+            "level": 66,
+            "name": "of Furring",
+            "text": "+(38-43)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+            "stats": [
+              {
+                "id": "armour_%_applies_to_fire_cold_lightning_damage",
+                "max": 43,
+                "min": 38
+              }
+            ]
+          },
+          {
+            "level": 81,
+            "name": "of Thermokryptance",
+            "text": "+(44-50)% of [Armour|Armour] also applies to [ElementalDamage|Elemental Damage]",
+            "stats": [
+              {
+                "id": "armour_%_applies_to_fire_cold_lightning_damage",
+                "max": 50,
+                "min": 44
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ChaosResistance",
+        "kind": "suffix",
+        "template": "+#% to [Resistances|Chaos Resistance]",
+        "tiers": [
+          {
+            "level": 16,
+            "name": "of the Lost",
+            "text": "+(4-7)% to [Resistances|Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_chaos_damage_resistance_%",
+                "max": 7,
+                "min": 4
+              }
+            ]
+          },
+          {
+            "level": 30,
+            "name": "of Banishment",
+            "text": "+(8-11)% to [Resistances|Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_chaos_damage_resistance_%",
+                "max": 11,
+                "min": 8
+              }
+            ]
+          },
+          {
+            "level": 44,
+            "name": "of Eviction",
+            "text": "+(12-15)% to [Resistances|Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_chaos_damage_resistance_%",
+                "max": 15,
+                "min": 12
+              }
+            ]
+          },
+          {
+            "level": 56,
+            "name": "of Expulsion",
+            "text": "+(16-19)% to [Resistances|Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_chaos_damage_resistance_%",
+                "max": 19,
+                "min": 16
+              }
+            ]
+          },
+          {
+            "level": 68,
+            "name": "of Exile",
+            "text": "+(20-23)% to [Resistances|Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_chaos_damage_resistance_%",
+                "max": 23,
+                "min": 20
+              }
+            ]
+          },
+          {
+            "level": 81,
+            "name": "of Bameth",
+            "text": "+(24-27)% to [Resistances|Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_chaos_damage_resistance_%",
+                "max": 27,
+                "min": 24
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ColdResistance",
+        "kind": "suffix",
+        "template": "+#% to [Resistances|Cold Resistance]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Seal",
+            "text": "+(6-10)% to [Resistances|Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_cold_damage_resistance_%",
+                "max": 10,
+                "min": 6
+              }
+            ]
+          },
+          {
+            "level": 14,
+            "name": "of the Penguin",
+            "text": "+(11-15)% to [Resistances|Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_cold_damage_resistance_%",
+                "max": 15,
+                "min": 11
+              }
+            ]
+          },
+          {
+            "level": 26,
+            "name": "of the Narwhal",
+            "text": "+(16-20)% to [Resistances|Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_cold_damage_resistance_%",
+                "max": 20,
+                "min": 16
+              }
+            ]
+          },
+          {
+            "level": 38,
+            "name": "of the Yeti",
+            "text": "+(21-25)% to [Resistances|Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_cold_damage_resistance_%",
+                "max": 25,
+                "min": 21
+              }
+            ]
+          },
+          {
+            "level": 50,
+            "name": "of the Walrus",
+            "text": "+(26-30)% to [Resistances|Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_cold_damage_resistance_%",
+                "max": 30,
+                "min": 26
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "of the Polar Bear",
+            "text": "+(31-35)% to [Resistances|Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_cold_damage_resistance_%",
+                "max": 35,
+                "min": 31
+              }
+            ]
+          },
+          {
+            "level": 71,
+            "name": "of the Ice",
+            "text": "+(36-40)% to [Resistances|Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_cold_damage_resistance_%",
+                "max": 40,
+                "min": 36
+              }
+            ]
+          },
+          {
+            "level": 82,
+            "name": "of Haast",
+            "text": "+(41-45)% to [Resistances|Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_cold_damage_resistance_%",
+                "max": 45,
+                "min": 41
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "EnergyShieldRegeneration",
+        "kind": "suffix",
+        "template": "#% increased [ESRechargeRate|Energy Shield Recharge Rate]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Enlivening",
+            "text": "(26-30)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
+            "stats": [
+              {
+                "id": "energy_shield_recharge_rate_+%",
+                "max": 30,
+                "min": 26
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "of Diffusion",
+            "text": "(31-35)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
+            "stats": [
+              {
+                "id": "energy_shield_recharge_rate_+%",
+                "max": 35,
+                "min": 31
+              }
+            ]
+          },
+          {
+            "level": 36,
+            "name": "of Dispersal",
+            "text": "(36-40)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
+            "stats": [
+              {
+                "id": "energy_shield_recharge_rate_+%",
+                "max": 40,
+                "min": 36
+              }
+            ]
+          },
+          {
+            "level": 48,
+            "name": "of Buffering",
+            "text": "(41-45)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
+            "stats": [
+              {
+                "id": "energy_shield_recharge_rate_+%",
+                "max": 45,
+                "min": 41
+              }
+            ]
+          },
+          {
+            "level": 66,
+            "name": "of Ardour",
+            "text": "(46-50)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
+            "stats": [
+              {
+                "id": "energy_shield_recharge_rate_+%",
+                "max": 50,
+                "min": 46
+              }
+            ]
+          },
+          {
+            "level": 81,
+            "name": "of Suffusion",
+            "text": "(51-55)% increased [ESRechargeRate|Energy Shield Recharge Rate]",
+            "stats": [
+              {
+                "id": "energy_shield_recharge_rate_+%",
+                "max": 55,
+                "min": 51
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "FireResistance",
+        "kind": "suffix",
+        "template": "+#% to [Resistances|Fire Resistance]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Whelpling",
+            "text": "+(6-10)% to [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_fire_damage_resistance_%",
+                "max": 10,
+                "min": 6
+              }
+            ]
+          },
+          {
+            "level": 12,
+            "name": "of the Salamander",
+            "text": "+(11-15)% to [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_fire_damage_resistance_%",
+                "max": 15,
+                "min": 11
+              }
+            ]
+          },
+          {
+            "level": 24,
+            "name": "of the Drake",
+            "text": "+(16-20)% to [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_fire_damage_resistance_%",
+                "max": 20,
+                "min": 16
+              }
+            ]
+          },
+          {
+            "level": 36,
+            "name": "of the Kiln",
+            "text": "+(21-25)% to [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_fire_damage_resistance_%",
+                "max": 25,
+                "min": 21
+              }
+            ]
+          },
+          {
+            "level": 48,
+            "name": "of the Furnace",
+            "text": "+(26-30)% to [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_fire_damage_resistance_%",
+                "max": 30,
+                "min": 26
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "of the Volcano",
+            "text": "+(31-35)% to [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_fire_damage_resistance_%",
+                "max": 35,
+                "min": 31
+              }
+            ]
+          },
+          {
+            "level": 71,
+            "name": "of Magma",
+            "text": "+(36-40)% to [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_fire_damage_resistance_%",
+                "max": 40,
+                "min": 36
+              }
+            ]
+          },
+          {
+            "level": 82,
+            "name": "of Tzteosh",
+            "text": "+(41-45)% to [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_fire_damage_resistance_%",
+                "max": 45,
+                "min": 41
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Intelligence",
+        "kind": "suffix",
+        "template": "+# to [Intelligence|Intelligence]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Pupil",
+            "text": "+(5-8) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 8,
+                "min": 5
+              }
+            ]
+          },
+          {
+            "level": 11,
+            "name": "of the Student",
+            "text": "+(9-12) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 12,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 22,
+            "name": "of the Prodigy",
+            "text": "+(13-16) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 16,
+                "min": 13
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "of the Augur",
+            "text": "+(17-20) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 20,
+                "min": 17
+              }
+            ]
+          },
+          {
+            "level": 44,
+            "name": "of the Philosopher",
+            "text": "+(21-24) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 24,
+                "min": 21
+              }
+            ]
+          },
+          {
+            "level": 55,
+            "name": "of the Sage",
+            "text": "+(25-27) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 27,
+                "min": 25
+              }
+            ]
+          },
+          {
+            "level": 66,
+            "name": "of the Savant",
+            "text": "+(28-30) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 30,
+                "min": 28
+              }
+            ]
+          },
+          {
+            "level": 74,
+            "name": "of the Virtuoso",
+            "text": "+(31-33) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 33,
+                "min": 31
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LightningResistance",
+        "kind": "suffix",
+        "template": "+#% to [Resistances|Lightning Resistance]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Cloud",
+            "text": "+(6-10)% to [Resistances|Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_lightning_damage_resistance_%",
+                "max": 10,
+                "min": 6
+              }
+            ]
+          },
+          {
+            "level": 13,
+            "name": "of the Squall",
+            "text": "+(11-15)% to [Resistances|Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_lightning_damage_resistance_%",
+                "max": 15,
+                "min": 11
+              }
+            ]
+          },
+          {
+            "level": 25,
+            "name": "of the Storm",
+            "text": "+(16-20)% to [Resistances|Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_lightning_damage_resistance_%",
+                "max": 20,
+                "min": 16
+              }
+            ]
+          },
+          {
+            "level": 37,
+            "name": "of the Thunderhead",
+            "text": "+(21-25)% to [Resistances|Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_lightning_damage_resistance_%",
+                "max": 25,
+                "min": 21
+              }
+            ]
+          },
+          {
+            "level": 49,
+            "name": "of the Tempest",
+            "text": "+(26-30)% to [Resistances|Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_lightning_damage_resistance_%",
+                "max": 30,
+                "min": 26
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "of the Maelstrom",
+            "text": "+(31-35)% to [Resistances|Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_lightning_damage_resistance_%",
+                "max": 35,
+                "min": 31
+              }
+            ]
+          },
+          {
+            "level": 71,
+            "name": "of the Lightning",
+            "text": "+(36-40)% to [Resistances|Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_lightning_damage_resistance_%",
+                "max": 40,
+                "min": 36
+              }
+            ]
+          },
+          {
+            "level": 82,
+            "name": "of Ephij",
+            "text": "+(41-45)% to [Resistances|Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_lightning_damage_resistance_%",
+                "max": 45,
+                "min": 41
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LocalAttributeRequirements",
+        "kind": "suffix",
+        "template": "#% reduced [Attributes|Attribute] Requirements",
+        "tiers": [
+          {
+            "level": 24,
+            "name": "of the Worthy",
+            "text": "15% reduced [Attributes|Attribute] Requirements",
+            "stats": [
+              {
+                "id": "local_attribute_requirements_+%",
+                "max": -15,
+                "min": -15
+              }
+            ]
+          },
+          {
+            "level": 32,
+            "name": "of the Apt",
+            "text": "20% reduced [Attributes|Attribute] Requirements",
+            "stats": [
+              {
+                "id": "local_attribute_requirements_+%",
+                "max": -20,
+                "min": -20
+              }
+            ]
+          },
+          {
+            "level": 40,
+            "name": "of the Talented",
+            "text": "25% reduced [Attributes|Attribute] Requirements",
+            "stats": [
+              {
+                "id": "local_attribute_requirements_+%",
+                "max": -25,
+                "min": -25
+              }
+            ]
+          },
+          {
+            "level": 52,
+            "name": "of the Skilled",
+            "text": "30% reduced [Attributes|Attribute] Requirements",
+            "stats": [
+              {
+                "id": "local_attribute_requirements_+%",
+                "max": -30,
+                "min": -30
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "of the Proficient",
+            "text": "35% reduced [Attributes|Attribute] Requirements",
+            "stats": [
+              {
+                "id": "local_attribute_requirements_+%",
+                "max": -35,
+                "min": -35
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MaximumChaosResistance",
+        "kind": "suffix",
+        "template": "+#% to [MaximumResistances|Maximum Chaos Resistance]",
+        "tiers": [
+          {
+            "level": 68,
+            "name": "of Regularity",
+            "text": "+1% to [MaximumResistances|Maximum Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_chaos_damage_resistance_%",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          },
+          {
+            "level": 75,
+            "name": "of Concord",
+            "text": "+2% to [MaximumResistances|Maximum Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_chaos_damage_resistance_%",
+                "max": 2,
+                "min": 2
+              }
+            ]
+          },
+          {
+            "level": 81,
+            "name": "of Harmony",
+            "text": "+3% to [MaximumResistances|Maximum Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_chaos_damage_resistance_%",
+                "max": 3,
+                "min": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MaximumColdResist",
+        "kind": "suffix",
+        "template": "+#% to [MaximumResistances|Maximum Cold Resistance]",
+        "tiers": [
+          {
+            "level": 68,
+            "name": "of Furs",
+            "text": "+1% to [MaximumResistances|Maximum Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_cold_damage_resistance_%",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          },
+          {
+            "level": 75,
+            "name": "of the Tundra",
+            "text": "+2% to [MaximumResistances|Maximum Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_cold_damage_resistance_%",
+                "max": 2,
+                "min": 2
+              }
+            ]
+          },
+          {
+            "level": 81,
+            "name": "of the Mammoth",
+            "text": "+3% to [MaximumResistances|Maximum Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_cold_damage_resistance_%",
+                "max": 3,
+                "min": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MaximumFireResist",
+        "kind": "suffix",
+        "template": "+#% to [MaximumResistances|Maximum Fire Resistance]",
+        "tiers": [
+          {
+            "level": 68,
+            "name": "of the Bushfire",
+            "text": "+1% to [MaximumResistances|Maximum Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_fire_damage_resistance_%",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          },
+          {
+            "level": 75,
+            "name": "of the Molten Core",
+            "text": "+2% to [MaximumResistances|Maximum Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_fire_damage_resistance_%",
+                "max": 2,
+                "min": 2
+              }
+            ]
+          },
+          {
+            "level": 81,
+            "name": "of the Solar Storm",
+            "text": "+3% to [MaximumResistances|Maximum Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_fire_damage_resistance_%",
+                "max": 3,
+                "min": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MaximumLightningResistance",
+        "kind": "suffix",
+        "template": "+#% to [MaximumResistances|Maximum Lightning Resistance]",
+        "tiers": [
+          {
+            "level": 68,
+            "name": "of Impedance",
+            "text": "+1% to [MaximumResistances|Maximum Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_lightning_damage_resistance_%",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          },
+          {
+            "level": 75,
+            "name": "of Shockproofing",
+            "text": "+2% to [MaximumResistances|Maximum Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_lightning_damage_resistance_%",
+                "max": 2,
+                "min": 2
+              }
+            ]
+          },
+          {
+            "level": 81,
+            "name": "of the Lightning Rod",
+            "text": "+3% to [MaximumResistances|Maximum Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_lightning_damage_resistance_%",
+                "max": 3,
+                "min": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MaximumResistances",
+        "kind": "suffix",
+        "template": "+#% to all [MaximumResistances|Maximum Elemental Resistances]",
+        "tiers": [
+          {
+            "level": 75,
+            "name": "of the Deathless",
+            "text": "+1% to all [MaximumResistances|Maximum Elemental Resistances]",
+            "stats": [
+              {
+                "id": "additional_maximum_all_elemental_resistances_%",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          },
+          {
+            "level": 81,
+            "name": "of the Everlasting",
+            "text": "+2% to all [MaximumResistances|Maximum Elemental Resistances]",
+            "stats": [
+              {
+                "id": "additional_maximum_all_elemental_resistances_%",
+                "max": 2,
+                "min": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Strength",
+        "kind": "suffix",
+        "template": "+# to [Strength|Strength]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Brute",
+            "text": "+(5-8) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 8,
+                "min": 5
+              }
+            ]
+          },
+          {
+            "level": 11,
+            "name": "of the Wrestler",
+            "text": "+(9-12) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 12,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 22,
+            "name": "of the Bear",
+            "text": "+(13-16) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 16,
+                "min": 13
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "of the Lion",
+            "text": "+(17-20) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 20,
+                "min": 17
+              }
+            ]
+          },
+          {
+            "level": 44,
+            "name": "of the Gorilla",
+            "text": "+(21-24) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 24,
+                "min": 21
+              }
+            ]
+          },
+          {
+            "level": 55,
+            "name": "of the Goliath",
+            "text": "+(25-27) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 27,
+                "min": 25
+              }
+            ]
+          },
+          {
+            "level": 66,
+            "name": "of the Leviathan",
+            "text": "+(28-30) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 30,
+                "min": 28
+              }
+            ]
+          },
+          {
+            "level": 74,
+            "name": "of the Titan",
+            "text": "+(31-33) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 33,
+                "min": 31
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "StunThreshold",
+        "kind": "suffix",
+        "template": "+# to [StunThreshold|Stun Threshold]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Thick Skin",
+            "text": "+(6-11) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "stun_threshold_+",
+                "max": 11,
+                "min": 6
+              }
+            ]
+          },
+          {
+            "level": 8,
+            "name": "of Reinforced Skin",
+            "text": "+(12-29) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "stun_threshold_+",
+                "max": 29,
+                "min": 12
+              }
+            ]
+          },
+          {
+            "level": 15,
+            "name": "of Stone Skin",
+            "text": "+(30-49) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "stun_threshold_+",
+                "max": 49,
+                "min": 30
+              }
+            ]
+          },
+          {
+            "level": 22,
+            "name": "of Iron Skin",
+            "text": "+(50-72) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "stun_threshold_+",
+                "max": 72,
+                "min": 50
+              }
+            ]
+          },
+          {
+            "level": 29,
+            "name": "of Steel Skin",
+            "text": "+(73-97) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "stun_threshold_+",
+                "max": 97,
+                "min": 73
+              }
+            ]
+          },
+          {
+            "level": 36,
+            "name": "of Granite Skin",
+            "text": "+(98-124) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "stun_threshold_+",
+                "max": 124,
+                "min": 98
+              }
+            ]
+          },
+          {
+            "level": 45,
+            "name": "of Platinum Skin",
+            "text": "+(125-163) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "stun_threshold_+",
+                "max": 163,
+                "min": 125
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "of Adamantite Skin",
+            "text": "+(164-206) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "stun_threshold_+",
+                "max": 206,
+                "min": 164
+              }
+            ]
+          },
+          {
+            "level": 63,
+            "name": "of Corundum Skin",
+            "text": "+(207-253) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "stun_threshold_+",
+                "max": 253,
+                "min": 207
+              }
+            ]
+          },
+          {
+            "level": 72,
+            "name": "of Obsidian Skin",
+            "text": "+(254-304) to [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "stun_threshold_+",
+                "max": 304,
+                "min": 254
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "socketable": [
+      {
+        "family_key": "AdeptRune",
+        "kind": "gen0",
+        "template": "# to Dexterity",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneDexterity\" href=\"Adept_Rune\">Adept Rune</a>",
+            "text": "+8 to Dexterity"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneDexterityGreater\" href=\"Greater_Adept_Rune\">Greater Adept Rune</a>",
+            "text": "+10 to Dexterity"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneDexterityLesser\" href=\"Lesser_Adept_Rune\">Lesser Adept Rune</a>",
+            "text": "+6 to Dexterity"
+          }
+        ]
+      },
+      {
+        "family_key": "BodyRune",
+        "kind": "gen0",
+        "template": "# to maximum Life",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLife\" href=\"Body_Rune\">Body Rune</a>",
+            "text": "+30 to maximum Life"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeGreater\" href=\"Greater_Body_Rune\">Greater Body Rune</a>",
+            "text": "+40 to maximum Life"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeLesser\" href=\"Lesser_Body_Rune\">Lesser Body Rune</a>",
+            "text": "+20 to maximum Life"
+          }
+        ]
+      },
+      {
+        "family_key": "DesertRune",
+        "kind": "gen0",
+        "template": "# to Fire Resistance",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFire\" href=\"Desert_Rune\">Desert Rune</a>",
+            "text": "+12% to Fire Resistance"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFireGreater\" href=\"Greater_Desert_Rune\">Greater Desert Rune</a>",
+            "text": "+14% to Fire Resistance"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFireLesser\" href=\"Lesser_Desert_Rune\">Lesser Desert Rune</a>",
+            "text": "+10% to Fire Resistance"
+          }
+        ]
+      },
+      {
+        "family_key": "GlacialRune",
+        "kind": "gen0",
+        "template": "# to Cold Resistance",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneCold\" href=\"Glacial_Rune\">Glacial Rune</a>",
+            "text": "+12% to Cold Resistance"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneColdGreater\" href=\"Greater_Glacial_Rune\">Greater Glacial Rune</a>",
+            "text": "+14% to Cold Resistance"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneColdLesser\" href=\"Lesser_Glacial_Rune\">Lesser Glacial Rune</a>",
+            "text": "+10% to Cold Resistance"
+          }
+        ]
+      },
+      {
+        "family_key": "InspirationRune",
+        "kind": "gen0",
+        "template": "# increased Mana Regeneration Rate",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecovery\" href=\"Inspiration_Rune\">Inspiration Rune</a>",
+            "text": "15% increased Mana Regeneration Rate"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecoveryGreater\" href=\"Greater_Inspiration_Rune\">Greater Inspiration Rune</a>",
+            "text": "18% increased Mana Regeneration Rate"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecoveryLesser\" href=\"Lesser_Inspiration_Rune\">Lesser Inspiration Rune</a>",
+            "text": "12% increased Mana Regeneration Rate"
+          }
+        ]
+      },
+      {
+        "family_key": "IronRune",
+        "kind": "gen0",
+        "template": "# increased Armour, Evasion and Energy Shield",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhance\" href=\"Iron_Rune\">Iron Rune</a>",
+            "text": "16% increased Armour, Evasion and Energy Shield"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhanceGreater\" href=\"Greater_Iron_Rune\">Greater Iron Rune</a>",
+            "text": "18% increased Armour, Evasion and Energy Shield"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhanceLesser\" href=\"Lesser_Iron_Rune\">Lesser Iron Rune</a>",
+            "text": "14% increased Armour, Evasion and Energy Shield"
+          }
+        ]
+      },
+      {
+        "family_key": "MindRune",
+        "kind": "gen0",
+        "template": "# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneMana\" href=\"Mind_Rune\">Mind Rune</a>",
+            "text": "+25 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaGreater\" href=\"Greater_Mind_Rune\">Greater Mind Rune</a>",
+            "text": "+35 to maximum Mana"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaLesser\" href=\"Lesser_Mind_Rune\">Lesser Mind Rune</a>",
+            "text": "+15 to maximum Mana"
+          }
+        ]
+      },
+      {
+        "family_key": "OxIdol",
+        "kind": "gen0",
+        "template": "# increased Block chance",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanOx\" href=\"Ox_Idol\">Ox Idol</a>",
+            "text": "10% increased Block chance"
+          }
+        ]
+      },
+      {
+        "family_key": "RebirthRune",
+        "kind": "gen0",
+        "template": "Regenerate # of maximum Life per second",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecovery\" href=\"Rebirth_Rune\">Rebirth Rune</a>",
+            "text": "Regenerate 0.3% of maximum Life per second"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecoveryGreater\" href=\"Greater_Rebirth_Rune\">Greater Rebirth Rune</a>",
+            "text": "Regenerate 0.35% of maximum Life per second"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecoveryLesser\" href=\"Lesser_Rebirth_Rune\">Lesser Rebirth Rune</a>",
+            "text": "Regenerate 0.25% of maximum Life per second"
+          }
+        ]
+      },
+      {
+        "family_key": "ResolveRune",
+        "kind": "gen0",
+        "template": "# to Intelligence",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneIntelligence\" href=\"Resolve_Rune\">Resolve Rune</a>",
+            "text": "+8 to Intelligence"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneIntelligenceGreater\" href=\"Greater_Resolve_Rune\">Greater Resolve Rune</a>",
+            "text": "+10 to Intelligence"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneIntelligenceLesser\" href=\"Lesser_Resolve_Rune\">Lesser Resolve Rune</a>",
+            "text": "+6 to Intelligence"
+          }
+        ]
+      },
+      {
+        "family_key": "RobustRune",
+        "kind": "gen0",
+        "template": "# to Strength",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStrength\" href=\"Robust_Rune\">Robust Rune</a>",
+            "text": "+8 to Strength"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStrengthGreater\" href=\"Greater_Robust_Rune\">Greater Robust Rune</a>",
+            "text": "+10 to Strength"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStrengthLesser\" href=\"Lesser_Robust_Rune\">Lesser Robust Rune</a>",
+            "text": "+6 to Strength"
+          }
+        ]
+      },
+      {
+        "family_key": "RuneofAlacrity",
+        "kind": "gen0",
+        "template": "Debuffs on you expire # faster",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial3\" href=\"Greater_Rune_of_Alacrity\">Greater Rune of Alacrity</a>",
+            "text": "Debuffs on you expire 8% faster"
+          }
+        ]
+      },
+      {
+        "family_key": "RuneofLeadership",
+        "kind": "gen0",
+        "template": "Minions take # of Physical Damage as Lightning Damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial1\" href=\"Greater_Rune_of_Leadership\">Greater Rune of Leadership</a>",
+            "text": "Minions take 10% of Physical Damage as Lightning Damage"
+          }
+        ]
+      },
+      {
+        "family_key": "RuneofNobility",
+        "kind": "gen0",
+        "template": "# reduced effect of Shock on you",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial4\" href=\"Greater_Rune_of_Nobility\">Greater Rune of Nobility</a>",
+            "text": "10% reduced effect of Shock on you"
+          }
+        ]
+      },
+      {
+        "family_key": "RuneofTithing",
+        "kind": "gen0",
+        "template": "# to # Lightning Thorns damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial2\" href=\"Greater_Rune_of_Tithing\">Greater Rune of Tithing</a>",
+            "text": "1 to 100 Lightning Thorns damage"
+          }
+        ]
+      },
+      {
+        "family_key": "SoulCoreofAtmohua",
+        "kind": "gen0",
+        "template": "Convert # of Requirements to Strength",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreStrength\" href=\"Soul_Core_of_Atmohua\">Soul Core of Atmohua</a>",
+            "text": "Convert 20% of Requirements to Strength"
+          }
+        ]
+      },
+      {
+        "family_key": "SoulCoreofCholotl",
+        "kind": "gen0",
+        "template": "Convert # of Requirements to Dexterity",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreDexterity\" href=\"Soul_Core_of_Cholotl\">Soul Core of Cholotl</a>",
+            "text": "Convert 20% of Requirements to Dexterity"
+          }
+        ]
+      },
+      {
+        "family_key": "SoulCoreofCitaqualotl",
+        "kind": "gen0",
+        "template": "# to all Elemental Resistances",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreEnlighten\" href=\"Soul_Core_of_Citaqualotl\">Soul Core of Citaqualotl</a>",
+            "text": "+5% to all Elemental Resistances"
+          }
+        ]
+      },
+      {
+        "family_key": "SoulCoreofTacati",
+        "kind": "gen0",
+        "template": "# to Chaos Resistance",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreChaos\" href=\"Soul_Core_of_Tacati\">Soul Core of Tacati</a>",
+            "text": "+11% to Chaos Resistance"
+          }
+        ]
+      },
+      {
+        "family_key": "SoulCoreofTicaba",
+        "kind": "gen0",
+        "template": "Hits against you have # reduced Critical Damage Bonus",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreCrit\" href=\"Soul_Core_of_Ticaba\">Soul Core of Ticaba</a>",
+            "text": "Hits against you have 20% reduced Critical Damage Bonus"
+          }
+        ]
+      },
+      {
+        "family_key": "SoulCoreofZantipi",
+        "kind": "gen0",
+        "template": "Convert # of Requirements to Intelligence",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreIntelligence\" href=\"Soul_Core_of_Zantipi\">Soul Core of Zantipi</a>",
+            "text": "Convert 20% of Requirements to Intelligence"
+          }
+        ]
+      },
+      {
+        "family_key": "StoneRune",
+        "kind": "gen0",
+        "template": "# to Stun Threshold",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStun\" href=\"Stone_Rune\">Stone Rune</a>",
+            "text": "+60 to Stun Threshold"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStunGreater\" href=\"Greater_Stone_Rune\">Greater Stone Rune</a>",
+            "text": "+80 to Stun Threshold"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStunLesser\" href=\"Lesser_Stone_Rune\">Lesser Stone Rune</a>",
+            "text": "+40 to Stun Threshold"
+          }
+        ]
+      },
+      {
+        "family_key": "StormRune",
+        "kind": "gen0",
+        "template": "# to Lightning Resistance",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightning\" href=\"Storm_Rune\">Storm Rune</a>",
+            "text": "+12% to Lightning Resistance"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightningGreater\" href=\"Greater_Storm_Rune\">Greater Storm Rune</a>",
+            "text": "+14% to Lightning Resistance"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightningLesser\" href=\"Lesser_Storm_Rune\">Lesser Storm Rune</a>",
+            "text": "+10% to Lightning Resistance"
+          }
+        ]
+      },
+      {
+        "family_key": "TemperedRune",
+        "kind": "gen0",
+        "template": "# to # Physical Thorns damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRunePhysical\" href=\"Tempered_Rune\">Tempered Rune</a>",
+            "text": "14 to 21 Physical Thorns damage"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRunePhysicalGreater\" href=\"Greater_Tempered_Rune\">Greater Tempered Rune</a>",
+            "text": "31 to 52 Physical Thorns damage"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRunePhysicalLesser\" href=\"Lesser_Tempered_Rune\">Lesser Tempered Rune</a>",
+            "text": "6 to 9 Physical Thorns damage"
+          }
+        ]
+      },
+      {
+        "family_key": "VisionRune",
+        "kind": "gen0",
+        "template": "# increased Life and Mana Recovery from Flasks",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracy\" href=\"Vision_Rune\">Vision Rune</a>",
+            "text": "10% increased Life and Mana Recovery from Flasks"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracyGreater\" href=\"Greater_Vision_Rune\">Greater Vision Rune</a>",
+            "text": "12% increased Life and Mana Recovery from Flasks"
+          },
+          {
+            "level": 1,
+            "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracyLesser\" href=\"Lesser_Vision_Rune\">Lesser Vision Rune</a>",
+            "text": "8% increased Life and Mana Recovery from Flasks"
+          }
+        ]
+      }
+    ]
+  },
   "slug": "Shields_str_int"
 }

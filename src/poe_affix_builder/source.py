@@ -70,7 +70,8 @@ def load_mod_entries(mods_json_path: Path, *, include_kinds: Iterable[str] | Non
         if not kind or (kinds is not None and kind not in kinds):
             continue
         groups = mod.get("groups") or []
-        family_key = groups[0] if isinstance(groups, list) and groups and isinstance(groups[0], str) else ""
+        family_parts = [group for group in groups if isinstance(group, str) and group] if isinstance(groups, list) else []
+        family_key = "|".join(family_parts)
         if not family_key:
             continue
         level = _to_int(mod.get("required_level"))

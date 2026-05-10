@@ -6,7 +6,16 @@ from typing import Any, Dict, Mapping
 from poe_affix_builder.adapters.json_store import load_json, write_json_atomic
 from poe_affix_builder.contracts.manifest_contracts import manifest_to_dict
 from poe_affix_builder.contracts.report_contracts import rebuild_report_to_dict
-from poe_affix_builder.domain.models import ManifestAffix, ManifestDocument, ManifestItem, ManifestTier, RebuildReport, RebuildResult
+from poe_affix_builder.domain.models import (
+    ManifestAffix,
+    ManifestBase,
+    ManifestDocument,
+    ManifestItem,
+    ManifestModifierSection,
+    ManifestTier,
+    RebuildReport,
+    RebuildResult,
+)
 from poe_affix_builder.policies import domain_for_category, spawn_tags_for_slug
 from poe_affix_builder.services.matching_service import index_entries_by_family_level, select_rebuild_candidate
 from poe_affix_builder.source import load_mod_entries
@@ -31,23 +40,18 @@ def _entry_stat_ids(entry) -> list[str]:
     return out
 
 
-def _build_item_from_snapshot(
+def _rebuild_affixes(
     *,
-    snapshot_item: Mapping[str, Any],
+    slug: str,
+    rows: list[Any],
     entries_by_family_level: Mapping[tuple[str, int], list[Any]],
     unresolved_mod_matches: list[dict[str, Any]],
-) -> ManifestItem:
-    slug = str(snapshot_item.get("slug") or "")
-    category = str(snapshot_item.get("category") or "")
-    label = str(snapshot_item.get("label") or slug)
-    include_domains = (domain_for_category(category),)
-    include_spawn_tags = tuple(spawn_tags_for_slug(slug))
-    domains_set = set(include_domains)
-    tags_set = set(include_spawn_tags)
-
+    include_domains: set[str],
+    include_spawn_tags: set[str],
+) -> tuple[ManifestAffix, ...]:
     affixes_out: list[ManifestAffix] = []
     for affix in sorted(
-        snapshot_item.get("affixes") or [],
+        rows,
         key=lambda row: (str((row or {}).get("kind") or ""), str((row or {}).get("family_key") or ""), str((row or {}).get("template") or "")),
     ):
         if not isinstance(affix, dict):
@@ -73,14 +77,60 @@ def _build_item_from_snapshot(
                 kind=kind,
                 text=text,
                 name=name,
-                include_domains=domains_set,
-                include_spawn_tags=tags_set,
+                include_domains=include_domains,
+                include_spawn_tags=include_spawn_tags,
             )
             stats = tuple(_entry_stat_ids(decision.entry)) if decision.entry is not None else ()
             if decision.entry is None:
                 unresolved_mod_matches.append({"slug": slug, "kind": kind, "family_key": family_key, "level": level})
             tiers_out.append(ManifestTier(level=level, name=name, text=text, stats=stats))
         affixes_out.append(ManifestAffix(kind=kind, family_key=family_key, template=template, tiers=tuple(tiers_out)))
+    return tuple(affixes_out)
+
+
+def _build_item_from_snapshot(
+    *,
+    snapshot_item: Mapping[str, Any],
+    entries_by_family_level: Mapping[tuple[str, int], list[Any]],
+    unresolved_mod_matches: list[dict[str, Any]],
+) -> ManifestItem:
+    slug = str(snapshot_item.get("slug") or "")
+    category = str(snapshot_item.get("category") or "")
+    label = str(snapshot_item.get("label") or slug)
+    include_domains = (domain_for_category(category),)
+    include_spawn_tags = tuple(spawn_tags_for_slug(slug))
+    domains_set = set(include_domains)
+    tags_set = set(include_spawn_tags)
+
+    bases = []
+    for base in snapshot_item.get("bases") or []:
+        if not isinstance(base, Mapping):
+            continue
+        bases.append(
+            ManifestBase(
+                name=str(base.get("name") or ""),
+                href=str(base.get("href") or ""),
+                required_level=base.get("required_level") if isinstance(base.get("required_level"), int) else None,
+            )
+        )
+
+    snapshot_sections = dict(snapshot_item.get("modifier_sections") or {})
+    if "normal" not in snapshot_sections and "affixes" in snapshot_item:
+        snapshot_sections["normal"] = snapshot_item.get("affixes") or []
+
+    modifier_sections: list[ManifestModifierSection] = []
+    for section_name, rows in sorted(snapshot_sections.items(), key=lambda row: str(row[0])):
+        affixes = _rebuild_affixes(
+            slug=slug,
+            rows=list(rows or []),
+            entries_by_family_level=entries_by_family_level,
+            unresolved_mod_matches=unresolved_mod_matches,
+            include_domains=domains_set,
+            include_spawn_tags=tags_set,
+        )
+        modifier_sections.append(ManifestModifierSection(name=str(section_name), affixes=affixes))
+
+    affixes_out = next((section.affixes for section in modifier_sections if section.name == "normal"), tuple())
 
     return ManifestItem(
         slug=slug,
@@ -88,7 +138,9 @@ def _build_item_from_snapshot(
         label=label,
         include_domains=include_domains,
         include_spawn_tags=include_spawn_tags,
-        affixes=tuple(affixes_out),
+        bases=tuple(bases),
+        modifier_sections=tuple(modifier_sections),
+        affixes=affixes_out,
     )
 
 
@@ -116,8 +168,17 @@ def rebuild_mapping(
         )
 
     document = ManifestDocument(version=1, items=tuple(out_items))
-    total_affixes = sum(len(item.affixes) for item in out_items)
-    total_tiers = sum(len(affix.tiers) for item in out_items for affix in item.affixes)
+    total_affixes = 0
+    total_tiers = 0
+    for item in out_items:
+        sections = item.modifier_sections or ()
+        if sections:
+            for section in sections:
+                total_affixes += len(section.affixes)
+                total_tiers += sum(len(affix.tiers) for affix in section.affixes)
+        else:
+            total_affixes += len(item.affixes)
+            total_tiers += sum(len(affix.tiers) for affix in item.affixes)
     report = RebuildReport(
         ok=True,
         items=len(out_items),

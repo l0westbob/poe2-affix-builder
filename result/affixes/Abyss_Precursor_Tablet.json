@@ -1,436 +1,438 @@
 {
-  "affixes": [
-    {
-      "family_key": "MapAdditionalAzmeriWisp",
-      "kind": "prefix",
-      "template": "Map contains # additional [AzmeriSpirit|Azmeri Spirit]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Azmeri's",
-          "text": "Map contains 1 additional [AzmeriSpirit|Azmeri Spirit]",
-          "stats": [
-            {
-              "id": "map_spawn_extra_torment_spirits",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "map_map_item_drop_chance_+%",
-              "max": 0,
-              "min": 0
-            },
-            {
-              "id": "map_item_drop_rarity_+%",
-              "max": 0,
-              "min": 0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapAdditionalChests",
-      "kind": "prefix",
-      "template": "Map contains # additional [Rarity|Rare] Chests",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Treasurer's",
-          "text": "Map contains (2-3) additional [Rarity|Rare] Chests",
-          "stats": [
-            {
-              "id": "map_addtional_rare_chest_amount",
-              "max": 3,
-              "min": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapAdditionalEssence",
-      "kind": "prefix",
-      "template": "Map contains an additional [Essence]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Crystallised",
-          "text": "Map contains an additional [Essence]",
-          "stats": [
-            {
-              "id": "map_extra_monoliths",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "map_map_item_drop_chance_+%",
-              "max": 0,
-              "min": 0
-            },
-            {
-              "id": "map_item_drop_rarity_+%",
-              "max": 0,
-              "min": 0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapAdditionalExile",
-      "kind": "prefix",
-      "template": "Map is inhabited by # additional Rogue Exile",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Exiled",
-          "text": "Map is inhabited by 1 additional Rogue Exile",
-          "stats": [
-            {
-              "id": "map_spawn_extra_exiles",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "map_map_item_drop_chance_+%",
-              "max": 0,
-              "min": 0
-            },
-            {
-              "id": "map_item_drop_rarity_+%",
-              "max": 0,
-              "min": 0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapAdditionalStoneCircle",
-      "kind": "prefix",
-      "template": "Map contains an additional [StoneSummoningCircle|Summoning Circle]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Summoner's",
-          "text": "Map contains an additional [StoneSummoningCircle|Summoning Circle]",
-          "stats": [
-            {
-              "id": "map_num_extra_stone_circles",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapDroppedGoldIncrease",
-      "kind": "prefix",
-      "template": "#% increased Gold found in Map",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Bountiful",
-          "text": "(25-40)% increased Gold found in Map",
-          "stats": [
-            {
-              "id": "map_extra_gold_piles_chance_%",
-              "max": 40,
-              "min": 25
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapDroppedItemRarityIncrease",
-      "kind": "prefix",
-      "template": "#% increased [Rarity] of Items found in Map",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Collector's",
-          "text": "(18-30)% increased [Rarity] of Items found in Map",
-          "stats": [
-            {
-              "id": "map_item_drop_rarity_+%",
-              "max": 30,
-              "min": 18
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapExperienceGainIncrease",
-      "kind": "prefix",
-      "template": "#% increased Experience gain in Map",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Elevated",
-          "text": "(10-20)% increased Experience gain in Map",
-          "stats": [
-            {
-              "id": "map_experience_gain_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapMagicPackIncrease",
-      "kind": "prefix",
-      "template": "Map has #% increased [Rarity|Magic] Monsters",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Teeming",
-          "text": "Map has (50-70)% increased [Rarity|Magic] Monsters",
-          "stats": [
-            {
-              "id": "map_number_of_magic_packs_+%",
-              "max": 70,
-              "min": 50
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapMonsterEffectiveness",
-      "kind": "prefix",
-      "template": "Monsters have #% increased [MonsterEffectiveness|Effectiveness]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Challenger's",
-          "text": "Monsters have (7-11)% increased [MonsterEffectiveness|Effectiveness]",
-          "stats": [
-            {
-              "id": "map_monster_potency_+%",
-              "max": 11,
-              "min": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapPackSizeIncrease",
-      "kind": "prefix",
-      "template": "#% increased Pack Size in Map",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Breeding",
-          "text": "(6-10)% increased Pack Size in Map",
-          "stats": [
-            {
-              "id": "map_pack_size_+%",
-              "max": 10,
-              "min": 6
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapRarePackIncrease",
-      "kind": "prefix",
-      "template": "Map has #% increased number of [Rarity|Rare] Monsters",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Brimming",
-          "text": "Map has (25-40)% increased number of [Rarity|Rare] Monsters",
-          "stats": [
-            {
-              "id": "map_number_of_rare_packs_+%",
-              "max": 40,
-              "min": 25
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "Abyss4AdditionalChance",
-      "kind": "suffix",
-      "template": "Map has #% chance to contain four additional [ContainsAbyss|Abysses]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Schisms",
-          "text": "Map has (20-40)% chance to contain four additional [ContainsAbyss|Abysses]",
-          "stats": [
-            {
-              "id": "map_chance_for_4_additional_abysses_%",
-              "max": 40,
-              "min": 20
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AbyssAdditionalChance",
-      "kind": "suffix",
-      "template": "Map contains an additional [ContainsAbyss|Abyss]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Hollows",
-          "text": "Map contains an additional [ContainsAbyss|Abyss]",
-          "stats": [
-            {
-              "id": "map_num_extra_abysses",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AbyssDepthsChance",
-      "kind": "suffix",
-      "template": "[ContainsAbyss|Abysses] in Map have #% increased chance to lead to an [AbyssalDepths|Abyssal Depths]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Depths",
-          "text": "[ContainsAbyss|Abysses] in Map have (10-20)% increased chance to lead to an [AbyssalDepths|Abyssal Depths]",
-          "stats": [
-            {
-              "id": "map_abyss_depths_chance_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AbyssEnhancedMonstersPerChasm",
-      "kind": "suffix",
-      "template": "[ContainsAbyss|Abyssal] Monsters in Map have increased Difficulty and Reward for each closed Pit",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Escalation",
-          "text": "[ContainsAbyss|Abyssal] Monsters in Map have increased Difficulty and Reward for each closed Pit",
-          "stats": [
-            {
-              "id": "map_abyss_monsters_enhanced_per_chasm_closed",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AbyssExtraModifiers",
-      "kind": "suffix",
-      "template": "#% increased chance for [ContainsAbyss|Abyssal] monsters in Map to have [AbyssalModifiers|Abyssal Modifiers]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Dark Power",
-          "text": "(20-30)% increased chance for [ContainsAbyss|Abyssal] monsters in Map to have [AbyssalModifiers|Abyssal Modifiers]",
-          "stats": [
-            {
-              "id": "map_abyss_monster_abyssal_modifier_chance_+%",
-              "max": 30,
-              "min": 20
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AbyssExtraTickets",
-      "kind": "suffix",
-      "template": "#% increased chance for [Abyssalify|Desecrated] Currency from [ContainsAbyss|Abysses] in Map",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Ossification",
-          "text": "(20-30)% increased chance for [Abyssalify|Desecrated] Currency from [ContainsAbyss|Abysses] in Map",
-          "stats": [
-            {
-              "id": "map_abyss_ticket_chance_+%",
-              "max": 30,
-              "min": 20
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AbyssIncreasedRewards",
-      "kind": "suffix",
-      "template": "[ContainsAbyss|Abyss] Pits in Map are twice as likely to have Rewards",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Treasures",
-          "text": "[ContainsAbyss|Abyss] Pits in Map are twice as likely to have Rewards",
-          "stats": [
-            {
-              "id": "map_abyss_no_reward_chance_+%",
-              "max": -50,
-              "min": -50
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AbyssMonsterIncrease",
-      "kind": "suffix",
-      "template": "[ContainsAbyss|Abysses] in Map spawn #% increased Monsters",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Horde",
-          "text": "[ContainsAbyss|Abysses] in Map spawn (20-30)% increased Monsters",
-          "stats": [
-            {
-              "id": "map_abyss_monster_spawn_amount_+%",
-              "max": 30,
-              "min": 20
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AbyssRareMonsterIncrease",
-      "kind": "suffix",
-      "template": "# additional [Rarity|Rare] Monsters are spawned from [ContainsAbyss|Abysses] in Map",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Champions",
-          "text": "(1-2) additional [Rarity|Rare] Monsters are spawned from [ContainsAbyss|Abysses] in Map",
-          "stats": [
-            {
-              "id": "map_abyss_num_additional_rare_monsters",
-              "max": 2,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    }
-  ],
   "category": "Tablet",
   "label": "Abyss Precursor Tablet",
+  "modifier_sections": {
+    "normal": [
+      {
+        "family_key": "MapAdditionalAzmeriWisp",
+        "kind": "prefix",
+        "template": "Map contains # additional [AzmeriSpirit|Azmeri Spirit]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Azmeri's",
+            "text": "Map contains 1 additional [AzmeriSpirit|Azmeri Spirit]",
+            "stats": [
+              {
+                "id": "map_spawn_extra_torment_spirits",
+                "max": 1,
+                "min": 1
+              },
+              {
+                "id": "map_map_item_drop_chance_+%",
+                "max": 0,
+                "min": 0
+              },
+              {
+                "id": "map_item_drop_rarity_+%",
+                "max": 0,
+                "min": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MapAdditionalChests",
+        "kind": "prefix",
+        "template": "Map contains # additional [Rarity|Rare] Chests",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Treasurer's",
+            "text": "Map contains (2-3) additional [Rarity|Rare] Chests",
+            "stats": [
+              {
+                "id": "map_addtional_rare_chest_amount",
+                "max": 3,
+                "min": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MapAdditionalEssence",
+        "kind": "prefix",
+        "template": "Map contains an additional [Essence]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Crystallised",
+            "text": "Map contains an additional [Essence]",
+            "stats": [
+              {
+                "id": "map_extra_monoliths",
+                "max": 1,
+                "min": 1
+              },
+              {
+                "id": "map_map_item_drop_chance_+%",
+                "max": 0,
+                "min": 0
+              },
+              {
+                "id": "map_item_drop_rarity_+%",
+                "max": 0,
+                "min": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MapAdditionalExile",
+        "kind": "prefix",
+        "template": "Map is inhabited by # additional Rogue Exile",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Exiled",
+            "text": "Map is inhabited by 1 additional Rogue Exile",
+            "stats": [
+              {
+                "id": "map_spawn_extra_exiles",
+                "max": 1,
+                "min": 1
+              },
+              {
+                "id": "map_map_item_drop_chance_+%",
+                "max": 0,
+                "min": 0
+              },
+              {
+                "id": "map_item_drop_rarity_+%",
+                "max": 0,
+                "min": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MapAdditionalStoneCircle",
+        "kind": "prefix",
+        "template": "Map contains an additional [StoneSummoningCircle|Summoning Circle]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Summoner's",
+            "text": "Map contains an additional [StoneSummoningCircle|Summoning Circle]",
+            "stats": [
+              {
+                "id": "map_num_extra_stone_circles",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MapDroppedGoldIncrease",
+        "kind": "prefix",
+        "template": "#% increased Gold found in Map",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Bountiful",
+            "text": "(25-40)% increased Gold found in Map",
+            "stats": [
+              {
+                "id": "map_extra_gold_piles_chance_%",
+                "max": 40,
+                "min": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MapDroppedItemRarityIncrease",
+        "kind": "prefix",
+        "template": "#% increased [Rarity] of Items found in Map",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Collector's",
+            "text": "(18-30)% increased [Rarity] of Items found in Map",
+            "stats": [
+              {
+                "id": "map_item_drop_rarity_+%",
+                "max": 30,
+                "min": 18
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MapExperienceGainIncrease",
+        "kind": "prefix",
+        "template": "#% increased Experience gain in Map",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Elevated",
+            "text": "(10-20)% increased Experience gain in Map",
+            "stats": [
+              {
+                "id": "map_experience_gain_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MapMagicPackIncrease",
+        "kind": "prefix",
+        "template": "Map has #% increased [Rarity|Magic] Monsters",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Teeming",
+            "text": "Map has (50-70)% increased [Rarity|Magic] Monsters",
+            "stats": [
+              {
+                "id": "map_number_of_magic_packs_+%",
+                "max": 70,
+                "min": 50
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MapMonsterEffectiveness",
+        "kind": "prefix",
+        "template": "Monsters have #% increased [MonsterEffectiveness|Effectiveness]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Challenger's",
+            "text": "Monsters have (7-11)% increased [MonsterEffectiveness|Effectiveness]",
+            "stats": [
+              {
+                "id": "map_monster_potency_+%",
+                "max": 11,
+                "min": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MapPackSizeIncrease",
+        "kind": "prefix",
+        "template": "#% increased Pack Size in Map",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Breeding",
+            "text": "(6-10)% increased Pack Size in Map",
+            "stats": [
+              {
+                "id": "map_pack_size_+%",
+                "max": 10,
+                "min": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MapRarePackIncrease",
+        "kind": "prefix",
+        "template": "Map has #% increased number of [Rarity|Rare] Monsters",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Brimming",
+            "text": "Map has (25-40)% increased number of [Rarity|Rare] Monsters",
+            "stats": [
+              {
+                "id": "map_number_of_rare_packs_+%",
+                "max": 40,
+                "min": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Abyss4AdditionalChance",
+        "kind": "suffix",
+        "template": "Map has #% chance to contain four additional [ContainsAbyss|Abysses]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Schisms",
+            "text": "Map has (20-40)% chance to contain four additional [ContainsAbyss|Abysses]",
+            "stats": [
+              {
+                "id": "map_chance_for_4_additional_abysses_%",
+                "max": 40,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssAdditionalChance",
+        "kind": "suffix",
+        "template": "Map contains an additional [ContainsAbyss|Abyss]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Hollows",
+            "text": "Map contains an additional [ContainsAbyss|Abyss]",
+            "stats": [
+              {
+                "id": "map_num_extra_abysses",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssDepthsChance",
+        "kind": "suffix",
+        "template": "[ContainsAbyss|Abysses] in Map have #% increased chance to lead to an [AbyssalDepths|Abyssal Depths]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Depths",
+            "text": "[ContainsAbyss|Abysses] in Map have (10-20)% increased chance to lead to an [AbyssalDepths|Abyssal Depths]",
+            "stats": [
+              {
+                "id": "map_abyss_depths_chance_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssEnhancedMonstersPerChasm",
+        "kind": "suffix",
+        "template": "[ContainsAbyss|Abyssal] Monsters in Map have increased Difficulty and Reward for each closed Pit",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Escalation",
+            "text": "[ContainsAbyss|Abyssal] Monsters in Map have increased Difficulty and Reward for each closed Pit",
+            "stats": [
+              {
+                "id": "map_abyss_monsters_enhanced_per_chasm_closed",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssExtraModifiers",
+        "kind": "suffix",
+        "template": "#% increased chance for [ContainsAbyss|Abyssal] monsters in Map to have [AbyssalModifiers|Abyssal Modifiers]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Dark Power",
+            "text": "(20-30)% increased chance for [ContainsAbyss|Abyssal] monsters in Map to have [AbyssalModifiers|Abyssal Modifiers]",
+            "stats": [
+              {
+                "id": "map_abyss_monster_abyssal_modifier_chance_+%",
+                "max": 30,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssExtraTickets",
+        "kind": "suffix",
+        "template": "#% increased chance for [Abyssalify|Desecrated] Currency from [ContainsAbyss|Abysses] in Map",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Ossification",
+            "text": "(20-30)% increased chance for [Abyssalify|Desecrated] Currency from [ContainsAbyss|Abysses] in Map",
+            "stats": [
+              {
+                "id": "map_abyss_ticket_chance_+%",
+                "max": 30,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssIncreasedRewards",
+        "kind": "suffix",
+        "template": "[ContainsAbyss|Abyss] Pits in Map are twice as likely to have Rewards",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Treasures",
+            "text": "[ContainsAbyss|Abyss] Pits in Map are twice as likely to have Rewards",
+            "stats": [
+              {
+                "id": "map_abyss_no_reward_chance_+%",
+                "max": -50,
+                "min": -50
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssMonsterIncrease",
+        "kind": "suffix",
+        "template": "[ContainsAbyss|Abysses] in Map spawn #% increased Monsters",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Horde",
+            "text": "[ContainsAbyss|Abysses] in Map spawn (20-30)% increased Monsters",
+            "stats": [
+              {
+                "id": "map_abyss_monster_spawn_amount_+%",
+                "max": 30,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssRareMonsterIncrease",
+        "kind": "suffix",
+        "template": "# additional [Rarity|Rare] Monsters are spawned from [ContainsAbyss|Abysses] in Map",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Champions",
+            "text": "(1-2) additional [Rarity|Rare] Monsters are spawned from [ContainsAbyss|Abysses] in Map",
+            "stats": [
+              {
+                "id": "map_abyss_num_additional_rare_monsters",
+                "max": 2,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "slug": "Abyss_Precursor_Tablet"
 }

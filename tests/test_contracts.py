@@ -29,10 +29,103 @@ class ContractRoundTripTests(unittest.TestCase):
 
     def test_snapshot_round_trip_matches_semantics(self):
         raw = json.loads((ROOT / "config" / "poe2db_snapshot.json").read_text(encoding="utf-8"))
-        self.assertEqual(snapshot_to_dict(snapshot_from_dict(raw)), raw)
+        normalized = snapshot_to_dict(snapshot_from_dict(raw))
+        self.assertIn("modifier_sections", normalized["items"][0])
+        self.assertIn("normal", normalized["items"][0]["modifier_sections"])
+        self.assertNotIn("affixes", normalized["items"][0])
+        if "affixes" in raw["items"][0]:
+            self.assertEqual(normalized["items"][0]["modifier_sections"]["normal"], raw["items"][0]["affixes"])
+        else:
+            self.assertEqual(normalized, raw)
 
     def test_output_round_trip_matches_semantics(self):
         raw = json.loads((ROOT / "result" / "affixes" / "Amulets.json").read_text(encoding="utf-8"))
+        self.assertEqual(output_item_to_dict(output_item_from_dict(raw)), raw)
+
+    def test_manifest_round_trip_supports_bases_and_modifier_sections(self):
+        raw = {
+            "version": 1,
+            "items": [
+                {
+                    "slug": "Amulets",
+                    "category": "Jewellery",
+                    "label": "Amulets",
+                    "include_domains": ["item"],
+                    "include_spawn_tags": ["amulet"],
+                    "bases": [
+                        {
+                            "name": "Lapis Amulet",
+                            "href": "/us/Lapis_Amulet",
+                            "required_level": 12,
+                        }
+                    ],
+                    "modifier_sections": {
+                        "normal": [
+                            {
+                                "kind": "prefix",
+                                "family_key": "Life",
+                                "template": "+# to maximum Life",
+                                "tiers": [
+                                    {
+                                        "level": 1,
+                                        "name": "Healthy",
+                                        "text": "+(1-2) to maximum Life",
+                                        "stats": ["base_maximum_life"],
+                                    }
+                                ],
+                            }
+                        ]
+                    },
+                    "affixes": [
+                        {
+                            "kind": "prefix",
+                            "family_key": "Life",
+                            "template": "+# to maximum Life",
+                            "tiers": [
+                                {
+                                    "level": 1,
+                                    "name": "Healthy",
+                                    "text": "+(1-2) to maximum Life",
+                                    "stats": ["base_maximum_life"],
+                                }
+                            ],
+                        }
+                    ],
+                }
+            ],
+        }
+        self.assertEqual(manifest_to_dict(manifest_from_dict(raw)), raw)
+
+    def test_output_round_trip_supports_bases_and_modifier_sections(self):
+        raw = {
+            "slug": "Amulets",
+            "category": "Jewellery",
+            "label": "Amulets",
+            "bases": [
+                {
+                    "name": "Lapis Amulet",
+                    "href": "/us/Lapis_Amulet",
+                    "required_level": 12,
+                }
+            ],
+            "modifier_sections": {
+                "normal": [
+                    {
+                        "family_key": "Life",
+                        "kind": "prefix",
+                        "template": "+# to maximum Life",
+                        "tiers": [
+                            {
+                                "level": 1,
+                                "name": "Healthy",
+                                "text": "+(1-2) to maximum Life",
+                                "stats": [{"id": "base_maximum_life", "min": 1, "max": 2}],
+                            }
+                        ],
+                    }
+                ]
+            },
+        }
         self.assertEqual(output_item_to_dict(output_item_from_dict(raw)), raw)
 
     def test_report_round_trip_matches_semantics(self):

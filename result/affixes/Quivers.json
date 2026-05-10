@@ -1,1480 +1,2085 @@
 {
-  "affixes": [
-    {
-      "family_key": "ColdDamage",
-      "kind": "prefix",
-      "template": "Adds # to # [Cold] damage to [Attack|Attacks]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Frosted",
-          "text": "Adds 1 to (2-3) [Cold] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_cold_damage",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "attack_maximum_added_cold_damage",
-              "max": 3,
-              "min": 2
-            }
-          ]
-        },
-        {
-          "level": 8,
-          "name": "Chilled",
-          "text": "Adds (3-4) to (5-8) [Cold] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_cold_damage",
-              "max": 4,
-              "min": 3
-            },
-            {
-              "id": "attack_maximum_added_cold_damage",
-              "max": 8,
-              "min": 5
-            }
-          ]
-        },
-        {
-          "level": 16,
-          "name": "Icy",
-          "text": "Adds (5-6) to (9-11) [Cold] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_cold_damage",
-              "max": 6,
-              "min": 5
-            },
-            {
-              "id": "attack_maximum_added_cold_damage",
-              "max": 11,
-              "min": 9
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "Frigid",
-          "text": "Adds (7-8) to (12-14) [Cold] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_cold_damage",
-              "max": 8,
-              "min": 7
-            },
-            {
-              "id": "attack_maximum_added_cold_damage",
-              "max": 14,
-              "min": 12
-            }
-          ]
-        },
-        {
-          "level": 46,
-          "name": "Freezing",
-          "text": "Adds (9-10) to (15-17) [Cold] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_cold_damage",
-              "max": 10,
-              "min": 9
-            },
-            {
-              "id": "attack_maximum_added_cold_damage",
-              "max": 17,
-              "min": 15
-            }
-          ]
-        },
-        {
-          "level": 54,
-          "name": "Frozen",
-          "text": "Adds (11-13) to (18-21) [Cold] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_cold_damage",
-              "max": 13,
-              "min": 11
-            },
-            {
-              "id": "attack_maximum_added_cold_damage",
-              "max": 21,
-              "min": 18
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "Glaciated",
-          "text": "Adds (14-15) to (22-24) [Cold] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_cold_damage",
-              "max": 15,
-              "min": 14
-            },
-            {
-              "id": "attack_maximum_added_cold_damage",
-              "max": 24,
-              "min": 22
-            }
-          ]
-        },
-        {
-          "level": 65,
-          "name": "Polar",
-          "text": "Adds (16-20) to (25-31) [Cold] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_cold_damage",
-              "max": 20,
-              "min": 16
-            },
-            {
-              "id": "attack_maximum_added_cold_damage",
-              "max": 31,
-              "min": 25
-            }
-          ]
-        },
-        {
-          "level": 75,
-          "name": "Entombing",
-          "text": "Adds (21-24) to (32-37) [Cold] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_cold_damage",
-              "max": 24,
-              "min": 21
-            },
-            {
-              "id": "attack_maximum_added_cold_damage",
-              "max": 37,
-              "min": 32
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "DamageWithWeaponTypeSkill",
-      "kind": "prefix",
-      "template": "#% increased Damage with Bow Skills",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Acute",
-          "text": "(11-20)% increased Damage with Bow Skills",
-          "stats": [
-            {
-              "id": "damage_+%_with_bow_skills",
-              "max": 20,
-              "min": 11
-            }
-          ]
-        },
-        {
-          "level": 16,
-          "name": "Trenchant",
-          "text": "(21-30)% increased Damage with Bow Skills",
-          "stats": [
-            {
-              "id": "damage_+%_with_bow_skills",
-              "max": 30,
-              "min": 21
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "Perforating",
-          "text": "(31-36)% increased Damage with Bow Skills",
-          "stats": [
-            {
-              "id": "damage_+%_with_bow_skills",
-              "max": 36,
-              "min": 31
-            }
-          ]
-        },
-        {
-          "level": 46,
-          "name": "Incisive",
-          "text": "(37-42)% increased Damage with Bow Skills",
-          "stats": [
-            {
-              "id": "damage_+%_with_bow_skills",
-              "max": 42,
-              "min": 37
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "Lacerating",
-          "text": "(43-50)% increased Damage with Bow Skills",
-          "stats": [
-            {
-              "id": "damage_+%_with_bow_skills",
-              "max": 50,
-              "min": 43
-            }
-          ]
-        },
-        {
-          "level": 81,
-          "name": "Impaling",
-          "text": "(51-59)% increased Damage with Bow Skills",
-          "stats": [
-            {
-              "id": "damage_+%_with_bow_skills",
-              "max": 59,
-              "min": 51
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "FireDamage",
-      "kind": "prefix",
-      "template": "Adds # to # [Fire] damage to [Attack|Attacks]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Heated",
-          "text": "Adds (1-2) to 3 [Fire] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_fire_damage",
-              "max": 2,
-              "min": 1
-            },
-            {
-              "id": "attack_maximum_added_fire_damage",
-              "max": 3,
-              "min": 3
-            }
-          ]
-        },
-        {
-          "level": 8,
-          "name": "Smouldering",
-          "text": "Adds (3-5) to (6-9) [Fire] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_fire_damage",
-              "max": 5,
-              "min": 3
-            },
-            {
-              "id": "attack_maximum_added_fire_damage",
-              "max": 9,
-              "min": 6
-            }
-          ]
-        },
-        {
-          "level": 16,
-          "name": "Smoking",
-          "text": "Adds (6-8) to (10-13) [Fire] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_fire_damage",
-              "max": 8,
-              "min": 6
-            },
-            {
-              "id": "attack_maximum_added_fire_damage",
-              "max": 13,
-              "min": 10
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "Burning",
-          "text": "Adds (9-11) to (14-17) [Fire] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_fire_damage",
-              "max": 11,
-              "min": 9
-            },
-            {
-              "id": "attack_maximum_added_fire_damage",
-              "max": 17,
-              "min": 14
-            }
-          ]
-        },
-        {
-          "level": 46,
-          "name": "Flaming",
-          "text": "Adds (12-13) to (18-20) [Fire] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_fire_damage",
-              "max": 13,
-              "min": 12
-            },
-            {
-              "id": "attack_maximum_added_fire_damage",
-              "max": 20,
-              "min": 18
-            }
-          ]
-        },
-        {
-          "level": 54,
-          "name": "Scorching",
-          "text": "Adds (11-16) to (21-26) [Fire] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_fire_damage",
-              "max": 16,
-              "min": 11
-            },
-            {
-              "id": "attack_maximum_added_fire_damage",
-              "max": 26,
-              "min": 21
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "Incinerating",
-          "text": "Adds (13-19) to (27-32) [Fire] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_fire_damage",
-              "max": 19,
-              "min": 13
-            },
-            {
-              "id": "attack_maximum_added_fire_damage",
-              "max": 32,
-              "min": 27
-            }
-          ]
-        },
-        {
-          "level": 65,
-          "name": "Blasting",
-          "text": "Adds (20-24) to (33-36) [Fire] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_fire_damage",
-              "max": 24,
-              "min": 20
-            },
-            {
-              "id": "attack_maximum_added_fire_damage",
-              "max": 36,
-              "min": 33
-            }
-          ]
-        },
-        {
-          "level": 75,
-          "name": "Cremating",
-          "text": "Adds (25-29) to (37-45) [Fire] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_fire_damage",
-              "max": 29,
-              "min": 25
-            },
-            {
-              "id": "attack_maximum_added_fire_damage",
-              "max": 45,
-              "min": 37
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IncreasedAccuracy",
-      "kind": "prefix",
-      "template": "+# to [Accuracy|Accuracy] Rating",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Precise",
-          "text": "+(11-32) to [Accuracy|Accuracy] Rating",
-          "stats": [
-            {
-              "id": "accuracy_rating",
-              "max": 32,
-              "min": 11
-            }
-          ]
-        },
-        {
-          "level": 11,
-          "name": "Reliable",
-          "text": "+(33-60) to [Accuracy|Accuracy] Rating",
-          "stats": [
-            {
-              "id": "accuracy_rating",
-              "max": 60,
-              "min": 33
-            }
-          ]
-        },
-        {
-          "level": 18,
-          "name": "Focused",
-          "text": "+(61-84) to [Accuracy|Accuracy] Rating",
-          "stats": [
-            {
-              "id": "accuracy_rating",
-              "max": 84,
-              "min": 61
-            }
-          ]
-        },
-        {
-          "level": 26,
-          "name": "Deliberate",
-          "text": "+(85-123) to [Accuracy|Accuracy] Rating",
-          "stats": [
-            {
-              "id": "accuracy_rating",
-              "max": 123,
-              "min": 85
-            }
-          ]
-        },
-        {
-          "level": 36,
-          "name": "Consistent",
-          "text": "+(124-167) to [Accuracy|Accuracy] Rating",
-          "stats": [
-            {
-              "id": "accuracy_rating",
-              "max": 167,
-              "min": 124
-            }
-          ]
-        },
-        {
-          "level": 48,
-          "name": "Steady",
-          "text": "+(168-236) to [Accuracy|Accuracy] Rating",
-          "stats": [
-            {
-              "id": "accuracy_rating",
-              "max": 236,
-              "min": 168
-            }
-          ]
-        },
-        {
-          "level": 58,
-          "name": "Hunter's",
-          "text": "+(237-346) to [Accuracy|Accuracy] Rating",
-          "stats": [
-            {
-              "id": "accuracy_rating",
-              "max": 346,
-              "min": 237
-            }
-          ]
-        },
-        {
-          "level": 67,
-          "name": "Ranger's",
-          "text": "+(347-450) to [Accuracy|Accuracy] Rating",
-          "stats": [
-            {
-              "id": "accuracy_rating",
-              "max": 450,
-              "min": 347
-            }
-          ]
-        },
-        {
-          "level": 76,
-          "name": "Amazon's",
-          "text": "+(451-550) to [Accuracy|Accuracy] Rating",
-          "stats": [
-            {
-              "id": "accuracy_rating",
-              "max": 550,
-              "min": 451
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "LightningDamage",
-      "kind": "prefix",
-      "template": "Adds # to # [Lightning] damage to [Attack|Attacks]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Humming",
-          "text": "Adds 1 to (4-6) [Lightning] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_lightning_damage",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "attack_maximum_added_lightning_damage",
-              "max": 6,
-              "min": 4
-            }
-          ]
-        },
-        {
-          "level": 8,
-          "name": "Buzzing",
-          "text": "Adds 1 to (10-15) [Lightning] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_lightning_damage",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "attack_maximum_added_lightning_damage",
-              "max": 15,
-              "min": 10
-            }
-          ]
-        },
-        {
-          "level": 16,
-          "name": "Snapping",
-          "text": "Adds 1 to (16-22) [Lightning] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_lightning_damage",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "attack_maximum_added_lightning_damage",
-              "max": 22,
-              "min": 16
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "Crackling",
-          "text": "Adds 1 to (23-27) [Lightning] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_lightning_damage",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "attack_maximum_added_lightning_damage",
-              "max": 27,
-              "min": 23
-            }
-          ]
-        },
-        {
-          "level": 46,
-          "name": "Sparking",
-          "text": "Adds 1 to (28-32) [Lightning] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_lightning_damage",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "attack_maximum_added_lightning_damage",
-              "max": 32,
-              "min": 28
-            }
-          ]
-        },
-        {
-          "level": 54,
-          "name": "Arcing",
-          "text": "Adds (1-2) to (33-40) [Lightning] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_lightning_damage",
-              "max": 2,
-              "min": 1
-            },
-            {
-              "id": "attack_maximum_added_lightning_damage",
-              "max": 40,
-              "min": 33
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "Shocking",
-          "text": "Adds (1-2) to (41-47) [Lightning] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_lightning_damage",
-              "max": 2,
-              "min": 1
-            },
-            {
-              "id": "attack_maximum_added_lightning_damage",
-              "max": 47,
-              "min": 41
-            }
-          ]
-        },
-        {
-          "level": 65,
-          "name": "Discharging",
-          "text": "Adds (1-3) to (48-59) [Lightning] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_lightning_damage",
-              "max": 3,
-              "min": 1
-            },
-            {
-              "id": "attack_maximum_added_lightning_damage",
-              "max": 59,
-              "min": 48
-            }
-          ]
-        },
-        {
-          "level": 75,
-          "name": "Electrocuting",
-          "text": "Adds (1-4) to (60-71) [Lightning] damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_lightning_damage",
-              "max": 4,
-              "min": 1
-            },
-            {
-              "id": "attack_maximum_added_lightning_damage",
-              "max": 71,
-              "min": 60
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "PhysicalDamage",
-      "kind": "prefix",
-      "template": "Adds # to # [Physical|Physical] Damage to [Attack|Attacks]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Glinting",
-          "text": "Adds (1-2) to 3 [Physical|Physical] Damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_physical_damage",
-              "max": 2,
-              "min": 1
-            },
-            {
-              "id": "attack_maximum_added_physical_damage",
-              "max": 3,
-              "min": 3
-            }
-          ]
-        },
-        {
-          "level": 8,
-          "name": "Burnished",
-          "text": "Adds (2-3) to (4-6) [Physical|Physical] Damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_physical_damage",
-              "max": 3,
-              "min": 2
-            },
-            {
-              "id": "attack_maximum_added_physical_damage",
-              "max": 6,
-              "min": 4
-            }
-          ]
-        },
-        {
-          "level": 16,
-          "name": "Polished",
-          "text": "Adds (2-4) to (5-8) [Physical|Physical] Damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_physical_damage",
-              "max": 4,
-              "min": 2
-            },
-            {
-              "id": "attack_maximum_added_physical_damage",
-              "max": 8,
-              "min": 5
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "Honed",
-          "text": "Adds (4-6) to (8-11) [Physical|Physical] Damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_physical_damage",
-              "max": 6,
-              "min": 4
-            },
-            {
-              "id": "attack_maximum_added_physical_damage",
-              "max": 11,
-              "min": 8
-            }
-          ]
-        },
-        {
-          "level": 46,
-          "name": "Gleaming",
-          "text": "Adds (5-7) to (9-13) [Physical|Physical] Damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_physical_damage",
-              "max": 7,
-              "min": 5
-            },
-            {
-              "id": "attack_maximum_added_physical_damage",
-              "max": 13,
-              "min": 9
-            }
-          ]
-        },
-        {
-          "level": 54,
-          "name": "Annealed",
-          "text": "Adds (6-10) to (12-17) [Physical|Physical] Damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_physical_damage",
-              "max": 10,
-              "min": 6
-            },
-            {
-              "id": "attack_maximum_added_physical_damage",
-              "max": 17,
-              "min": 12
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "Razor-sharp",
-          "text": "Adds (7-11) to (14-20) [Physical|Physical] Damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_physical_damage",
-              "max": 11,
-              "min": 7
-            },
-            {
-              "id": "attack_maximum_added_physical_damage",
-              "max": 20,
-              "min": 14
-            }
-          ]
-        },
-        {
-          "level": 65,
-          "name": "Tempered",
-          "text": "Adds (10-15) to (18-26) [Physical|Physical] Damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_physical_damage",
-              "max": 15,
-              "min": 10
-            },
-            {
-              "id": "attack_maximum_added_physical_damage",
-              "max": 26,
-              "min": 18
-            }
-          ]
-        },
-        {
-          "level": 75,
-          "name": "Flaring",
-          "text": "Adds (12-19) to (22-32) [Physical|Physical] Damage to [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_minimum_added_physical_damage",
-              "max": 19,
-              "min": 12
-            },
-            {
-              "id": "attack_maximum_added_physical_damage",
-              "max": 32,
-              "min": 22
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ProjectileSpeed",
-      "kind": "prefix",
-      "template": "#% increased [Projectile] Speed",
-      "tiers": [
-        {
-          "level": 14,
-          "name": "Darting",
-          "text": "(10-17)% increased [Projectile] Speed",
-          "stats": [
-            {
-              "id": "base_projectile_speed_+%",
-              "max": 17,
-              "min": 10
-            }
-          ]
-        },
-        {
-          "level": 27,
-          "name": "Brisk",
-          "text": "(18-25)% increased [Projectile] Speed",
-          "stats": [
-            {
-              "id": "base_projectile_speed_+%",
-              "max": 25,
-              "min": 18
-            }
-          ]
-        },
-        {
-          "level": 41,
-          "name": "Quick",
-          "text": "(26-33)% increased [Projectile] Speed",
-          "stats": [
-            {
-              "id": "base_projectile_speed_+%",
-              "max": 33,
-              "min": 26
-            }
-          ]
-        },
-        {
-          "level": 55,
-          "name": "Rapid",
-          "text": "(34-41)% increased [Projectile] Speed",
-          "stats": [
-            {
-              "id": "base_projectile_speed_+%",
-              "max": 41,
-              "min": 34
-            }
-          ]
-        },
-        {
-          "level": 82,
-          "name": "Nimble",
-          "text": "(42-46)% increased [Projectile] Speed",
-          "stats": [
-            {
-              "id": "base_projectile_speed_+%",
-              "max": 46,
-              "min": 42
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ChanceToPierce",
-      "kind": "suffix",
-      "template": "#% chance to [Pierce|Pierce] an Enemy",
-      "tiers": [
-        {
-          "level": 11,
-          "name": "of Piercing",
-          "text": "(12-14)% chance to [Pierce|Pierce] an Enemy",
-          "stats": [
-            {
-              "id": "base_chance_to_pierce_%",
-              "max": 14,
-              "min": 12
-            }
-          ]
-        },
-        {
-          "level": 26,
-          "name": "of Drilling",
-          "text": "(15-17)% chance to [Pierce|Pierce] an Enemy",
-          "stats": [
-            {
-              "id": "base_chance_to_pierce_%",
-              "max": 17,
-              "min": 15
-            }
-          ]
-        },
-        {
-          "level": 44,
-          "name": "of Puncturing",
-          "text": "(18-20)% chance to [Pierce|Pierce] an Enemy",
-          "stats": [
-            {
-              "id": "base_chance_to_pierce_%",
-              "max": 20,
-              "min": 18
-            }
-          ]
-        },
-        {
-          "level": 61,
-          "name": "of Skewering",
-          "text": "(21-23)% chance to [Pierce|Pierce] an Enemy",
-          "stats": [
-            {
-              "id": "base_chance_to_pierce_%",
-              "max": 23,
-              "min": 21
-            }
-          ]
-        },
-        {
-          "level": 77,
-          "name": "of Penetrating",
-          "text": "(24-26)% chance to [Pierce|Pierce] an Enemy",
-          "stats": [
-            {
-              "id": "base_chance_to_pierce_%",
-              "max": 26,
-              "min": 24
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "CriticalStrikeChanceIncrease",
-      "kind": "suffix",
-      "template": "#% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
-      "tiers": [
-        {
-          "level": 5,
-          "name": "of Menace",
-          "text": "(10-14)% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_critical_strike_chance_+%",
-              "max": 14,
-              "min": 10
-            }
-          ]
-        },
-        {
-          "level": 20,
-          "name": "of Havoc",
-          "text": "(15-19)% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_critical_strike_chance_+%",
-              "max": 19,
-              "min": 15
-            }
-          ]
-        },
-        {
-          "level": 30,
-          "name": "of Disaster",
-          "text": "(20-24)% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_critical_strike_chance_+%",
-              "max": 24,
-              "min": 20
-            }
-          ]
-        },
-        {
-          "level": 44,
-          "name": "of Calamity",
-          "text": "(25-29)% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_critical_strike_chance_+%",
-              "max": 29,
-              "min": 25
-            }
-          ]
-        },
-        {
-          "level": 58,
-          "name": "of Ruin",
-          "text": "(30-34)% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_critical_strike_chance_+%",
-              "max": 34,
-              "min": 30
-            }
-          ]
-        },
-        {
-          "level": 72,
-          "name": "of Unmaking",
-          "text": "(35-38)% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attack_critical_strike_chance_+%",
-              "max": 38,
-              "min": 35
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "CriticalStrikeMultiplier",
-      "kind": "suffix",
-      "template": "#% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
-      "tiers": [
-        {
-          "level": 8,
-          "name": "of Ire",
-          "text": "(10-14)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
-          "stats": [
-            {
-              "id": "attack_critical_strike_multiplier_+",
-              "max": 14,
-              "min": 10
-            }
-          ]
-        },
-        {
-          "level": 21,
-          "name": "of Anger",
-          "text": "(15-19)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
-          "stats": [
-            {
-              "id": "attack_critical_strike_multiplier_+",
-              "max": 19,
-              "min": 15
-            }
-          ]
-        },
-        {
-          "level": 31,
-          "name": "of Rage",
-          "text": "(20-24)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
-          "stats": [
-            {
-              "id": "attack_critical_strike_multiplier_+",
-              "max": 24,
-              "min": 20
-            }
-          ]
-        },
-        {
-          "level": 45,
-          "name": "of Fury",
-          "text": "(25-29)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
-          "stats": [
-            {
-              "id": "attack_critical_strike_multiplier_+",
-              "max": 29,
-              "min": 25
-            }
-          ]
-        },
-        {
-          "level": 59,
-          "name": "of Ferocity",
-          "text": "(30-34)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
-          "stats": [
-            {
-              "id": "attack_critical_strike_multiplier_+",
-              "max": 34,
-              "min": 30
-            }
-          ]
-        },
-        {
-          "level": 74,
-          "name": "of Destruction",
-          "text": "(35-39)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
-          "stats": [
-            {
-              "id": "attack_critical_strike_multiplier_+",
-              "max": 39,
-              "min": 35
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "Dexterity",
-      "kind": "suffix",
-      "template": "+# to [Dexterity|Dexterity]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Mongoose",
-          "text": "+(5-8) to [Dexterity|Dexterity]",
-          "stats": [
-            {
-              "id": "additional_dexterity",
-              "max": 8,
-              "min": 5
-            }
-          ]
-        },
-        {
-          "level": 11,
-          "name": "of the Lynx",
-          "text": "+(9-12) to [Dexterity|Dexterity]",
-          "stats": [
-            {
-              "id": "additional_dexterity",
-              "max": 12,
-              "min": 9
-            }
-          ]
-        },
-        {
-          "level": 22,
-          "name": "of the Fox",
-          "text": "+(13-16) to [Dexterity|Dexterity]",
-          "stats": [
-            {
-              "id": "additional_dexterity",
-              "max": 16,
-              "min": 13
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "of the Falcon",
-          "text": "+(17-20) to [Dexterity|Dexterity]",
-          "stats": [
-            {
-              "id": "additional_dexterity",
-              "max": 20,
-              "min": 17
-            }
-          ]
-        },
-        {
-          "level": 44,
-          "name": "of the Panther",
-          "text": "+(21-24) to [Dexterity|Dexterity]",
-          "stats": [
-            {
-              "id": "additional_dexterity",
-              "max": 24,
-              "min": 21
-            }
-          ]
-        },
-        {
-          "level": 55,
-          "name": "of the Leopard",
-          "text": "+(25-27) to [Dexterity|Dexterity]",
-          "stats": [
-            {
-              "id": "additional_dexterity",
-              "max": 27,
-              "min": 25
-            }
-          ]
-        },
-        {
-          "level": 66,
-          "name": "of the Jaguar",
-          "text": "+(28-30) to [Dexterity|Dexterity]",
-          "stats": [
-            {
-              "id": "additional_dexterity",
-              "max": 30,
-              "min": 28
-            }
-          ]
-        },
-        {
-          "level": 74,
-          "name": "of the Phantom",
-          "text": "+(31-33) to [Dexterity|Dexterity]",
-          "stats": [
-            {
-              "id": "additional_dexterity",
-              "max": 33,
-              "min": 31
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IncreaseSocketedGemLevel",
-      "kind": "suffix",
-      "template": "+# to Level of all [Projectile] Skills",
-      "tiers": [
-        {
-          "level": 5,
-          "name": "of the Archer",
-          "text": "+1 to Level of all [Projectile] Skills",
-          "stats": [
-            {
-              "id": "projectile_skill_gem_level_+",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        },
-        {
-          "level": 41,
-          "name": "of the Fletcher",
-          "text": "+2 to Level of all [Projectile] Skills",
-          "stats": [
-            {
-              "id": "projectile_skill_gem_level_+",
-              "max": 2,
-              "min": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IncreasedAttackSpeed",
-      "kind": "suffix",
-      "template": "#% increased [Attack] Speed",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Skill",
-          "text": "(5-7)% increased [Attack] Speed",
-          "stats": [
-            {
-              "id": "attack_speed_+%",
-              "max": 7,
-              "min": 5
-            }
-          ]
-        },
-        {
-          "level": 22,
-          "name": "of Ease",
-          "text": "(8-10)% increased [Attack] Speed",
-          "stats": [
-            {
-              "id": "attack_speed_+%",
-              "max": 10,
-              "min": 8
-            }
-          ]
-        },
-        {
-          "level": 37,
-          "name": "of Mastery",
-          "text": "(11-13)% increased [Attack] Speed",
-          "stats": [
-            {
-              "id": "attack_speed_+%",
-              "max": 13,
-              "min": 11
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "of Renown",
-          "text": "(14-16)% increased [Attack] Speed",
-          "stats": [
-            {
-              "id": "attack_speed_+%",
-              "max": 16,
-              "min": 14
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "LifeGainedFromEnemyDeath",
-      "kind": "suffix",
-      "template": "Gain # Life per enemy killed",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Success",
-          "text": "Gain (4-6) Life per enemy killed",
-          "stats": [
-            {
-              "id": "base_life_gained_on_enemy_death",
-              "max": 6,
-              "min": 4
-            }
-          ]
-        },
-        {
-          "level": 11,
-          "name": "of Victory",
-          "text": "Gain (7-9) Life per enemy killed",
-          "stats": [
-            {
-              "id": "base_life_gained_on_enemy_death",
-              "max": 9,
-              "min": 7
-            }
-          ]
-        },
-        {
-          "level": 22,
-          "name": "of Triumph",
-          "text": "Gain (10-18) Life per enemy killed",
-          "stats": [
-            {
-              "id": "base_life_gained_on_enemy_death",
-              "max": 18,
-              "min": 10
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "of Conquest",
-          "text": "Gain (19-28) Life per enemy killed",
-          "stats": [
-            {
-              "id": "base_life_gained_on_enemy_death",
-              "max": 28,
-              "min": 19
-            }
-          ]
-        },
-        {
-          "level": 44,
-          "name": "of Vanquishing",
-          "text": "Gain (29-40) Life per enemy killed",
-          "stats": [
-            {
-              "id": "base_life_gained_on_enemy_death",
-              "max": 40,
-              "min": 29
-            }
-          ]
-        },
-        {
-          "level": 55,
-          "name": "of Valour",
-          "text": "Gain (41-53) Life per enemy killed",
-          "stats": [
-            {
-              "id": "base_life_gained_on_enemy_death",
-              "max": 53,
-              "min": 41
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ManaGainedFromEnemyDeath",
-      "kind": "suffix",
-      "template": "Gain # Mana per enemy killed",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Absorption",
-          "text": "Gain (2-3) Mana per enemy killed",
-          "stats": [
-            {
-              "id": "base_mana_gained_on_enemy_death",
-              "max": 3,
-              "min": 2
-            }
-          ]
-        },
-        {
-          "level": 12,
-          "name": "of Osmosis",
-          "text": "Gain (4-5) Mana per enemy killed",
-          "stats": [
-            {
-              "id": "base_mana_gained_on_enemy_death",
-              "max": 5,
-              "min": 4
-            }
-          ]
-        },
-        {
-          "level": 23,
-          "name": "of Infusion",
-          "text": "Gain (6-9) Mana per enemy killed",
-          "stats": [
-            {
-              "id": "base_mana_gained_on_enemy_death",
-              "max": 9,
-              "min": 6
-            }
-          ]
-        },
-        {
-          "level": 34,
-          "name": "of Enveloping",
-          "text": "Gain (10-14) Mana per enemy killed",
-          "stats": [
-            {
-              "id": "base_mana_gained_on_enemy_death",
-              "max": 14,
-              "min": 10
-            }
-          ]
-        },
-        {
-          "level": 45,
-          "name": "of Consumption",
-          "text": "Gain (15-20) Mana per enemy killed",
-          "stats": [
-            {
-              "id": "base_mana_gained_on_enemy_death",
-              "max": 20,
-              "min": 15
-            }
-          ]
-        },
-        {
-          "level": 56,
-          "name": "of Siphoning",
-          "text": "Gain (21-27) Mana per enemy killed",
-          "stats": [
-            {
-              "id": "base_mana_gained_on_enemy_death",
-              "max": 27,
-              "min": 21
-            }
-          ]
-        }
-      ]
-    }
-  ],
   "category": "Off-hand",
   "label": "Quivers",
+  "bases": [
+    {
+      "name": "Broadhead Quiver",
+      "href": "https://poe2db.tw/Broadhead_Quiver",
+      "required_level": null
+    },
+    {
+      "name": "Fire Quiver",
+      "href": "https://poe2db.tw/Fire_Quiver",
+      "required_level": 8
+    },
+    {
+      "name": "Sacral Quiver",
+      "href": "https://poe2db.tw/Sacral_Quiver",
+      "required_level": 16
+    },
+    {
+      "name": "Two-Point Quiver",
+      "href": "https://poe2db.tw/Two-Point_Quiver",
+      "required_level": 24
+    },
+    {
+      "name": "Blunt Quiver",
+      "href": "https://poe2db.tw/Blunt_Quiver",
+      "required_level": 33
+    },
+    {
+      "name": "Toxic Quiver",
+      "href": "https://poe2db.tw/Toxic_Quiver",
+      "required_level": 39
+    },
+    {
+      "name": "Serrated Quiver",
+      "href": "https://poe2db.tw/Serrated_Quiver",
+      "required_level": 44
+    },
+    {
+      "name": "Primed Quiver",
+      "href": "https://poe2db.tw/Primed_Quiver",
+      "required_level": 51
+    },
+    {
+      "name": "Penetrating Quiver",
+      "href": "https://poe2db.tw/Penetrating_Quiver",
+      "required_level": 55
+    },
+    {
+      "name": "Volant Quiver",
+      "href": "https://poe2db.tw/Volant_Quiver",
+      "required_level": 61
+    },
+    {
+      "name": "Visceral Quiver",
+      "href": "https://poe2db.tw/Visceral_Quiver",
+      "required_level": 65
+    }
+  ],
+  "modifier_sections": {
+    "corrupted": [
+      {
+        "family_key": "AllDamage",
+        "kind": "gen5",
+        "template": "#% increased Damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionAllDamage1",
+            "text": "(20-30)% increased Damage",
+            "stats": [
+              {
+                "id": "damage_+%",
+                "max": 30,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ChainFromTerrain",
+        "kind": "gen5",
+        "template": "[Projectile|Projectiles] have #% chance to [Chain] an additional time from terrain",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionChainFromTerrain1",
+            "text": "[Projectile|Projectiles] have (25-50)% chance to [Chain] an additional time from terrain",
+            "stats": [
+              {
+                "id": "projectile_chance_to_chain_1_extra_time_from_terrain_%",
+                "max": 50,
+                "min": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ChanceToPierce",
+        "kind": "gen5",
+        "template": "#% chance to [Pierce|Pierce] an Enemy",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionChanceToPierce1",
+            "text": "(50-75)% chance to [Pierce|Pierce] an Enemy",
+            "stats": [
+              {
+                "id": "base_chance_to_pierce_%",
+                "max": 75,
+                "min": 50
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "CriticalStrikeMultiplier",
+        "kind": "gen5",
+        "template": "#% increased [CriticalDamageBonus|Critical Damage Bonus]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionCriticalStrikeMultiplier1",
+            "text": "(35-60)% increased [CriticalDamageBonus|Critical Damage Bonus]",
+            "stats": [
+              {
+                "id": "base_critical_strike_multiplier_+",
+                "max": 60,
+                "min": 35
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedAccuracy",
+        "kind": "gen5",
+        "template": "+# to [Accuracy|Accuracy] Rating",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionIncreasedAccuracy1",
+            "text": "+(11-32) to [Accuracy|Accuracy] Rating",
+            "stats": [
+              {
+                "id": "accuracy_rating",
+                "max": 32,
+                "min": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedMana",
+        "kind": "gen5",
+        "template": "+# to maximum Mana",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionIncreasedMana1",
+            "text": "+(20-25) to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_mana",
+                "max": 25,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedSpeed",
+        "kind": "gen5",
+        "template": "#% increased [SkillSpeed|Skill Speed]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionIncreasedSkillSpeed1",
+            "text": "(8-16)% increased [SkillSpeed|Skill Speed]",
+            "stats": [
+              {
+                "id": "skill_speed_+%",
+                "max": 16,
+                "min": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LifeGainedFromEnemyDeath",
+        "kind": "gen5",
+        "template": "Gain # Life per enemy killed",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionLifeGainedFromEnemyDeath1",
+            "text": "Gain (20-25) Life per enemy killed",
+            "stats": [
+              {
+                "id": "base_life_gained_on_enemy_death",
+                "max": 25,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ManaGainedFromEnemyDeath",
+        "kind": "gen5",
+        "template": "Gain # Mana per enemy killed",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionManaGainedFromEnemyDeath1",
+            "text": "Gain (10-15) Mana per enemy killed",
+            "stats": [
+              {
+                "id": "base_mana_gained_on_enemy_death",
+                "max": 15,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "desecrated": [
+      {
+        "family_key": "ProjectileDamage",
+        "kind": "prefix",
+        "template": "Increases and Reductions to [Projectile|Projectile] Speed also apply to Damage with [Bow|Bows]",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "Ulaman's",
+            "text": "Increases and Reductions to [Projectile|Projectile] Speed also apply to Damage with [Bow|Bows]",
+            "stats": [
+              {
+                "id": "arrow_speed_additive_modifiers_also_apply_to_bow_damage",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ProjectileDamage",
+        "kind": "prefix",
+        "template": "[Projectile|Projectiles] deal #% increased Damage with Hits against Enemies further than #m",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "Kurgal's",
+            "text": "[Projectile|Projectiles] deal (20-30)% increased Damage with Hits against Enemies further than 6m",
+            "stats": [
+              {
+                "id": "projectile_damage_+%_vs_enemies_further_than_6m_distance",
+                "max": 30,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ProjectileDamage",
+        "kind": "prefix",
+        "template": "[Projectile|Projectiles] deal #% increased Damage with Hits against Enemies within #m",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "Amanamu's",
+            "text": "[Projectile|Projectiles] deal (20-30)% increased Damage with Hits against Enemies within 2m",
+            "stats": [
+              {
+                "id": "projectile_damage_+%_vs_enemies_within_2m_distance",
+                "max": 30,
+                "min": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AdditionalProjectiles",
+        "kind": "suffix",
+        "template": "[Projectile] [Attack|Attacks] have a #% chance to fire two additional [Projectile|Projectiles] while moving",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Ulaman",
+            "text": "[Projectile] [Attack|Attacks] have a (8-12)% chance to fire two additional [Projectile|Projectiles] while moving",
+            "stats": [
+              {
+                "id": "projectile_attacks_%_chance_to_fire_2_additional_projectiles_while_moving",
+                "max": 12,
+                "min": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "CriticalStrikeChanceIncrease",
+        "kind": "suffix",
+        "template": "[Projectile|Projectiles] have #% increased [Critical] Hit Chance against Enemies further than #m",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Kurgal",
+            "text": "[Projectile|Projectiles] have (18-26)% increased [Critical] Hit Chance against Enemies further than 6m",
+            "stats": [
+              {
+                "id": "critical_strike_chance_+%_vs_enemies_further_than_6m_distance",
+                "max": 26,
+                "min": 18
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "CriticalStrikeMultiplier",
+        "kind": "suffix",
+        "template": "[Projectile|Projectiles] have #% increased [CriticalDamageBonus|Critical Damage Bonus] against Enemies within #m",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Amanamu",
+            "text": "[Projectile|Projectiles] have (18-26)% increased [CriticalDamageBonus|Critical Damage Bonus] against Enemies within 2m",
+            "stats": [
+              {
+                "id": "critical_hit_damage_bonus_+%_vs_enemies_within_2m_distance",
+                "max": 26,
+                "min": 18
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LifeCost",
+        "kind": "suffix",
+        "template": "#% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Ulaman",
+            "text": "(10-14)% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
+            "stats": [
+              {
+                "id": "base_skill_cost_life_instead_of_mana_%",
+                "max": 14,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ManaCostEfficiency",
+        "kind": "suffix",
+        "template": "#% increased Mana Cost [Efficiency]",
+        "tiers": [
+          {
+            "level": 65,
+            "name": "of Kurgal",
+            "text": "(6-10)% increased Mana Cost [Efficiency]",
+            "stats": [
+              {
+                "id": "base_mana_cost_efficiency_+%",
+                "max": 10,
+                "min": 6
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "essence": [
+      {
+        "family_key": "DamageWithWeaponTypeSkill",
+        "kind": "prefix",
+        "template": "#% increased Damage with Bow Skills",
+        "tiers": [
+          {
+            "level": 60,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyCorruptedEssenceHysteria\" href=\"Essence_of_Hysteria\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/CorruptedEssenceHysteria.webp\" alt=\"CorruptedEssenceHysteria\" height=\"16\" />Essence of Hysteria</a>",
+            "text": "(43-50)% increased Damage with Bow Skills",
+            "stats": [
+              {
+                "id": "damage_+%_with_bow_skills",
+                "max": 50,
+                "min": 43
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "EssenceAbyss",
+        "kind": "prefix",
+        "template": "Bears the [MarkofAbyssalLord|Mark of the Abyssal Lord]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyCorruptedEssenceAbyss\" href=\"Essence_of_the_Abyss\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AbyssalEssence.webp\" alt=\"AbyssalEssence\" height=\"16\" />Essence of the Abyss</a>",
+            "text": "Bears the [MarkofAbyssalLord|Mark of the Abyssal Lord]",
+            "stats": [
+              {
+                "id": "essence_abyss_guaranteed_pick",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedAccuracy",
+        "kind": "prefix",
+        "template": "+# to [Accuracy|Accuracy] Rating",
+        "tiers": [
+          {
+            "level": 58,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceAttack\" href=\"Greater_Essence_of_Battle\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterAttackEssence.webp\" alt=\"GreaterAttackEssence\" height=\"16\" />Greater Essence of Battle</a>",
+            "text": "+(237-346) to [Accuracy|Accuracy] Rating",
+            "stats": [
+              {
+                "id": "accuracy_rating",
+                "max": 346,
+                "min": 237
+              }
+            ]
+          },
+          {
+            "level": 58,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceAttack\" href=\"Greater_Essence_of_Battle\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterAttackEssence.webp\" alt=\"GreaterAttackEssence\" height=\"16\" />Greater Essence of Battle</a>",
+            "text": "+(237-346) to [Accuracy|Accuracy] Rating",
+            "stats": [
+              {
+                "id": "accuracy_rating",
+                "max": 346,
+                "min": 237
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Dexterity",
+        "kind": "suffix",
+        "template": "+# to [Dexterity|Dexterity]",
+        "tiers": [
+          {
+            "level": 11,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceAttribute\" href=\"Lesser_Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssenceLesser.webp\" alt=\"AttributeEssenceLesser\" height=\"16\" />Lesser Essence of the Infinite</a>",
+            "text": "+(9-12) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 12,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceAttribute\" href=\"Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssence.webp\" alt=\"AttributeEssence\" height=\"16\" />Essence of the Infinite</a>",
+            "text": "+(17-20) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 20,
+                "min": 17
+              }
+            ]
+          },
+          {
+            "level": 55,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceAttribute\" href=\"Greater_Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterAttributeEssence.webp\" alt=\"GreaterAttributeEssence\" height=\"16\" />Greater Essence of the Infinite</a>",
+            "text": "+(25-27) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 27,
+                "min": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "EssenceAbyss",
+        "kind": "suffix",
+        "template": "Bears the [MarkofAbyssalLord|Mark of the Abyssal Lord]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyCorruptedEssenceAbyss\" href=\"Essence_of_the_Abyss\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AbyssalEssence.webp\" alt=\"AbyssalEssence\" height=\"16\" />Essence of the Abyss</a>",
+            "text": "Bears the [MarkofAbyssalLord|Mark of the Abyssal Lord]",
+            "stats": [
+              {
+                "id": "essence_abyss_guaranteed_pick",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Intelligence",
+        "kind": "suffix",
+        "template": "+# to [Intelligence|Intelligence]",
+        "tiers": [
+          {
+            "level": 11,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceAttribute\" href=\"Lesser_Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssenceLesser.webp\" alt=\"AttributeEssenceLesser\" height=\"16\" />Lesser Essence of the Infinite</a>",
+            "text": "+(9-12) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 12,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceAttribute\" href=\"Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssence.webp\" alt=\"AttributeEssence\" height=\"16\" />Essence of the Infinite</a>",
+            "text": "+(17-20) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 20,
+                "min": 17
+              }
+            ]
+          },
+          {
+            "level": 55,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceAttribute\" href=\"Greater_Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterAttributeEssence.webp\" alt=\"GreaterAttributeEssence\" height=\"16\" />Greater Essence of the Infinite</a>",
+            "text": "+(25-27) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 27,
+                "min": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Strength",
+        "kind": "suffix",
+        "template": "+# to [Strength|Strength]",
+        "tiers": [
+          {
+            "level": 11,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyLesserEssenceAttribute\" href=\"Lesser_Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssenceLesser.webp\" alt=\"AttributeEssenceLesser\" height=\"16\" />Lesser Essence of the Infinite</a>",
+            "text": "+(9-12) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 12,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEssenceAttribute\" href=\"Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssence.webp\" alt=\"AttributeEssence\" height=\"16\" />Essence of the Infinite</a>",
+            "text": "+(17-20) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 20,
+                "min": 17
+              }
+            ]
+          },
+          {
+            "level": 55,
+            "name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGreaterEssenceAttribute\" href=\"Greater_Essence_of_the_Infinite\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterAttributeEssence.webp\" alt=\"GreaterAttributeEssence\" height=\"16\" />Greater Essence of the Infinite</a>",
+            "text": "+(25-27) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 27,
+                "min": 25
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normal": [
+      {
+        "family_key": "ColdDamage",
+        "kind": "prefix",
+        "template": "Adds # to # [Cold] damage to [Attack|Attacks]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Frosted",
+            "text": "Adds 1 to (2-3) [Cold] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_cold_damage",
+                "max": 1,
+                "min": 1
+              },
+              {
+                "id": "attack_maximum_added_cold_damage",
+                "max": 3,
+                "min": 2
+              }
+            ]
+          },
+          {
+            "level": 8,
+            "name": "Chilled",
+            "text": "Adds (3-4) to (5-8) [Cold] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_cold_damage",
+                "max": 4,
+                "min": 3
+              },
+              {
+                "id": "attack_maximum_added_cold_damage",
+                "max": 8,
+                "min": 5
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "Icy",
+            "text": "Adds (5-6) to (9-11) [Cold] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_cold_damage",
+                "max": 6,
+                "min": 5
+              },
+              {
+                "id": "attack_maximum_added_cold_damage",
+                "max": 11,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "Frigid",
+            "text": "Adds (7-8) to (12-14) [Cold] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_cold_damage",
+                "max": 8,
+                "min": 7
+              },
+              {
+                "id": "attack_maximum_added_cold_damage",
+                "max": 14,
+                "min": 12
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "Freezing",
+            "text": "Adds (9-10) to (15-17) [Cold] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_cold_damage",
+                "max": 10,
+                "min": 9
+              },
+              {
+                "id": "attack_maximum_added_cold_damage",
+                "max": 17,
+                "min": 15
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "Frozen",
+            "text": "Adds (11-13) to (18-21) [Cold] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_cold_damage",
+                "max": 13,
+                "min": 11
+              },
+              {
+                "id": "attack_maximum_added_cold_damage",
+                "max": 21,
+                "min": 18
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "Glaciated",
+            "text": "Adds (14-15) to (22-24) [Cold] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_cold_damage",
+                "max": 15,
+                "min": 14
+              },
+              {
+                "id": "attack_maximum_added_cold_damage",
+                "max": 24,
+                "min": 22
+              }
+            ]
+          },
+          {
+            "level": 65,
+            "name": "Polar",
+            "text": "Adds (16-20) to (25-31) [Cold] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_cold_damage",
+                "max": 20,
+                "min": 16
+              },
+              {
+                "id": "attack_maximum_added_cold_damage",
+                "max": 31,
+                "min": 25
+              }
+            ]
+          },
+          {
+            "level": 75,
+            "name": "Entombing",
+            "text": "Adds (21-24) to (32-37) [Cold] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_cold_damage",
+                "max": 24,
+                "min": 21
+              },
+              {
+                "id": "attack_maximum_added_cold_damage",
+                "max": 37,
+                "min": 32
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "DamageWithWeaponTypeSkill",
+        "kind": "prefix",
+        "template": "#% increased Damage with Bow Skills",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Acute",
+            "text": "(11-20)% increased Damage with Bow Skills",
+            "stats": [
+              {
+                "id": "damage_+%_with_bow_skills",
+                "max": 20,
+                "min": 11
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "Trenchant",
+            "text": "(21-30)% increased Damage with Bow Skills",
+            "stats": [
+              {
+                "id": "damage_+%_with_bow_skills",
+                "max": 30,
+                "min": 21
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "Perforating",
+            "text": "(31-36)% increased Damage with Bow Skills",
+            "stats": [
+              {
+                "id": "damage_+%_with_bow_skills",
+                "max": 36,
+                "min": 31
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "Incisive",
+            "text": "(37-42)% increased Damage with Bow Skills",
+            "stats": [
+              {
+                "id": "damage_+%_with_bow_skills",
+                "max": 42,
+                "min": 37
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "Lacerating",
+            "text": "(43-50)% increased Damage with Bow Skills",
+            "stats": [
+              {
+                "id": "damage_+%_with_bow_skills",
+                "max": 50,
+                "min": 43
+              }
+            ]
+          },
+          {
+            "level": 81,
+            "name": "Impaling",
+            "text": "(51-59)% increased Damage with Bow Skills",
+            "stats": [
+              {
+                "id": "damage_+%_with_bow_skills",
+                "max": 59,
+                "min": 51
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "FireDamage",
+        "kind": "prefix",
+        "template": "Adds # to # [Fire] damage to [Attack|Attacks]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Heated",
+            "text": "Adds (1-2) to 3 [Fire] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_fire_damage",
+                "max": 2,
+                "min": 1
+              },
+              {
+                "id": "attack_maximum_added_fire_damage",
+                "max": 3,
+                "min": 3
+              }
+            ]
+          },
+          {
+            "level": 8,
+            "name": "Smouldering",
+            "text": "Adds (3-5) to (6-9) [Fire] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_fire_damage",
+                "max": 5,
+                "min": 3
+              },
+              {
+                "id": "attack_maximum_added_fire_damage",
+                "max": 9,
+                "min": 6
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "Smoking",
+            "text": "Adds (6-8) to (10-13) [Fire] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_fire_damage",
+                "max": 8,
+                "min": 6
+              },
+              {
+                "id": "attack_maximum_added_fire_damage",
+                "max": 13,
+                "min": 10
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "Burning",
+            "text": "Adds (9-11) to (14-17) [Fire] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_fire_damage",
+                "max": 11,
+                "min": 9
+              },
+              {
+                "id": "attack_maximum_added_fire_damage",
+                "max": 17,
+                "min": 14
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "Flaming",
+            "text": "Adds (12-13) to (18-20) [Fire] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_fire_damage",
+                "max": 13,
+                "min": 12
+              },
+              {
+                "id": "attack_maximum_added_fire_damage",
+                "max": 20,
+                "min": 18
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "Scorching",
+            "text": "Adds (11-16) to (21-26) [Fire] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_fire_damage",
+                "max": 16,
+                "min": 11
+              },
+              {
+                "id": "attack_maximum_added_fire_damage",
+                "max": 26,
+                "min": 21
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "Incinerating",
+            "text": "Adds (13-19) to (27-32) [Fire] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_fire_damage",
+                "max": 19,
+                "min": 13
+              },
+              {
+                "id": "attack_maximum_added_fire_damage",
+                "max": 32,
+                "min": 27
+              }
+            ]
+          },
+          {
+            "level": 65,
+            "name": "Blasting",
+            "text": "Adds (20-24) to (33-36) [Fire] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_fire_damage",
+                "max": 24,
+                "min": 20
+              },
+              {
+                "id": "attack_maximum_added_fire_damage",
+                "max": 36,
+                "min": 33
+              }
+            ]
+          },
+          {
+            "level": 75,
+            "name": "Cremating",
+            "text": "Adds (25-29) to (37-45) [Fire] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_fire_damage",
+                "max": 29,
+                "min": 25
+              },
+              {
+                "id": "attack_maximum_added_fire_damage",
+                "max": 45,
+                "min": 37
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedAccuracy",
+        "kind": "prefix",
+        "template": "+# to [Accuracy|Accuracy] Rating",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Precise",
+            "text": "+(11-32) to [Accuracy|Accuracy] Rating",
+            "stats": [
+              {
+                "id": "accuracy_rating",
+                "max": 32,
+                "min": 11
+              }
+            ]
+          },
+          {
+            "level": 11,
+            "name": "Reliable",
+            "text": "+(33-60) to [Accuracy|Accuracy] Rating",
+            "stats": [
+              {
+                "id": "accuracy_rating",
+                "max": 60,
+                "min": 33
+              }
+            ]
+          },
+          {
+            "level": 18,
+            "name": "Focused",
+            "text": "+(61-84) to [Accuracy|Accuracy] Rating",
+            "stats": [
+              {
+                "id": "accuracy_rating",
+                "max": 84,
+                "min": 61
+              }
+            ]
+          },
+          {
+            "level": 26,
+            "name": "Deliberate",
+            "text": "+(85-123) to [Accuracy|Accuracy] Rating",
+            "stats": [
+              {
+                "id": "accuracy_rating",
+                "max": 123,
+                "min": 85
+              }
+            ]
+          },
+          {
+            "level": 36,
+            "name": "Consistent",
+            "text": "+(124-167) to [Accuracy|Accuracy] Rating",
+            "stats": [
+              {
+                "id": "accuracy_rating",
+                "max": 167,
+                "min": 124
+              }
+            ]
+          },
+          {
+            "level": 48,
+            "name": "Steady",
+            "text": "+(168-236) to [Accuracy|Accuracy] Rating",
+            "stats": [
+              {
+                "id": "accuracy_rating",
+                "max": 236,
+                "min": 168
+              }
+            ]
+          },
+          {
+            "level": 58,
+            "name": "Hunter's",
+            "text": "+(237-346) to [Accuracy|Accuracy] Rating",
+            "stats": [
+              {
+                "id": "accuracy_rating",
+                "max": 346,
+                "min": 237
+              }
+            ]
+          },
+          {
+            "level": 67,
+            "name": "Ranger's",
+            "text": "+(347-450) to [Accuracy|Accuracy] Rating",
+            "stats": [
+              {
+                "id": "accuracy_rating",
+                "max": 450,
+                "min": 347
+              }
+            ]
+          },
+          {
+            "level": 76,
+            "name": "Amazon's",
+            "text": "+(451-550) to [Accuracy|Accuracy] Rating",
+            "stats": [
+              {
+                "id": "accuracy_rating",
+                "max": 550,
+                "min": 451
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LightningDamage",
+        "kind": "prefix",
+        "template": "Adds # to # [Lightning] damage to [Attack|Attacks]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Humming",
+            "text": "Adds 1 to (4-6) [Lightning] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_lightning_damage",
+                "max": 1,
+                "min": 1
+              },
+              {
+                "id": "attack_maximum_added_lightning_damage",
+                "max": 6,
+                "min": 4
+              }
+            ]
+          },
+          {
+            "level": 8,
+            "name": "Buzzing",
+            "text": "Adds 1 to (10-15) [Lightning] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_lightning_damage",
+                "max": 1,
+                "min": 1
+              },
+              {
+                "id": "attack_maximum_added_lightning_damage",
+                "max": 15,
+                "min": 10
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "Snapping",
+            "text": "Adds 1 to (16-22) [Lightning] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_lightning_damage",
+                "max": 1,
+                "min": 1
+              },
+              {
+                "id": "attack_maximum_added_lightning_damage",
+                "max": 22,
+                "min": 16
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "Crackling",
+            "text": "Adds 1 to (23-27) [Lightning] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_lightning_damage",
+                "max": 1,
+                "min": 1
+              },
+              {
+                "id": "attack_maximum_added_lightning_damage",
+                "max": 27,
+                "min": 23
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "Sparking",
+            "text": "Adds 1 to (28-32) [Lightning] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_lightning_damage",
+                "max": 1,
+                "min": 1
+              },
+              {
+                "id": "attack_maximum_added_lightning_damage",
+                "max": 32,
+                "min": 28
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "Arcing",
+            "text": "Adds (1-2) to (33-40) [Lightning] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_lightning_damage",
+                "max": 2,
+                "min": 1
+              },
+              {
+                "id": "attack_maximum_added_lightning_damage",
+                "max": 40,
+                "min": 33
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "Shocking",
+            "text": "Adds (1-2) to (41-47) [Lightning] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_lightning_damage",
+                "max": 2,
+                "min": 1
+              },
+              {
+                "id": "attack_maximum_added_lightning_damage",
+                "max": 47,
+                "min": 41
+              }
+            ]
+          },
+          {
+            "level": 65,
+            "name": "Discharging",
+            "text": "Adds (1-3) to (48-59) [Lightning] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_lightning_damage",
+                "max": 3,
+                "min": 1
+              },
+              {
+                "id": "attack_maximum_added_lightning_damage",
+                "max": 59,
+                "min": 48
+              }
+            ]
+          },
+          {
+            "level": 75,
+            "name": "Electrocuting",
+            "text": "Adds (1-4) to (60-71) [Lightning] damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_lightning_damage",
+                "max": 4,
+                "min": 1
+              },
+              {
+                "id": "attack_maximum_added_lightning_damage",
+                "max": 71,
+                "min": 60
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "PhysicalDamage",
+        "kind": "prefix",
+        "template": "Adds # to # [Physical|Physical] Damage to [Attack|Attacks]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Glinting",
+            "text": "Adds (1-2) to 3 [Physical|Physical] Damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_physical_damage",
+                "max": 2,
+                "min": 1
+              },
+              {
+                "id": "attack_maximum_added_physical_damage",
+                "max": 3,
+                "min": 3
+              }
+            ]
+          },
+          {
+            "level": 8,
+            "name": "Burnished",
+            "text": "Adds (2-3) to (4-6) [Physical|Physical] Damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_physical_damage",
+                "max": 3,
+                "min": 2
+              },
+              {
+                "id": "attack_maximum_added_physical_damage",
+                "max": 6,
+                "min": 4
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "name": "Polished",
+            "text": "Adds (2-4) to (5-8) [Physical|Physical] Damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_physical_damage",
+                "max": 4,
+                "min": 2
+              },
+              {
+                "id": "attack_maximum_added_physical_damage",
+                "max": 8,
+                "min": 5
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "Honed",
+            "text": "Adds (4-6) to (8-11) [Physical|Physical] Damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_physical_damage",
+                "max": 6,
+                "min": 4
+              },
+              {
+                "id": "attack_maximum_added_physical_damage",
+                "max": 11,
+                "min": 8
+              }
+            ]
+          },
+          {
+            "level": 46,
+            "name": "Gleaming",
+            "text": "Adds (5-7) to (9-13) [Physical|Physical] Damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_physical_damage",
+                "max": 7,
+                "min": 5
+              },
+              {
+                "id": "attack_maximum_added_physical_damage",
+                "max": 13,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 54,
+            "name": "Annealed",
+            "text": "Adds (6-10) to (12-17) [Physical|Physical] Damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_physical_damage",
+                "max": 10,
+                "min": 6
+              },
+              {
+                "id": "attack_maximum_added_physical_damage",
+                "max": 17,
+                "min": 12
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "Razor-sharp",
+            "text": "Adds (7-11) to (14-20) [Physical|Physical] Damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_physical_damage",
+                "max": 11,
+                "min": 7
+              },
+              {
+                "id": "attack_maximum_added_physical_damage",
+                "max": 20,
+                "min": 14
+              }
+            ]
+          },
+          {
+            "level": 65,
+            "name": "Tempered",
+            "text": "Adds (10-15) to (18-26) [Physical|Physical] Damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_physical_damage",
+                "max": 15,
+                "min": 10
+              },
+              {
+                "id": "attack_maximum_added_physical_damage",
+                "max": 26,
+                "min": 18
+              }
+            ]
+          },
+          {
+            "level": 75,
+            "name": "Flaring",
+            "text": "Adds (12-19) to (22-32) [Physical|Physical] Damage to [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_minimum_added_physical_damage",
+                "max": 19,
+                "min": 12
+              },
+              {
+                "id": "attack_maximum_added_physical_damage",
+                "max": 32,
+                "min": 22
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ProjectileSpeed",
+        "kind": "prefix",
+        "template": "#% increased [Projectile] Speed",
+        "tiers": [
+          {
+            "level": 14,
+            "name": "Darting",
+            "text": "(10-17)% increased [Projectile] Speed",
+            "stats": [
+              {
+                "id": "base_projectile_speed_+%",
+                "max": 17,
+                "min": 10
+              }
+            ]
+          },
+          {
+            "level": 27,
+            "name": "Brisk",
+            "text": "(18-25)% increased [Projectile] Speed",
+            "stats": [
+              {
+                "id": "base_projectile_speed_+%",
+                "max": 25,
+                "min": 18
+              }
+            ]
+          },
+          {
+            "level": 41,
+            "name": "Quick",
+            "text": "(26-33)% increased [Projectile] Speed",
+            "stats": [
+              {
+                "id": "base_projectile_speed_+%",
+                "max": 33,
+                "min": 26
+              }
+            ]
+          },
+          {
+            "level": 55,
+            "name": "Rapid",
+            "text": "(34-41)% increased [Projectile] Speed",
+            "stats": [
+              {
+                "id": "base_projectile_speed_+%",
+                "max": 41,
+                "min": 34
+              }
+            ]
+          },
+          {
+            "level": 82,
+            "name": "Nimble",
+            "text": "(42-46)% increased [Projectile] Speed",
+            "stats": [
+              {
+                "id": "base_projectile_speed_+%",
+                "max": 46,
+                "min": 42
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ChanceToPierce",
+        "kind": "suffix",
+        "template": "#% chance to [Pierce|Pierce] an Enemy",
+        "tiers": [
+          {
+            "level": 11,
+            "name": "of Piercing",
+            "text": "(12-14)% chance to [Pierce|Pierce] an Enemy",
+            "stats": [
+              {
+                "id": "base_chance_to_pierce_%",
+                "max": 14,
+                "min": 12
+              }
+            ]
+          },
+          {
+            "level": 26,
+            "name": "of Drilling",
+            "text": "(15-17)% chance to [Pierce|Pierce] an Enemy",
+            "stats": [
+              {
+                "id": "base_chance_to_pierce_%",
+                "max": 17,
+                "min": 15
+              }
+            ]
+          },
+          {
+            "level": 44,
+            "name": "of Puncturing",
+            "text": "(18-20)% chance to [Pierce|Pierce] an Enemy",
+            "stats": [
+              {
+                "id": "base_chance_to_pierce_%",
+                "max": 20,
+                "min": 18
+              }
+            ]
+          },
+          {
+            "level": 61,
+            "name": "of Skewering",
+            "text": "(21-23)% chance to [Pierce|Pierce] an Enemy",
+            "stats": [
+              {
+                "id": "base_chance_to_pierce_%",
+                "max": 23,
+                "min": 21
+              }
+            ]
+          },
+          {
+            "level": 77,
+            "name": "of Penetrating",
+            "text": "(24-26)% chance to [Pierce|Pierce] an Enemy",
+            "stats": [
+              {
+                "id": "base_chance_to_pierce_%",
+                "max": 26,
+                "min": 24
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "CriticalStrikeChanceIncrease",
+        "kind": "suffix",
+        "template": "#% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
+        "tiers": [
+          {
+            "level": 5,
+            "name": "of Menace",
+            "text": "(10-14)% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_critical_strike_chance_+%",
+                "max": 14,
+                "min": 10
+              }
+            ]
+          },
+          {
+            "level": 20,
+            "name": "of Havoc",
+            "text": "(15-19)% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_critical_strike_chance_+%",
+                "max": 19,
+                "min": 15
+              }
+            ]
+          },
+          {
+            "level": 30,
+            "name": "of Disaster",
+            "text": "(20-24)% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_critical_strike_chance_+%",
+                "max": 24,
+                "min": 20
+              }
+            ]
+          },
+          {
+            "level": 44,
+            "name": "of Calamity",
+            "text": "(25-29)% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_critical_strike_chance_+%",
+                "max": 29,
+                "min": 25
+              }
+            ]
+          },
+          {
+            "level": 58,
+            "name": "of Ruin",
+            "text": "(30-34)% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_critical_strike_chance_+%",
+                "max": 34,
+                "min": 30
+              }
+            ]
+          },
+          {
+            "level": 72,
+            "name": "of Unmaking",
+            "text": "(35-38)% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
+            "stats": [
+              {
+                "id": "attack_critical_strike_chance_+%",
+                "max": 38,
+                "min": 35
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "CriticalStrikeMultiplier",
+        "kind": "suffix",
+        "template": "#% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
+        "tiers": [
+          {
+            "level": 8,
+            "name": "of Ire",
+            "text": "(10-14)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
+            "stats": [
+              {
+                "id": "attack_critical_strike_multiplier_+",
+                "max": 14,
+                "min": 10
+              }
+            ]
+          },
+          {
+            "level": 21,
+            "name": "of Anger",
+            "text": "(15-19)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
+            "stats": [
+              {
+                "id": "attack_critical_strike_multiplier_+",
+                "max": 19,
+                "min": 15
+              }
+            ]
+          },
+          {
+            "level": 31,
+            "name": "of Rage",
+            "text": "(20-24)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
+            "stats": [
+              {
+                "id": "attack_critical_strike_multiplier_+",
+                "max": 24,
+                "min": 20
+              }
+            ]
+          },
+          {
+            "level": 45,
+            "name": "of Fury",
+            "text": "(25-29)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
+            "stats": [
+              {
+                "id": "attack_critical_strike_multiplier_+",
+                "max": 29,
+                "min": 25
+              }
+            ]
+          },
+          {
+            "level": 59,
+            "name": "of Ferocity",
+            "text": "(30-34)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
+            "stats": [
+              {
+                "id": "attack_critical_strike_multiplier_+",
+                "max": 34,
+                "min": 30
+              }
+            ]
+          },
+          {
+            "level": 74,
+            "name": "of Destruction",
+            "text": "(35-39)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
+            "stats": [
+              {
+                "id": "attack_critical_strike_multiplier_+",
+                "max": 39,
+                "min": 35
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Dexterity",
+        "kind": "suffix",
+        "template": "+# to [Dexterity|Dexterity]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Mongoose",
+            "text": "+(5-8) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 8,
+                "min": 5
+              }
+            ]
+          },
+          {
+            "level": 11,
+            "name": "of the Lynx",
+            "text": "+(9-12) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 12,
+                "min": 9
+              }
+            ]
+          },
+          {
+            "level": 22,
+            "name": "of the Fox",
+            "text": "+(13-16) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 16,
+                "min": 13
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "of the Falcon",
+            "text": "+(17-20) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 20,
+                "min": 17
+              }
+            ]
+          },
+          {
+            "level": 44,
+            "name": "of the Panther",
+            "text": "+(21-24) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 24,
+                "min": 21
+              }
+            ]
+          },
+          {
+            "level": 55,
+            "name": "of the Leopard",
+            "text": "+(25-27) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 27,
+                "min": 25
+              }
+            ]
+          },
+          {
+            "level": 66,
+            "name": "of the Jaguar",
+            "text": "+(28-30) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 30,
+                "min": 28
+              }
+            ]
+          },
+          {
+            "level": 74,
+            "name": "of the Phantom",
+            "text": "+(31-33) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 33,
+                "min": 31
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreaseSocketedGemLevel",
+        "kind": "suffix",
+        "template": "+# to Level of all [Projectile] Skills",
+        "tiers": [
+          {
+            "level": 5,
+            "name": "of the Archer",
+            "text": "+1 to Level of all [Projectile] Skills",
+            "stats": [
+              {
+                "id": "projectile_skill_gem_level_+",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          },
+          {
+            "level": 41,
+            "name": "of the Fletcher",
+            "text": "+2 to Level of all [Projectile] Skills",
+            "stats": [
+              {
+                "id": "projectile_skill_gem_level_+",
+                "max": 2,
+                "min": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedAttackSpeed",
+        "kind": "suffix",
+        "template": "#% increased [Attack] Speed",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Skill",
+            "text": "(5-7)% increased [Attack] Speed",
+            "stats": [
+              {
+                "id": "attack_speed_+%",
+                "max": 7,
+                "min": 5
+              }
+            ]
+          },
+          {
+            "level": 22,
+            "name": "of Ease",
+            "text": "(8-10)% increased [Attack] Speed",
+            "stats": [
+              {
+                "id": "attack_speed_+%",
+                "max": 10,
+                "min": 8
+              }
+            ]
+          },
+          {
+            "level": 37,
+            "name": "of Mastery",
+            "text": "(11-13)% increased [Attack] Speed",
+            "stats": [
+              {
+                "id": "attack_speed_+%",
+                "max": 13,
+                "min": 11
+              }
+            ]
+          },
+          {
+            "level": 60,
+            "name": "of Renown",
+            "text": "(14-16)% increased [Attack] Speed",
+            "stats": [
+              {
+                "id": "attack_speed_+%",
+                "max": 16,
+                "min": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LifeGainedFromEnemyDeath",
+        "kind": "suffix",
+        "template": "Gain # Life per enemy killed",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Success",
+            "text": "Gain (4-6) Life per enemy killed",
+            "stats": [
+              {
+                "id": "base_life_gained_on_enemy_death",
+                "max": 6,
+                "min": 4
+              }
+            ]
+          },
+          {
+            "level": 11,
+            "name": "of Victory",
+            "text": "Gain (7-9) Life per enemy killed",
+            "stats": [
+              {
+                "id": "base_life_gained_on_enemy_death",
+                "max": 9,
+                "min": 7
+              }
+            ]
+          },
+          {
+            "level": 22,
+            "name": "of Triumph",
+            "text": "Gain (10-18) Life per enemy killed",
+            "stats": [
+              {
+                "id": "base_life_gained_on_enemy_death",
+                "max": 18,
+                "min": 10
+              }
+            ]
+          },
+          {
+            "level": 33,
+            "name": "of Conquest",
+            "text": "Gain (19-28) Life per enemy killed",
+            "stats": [
+              {
+                "id": "base_life_gained_on_enemy_death",
+                "max": 28,
+                "min": 19
+              }
+            ]
+          },
+          {
+            "level": 44,
+            "name": "of Vanquishing",
+            "text": "Gain (29-40) Life per enemy killed",
+            "stats": [
+              {
+                "id": "base_life_gained_on_enemy_death",
+                "max": 40,
+                "min": 29
+              }
+            ]
+          },
+          {
+            "level": 55,
+            "name": "of Valour",
+            "text": "Gain (41-53) Life per enemy killed",
+            "stats": [
+              {
+                "id": "base_life_gained_on_enemy_death",
+                "max": 53,
+                "min": 41
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ManaGainedFromEnemyDeath",
+        "kind": "suffix",
+        "template": "Gain # Mana per enemy killed",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Absorption",
+            "text": "Gain (2-3) Mana per enemy killed",
+            "stats": [
+              {
+                "id": "base_mana_gained_on_enemy_death",
+                "max": 3,
+                "min": 2
+              }
+            ]
+          },
+          {
+            "level": 12,
+            "name": "of Osmosis",
+            "text": "Gain (4-5) Mana per enemy killed",
+            "stats": [
+              {
+                "id": "base_mana_gained_on_enemy_death",
+                "max": 5,
+                "min": 4
+              }
+            ]
+          },
+          {
+            "level": 23,
+            "name": "of Infusion",
+            "text": "Gain (6-9) Mana per enemy killed",
+            "stats": [
+              {
+                "id": "base_mana_gained_on_enemy_death",
+                "max": 9,
+                "min": 6
+              }
+            ]
+          },
+          {
+            "level": 34,
+            "name": "of Enveloping",
+            "text": "Gain (10-14) Mana per enemy killed",
+            "stats": [
+              {
+                "id": "base_mana_gained_on_enemy_death",
+                "max": 14,
+                "min": 10
+              }
+            ]
+          },
+          {
+            "level": 45,
+            "name": "of Consumption",
+            "text": "Gain (15-20) Mana per enemy killed",
+            "stats": [
+              {
+                "id": "base_mana_gained_on_enemy_death",
+                "max": 20,
+                "min": 15
+              }
+            ]
+          },
+          {
+            "level": 56,
+            "name": "of Siphoning",
+            "text": "Gain (21-27) Mana per enemy killed",
+            "stats": [
+              {
+                "id": "base_mana_gained_on_enemy_death",
+                "max": 27,
+                "min": 21
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "slug": "Quivers"
 }

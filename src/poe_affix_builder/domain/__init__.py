@@ -16,8 +16,10 @@ from poe_affix_builder.domain.models import (
     RebuildResult,
     RefreshReport,
     SnapshotAffix,
+    SnapshotBase,
     SnapshotDocument,
     SnapshotItem,
+    SnapshotModifierSection,
     SnapshotTier,
     UnresolvedTier,
 )
@@ -40,8 +42,10 @@ __all__ = [
     "RebuildResult",
     "RefreshReport",
     "SnapshotAffix",
+    "SnapshotBase",
     "SnapshotDocument",
     "SnapshotItem",
+    "SnapshotModifierSection",
     "SnapshotTier",
     "UnresolvedTier",
 ]

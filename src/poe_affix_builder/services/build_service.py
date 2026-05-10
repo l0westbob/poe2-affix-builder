@@ -7,7 +7,17 @@ from poe_affix_builder.adapters.json_store import write_json_atomic
 from poe_affix_builder.contracts.manifest_contracts import manifest_from_dict
 from poe_affix_builder.contracts.output_contracts import output_item_to_dict
 from poe_affix_builder.contracts.report_contracts import build_report_to_dict, validation_report_to_dict
-from poe_affix_builder.domain.models import BuildReport, BuildResult, MappingValidationReport, OutputAffix, OutputItem, OutputTier, UnresolvedTier
+from poe_affix_builder.domain.models import (
+    BuildReport,
+    BuildResult,
+    MappingValidationReport,
+    OutputAffix,
+    OutputBase,
+    OutputItem,
+    OutputModifierSection,
+    OutputTier,
+    UnresolvedTier,
+)
 from poe_affix_builder.manifest import load_manifest
 from poe_affix_builder.normalize import normalize_output_text, text_to_template
 from poe_affix_builder.services.matching_service import (
@@ -21,6 +31,73 @@ from poe_affix_builder.services.matching_service import (
     select_build_candidate,
 )
 from poe_affix_builder.source import load_mod_entries
+
+
+def _build_output_affixes(
+    *,
+    item,
+    affixes,
+    include_domains: set[str],
+    include_spawn_tags: set[str],
+    indexes,
+    unresolved: list[UnresolvedTier],
+) -> tuple[OutputAffix, ...]:
+    out_affixes: list[OutputAffix] = []
+    for affix in affixes:
+        out_tiers: list[OutputTier] = []
+        first_matched_text: str | None = None
+
+        for tier in affix.tiers:
+            candidates_here = collect_build_candidates(
+                indexes,
+                kind=affix.kind,
+                family_key=affix.family_key,
+                level=tier.level,
+                name=tier.name,
+                text_ref=tier.text,
+            )
+            decision = select_build_candidate(
+                candidates_here,
+                include_domains=include_domains,
+                include_spawn_tags=include_spawn_tags,
+                ref_text=tier.text,
+                ref_name=tier.name or None,
+                ref_stat_ids=extract_ref_stat_ids(
+                    {
+                        "stats": list(tier.stats),
+                    }
+                ),
+            )
+            text_out = normalize_output_text(tier.text) if isinstance(tier.text, str) else tier.text
+            stats = ()
+            if decision.entry is not None:
+                text_out = decision.entry.text
+                copied = copy_stats(decision.entry.stats)
+                stats = tuple(copied)
+                if first_matched_text is None:
+                    first_matched_text = decision.entry.text
+            else:
+                unresolved.append(
+                    UnresolvedTier(
+                        slug=item.slug,
+                        family_key=affix.family_key,
+                        kind=affix.kind,
+                        level=tier.level,
+                        name=tier.name or None,
+                        text=tier.text or None,
+                    )
+                )
+            out_tiers.append(OutputTier(level=tier.level, name=tier.name, text=text_out, stats=stats))
+
+        out_affixes.append(
+            OutputAffix(
+                family_key=affix.family_key,
+                kind=affix.kind,
+                template=text_to_template(first_matched_text) if first_matched_text else affix.template,
+                tiers=tuple(out_tiers),
+            )
+        )
+    return tuple(out_affixes)
 
 
 def build_affixes(
@@ -59,68 +136,47 @@ def build_affixes(
                 for kind, family_key in unknown[:50]
             ]
 
-        out_affixes: list[OutputAffix] = []
-        for affix in item.affixes:
-            out_tiers: list[OutputTier] = []
-            first_matched_text: str | None = None
-
-            for tier in affix.tiers:
-                candidates_here = collect_build_candidates(
-                    indexes,
-                    kind=affix.kind,
-                    family_key=affix.family_key,
-                    level=tier.level,
-                    name=tier.name,
-                    text_ref=tier.text,
-                )
-                decision = select_build_candidate(
-                    candidates_here,
-                    include_domains=include_domains,
-                    include_spawn_tags=include_spawn_tags,
-                    ref_text=tier.text,
-                    ref_name=tier.name or None,
-                    ref_stat_ids=extract_ref_stat_ids(
-                        {
-                            "stats": list(tier.stats),
-                        }
-                    ),
-                )
-                text_out = normalize_output_text(tier.text) if isinstance(tier.text, str) else tier.text
-                stats = ()
-                if decision.entry is not None:
-                    text_out = decision.entry.text
-                    copied = copy_stats(decision.entry.stats)
-                    stats = tuple(copied)
-                    if first_matched_text is None:
-                        first_matched_text = decision.entry.text
-                else:
-                    unresolved.append(
-                        UnresolvedTier(
-                            slug=item.slug,
-                            family_key=affix.family_key,
-                            kind=affix.kind,
-                            level=tier.level,
-                            name=tier.name or None,
-                            text=tier.text or None,
-                        )
-                    )
-                out_tiers.append(OutputTier(level=tier.level, name=tier.name, text=text_out, stats=stats))
-                tiers_written += 1
-
-            out_affixes.append(
-                OutputAffix(
-                    family_key=affix.family_key,
-                    kind=affix.kind,
-                    template=text_to_template(first_matched_text) if first_matched_text else affix.template,
-                    tiers=tuple(out_tiers),
-                )
+        out_modifier_sections: list[OutputModifierSection] = []
+        for section in item.modifier_sections:
+            built_affixes = _build_output_affixes(
+                item=item,
+                affixes=section.affixes,
+                include_domains=include_domains,
+                include_spawn_tags=include_spawn_tags,
+                indexes=indexes,
+                unresolved=unresolved,
             )
-            affixes_written += 1
+            out_modifier_sections.append(OutputModifierSection(name=section.name, affixes=built_affixes))
+            affixes_written += len(built_affixes)
+            tiers_written += sum(len(affix.tiers) for affix in built_affixes)
+
+        out_affixes = next((section.affixes for section in out_modifier_sections if section.name == "normal"), tuple())
+        if not out_modifier_sections and item.affixes:
+            out_affixes = _build_output_affixes(
+                item=item,
+                affixes=item.affixes,
+                include_domains=include_domains,
+                include_spawn_tags=include_spawn_tags,
+                indexes=indexes,
+                unresolved=unresolved,
+            )
+            out_modifier_sections = [OutputModifierSection(name="normal", affixes=out_affixes)]
+            affixes_written += len(out_affixes)
+            tiers_written += sum(len(affix.tiers) for affix in out_affixes)
 
         out_item = OutputItem(
             slug=item.slug,
             category=item.category,
             label=item.label,
+            bases=tuple(
+                OutputBase(
+                    name=base.name,
+                    href=base.href,
+                    required_level=base.required_level,
+                )
+                for base in item.bases
+            ),
+            modifier_sections=tuple(out_modifier_sections),
             affixes=tuple(out_affixes),
         )
         write_json_atomic(out_dir / f"{item.slug}.json", output_item_to_dict(out_item))

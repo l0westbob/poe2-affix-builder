@@ -37,6 +37,14 @@ class RebuildMappingTests(unittest.TestCase):
             """
             bows_html = """
             <html><body>
+            <div class="tab-content">
+              <div id="BowsItem" class="tab-pane fade show active">
+                <div class="flex-grow-1 ms-2">
+                  <a class="whiteitem Bow" href="/us/Crude_Bow">Crude Bow</a>
+                  <div class="requirements">Requires: <span class="colourDefault">Level 6</span>, 14 Dex</div>
+                </div>
+              </div>
+            </div>
             <script>
             new ModsView({
               normal: [
@@ -102,14 +110,31 @@ class RebuildMappingTests(unittest.TestCase):
                         "slug": "Amulets",
                         "category": "Jewellery",
                         "label": "Amulets",
-                        "affixes": [
+                        "bases": [
                             {
-                                "kind": "prefix",
-                                "family_key": "Life",
-                                "template": "+# to maximum Life",
-                                "tiers": [{"level": 1, "name": "Healthy", "text": "+(1-2) to maximum Life"}],
+                                "name": "Lapis Amulet",
+                                "href": "/us/Lapis_Amulet",
+                                "required_level": 12,
                             }
                         ],
+                        "modifier_sections": {
+                            "normal": [
+                                {
+                                    "kind": "prefix",
+                                    "family_key": "Life",
+                                    "template": "+# to maximum Life",
+                                    "tiers": [{"level": 1, "name": "Healthy", "text": "+(1-2) to maximum Life"}],
+                                }
+                            ],
+                            "corrupted": [
+                                {
+                                    "kind": "suffix",
+                                    "family_key": "Life",
+                                    "template": "+# to maximum Life",
+                                    "tiers": [{"level": 1, "name": "Healthy", "text": "+(1-2) to maximum Life"}],
+                                }
+                            ]
+                        },
                     }
                 ],
             }
@@ -131,11 +156,101 @@ class RebuildMappingTests(unittest.TestCase):
             self.assertEqual(item["slug"], "Amulets")
             self.assertEqual(item["include_domains"], ["item"])
             self.assertEqual(item["include_spawn_tags"], ["amulet"])
+            self.assertEqual(item["bases"][0]["name"], "Lapis Amulet")
+            self.assertIn("modifier_sections", item)
+            self.assertIn("normal", item["modifier_sections"])
+            self.assertIn("corrupted", item["modifier_sections"])
             self.assertEqual(tier["stats"], ["base_maximum_life"])
+            self.assertEqual(item["modifier_sections"]["corrupted"][0]["tiers"][0]["stats"], ["base_maximum_life"])
 
             report = json.loads(report_path.read_text(encoding="utf-8"))
             self.assertTrue(report["ok"])
             self.assertEqual(report["unresolved_mod_matches"], [])
+
+    def test_refresh_snapshot_extracts_item_bases_and_tiers(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            snapshot_path = root / "snapshot.json"
+            report_path = root / "report.json"
+
+            index_html = """
+            <div class="card">
+              <h5 class="card-header">Modifiers</h5>
+              <div class="card-body">
+                <div class="itemList"><a href="/us/Modifiers">Ignore</a></div>
+                <div class="itemList">
+                  <span class="disabled">Weapons</span>
+                  <a href="/us/Claws">Claws</a>
+                </div>
+              </div>
+            </div>
+            """
+            claws_html = """
+            <html><body>
+            <div class="tab-content">
+              <div id="ClawsItem" class="tab-pane fade show active">
+                <div class="flex-grow-1 ms-2">
+                  <a class="whiteitem Claw" href="Crude_Claw">Crude Claw</a>
+                </div>
+                <div class="flex-grow-1 ms-2">
+                  <a class="whiteitem Claw" href="Pict_Claw">Pict Claw</a>
+                  <div class="requirements">Requires: <span class="colourDefault">Level 6</span>, 14 Dex</div>
+                </div>
+              </div>
+            </div>
+            <script>
+            new ModsView({
+              normal: [
+                {
+                  ModGenerationTypeID: 1,
+                  ModFamilyList: ["ClawDamage"],
+                  Name: "Sharp",
+                  Level: 1,
+                  DropChance: 100,
+                  str: "<span>+(1-2) to Physical Damage</span>"
+                }
+              ],
+              corrupted: [
+                {
+                  ModGenerationTypeID: 2,
+                  ModFamilyList: ["ClawCorrupted"],
+                  Name: "Corrupted Example",
+                  Level: 2,
+                  DropChance: 50,
+                  str: "<span>+(3-4)% to some Corrupted Stat</span>"
+                }
+              ]
+            });
+            </script>
+            </body></html>
+            """
+
+            def fetcher(url: str) -> str:
+                if url.endswith("/Modifiers"):
+                    return index_html
+                if url.endswith("/Claws"):
+                    return claws_html
+                raise RuntimeError(f"unexpected url: {url}")
+
+            refresh_snapshot(
+                snapshot_path=snapshot_path,
+                report_path=report_path,
+                index_url="https://poe2db.tw/us/Modifiers",
+                fetcher=fetcher,
+            )
+
+            snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
+            item = snapshot["items"][0]
+            self.assertEqual(item["slug"], "Claws")
+            self.assertEqual(item["bases"][0]["name"], "Crude Claw")
+            self.assertIsNone(item["bases"][0]["required_level"])
+            self.assertEqual(item["bases"][1]["name"], "Pict Claw")
+            self.assertEqual(item["bases"][1]["required_level"], 6)
+            self.assertNotIn("affixes", item)
+            self.assertIn("normal", item["modifier_sections"])
+            self.assertIn("corrupted", item["modifier_sections"])
+            self.assertEqual(item["modifier_sections"]["normal"][0]["kind"], "prefix")
+            self.assertEqual(item["modifier_sections"]["corrupted"][0]["kind"], "suffix")
 
     def test_rebuild_mapping_deterministic(self):
         with tempfile.TemporaryDirectory() as td:
@@ -164,14 +279,16 @@ class RebuildMappingTests(unittest.TestCase):
                         "slug": "Amulets",
                         "category": "Jewellery",
                         "label": "Amulets",
-                        "affixes": [
-                            {
-                                "kind": "prefix",
-                                "family_key": "Life",
-                                "template": "+# to maximum Life",
-                                "tiers": [{"level": 1, "name": "Healthy", "text": "+(1-2) to maximum Life"}],
-                            }
-                        ],
+                        "modifier_sections": {
+                            "normal": [
+                                {
+                                    "kind": "prefix",
+                                    "family_key": "Life",
+                                    "template": "+# to maximum Life",
+                                    "tiers": [{"level": 1, "name": "Healthy", "text": "+(1-2) to maximum Life"}],
+                                }
+                            ]
+                        },
                     }
                 ],
             }

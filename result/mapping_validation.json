@@ -13755,7 +13755,7 @@
         "kind": "prefix",
         "family_key": "BaseSpirit",
         "matching_entry_count": 8,
-        "global_entry_count": 10,
+        "global_entry_count": 9,
         "matching_domains": [
           "item"
         ],
@@ -16851,12 +16851,11 @@
         "kind": "suffix",
         "family_key": "Dexterity",
         "matching_entry_count": 9,
-        "global_entry_count": 10,
+        "global_entry_count": 9,
         "matching_domains": [
           "item"
         ],
         "global_domains": [
-          "desecrated",
           "item"
         ],
         "sample_spawn_tags": [
@@ -17915,7 +17914,7 @@
         "kind": "suffix",
         "family_key": "ManaCostEfficiency",
         "matching_entry_count": 2,
-        "global_entry_count": 7,
+        "global_entry_count": 6,
         "matching_domains": [
           "item"
         ],
@@ -18946,12 +18945,11 @@
         "kind": "suffix",
         "family_key": "Strength",
         "matching_entry_count": 9,
-        "global_entry_count": 11,
+        "global_entry_count": 9,
         "matching_domains": [
           "item"
         ],
         "global_domains": [
-          "desecrated",
           "item"
         ],
         "sample_spawn_tags": [
@@ -23244,13 +23242,12 @@
         "kind": "unique",
         "family_key": "BestiaryLeague",
         "matching_entry_count": 1,
-        "global_entry_count": 2,
+        "global_entry_count": 1,
         "matching_domains": [
           "item"
         ],
         "global_domains": [
-          "item",
-          "memory_line"
+          "item"
         ],
         "sample_spawn_tags": [],
         "sample_mod_keys": [
@@ -67123,7 +67120,7 @@
         "kind": "prefix",
         "family_key": "WeaponDamageTypePrefix",
         "matching_entry_count": 40,
-        "global_entry_count": 84,
+        "global_entry_count": 81,
         "matching_domains": [
           "item"
         ],

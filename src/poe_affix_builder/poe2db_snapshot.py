@@ -13,7 +13,9 @@ from poe_affix_builder.adapters.json_store import write_json_atomic
 from poe_affix_builder.adapters.poe2db_client import (
     DEFAULT_HEADERS,
     DEFAULT_INDEX_URL,
+    extract_item_bases_from_page,
     extract_item_links_from_modifiers_index,
+    extract_modifier_sections,
     extract_modsview,
     fetch_html,
     fetch_html_with_client,
@@ -49,16 +51,19 @@ def _build_snapshot_inner(*, fetcher: Callable[[str], str], index_url: str) -> d
         normal = modsview.get("normal")
         if not isinstance(normal, list):
             raise RuntimeError(f"modsview for {link.slug} has no 'normal' list")
+        modifier_sections = extract_modifier_sections(modsview)
         item = {
             "slug": link.slug,
             "category": link.category,
             "label": link.label,
             "href": link.href,
-            "affixes": group_affixes(row for row in normal if isinstance(row, dict)),
+            "bases": extract_item_bases_from_page(page_html),
+            "modifier_sections": modifier_sections,
         }
         items.append(item)
-        tiers = sum(len(affix.get("tiers") or []) for affix in item["affixes"])
-        print(f"[poe2db] [{idx}/{len(links)}] done {link.slug}: {len(item['affixes'])} affixes, {tiers} tiers", flush=True)
+        normal_affixes = modifier_sections.get("normal") or group_affixes(row for row in normal if isinstance(row, dict))
+        tiers = sum(len(affix.get("tiers") or []) for affix in normal_affixes)
+        print(f"[poe2db] [{idx}/{len(links)}] done {link.slug}: {len(normal_affixes)} affixes, {tiers} tiers", flush=True)
 
     items.sort(key=lambda item: str(item.get("slug") or ""))
     return {
@@ -87,7 +92,8 @@ def refresh_snapshot(
     for item in snapshot.get("items") or []:
         if not isinstance(item, dict):
             continue
-        affixes = item.get("affixes") or []
+        modifier_sections = item.get("modifier_sections") or {}
+        affixes = modifier_sections.get("normal") or item.get("affixes") or []
         affix_count += len(affixes)
         for affix in affixes:
             if isinstance(affix, dict):

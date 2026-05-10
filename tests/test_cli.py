@@ -56,13 +56,25 @@ class CliSourceRepoTests(unittest.TestCase):
             with self.assertRaises(RuntimeError):
                 _resolve_mods_json_path(source_dir)
 
-    def test_resolve_mods_path_repo_exists_but_mods_missing_raises(self):
+    def test_resolve_mods_path_repo_exists_but_mods_missing_restores_checkout(self):
         with tempfile.TemporaryDirectory() as td:
             source_dir = Path(td) / "poe2" / "data"
             repo_dir = source_dir.parent
             (repo_dir / ".git").mkdir(parents=True, exist_ok=True)
-            with self.assertRaises(FileNotFoundError):
-                _resolve_mods_json_path(source_dir)
+            calls: list[list[str]] = []
+
+            def _fake_restore(cmd, **kwargs):
+                _ = kwargs
+                calls.append(cmd)
+                if cmd[3] == "restore":
+                    source_dir.mkdir(parents=True, exist_ok=True)
+                    (source_dir / "mods.json").write_text("{}", encoding="utf-8")
+                return subprocess.CompletedProcess(args=cmd, returncode=0)
+
+            resolved = _resolve_mods_json_path(source_dir, run_command=_fake_restore)
+            self.assertEqual(resolved, source_dir / "mods.json")
+            self.assertEqual(calls[0][0:4], ["git", "-C", str(repo_dir), "sparse-checkout"])
+            self.assertEqual(calls[1][0:4], ["git", "-C", str(repo_dir), "restore"])
 
     def test_clone_poe2_repo_wraps_git_error(self):
         with tempfile.TemporaryDirectory() as td:

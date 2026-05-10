@@ -1,957 +1,1925 @@
 {
-  "affixes": [
-    {
-      "family_key": "AreaOfEffect",
-      "kind": "prefix",
-      "template": "#% increased Area of Effect",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Blasting",
-          "text": "(4-6)% increased Area of Effect",
-          "stats": [
-            {
-              "id": "base_skill_area_of_effect_+%",
-              "max": 6,
-              "min": 4
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ArmourBreak",
-      "kind": "prefix",
-      "template": "[ArmourBreak|Break] #% increased [Armour|Armour]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Shattering",
-          "text": "[ArmourBreak|Break] (5-15)% increased [Armour|Armour]",
-          "stats": [
-            {
-              "id": "armour_break_amount_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AttackDamage",
-      "kind": "prefix",
-      "template": "#% increased [Attack] Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Combat",
-          "text": "(5-15)% increased [Attack] Damage",
-          "stats": [
-            {
-              "id": "attack_damage_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "BannerArea",
-      "kind": "prefix",
-      "template": "[Banner] Skills have #% increased Area of Effect",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Rallying",
-          "text": "[Banner] Skills have (10-20)% increased Area of Effect",
-          "stats": [
-            {
-              "id": "banner_area_of_effect_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "BleedChanceIncrease",
-      "kind": "prefix",
-      "template": "#% chance to inflict [Bleeding|Bleeding] on [HitDamage|Hit]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Bleeding",
-          "text": "(3-7)% chance to inflict [Bleeding|Bleeding] on [HitDamage|Hit]",
-          "stats": [
-            {
-              "id": "base_chance_to_inflict_bleeding_%",
-              "max": 7,
-              "min": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "BleedingDamage",
-      "kind": "prefix",
-      "template": "#% increased [BuffMagnitude|Magnitude] of [Bleeding|Bleeding] you inflict",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Haemorrhaging",
-          "text": "(5-15)% increased [BuffMagnitude|Magnitude] of [Bleeding|Bleeding] you inflict",
-          "stats": [
-            {
-              "id": "base_bleeding_effect_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "DamageForm",
-      "kind": "prefix",
-      "template": "#% increased Damage while [Shapeshift|Shapeshifted]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Bestial",
-          "text": "(5-15)% increased Damage while [Shapeshift|Shapeshifted]",
-          "stats": [
-            {
-              "id": "damage_+%_while_shapeshifted",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "DamageForm",
-      "kind": "prefix",
-      "template": "#% increased Damage with [Plant|Plant] Skills",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Overgrown",
-          "text": "(5-15)% increased Damage with [Plant|Plant] Skills",
-          "stats": [
-            {
-              "id": "plant_skill_damage_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "DamagevsArmourBrokenEnemies",
-      "kind": "prefix",
-      "template": "#% increased Damage against Enemies with [ArmourBreak|Fully Broken Armour]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Exploiting",
-          "text": "(15-25)% increased Damage against Enemies with [ArmourBreak|Fully Broken Armour]",
-          "stats": [
-            {
-              "id": "damage_+%_against_enemies_with_fully_broken_armour",
-              "max": 25,
-              "min": 15
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ElementalDamagePercent",
-      "kind": "prefix",
-      "template": "#% increased [ElementalDamage|Elemental Damage]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Prismatic",
-          "text": "(5-15)% increased [ElementalDamage|Elemental Damage]",
-          "stats": [
-            {
-              "id": "elemental_damage_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ExertedAttackDamage",
-      "kind": "prefix",
-      "template": "[Empowered|Empowered Attacks] deal #% increased Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Empowering",
-          "text": "[Empowered|Empowered Attacks] deal (10-20)% increased Damage",
-          "stats": [
-            {
-              "id": "empowered_attack_damage_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "FireDamagePercentage",
-      "kind": "prefix",
-      "template": "#% increased [Fire] Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Flaming",
-          "text": "(5-15)% increased [Fire] Damage",
-          "stats": [
-            {
-              "id": "fire_damage_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "FireResistancePenetration",
-      "kind": "prefix",
-      "template": "Damage [Penetration|Penetrates] #% [Resistances|Fire Resistance]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Searing",
-          "text": "Damage [Penetration|Penetrates] (5-10)% [Resistances|Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_reduce_enemy_fire_resistance_%",
-              "max": 10,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IgniteEffect",
-      "kind": "prefix",
-      "template": "#% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Burning",
-          "text": "(5-15)% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
-          "stats": [
-            {
-              "id": "base_ignite_effect_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IncisionChance",
-      "kind": "prefix",
-      "template": "#% chance for [Attack] [HitDamage|Hits] to apply [Incision]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Incise",
-          "text": "(15-25)% chance for [Attack] [HitDamage|Hits] to apply [Incision]",
-          "stats": [
-            {
-              "id": "chance_to_inflict_incision_on_attack_hit_%",
-              "max": 25,
-              "min": 15
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IncreasedBlockChance",
-      "kind": "prefix",
-      "template": "#% increased [Block] chance",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Protecting",
-          "text": "(3-7)% increased [Block] chance",
-          "stats": [
-            {
-              "id": "block_chance_+%",
-              "max": 7,
-              "min": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IncreasedPhysicalDamageReductionRatingPercent",
-      "kind": "prefix",
-      "template": "#% increased [Armour]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Armoured",
-          "text": "(10-20)% increased [Armour]",
-          "stats": [
-            {
-              "id": "physical_damage_reduction_rating_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IncreasedTotemLife",
-      "kind": "prefix",
-      "template": "#% increased [Totem] Life",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Carved",
-          "text": "(10-20)% increased [Totem] Life",
-          "stats": [
-            {
-              "id": "totem_life_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MaximumRage",
-      "kind": "prefix",
-      "template": "+# to Maximum [Rage]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Angry",
-          "text": "+1 to Maximum [Rage]",
-          "stats": [
-            {
-              "id": "maximum_rage",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MeleeDamage",
-      "kind": "prefix",
-      "template": "#% increased [Melee] Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Clashing",
-          "text": "(5-15)% increased [Melee] Damage",
-          "stats": [
-            {
-              "id": "melee_damage_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MinionAreaOfEffect",
-      "kind": "prefix",
-      "template": "[Minion|Minions] have #% increased Area of Effect",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Companion",
-          "text": "[Minion|Minions] have (5-8)% increased Area of Effect",
-          "stats": [
-            {
-              "id": "minion_skill_area_of_effect_+%",
-              "max": 8,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MinionLife",
-      "kind": "prefix",
-      "template": "[Minion|Minions] have #% increased maximum Life",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Fortuitous",
-          "text": "[Minion|Minions] have (5-15)% increased maximum Life",
-          "stats": [
-            {
-              "id": "minion_maximum_life_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "PhysicalDamagePercent",
-      "kind": "prefix",
-      "template": "#% increased Global [Physical] Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Sharpened",
-          "text": "(5-15)% increased Global [Physical] Damage",
-          "stats": [
-            {
-              "id": "physical_damage_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "PresenceRadius",
-      "kind": "prefix",
-      "template": "#% increased [Presence|Presence] Area of Effect",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Iconic",
-          "text": "(15-25)% increased [Presence|Presence] Area of Effect",
-          "stats": [
-            {
-              "id": "presence_area_+%",
-              "max": 25,
-              "min": 15
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ShieldArmourIncrease",
-      "kind": "prefix",
-      "template": "#% increased [Defences] from Equipped [Shield]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Shielding",
-          "text": "(18-32)% increased [Defences] from Equipped [Shield]",
-          "stats": [
-            {
-              "id": "shield_defences_+%",
-              "max": 32,
-              "min": 18
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SpecificWeaponDamage",
-      "kind": "prefix",
-      "template": "#% increased Damage with [Mace|Maces]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Beating",
-          "text": "(6-16)% increased Damage with [Mace|Maces]",
-          "stats": [
-            {
-              "id": "mace_damage_+%",
-              "max": 16,
-              "min": 6
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "Thorns",
-      "kind": "prefix",
-      "template": "#% increased [Thorns|Thorns] damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Retaliating",
-          "text": "(10-20)% increased [Thorns|Thorns] damage",
-          "stats": [
-            {
-              "id": "thorns_damage_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "TotemDamage",
-      "kind": "prefix",
-      "template": "#% increased [Totem|Totem] Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Shaman's",
-          "text": "(10-18)% increased [Totem|Totem] Damage",
-          "stats": [
-            {
-              "id": "totem_damage_+%",
-              "max": 18,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "WarcryDamage",
-      "kind": "prefix",
-      "template": "#% increased Damage with [Warcry|Warcries]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Yelling",
-          "text": "(10-20)% increased Damage with [Warcry|Warcries]",
-          "stats": [
-            {
-              "id": "warcry_damage_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ArmourBreakDuration",
-      "kind": "suffix",
-      "template": "#% increased [ArmourBreak|Armour Break] Duration",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Resonating",
-          "text": "(10-20)% increased [ArmourBreak|Armour Break] Duration",
-          "stats": [
-            {
-              "id": "armour_break_and_sundered_armour_duration_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "BannerDuration",
-      "kind": "suffix",
-      "template": "[Banner] Skills have #% increased Duration",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Inspiring",
-          "text": "[Banner] Skills have (15-25)% increased Duration",
-          "stats": [
-            {
-              "id": "banner_duration_+%",
-              "max": 25,
-              "min": 15
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "BannerValourGained",
-      "kind": "suffix",
-      "template": "#% increased [Glory] generation for [Banner] Skills",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Valour",
-          "text": "(15-20)% increased [Glory] generation for [Banner] Skills",
-          "stats": [
-            {
-              "id": "glory_generation_+%_for_banners",
-              "max": 20,
-              "min": 15
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "BleedDuration",
-      "kind": "suffix",
-      "template": "#% increased Bleeding Duration",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Haemophilia",
-          "text": "(5-10)% increased Bleeding Duration",
-          "stats": [
-            {
-              "id": "base_bleed_duration_+%",
-              "max": 10,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "GainRage",
-      "kind": "suffix",
-      "template": "Gain # [Rage] when [HitDamage|Hit] by an Enemy",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Retribution",
-          "text": "Gain (1-3) [Rage] when [HitDamage|Hit] by an Enemy",
-          "stats": [
-            {
-              "id": "gain_x_rage_when_hit",
-              "max": 3,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IgniteChanceIncrease",
-      "kind": "suffix",
-      "template": "#% increased [Flammability] [BuffMagnitude|Magnitude]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Ignition",
-          "text": "(10-20)% increased [Flammability] [BuffMagnitude|Magnitude]",
-          "stats": [
-            {
-              "id": "ignite_chance_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IncreasedStunThreshold",
-      "kind": "suffix",
-      "template": "#% increased [StunThreshold|Stun Threshold]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Withstanding",
-          "text": "(6-16)% increased [StunThreshold|Stun Threshold]",
-          "stats": [
-            {
-              "id": "stun_threshold_+%",
-              "max": 16,
-              "min": 6
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "Knockback",
-      "kind": "suffix",
-      "template": "#% increased [Knockback] Distance",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Fending",
-          "text": "(5-15)% increased [Knockback] Distance",
-          "stats": [
-            {
-              "id": "knockback_distance_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "LifeCost",
-      "kind": "suffix",
-      "template": "#% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Sacrifice",
-          "text": "(4-6)% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
-          "stats": [
-            {
-              "id": "base_skill_cost_life_instead_of_mana_%",
-              "max": 6,
-              "min": 4
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "LifeLeech",
-      "kind": "suffix",
-      "template": "#% increased amount of Life [LifeLeech|Leeched]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Frenzy",
-          "text": "(5-15)% increased amount of Life [LifeLeech|Leeched]",
-          "stats": [
-            {
-              "id": "base_life_leech_amount_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "LifeRegenerationRate",
-      "kind": "suffix",
-      "template": "#% increased Life Regeneration rate",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Regeneration",
-          "text": "(5-10)% increased Life Regeneration rate",
-          "stats": [
-            {
-              "id": "life_regeneration_rate_+%",
-              "max": 10,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MaceStun",
-      "kind": "suffix",
-      "template": "#% increased [Stun|Stun Buildup] with [Mace|Maces]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Thumping",
-          "text": "(15-25)% increased [Stun|Stun Buildup] with [Mace|Maces]",
-          "stats": [
-            {
-              "id": "mace_hit_damage_stun_multiplier_+%",
-              "max": 25,
-              "min": 15
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MaximumFireResist",
-      "kind": "suffix",
-      "template": "+#% to [MaximumResistances|Maximum Fire Resistance]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Phoenix",
-          "text": "+1% to [MaximumResistances|Maximum Fire Resistance]",
-          "stats": [
-            {
-              "id": "base_maximum_fire_damage_resistance_%",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MinionPhysicalDamageReduction",
-      "kind": "suffix",
-      "template": "[Minion|Minions] have #% additional [Physical] Damage Reduction",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Confidence",
-          "text": "[Minion|Minions] have (6-16)% additional [Physical] Damage Reduction",
-          "stats": [
-            {
-              "id": "minion_additional_physical_damage_reduction_%",
-              "max": 16,
-              "min": 6
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "RageOnHit",
-      "kind": "suffix",
-      "template": "Gain # [Rage|Rage] on [Melee] [HitDamage|Hit]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Raging",
-          "text": "Gain 1 [Rage|Rage] on [Melee] [HitDamage|Hit]",
-          "stats": [
-            {
-              "id": "gain_x_rage_on_melee_hit",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SkillEffectDuration",
-      "kind": "suffix",
-      "template": "#% increased Skill Effect Duration",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Lengthening",
-          "text": "(5-10)% increased Skill Effect Duration",
-          "stats": [
-            {
-              "id": "skill_effect_duration_+%",
-              "max": 10,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SpecificWeaponSpeed",
-      "kind": "suffix",
-      "template": "#% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Wild",
-          "text": "(2-4)% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
-          "stats": [
-            {
-              "id": "skill_speed_+%_while_shapeshifted",
-              "max": 4,
-              "min": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "StunDamageIncrease",
-      "kind": "suffix",
-      "template": "#% increased [Stun] Buildup",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Stunning",
-          "text": "(10-20)% increased [Stun] Buildup",
-          "stats": [
-            {
-              "id": "hit_damage_stun_multiplier_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SummonTotemCastSpeed",
-      "kind": "suffix",
-      "template": "#% increased [Totem|Totem] Placement speed",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Ancestry",
-          "text": "(10-20)% increased [Totem|Totem] Placement speed",
-          "stats": [
-            {
-              "id": "summon_totem_cast_speed_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "WarcryCooldownSpeed",
-      "kind": "suffix",
-      "template": "#% increased [Warcry|Warcry] Cooldown Recovery Rate",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Rallying",
-          "text": "(5-15)% increased [Warcry|Warcry] Cooldown Recovery Rate",
-          "stats": [
-            {
-              "id": "warcry_cooldown_speed_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "WarcrySpeed",
-      "kind": "suffix",
-      "template": "#% increased [Warcry|Warcry] Speed",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Lungs",
-          "text": "(10-20)% increased [Warcry|Warcry] Speed",
-          "stats": [
-            {
-              "id": "warcry_speed_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    }
-  ],
   "category": "Jewels",
   "label": "Ruby",
+  "modifier_sections": {
+    "corrupted": [
+      {
+        "family_key": "ChaosResistance",
+        "kind": "gen5",
+        "template": "+#% to [Resistances|Chaos Resistance]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionJewelChaosResist1",
+            "text": "+(2-3)% to [Resistances|Chaos Resistance]",
+            "stats": [
+              {
+                "id": "base_chaos_damage_resistance_%",
+                "max": 3,
+                "min": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ColdResistance",
+        "kind": "gen5",
+        "template": "+#% to [Resistances|Cold Resistance]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionJewelColdResist1",
+            "text": "+(2-4)% to [Resistances|Cold Resistance]",
+            "stats": [
+              {
+                "id": "base_cold_damage_resistance_%",
+                "max": 4,
+                "min": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "CorruptedBlood",
+        "kind": "gen5",
+        "template": "[CorruptedBlood|Corrupted Blood] cannot be inflicted on you",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionJewelCorruptedBloodImmunity1",
+            "text": "[CorruptedBlood|Corrupted Blood] cannot be inflicted on you",
+            "stats": [
+              {
+                "id": "cannot_be_inflicted_by_corrupted_blood",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Dexterity",
+        "kind": "gen5",
+        "template": "+# to [Dexterity|Dexterity]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionJewelDexterity1",
+            "text": "+(16-24) to [Dexterity|Dexterity]",
+            "stats": [
+              {
+                "id": "additional_dexterity",
+                "max": 24,
+                "min": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "FireResistance",
+        "kind": "gen5",
+        "template": "+#% to [Resistances|Fire Resistance]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionJewelFireResist1",
+            "text": "+(2-4)% to [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_fire_damage_resistance_%",
+                "max": 4,
+                "min": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ImmuneToMaim",
+        "kind": "gen5",
+        "template": "Immune to [Maim]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionJewelMaimImmunity1",
+            "text": "Immune to [Maim]",
+            "stats": [
+              {
+                "id": "immune_to_maim",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ImmunityToBlind",
+        "kind": "gen5",
+        "template": "Cannot be [Blind|Blinded]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionJewelBlindImmunity1",
+            "text": "Cannot be [Blind|Blinded]",
+            "stats": [
+              {
+                "id": "cannot_be_blinded",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Intelligence",
+        "kind": "gen5",
+        "template": "+# to [Intelligence|Intelligence]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionJewelIntelligence1",
+            "text": "+(16-24) to [Intelligence|Intelligence]",
+            "stats": [
+              {
+                "id": "additional_intelligence",
+                "max": 24,
+                "min": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LightningResistance",
+        "kind": "gen5",
+        "template": "+#% to [Resistances|Lightning Resistance]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionJewelLightningResist1",
+            "text": "+(2-4)% to [Resistances|Lightning Resistance]",
+            "stats": [
+              {
+                "id": "base_lightning_damage_resistance_%",
+                "max": 4,
+                "min": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Strength",
+        "kind": "gen5",
+        "template": "+# to [Strength|Strength]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionJewelStrength1",
+            "text": "+(16-24) to [Strength|Strength]",
+            "stats": [
+              {
+                "id": "additional_strength",
+                "max": 24,
+                "min": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "YouCannotBeHindered",
+        "kind": "gen5",
+        "template": "You cannot be Hindered",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "CorruptionJewelHinderImmunity1",
+            "text": "You cannot be Hindered",
+            "stats": [
+              {
+                "id": "you_cannot_be_hindered",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "desecrated": [
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "prefix",
+        "template": "#% increased [Warcry|Warcry] Buff Effect #% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Lightless",
+            "text": "(4-8)% increased [Warcry|Warcry] Buff Effect (5-10)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_buff_effect_+%",
+                "max": 8,
+                "min": 4
+              },
+              {
+                "id": "warcry_damage_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "suffix",
+        "template": "#% increased [Strength]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Abyss",
+            "text": "(1-2)% increased [Strength]",
+            "stats": [
+              {
+                "id": "strength_+%",
+                "max": 2,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "suffix",
+        "template": "#% increased [Strength]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Abyss",
+            "text": "(1-2)% increased [Strength]",
+            "stats": [
+              {
+                "id": "strength_+%",
+                "max": 2,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AbyssJewelMod",
+        "kind": "suffix",
+        "template": "#% increased [Strength]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Abyss",
+            "text": "(1-2)% increased [Strength]",
+            "stats": [
+              {
+                "id": "strength_+%",
+                "max": 2,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normal": [
+      {
+        "family_key": "AreaOfEffect",
+        "kind": "prefix",
+        "template": "#% increased Area of Effect",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Blasting",
+            "text": "(4-6)% increased Area of Effect",
+            "stats": [
+              {
+                "id": "base_skill_area_of_effect_+%",
+                "max": 6,
+                "min": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ArmourBreak",
+        "kind": "prefix",
+        "template": "[ArmourBreak|Break] #% increased [Armour|Armour]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Shattering",
+            "text": "[ArmourBreak|Break] (5-15)% increased [Armour|Armour]",
+            "stats": [
+              {
+                "id": "armour_break_amount_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "AttackDamage",
+        "kind": "prefix",
+        "template": "#% increased [Attack] Damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Combat",
+            "text": "(5-15)% increased [Attack] Damage",
+            "stats": [
+              {
+                "id": "attack_damage_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "BannerArea",
+        "kind": "prefix",
+        "template": "[Banner] Skills have #% increased Area of Effect",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Rallying",
+            "text": "[Banner] Skills have (10-20)% increased Area of Effect",
+            "stats": [
+              {
+                "id": "banner_area_of_effect_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "BleedChanceIncrease",
+        "kind": "prefix",
+        "template": "#% chance to inflict [Bleeding|Bleeding] on [HitDamage|Hit]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Bleeding",
+            "text": "(3-7)% chance to inflict [Bleeding|Bleeding] on [HitDamage|Hit]",
+            "stats": [
+              {
+                "id": "base_chance_to_inflict_bleeding_%",
+                "max": 7,
+                "min": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "BleedingDamage",
+        "kind": "prefix",
+        "template": "#% increased [BuffMagnitude|Magnitude] of [Bleeding|Bleeding] you inflict",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Haemorrhaging",
+            "text": "(5-15)% increased [BuffMagnitude|Magnitude] of [Bleeding|Bleeding] you inflict",
+            "stats": [
+              {
+                "id": "base_bleeding_effect_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "DamageForm",
+        "kind": "prefix",
+        "template": "#% increased Damage while [Shapeshift|Shapeshifted]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Bestial",
+            "text": "(5-15)% increased Damage while [Shapeshift|Shapeshifted]",
+            "stats": [
+              {
+                "id": "damage_+%_while_shapeshifted",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "DamageForm",
+        "kind": "prefix",
+        "template": "#% increased Damage with [Plant|Plant] Skills",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Overgrown",
+            "text": "(5-15)% increased Damage with [Plant|Plant] Skills",
+            "stats": [
+              {
+                "id": "plant_skill_damage_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "DamagevsArmourBrokenEnemies",
+        "kind": "prefix",
+        "template": "#% increased Damage against Enemies with [ArmourBreak|Fully Broken Armour]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Exploiting",
+            "text": "(15-25)% increased Damage against Enemies with [ArmourBreak|Fully Broken Armour]",
+            "stats": [
+              {
+                "id": "damage_+%_against_enemies_with_fully_broken_armour",
+                "max": 25,
+                "min": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ElementalDamagePercent",
+        "kind": "prefix",
+        "template": "#% increased [ElementalDamage|Elemental Damage]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Prismatic",
+            "text": "(5-15)% increased [ElementalDamage|Elemental Damage]",
+            "stats": [
+              {
+                "id": "elemental_damage_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ExertedAttackDamage",
+        "kind": "prefix",
+        "template": "[Empowered|Empowered Attacks] deal #% increased Damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Empowering",
+            "text": "[Empowered|Empowered Attacks] deal (10-20)% increased Damage",
+            "stats": [
+              {
+                "id": "empowered_attack_damage_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "FireDamagePercentage",
+        "kind": "prefix",
+        "template": "#% increased [Fire] Damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Flaming",
+            "text": "(5-15)% increased [Fire] Damage",
+            "stats": [
+              {
+                "id": "fire_damage_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "FireResistancePenetration",
+        "kind": "prefix",
+        "template": "Damage [Penetration|Penetrates] #% [Resistances|Fire Resistance]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Searing",
+            "text": "Damage [Penetration|Penetrates] (5-10)% [Resistances|Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_reduce_enemy_fire_resistance_%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IgniteEffect",
+        "kind": "prefix",
+        "template": "#% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Burning",
+            "text": "(5-15)% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
+            "stats": [
+              {
+                "id": "base_ignite_effect_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncisionChance",
+        "kind": "prefix",
+        "template": "#% chance for [Attack] [HitDamage|Hits] to apply [Incision]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Incise",
+            "text": "(15-25)% chance for [Attack] [HitDamage|Hits] to apply [Incision]",
+            "stats": [
+              {
+                "id": "chance_to_inflict_incision_on_attack_hit_%",
+                "max": 25,
+                "min": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedBlockChance",
+        "kind": "prefix",
+        "template": "#% increased [Block] chance",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Protecting",
+            "text": "(3-7)% increased [Block] chance",
+            "stats": [
+              {
+                "id": "block_chance_+%",
+                "max": 7,
+                "min": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedPhysicalDamageReductionRatingPercent",
+        "kind": "prefix",
+        "template": "#% increased [Armour]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Armoured",
+            "text": "(10-20)% increased [Armour]",
+            "stats": [
+              {
+                "id": "physical_damage_reduction_rating_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedTotemLife",
+        "kind": "prefix",
+        "template": "#% increased [Totem] Life",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Carved",
+            "text": "(10-20)% increased [Totem] Life",
+            "stats": [
+              {
+                "id": "totem_life_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MaximumRage",
+        "kind": "prefix",
+        "template": "+# to Maximum [Rage]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Angry",
+            "text": "+1 to Maximum [Rage]",
+            "stats": [
+              {
+                "id": "maximum_rage",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MeleeDamage",
+        "kind": "prefix",
+        "template": "#% increased [Melee] Damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Clashing",
+            "text": "(5-15)% increased [Melee] Damage",
+            "stats": [
+              {
+                "id": "melee_damage_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MinionAreaOfEffect",
+        "kind": "prefix",
+        "template": "[Minion|Minions] have #% increased Area of Effect",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Companion",
+            "text": "[Minion|Minions] have (5-8)% increased Area of Effect",
+            "stats": [
+              {
+                "id": "minion_skill_area_of_effect_+%",
+                "max": 8,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MinionLife",
+        "kind": "prefix",
+        "template": "[Minion|Minions] have #% increased maximum Life",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Fortuitous",
+            "text": "[Minion|Minions] have (5-15)% increased maximum Life",
+            "stats": [
+              {
+                "id": "minion_maximum_life_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "PhysicalDamagePercent",
+        "kind": "prefix",
+        "template": "#% increased Global [Physical] Damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Sharpened",
+            "text": "(5-15)% increased Global [Physical] Damage",
+            "stats": [
+              {
+                "id": "physical_damage_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "PresenceRadius",
+        "kind": "prefix",
+        "template": "#% increased [Presence|Presence] Area of Effect",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Iconic",
+            "text": "(15-25)% increased [Presence|Presence] Area of Effect",
+            "stats": [
+              {
+                "id": "presence_area_+%",
+                "max": 25,
+                "min": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ShieldArmourIncrease",
+        "kind": "prefix",
+        "template": "#% increased [Defences] from Equipped [Shield]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Shielding",
+            "text": "(18-32)% increased [Defences] from Equipped [Shield]",
+            "stats": [
+              {
+                "id": "shield_defences_+%",
+                "max": 32,
+                "min": 18
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "SpecificWeaponDamage",
+        "kind": "prefix",
+        "template": "#% increased Damage with [Mace|Maces]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Beating",
+            "text": "(6-16)% increased Damage with [Mace|Maces]",
+            "stats": [
+              {
+                "id": "mace_damage_+%",
+                "max": 16,
+                "min": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Thorns",
+        "kind": "prefix",
+        "template": "#% increased [Thorns|Thorns] damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Retaliating",
+            "text": "(10-20)% increased [Thorns|Thorns] damage",
+            "stats": [
+              {
+                "id": "thorns_damage_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "TotemDamage",
+        "kind": "prefix",
+        "template": "#% increased [Totem|Totem] Damage",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Shaman's",
+            "text": "(10-18)% increased [Totem|Totem] Damage",
+            "stats": [
+              {
+                "id": "totem_damage_+%",
+                "max": 18,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "WarcryDamage",
+        "kind": "prefix",
+        "template": "#% increased Damage with [Warcry|Warcries]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Yelling",
+            "text": "(10-20)% increased Damage with [Warcry|Warcries]",
+            "stats": [
+              {
+                "id": "warcry_damage_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "ArmourBreakDuration",
+        "kind": "suffix",
+        "template": "#% increased [ArmourBreak|Armour Break] Duration",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "Resonating",
+            "text": "(10-20)% increased [ArmourBreak|Armour Break] Duration",
+            "stats": [
+              {
+                "id": "armour_break_and_sundered_armour_duration_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "BannerDuration",
+        "kind": "suffix",
+        "template": "[Banner] Skills have #% increased Duration",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Inspiring",
+            "text": "[Banner] Skills have (15-25)% increased Duration",
+            "stats": [
+              {
+                "id": "banner_duration_+%",
+                "max": 25,
+                "min": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "BannerValourGained",
+        "kind": "suffix",
+        "template": "#% increased [Glory] generation for [Banner] Skills",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Valour",
+            "text": "(15-20)% increased [Glory] generation for [Banner] Skills",
+            "stats": [
+              {
+                "id": "glory_generation_+%_for_banners",
+                "max": 20,
+                "min": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "BleedDuration",
+        "kind": "suffix",
+        "template": "#% increased Bleeding Duration",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Haemophilia",
+            "text": "(5-10)% increased Bleeding Duration",
+            "stats": [
+              {
+                "id": "base_bleed_duration_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "GainRage",
+        "kind": "suffix",
+        "template": "Gain # [Rage] when [HitDamage|Hit] by an Enemy",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Retribution",
+            "text": "Gain (1-3) [Rage] when [HitDamage|Hit] by an Enemy",
+            "stats": [
+              {
+                "id": "gain_x_rage_when_hit",
+                "max": 3,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IgniteChanceIncrease",
+        "kind": "suffix",
+        "template": "#% increased [Flammability] [BuffMagnitude|Magnitude]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Ignition",
+            "text": "(10-20)% increased [Flammability] [BuffMagnitude|Magnitude]",
+            "stats": [
+              {
+                "id": "ignite_chance_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "IncreasedStunThreshold",
+        "kind": "suffix",
+        "template": "#% increased [StunThreshold|Stun Threshold]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Withstanding",
+            "text": "(6-16)% increased [StunThreshold|Stun Threshold]",
+            "stats": [
+              {
+                "id": "stun_threshold_+%",
+                "max": 16,
+                "min": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "Knockback",
+        "kind": "suffix",
+        "template": "#% increased [Knockback] Distance",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Fending",
+            "text": "(5-15)% increased [Knockback] Distance",
+            "stats": [
+              {
+                "id": "knockback_distance_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LifeCost",
+        "kind": "suffix",
+        "template": "#% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Sacrifice",
+            "text": "(4-6)% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
+            "stats": [
+              {
+                "id": "base_skill_cost_life_instead_of_mana_%",
+                "max": 6,
+                "min": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LifeLeech",
+        "kind": "suffix",
+        "template": "#% increased amount of Life [LifeLeech|Leeched]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Frenzy",
+            "text": "(5-15)% increased amount of Life [LifeLeech|Leeched]",
+            "stats": [
+              {
+                "id": "base_life_leech_amount_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "LifeRegenerationRate",
+        "kind": "suffix",
+        "template": "#% increased Life Regeneration rate",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Regeneration",
+            "text": "(5-10)% increased Life Regeneration rate",
+            "stats": [
+              {
+                "id": "life_regeneration_rate_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MaceStun",
+        "kind": "suffix",
+        "template": "#% increased [Stun|Stun Buildup] with [Mace|Maces]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Thumping",
+            "text": "(15-25)% increased [Stun|Stun Buildup] with [Mace|Maces]",
+            "stats": [
+              {
+                "id": "mace_hit_damage_stun_multiplier_+%",
+                "max": 25,
+                "min": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MaximumFireResist",
+        "kind": "suffix",
+        "template": "+#% to [MaximumResistances|Maximum Fire Resistance]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Phoenix",
+            "text": "+1% to [MaximumResistances|Maximum Fire Resistance]",
+            "stats": [
+              {
+                "id": "base_maximum_fire_damage_resistance_%",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "MinionPhysicalDamageReduction",
+        "kind": "suffix",
+        "template": "[Minion|Minions] have #% additional [Physical] Damage Reduction",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Confidence",
+            "text": "[Minion|Minions] have (6-16)% additional [Physical] Damage Reduction",
+            "stats": [
+              {
+                "id": "minion_additional_physical_damage_reduction_%",
+                "max": 16,
+                "min": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "RageOnHit",
+        "kind": "suffix",
+        "template": "Gain # [Rage|Rage] on [Melee] [HitDamage|Hit]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Raging",
+            "text": "Gain 1 [Rage|Rage] on [Melee] [HitDamage|Hit]",
+            "stats": [
+              {
+                "id": "gain_x_rage_on_melee_hit",
+                "max": 1,
+                "min": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "SkillEffectDuration",
+        "kind": "suffix",
+        "template": "#% increased Skill Effect Duration",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Lengthening",
+            "text": "(5-10)% increased Skill Effect Duration",
+            "stats": [
+              {
+                "id": "skill_effect_duration_+%",
+                "max": 10,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "SpecificWeaponSpeed",
+        "kind": "suffix",
+        "template": "#% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of the Wild",
+            "text": "(2-4)% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
+            "stats": [
+              {
+                "id": "skill_speed_+%_while_shapeshifted",
+                "max": 4,
+                "min": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "StunDamageIncrease",
+        "kind": "suffix",
+        "template": "#% increased [Stun] Buildup",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Stunning",
+            "text": "(10-20)% increased [Stun] Buildup",
+            "stats": [
+              {
+                "id": "hit_damage_stun_multiplier_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "SummonTotemCastSpeed",
+        "kind": "suffix",
+        "template": "#% increased [Totem|Totem] Placement speed",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Ancestry",
+            "text": "(10-20)% increased [Totem|Totem] Placement speed",
+            "stats": [
+              {
+                "id": "summon_totem_cast_speed_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "WarcryCooldownSpeed",
+        "kind": "suffix",
+        "template": "#% increased [Warcry|Warcry] Cooldown Recovery Rate",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Rallying",
+            "text": "(5-15)% increased [Warcry|Warcry] Cooldown Recovery Rate",
+            "stats": [
+              {
+                "id": "warcry_cooldown_speed_+%",
+                "max": 15,
+                "min": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family_key": "WarcrySpeed",
+        "kind": "suffix",
+        "template": "#% increased [Warcry|Warcry] Speed",
+        "tiers": [
+          {
+            "level": 1,
+            "name": "of Lungs",
+            "text": "(10-20)% increased [Warcry|Warcry] Speed",
+            "stats": [
+              {
+                "id": "warcry_speed_+%",
+                "max": 20,
+                "min": 10
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "slug": "Ruby"
 }

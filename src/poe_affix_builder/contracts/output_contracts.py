@@ -2,12 +2,12 @@ from __future__ import annotations
 
 from typing import Any, Mapping
 
-from poe_affix_builder.domain.models import OutputAffix, OutputItem, OutputTier
+from poe_affix_builder.domain.models import OutputAffix, OutputBase, OutputItem, OutputModifierSection, OutputTier
 
 
-def output_item_from_dict(data: Mapping[str, Any]) -> OutputItem:
+def _output_affixes_from_rows(rows: list[Any] | tuple[Any, ...]) -> tuple[OutputAffix, ...]:
     affixes = []
-    for affix in data.get("affixes") or []:
+    for affix in rows or []:
         tiers = []
         for tier in affix.get("tiers") or []:
             stats = []
@@ -30,34 +30,86 @@ def output_item_from_dict(data: Mapping[str, Any]) -> OutputItem:
                 tiers=tuple(tiers),
             )
         )
+    return tuple(affixes)
+
+
+def output_item_from_dict(data: Mapping[str, Any]) -> OutputItem:
+    bases = []
+    for base in data.get("bases") or []:
+        bases.append(
+            OutputBase(
+                name=str(base.get("name") or ""),
+                href=str(base.get("href") or ""),
+                required_level=base.get("required_level") if isinstance(base.get("required_level"), int) else None,
+            )
+        )
+    modifier_sections = []
+    for name, rows in (data.get("modifier_sections") or {}).items():
+        modifier_sections.append(
+            OutputModifierSection(
+                name=str(name),
+                affixes=_output_affixes_from_rows(rows if isinstance(rows, (list, tuple)) else []),
+            )
+        )
+    affixes = _output_affixes_from_rows(data.get("affixes") or [])
+    if not affixes:
+        for section in modifier_sections:
+            if section.name == "normal":
+                affixes = section.affixes
+                break
     return OutputItem(
         slug=str(data.get("slug") or ""),
         category=str(data.get("category") or ""),
         label=str(data.get("label") or ""),
-        affixes=tuple(affixes),
+        bases=tuple(bases),
+        modifier_sections=tuple(modifier_sections),
+        affixes=affixes,
     )
 
 
 def output_item_to_dict(item: OutputItem) -> dict[str, Any]:
     return {
-        "affixes": [
-            {
-                "family_key": affix.family_key,
-                "kind": affix.kind,
-                "template": affix.template,
-                "tiers": [
-                    {
-                        "level": tier.level,
-                        "name": tier.name,
-                        "text": tier.text,
-                        **({"stats": [dict(row) for row in tier.stats]} if tier.stats else {}),
-                    }
-                    for tier in affix.tiers
-                ],
-            }
-            for affix in item.affixes
-        ],
         "category": item.category,
         "label": item.label,
+        **(
+            {
+                "bases": [
+                    {
+                        "name": base.name,
+                        "href": base.href,
+                        "required_level": base.required_level,
+                    }
+                    for base in item.bases
+                ]
+            }
+            if item.bases
+            else {}
+        ),
+        **(
+            {
+                "modifier_sections": {
+                    section.name: [
+                        {
+                            "family_key": affix.family_key,
+                            "kind": affix.kind,
+                            "template": affix.template,
+                            "tiers": [
+                                {
+                                    "level": tier.level,
+                                    "name": tier.name,
+                                    "text": tier.text,
+                                    **({"stats": [dict(row) for row in tier.stats]} if tier.stats else {}),
+                                }
+                                for tier in affix.tiers
+                            ],
+                        }
+                        for affix in section.affixes
+                    ]
+                    for section in item.modifier_sections
+                }
+            }
+            if item.modifier_sections
+            else {}
+        ),
         "slug": item.slug,
     }

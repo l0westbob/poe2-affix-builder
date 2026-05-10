@@ -35,18 +35,20 @@ class BuilderTests(unittest.TestCase):
             files = _iter_json_files(out_dir)
             self.assertEqual(result.items_written, 78)
             self.assertEqual(len(files), 78)
-            self.assertEqual(result.affixes_written, 1967)
-            self.assertEqual(result.tiers_written, 9098)
+            self.assertEqual(result.affixes_written, 7058)
+            self.assertEqual(result.tiers_written, 18182)
             self.assertTrue(report.exists())
 
             sample = json.loads((out_dir / "Amulets.json").read_text(encoding="utf-8"))
-            self.assertEqual(set(sample.keys()), {"slug", "category", "label", "affixes"})
-            affix = sample["affixes"][0]
+            self.assertEqual(set(sample.keys()), {"slug", "category", "label", "bases", "modifier_sections"})
+            self.assertNotIn("affixes", sample)
+            affix = sample["modifier_sections"]["normal"][0]
             self.assertEqual(set(affix.keys()), {"family_key", "kind", "template", "tiers"})
             tier = affix["tiers"][0]
             self.assertIn("level", tier)
             self.assertIn("name", tier)
             self.assertIn("text", tier)
+            self.assertIn("normal", sample["modifier_sections"])
 
     @unittest.skipUnless(HAS_REAL_DATASET, "Requires local PoE2 source checkout under data/poe2")
     def test_deterministic_output(self):
@@ -173,9 +175,99 @@ class BuilderTests(unittest.TestCase):
             )
 
             output = json.loads((out_dir / "TestItem.json").read_text(encoding="utf-8"))
-            tier = output["affixes"][0]["tiers"][0]
+            self.assertNotIn("affixes", output)
+            tier = output["modifier_sections"]["normal"][0]["tiers"][0]
             self.assertEqual(tier["text"], "legacy text")
             self.assertNotIn("stats", tier)
+
+    def test_build_preserves_bases_and_modifier_sections(self):
+        with tempfile.TemporaryDirectory() as td:
+            td_path = Path(td)
+            mods = {
+                "TestMod1": {
+                    "generation_type": "prefix",
+                    "groups": ["TestFamily"],
+                    "required_level": 1,
+                    "name": "Alpha",
+                    "text": "+(1-3) to Life",
+                    "stats": [{"id": "base_maximum_life", "min": 1, "max": 3}],
+                    "domain": "item",
+                    "spawn_weights": [{"tag": "amulet", "weight": 1000}],
+                }
+            }
+            manifest = {
+                "version": 1,
+                "items": [
+                    {
+                        "slug": "TestItem",
+                        "category": "Jewellery",
+                        "label": "Test",
+                        "include_domains": ["item"],
+                        "include_spawn_tags": ["amulet"],
+                        "bases": [
+                            {
+                                "name": "Lapis Amulet",
+                                "href": "/us/Lapis_Amulet",
+                                "required_level": 12,
+                            }
+                        ],
+                        "modifier_sections": {
+                            "normal": [
+                                {
+                                    "kind": "prefix",
+                                    "family_key": "TestFamily",
+                                    "template": "+# to Life",
+                                    "tiers": [
+                                        {"level": 1, "name": "Alpha", "text": "+(1-3) to Life", "stats": ["base_maximum_life"]}
+                                    ],
+                                }
+                            ],
+                            "corrupted": [
+                                {
+                                    "kind": "suffix",
+                                    "family_key": "TestFamily",
+                                    "template": "+# to Life",
+                                    "tiers": [
+                                        {"level": 1, "name": "Alpha", "text": "+(1-3) to Life", "stats": ["base_maximum_life"]}
+                                    ],
+                                }
+                            ],
+                        },
+                        "affixes": [
+                            {
+                                "kind": "prefix",
+                                "family_key": "TestFamily",
+                                "template": "+# to Life",
+                                "tiers": [
+                                    {"level": 1, "name": "Alpha", "text": "+(1-3) to Life", "stats": ["base_maximum_life"]}
+                                ],
+                            }
+                        ],
+                    }
+                ],
+            }
+
+            mods_path = td_path / "mods.json"
+            manifest_path = td_path / "manifest.json"
+            out_dir = td_path / "out"
+            report = td_path / "report.json"
+            mods_path.write_text(json.dumps(mods), encoding="utf-8")
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+
+            build_affixes(
+                mods_json_path=mods_path,
+                manifest_path=manifest_path,
+                out_dir=out_dir,
+                report_path=report,
+            )
+
+            output = json.loads((out_dir / "TestItem.json").read_text(encoding="utf-8"))
+            self.assertEqual(output["bases"][0]["name"], "Lapis Amulet")
+            self.assertIn("modifier_sections", output)
+            self.assertIn("normal", output["modifier_sections"])
+            self.assertIn("corrupted", output["modifier_sections"])
+            self.assertEqual(output["modifier_sections"]["corrupted"][0]["tiers"][0]["stats"][0]["id"], "base_maximum_life")
+            self.assertNotIn("affixes", output)
 
 
 if __name__ == "__main__":

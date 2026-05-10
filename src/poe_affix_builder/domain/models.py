@@ -68,12 +68,27 @@ class ManifestAffix:
 
 
 @dataclass(frozen=True)
+class ManifestModifierSection:
+    name: str
+    affixes: tuple[ManifestAffix, ...]
+
+
+@dataclass(frozen=True)
+class ManifestBase:
+    name: str
+    href: str
+    required_level: int | None
+
+
+@dataclass(frozen=True)
 class ManifestItem:
     slug: str
     category: str
     label: str
     include_domains: tuple[str, ...]
     include_spawn_tags: tuple[str, ...]
+    bases: tuple[ManifestBase, ...]
+    modifier_sections: tuple[ManifestModifierSection, ...]
     affixes: tuple[ManifestAffix, ...]
 
 
@@ -92,6 +107,13 @@ class SnapshotTier:
 
 
 @dataclass(frozen=True)
+class SnapshotBase:
+    name: str
+    href: str
+    required_level: int | None
+
+
+@dataclass(frozen=True)
 class SnapshotAffix:
     kind: str
     family_key: str
@@ -100,12 +122,19 @@ class SnapshotAffix:
 
 
 @dataclass(frozen=True)
+class SnapshotModifierSection:
+    name: str
+    affixes: tuple[SnapshotAffix, ...]
+
+
+@dataclass(frozen=True)
 class SnapshotItem:
     slug: str
     category: str
     label: str
     href: str
-    affixes: tuple[SnapshotAffix, ...]
+    bases: tuple[SnapshotBase, ...] | None
+    modifier_sections: tuple[SnapshotModifierSection, ...] | None
 
 
 @dataclass(frozen=True)
@@ -133,10 +162,25 @@ class OutputAffix:
 
 
 @dataclass(frozen=True)
+class OutputModifierSection:
+    name: str
+    affixes: tuple[OutputAffix, ...]
+
+
+@dataclass(frozen=True)
+class OutputBase:
+    name: str
+    href: str
+    required_level: int | None
+
+
+@dataclass(frozen=True)
 class OutputItem:
     slug: str
     category: str
     label: str
+    bases: tuple[OutputBase, ...]
+    modifier_sections: tuple[OutputModifierSection, ...]
     affixes: tuple[OutputAffix, ...]
 
 
