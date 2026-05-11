@@ -24,3 +24,9 @@ jobs:
 
       - name: Run tests
         run: uv run python -m unittest discover -s tests
+
+      - name: Validate committed JSON artifacts
+        run: |
+          find config result -name '*.json' -print0 | while IFS= read -r -d '' file; do
+            python -m json.tool "$file" > /dev/null
+          done

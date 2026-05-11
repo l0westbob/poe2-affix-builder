@@ -26,10 +26,14 @@
 - `adapters`
   - `json_store`: canonical JSON load/write helpers.
   - `poe2_source_repo`: sparse checkout and source resolution.
-  - `poe2db_client`: HTTP fetch, retry behavior, and page parsing helpers.
+  - `poe2db_http`: HTTP fetch and retry behavior.
+  - `poe2db_html`: poe2db page parsing and item-base extraction.
+  - `poe2db_modifiers`: ModsView modifier row grouping.
+  - `poe2db_client`: compatibility facade for older imports.
 - `services`
   - `build_service`
   - `rebuild_mapping_service`
+  - `diagnostics_service`
   - shared `matching_service`
 
 ## Parity Rules

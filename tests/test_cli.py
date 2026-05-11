@@ -5,10 +5,11 @@ import subprocess
 import tempfile
 import unittest
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
+from poe_affix_builder import __version__
 from poe_affix_builder.cli import _clone_poe2_repo, _resolve_mods_json_path, main
-from poe_affix_builder.domain.models import BuildResult
+from poe_affix_builder.domain.models import BuildResult, RebuildResult
 
 
 class CliSourceRepoTests(unittest.TestCase):
@@ -109,6 +110,17 @@ class CliSourceRepoTests(unittest.TestCase):
 
 
 class CliCommandTests(unittest.TestCase):
+    def test_version_flag_prints_package_version(self):
+        out = io.StringIO()
+        with (
+            patch("sys.argv", ["poe-affix-build", "--version"]),
+            patch("sys.stdout", out),
+            self.assertRaises(SystemExit) as err,
+        ):
+            main()
+        self.assertEqual(err.exception.code, 0)
+        self.assertIn(__version__, out.getvalue())
+
     def test_build_message_uses_advisory_wording(self):
         fake_result = BuildResult(
             items_written=1,
@@ -127,6 +139,42 @@ class CliCommandTests(unittest.TestCase):
             rc = main()
         self.assertEqual(rc, 0)
         self.assertIn("Coverage advisories: 1", out.getvalue())
+
+    def test_build_passes_optional_diagnostics_path(self):
+        fake_result = BuildResult(
+            items_written=1,
+            affixes_written=2,
+            tiers_written=3,
+            unresolved_tiers=(),
+            mapping_warnings={},
+        )
+        fake_build = Mock(return_value=fake_result)
+        with tempfile.TemporaryDirectory() as td:
+            diagnostics_path = Path(td) / "diagnostics.json"
+            with (
+                patch("poe_affix_builder.cli._resolve_mods_json_path", return_value=Path("mods.json")),
+                patch("poe_affix_builder.cli.build_affixes", fake_build),
+                patch("sys.argv", ["poe-affix-build", "build", "--diagnostics", str(diagnostics_path)]),
+                patch("sys.stdout", io.StringIO()),
+            ):
+                rc = main()
+        self.assertEqual(rc, 0)
+        self.assertEqual(fake_build.call_args.kwargs["diagnostics_path"], diagnostics_path)
+
+    def test_rebuild_passes_optional_diagnostics_path(self):
+        fake_result = RebuildResult(items=1, affixes=2, tiers=3, report={})
+        fake_rebuild = Mock(return_value=fake_result)
+        with tempfile.TemporaryDirectory() as td:
+            diagnostics_path = Path(td) / "diagnostics.json"
+            with (
+                patch("poe_affix_builder.cli._resolve_mods_json_path", return_value=Path("mods.json")),
+                patch("poe_affix_builder.cli.rebuild_mapping", fake_rebuild),
+                patch("sys.argv", ["poe-affix-build", "rebuild-mapping", "--diagnostics", str(diagnostics_path)]),
+                patch("sys.stdout", io.StringIO()),
+            ):
+                rc = main()
+        self.assertEqual(rc, 0)
+        self.assertEqual(fake_rebuild.call_args.kwargs["diagnostics_path"], diagnostics_path)
 
     def test_validate_message_uses_advisory_wording(self):
         out = io.StringIO()

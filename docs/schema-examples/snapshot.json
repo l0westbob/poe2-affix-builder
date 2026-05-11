@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "source": "https://poe2db.tw/us/Modifiers",
+  "fetched_at": "2026-05-11T00:00:00+00:00",
+  "items": [
+    {
+      "slug": "Claws",
+      "category": "Weapons",
+      "label": "Claws",
+      "href": "https://poe2db.tw/us/Claws",
+      "bases": [
+        {
+          "name": "Crude Claw",
+          "href": "https://poe2db.tw/us/Crude_Claw",
+          "required_level": null
+        }
+      ],
+      "modifier_sections": {
+        "normal": []
+      }
+    }
+  ]
+}

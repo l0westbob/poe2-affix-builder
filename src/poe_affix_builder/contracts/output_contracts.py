@@ -4,6 +4,8 @@ from typing import Any, Mapping
 
 from poe_affix_builder.domain.models import OutputAffix, OutputBase, OutputItem, OutputModifierSection, OutputTier
 
+OUTPUT_CONTRACT_VERSION = 1
+
 
 def _output_affixes_from_rows(rows: list[Any] | tuple[Any, ...]) -> tuple[OutputAffix, ...]:
     affixes = []
@@ -57,6 +59,8 @@ def output_item_from_dict(data: Mapping[str, Any]) -> OutputItem:
             if section.name == "normal":
                 affixes = section.affixes
                 break
+    elif not modifier_sections:
+        modifier_sections.append(OutputModifierSection(name="normal", affixes=affixes))
     return OutputItem(
         slug=str(data.get("slug") or ""),
         category=str(data.get("category") or ""),

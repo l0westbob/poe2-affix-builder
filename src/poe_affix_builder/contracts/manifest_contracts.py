@@ -11,6 +11,8 @@ from poe_affix_builder.domain.models import (
     ManifestTier,
 )
 
+MANIFEST_CONTRACT_VERSION = 1
+
 
 def validate_manifest_dict(data: Mapping[str, Any]) -> None:
     items = data.get("items")

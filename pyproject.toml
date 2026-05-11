@@ -8,11 +8,29 @@ version = "0.1.0"
 description = "Build PoE2 affix files from data/poe2 mods.json"
 readme = "README.md"
 requires-python = ">=3.14"
+license = "CC0-1.0"
+authors = [
+  { name = "poe-affix-builder contributors" },
+]
+keywords = ["path-of-exile-2", "poe2", "affixes", "data-pipeline"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: Text Processing :: Markup :: HTML",
+]
 dependencies = [
   "demjson3>=3.0.6",
   "httpx>=0.27",
   "selectolax>=0.3.28",
 ]
+
+[project.urls]
+Repository = "https://github.com/l0westbob/poe2-affix-builder"
+Issues = "https://github.com/l0westbob/poe2-affix-builder/issues"
 
 [project.scripts]
 poe-affix-build = "poe_affix_builder.cli:main"

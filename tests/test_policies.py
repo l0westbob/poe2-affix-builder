@@ -2,7 +2,14 @@ from __future__ import annotations
 
 import unittest
 
-from poe_affix_builder.policies import domain_for_category, spawn_tags_for_slug
+from poe_affix_builder.policies import (
+    EXPECTED_NON_NORMAL_UNRESOLVED,
+    NORMAL_UNRESOLVED,
+    UNKNOWN_UNRESOLVED,
+    domain_for_category,
+    spawn_tags_for_slug,
+    unresolved_reason_code,
+)
 
 
 class PolicyTests(unittest.TestCase):
@@ -16,6 +23,11 @@ class PolicyTests(unittest.TestCase):
         self.assertEqual(spawn_tags_for_slug("Amulets"), ["amulet"])
         self.assertEqual(spawn_tags_for_slug("Body_Armours_str_dex"), ["body_armour", "str_dex_armour"])
         self.assertEqual(spawn_tags_for_slug("Helmets_int"), ["helmet", "int_armour"])
+
+    def test_section_policy_classifies_unresolved_groups(self):
+        self.assertEqual(unresolved_reason_code("normal"), NORMAL_UNRESOLVED)
+        self.assertEqual(unresolved_reason_code("socketable"), EXPECTED_NON_NORMAL_UNRESOLVED)
+        self.assertEqual(unresolved_reason_code("unexpected_section"), UNKNOWN_UNRESOLVED)
 
 
 if __name__ == "__main__":

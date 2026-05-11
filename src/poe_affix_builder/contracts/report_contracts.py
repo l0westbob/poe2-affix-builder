@@ -10,6 +10,8 @@ from poe_affix_builder.domain.models import (
     UnresolvedTier,
 )
 
+REPORT_CONTRACT_VERSION = 1
+
 
 def build_report_from_dict(data: Mapping[str, Any]) -> BuildReport:
     unresolved = []

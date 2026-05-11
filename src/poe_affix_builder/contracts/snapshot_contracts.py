@@ -11,6 +11,8 @@ from poe_affix_builder.domain.models import (
     SnapshotTier,
 )
 
+SNAPSHOT_CONTRACT_VERSION = 1
+
 
 def snapshot_from_dict(data: Mapping[str, Any]) -> SnapshotDocument:
     items = []

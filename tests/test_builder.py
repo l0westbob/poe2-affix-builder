@@ -164,6 +164,7 @@ class BuilderTests(unittest.TestCase):
             manifest_path = td_path / "manifest.json"
             out_dir = td_path / "out"
             report = td_path / "report.json"
+            diagnostics_path = td_path / "diagnostics.json"
             mods_path.write_text(json.dumps(mods), encoding="utf-8")
             manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
 
@@ -172,6 +173,7 @@ class BuilderTests(unittest.TestCase):
                 manifest_path=manifest_path,
                 out_dir=out_dir,
                 report_path=report,
+                diagnostics_path=diagnostics_path,
             )
 
             output = json.loads((out_dir / "TestItem.json").read_text(encoding="utf-8"))
@@ -179,6 +181,10 @@ class BuilderTests(unittest.TestCase):
             tier = output["modifier_sections"]["normal"][0]["tiers"][0]
             self.assertEqual(tier["text"], "legacy text")
             self.assertNotIn("stats", tier)
+
+            diagnostics = json.loads(diagnostics_path.read_text(encoding="utf-8"))
+            self.assertEqual(diagnostics["summary"]["normal_unresolved"], 1)
+            self.assertEqual(diagnostics["unresolved_matches"]["normal_unresolved"][0]["section"], "normal")
 
     def test_build_preserves_bases_and_modifier_sections(self):
         with tempfile.TemporaryDirectory() as td:

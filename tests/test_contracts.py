@@ -4,6 +4,12 @@ import json
 import unittest
 from pathlib import Path
 
+from poe_affix_builder.contracts import (
+    MANIFEST_CONTRACT_VERSION,
+    OUTPUT_CONTRACT_VERSION,
+    REPORT_CONTRACT_VERSION,
+    SNAPSHOT_CONTRACT_VERSION,
+)
 from poe_affix_builder.contracts.manifest_contracts import manifest_from_dict, manifest_to_dict
 from poe_affix_builder.contracts.output_contracts import output_item_from_dict, output_item_to_dict
 from poe_affix_builder.contracts.report_contracts import (
@@ -23,6 +29,12 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class ContractRoundTripTests(unittest.TestCase):
+    def test_contract_versions_are_explicit(self):
+        self.assertEqual(SNAPSHOT_CONTRACT_VERSION, 1)
+        self.assertEqual(MANIFEST_CONTRACT_VERSION, 1)
+        self.assertEqual(OUTPUT_CONTRACT_VERSION, 1)
+        self.assertEqual(REPORT_CONTRACT_VERSION, 1)
+
     def test_manifest_round_trip_matches_semantics(self):
         raw = json.loads((ROOT / "config" / "item_mapping.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest_to_dict(manifest_from_dict(raw)), raw)
@@ -127,6 +139,61 @@ class ContractRoundTripTests(unittest.TestCase):
             },
         }
         self.assertEqual(output_item_to_dict(output_item_from_dict(raw)), raw)
+
+    def test_output_legacy_affixes_input_normalizes_to_modifier_sections(self):
+        raw = {
+            "slug": "Amulets",
+            "category": "Jewellery",
+            "label": "Amulets",
+            "affixes": [
+                {
+                    "family_key": "Life",
+                    "kind": "prefix",
+                    "template": "+# to maximum Life",
+                    "tiers": [{"level": 1, "name": "Healthy", "text": "+(1-2) to maximum Life"}],
+                }
+            ],
+        }
+
+        normalized = output_item_to_dict(output_item_from_dict(raw))
+
+        self.assertNotIn("affixes", normalized)
+        self.assertEqual(normalized["modifier_sections"]["normal"], raw["affixes"])
+
+    def test_snapshot_legacy_affixes_input_normalizes_to_modifier_sections(self):
+        raw = {
+            "version": 1,
+            "source": "fixture",
+            "fetched_at": "2026-05-11T00:00:00+00:00",
+            "items": [
+                {
+                    "slug": "Amulets",
+                    "category": "Jewellery",
+                    "label": "Amulets",
+                    "href": "https://poe2db.tw/us/Amulets",
+                    "affixes": [
+                        {
+                            "kind": "prefix",
+                            "family_key": "Life",
+                            "template": "+# to maximum Life",
+                            "tiers": [
+                                {
+                                    "level": 1,
+                                    "name": "Healthy",
+                                    "text": "+(1-2) to maximum Life",
+                                    "drop_chance": 100,
+                                }
+                            ],
+                        }
+                    ],
+                }
+            ],
+        }
+
+        normalized = snapshot_to_dict(snapshot_from_dict(raw))
+
+        self.assertNotIn("affixes", normalized["items"][0])
+        self.assertEqual(normalized["items"][0]["modifier_sections"]["normal"], raw["items"][0]["affixes"])
 
     def test_report_round_trip_matches_semantics(self):
         build_raw = json.loads((ROOT / "result" / "build_report.json").read_text(encoding="utf-8"))

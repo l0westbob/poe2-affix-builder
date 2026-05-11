@@ -1,0 +1,22 @@
+{
+  "slug": "Claws",
+  "category": "Weapons",
+  "label": "Claws",
+  "include_domains": [
+    1
+  ],
+  "include_spawn_tags": [
+    "claw"
+  ],
+  "bases": [
+    {
+      "name": "Crude Claw",
+      "href": "https://poe2db.tw/us/Crude_Claw",
+      "required_level": null
+    }
+  ],
+  "modifier_sections": {
+    "normal": []
+  },
+  "affixes": []
+}

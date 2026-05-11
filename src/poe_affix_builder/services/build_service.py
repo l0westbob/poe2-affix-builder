@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict
 
@@ -20,6 +21,7 @@ from poe_affix_builder.domain.models import (
 )
 from poe_affix_builder.manifest import load_manifest
 from poe_affix_builder.normalize import normalize_output_text, text_to_template
+from poe_affix_builder.services.diagnostics_service import unresolved_diagnostics_to_dict
 from poe_affix_builder.services.matching_service import (
     build_family_index,
     build_indexes,
@@ -33,16 +35,25 @@ from poe_affix_builder.services.matching_service import (
 from poe_affix_builder.source import load_mod_entries
 
 
-def _build_output_affixes(
+@dataclass(frozen=True)
+class BuiltModifierSectionResult:
+    section: OutputModifierSection
+    unresolved_tiers: tuple[UnresolvedTier, ...]
+    unresolved_details: tuple[dict[str, Any], ...]
+
+
+def build_modifier_section_output(
     *,
     item,
+    section_name: str,
     affixes,
     include_domains: set[str],
     include_spawn_tags: set[str],
     indexes,
-    unresolved: list[UnresolvedTier],
-) -> tuple[OutputAffix, ...]:
+) -> BuiltModifierSectionResult:
     out_affixes: list[OutputAffix] = []
+    unresolved: list[UnresolvedTier] = []
+    unresolved_details: list[dict[str, Any]] = []
     for affix in affixes:
         out_tiers: list[OutputTier] = []
         first_matched_text: str | None = None
@@ -87,6 +98,16 @@ def _build_output_affixes(
                         text=tier.text or None,
                     )
                 )
+                unresolved_details.append(
+                    {
+                        "section": section_name,
+                        "slug": item.slug,
+                        "family_key": affix.family_key,
+                        "kind": affix.kind,
+                        "level": tier.level,
+                        "match_explanation": decision.explanation.reasons,
+                    }
+                )
             out_tiers.append(OutputTier(level=tier.level, name=tier.name, text=text_out, stats=stats))
 
         out_affixes.append(
@@ -97,7 +118,11 @@ def _build_output_affixes(
                 tiers=tuple(out_tiers),
             )
         )
-    return tuple(out_affixes)
+    return BuiltModifierSectionResult(
+        section=OutputModifierSection(name=section_name, affixes=tuple(out_affixes)),
+        unresolved_tiers=tuple(unresolved),
+        unresolved_details=tuple(unresolved_details),
+    )
 
 
 def build_affixes(
@@ -106,6 +131,7 @@ def build_affixes(
     manifest_path: Path,
     out_dir: Path,
     report_path: Path,
+    diagnostics_path: Path | None = None,
 ) -> BuildResult:
     manifest = manifest_from_dict(load_manifest(manifest_path))
     entries = load_mod_entries(mods_json_path)
@@ -114,6 +140,7 @@ def build_affixes(
 
     out_dir.mkdir(parents=True, exist_ok=True)
     unresolved: list[UnresolvedTier] = []
+    unresolved_details: list[dict[str, Any]] = []
     mapping_warnings: Dict[str, list[dict[str, Any]]] = {}
     items_written = 0
     affixes_written = 0
@@ -138,29 +165,34 @@ def build_affixes(
 
         out_modifier_sections: list[OutputModifierSection] = []
         for section in item.modifier_sections:
-            built_affixes = _build_output_affixes(
+            built_section = build_modifier_section_output(
                 item=item,
+                section_name=section.name,
                 affixes=section.affixes,
                 include_domains=include_domains,
                 include_spawn_tags=include_spawn_tags,
                 indexes=indexes,
-                unresolved=unresolved,
             )
-            out_modifier_sections.append(OutputModifierSection(name=section.name, affixes=built_affixes))
-            affixes_written += len(built_affixes)
-            tiers_written += sum(len(affix.tiers) for affix in built_affixes)
+            out_modifier_sections.append(built_section.section)
+            unresolved.extend(built_section.unresolved_tiers)
+            unresolved_details.extend(built_section.unresolved_details)
+            affixes_written += len(built_section.section.affixes)
+            tiers_written += sum(len(affix.tiers) for affix in built_section.section.affixes)
 
         out_affixes = next((section.affixes for section in out_modifier_sections if section.name == "normal"), tuple())
         if not out_modifier_sections and item.affixes:
-            out_affixes = _build_output_affixes(
+            built_section = build_modifier_section_output(
                 item=item,
+                section_name="normal",
                 affixes=item.affixes,
                 include_domains=include_domains,
                 include_spawn_tags=include_spawn_tags,
                 indexes=indexes,
-                unresolved=unresolved,
             )
-            out_modifier_sections = [OutputModifierSection(name="normal", affixes=out_affixes)]
+            out_affixes = built_section.section.affixes
+            out_modifier_sections = [built_section.section]
+            unresolved.extend(built_section.unresolved_tiers)
+            unresolved_details.extend(built_section.unresolved_details)
             affixes_written += len(out_affixes)
             tiers_written += sum(len(affix.tiers) for affix in out_affixes)
 
@@ -190,6 +222,8 @@ def build_affixes(
         mapping_warnings=mapping_warnings,
     )
     write_json_atomic(report_path, build_report_to_dict(report))
+    if diagnostics_path is not None:
+        write_json_atomic(diagnostics_path, unresolved_diagnostics_to_dict(unresolved_details))
     return BuildResult(
         items_written=report.items_written,
         affixes_written=report.affixes_written,

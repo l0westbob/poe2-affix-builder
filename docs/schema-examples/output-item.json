@@ -1,0 +1,15 @@
+{
+  "category": "Weapons",
+  "label": "Claws",
+  "bases": [
+    {
+      "name": "Crude Claw",
+      "href": "https://poe2db.tw/us/Crude_Claw",
+      "required_level": null
+    }
+  ],
+  "modifier_sections": {
+    "normal": []
+  },
+  "slug": "Claws"
+}

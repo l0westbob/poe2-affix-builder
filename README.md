@@ -29,6 +29,12 @@ uv sync
 
 ## Commands
 
+Show the installed CLI version:
+
+```bash
+uv run poe-affix-build --version
+```
+
 Refresh poe2db snapshot (explicit/manual, not part of `build`):
 
 ```bash
@@ -49,6 +55,13 @@ uv run poe-affix-build rebuild-mapping \
   --report result/rebuild_mapping_report.json
 ```
 
+For contributor debugging, `rebuild-mapping` can also write a categorized unresolved diagnostic report:
+
+```bash
+uv run poe-affix-build rebuild-mapping \
+  --diagnostics result/rebuild_mapping_diagnostics.json
+```
+
 Build affix output from source data:
 
 ```bash
@@ -57,6 +70,13 @@ uv run poe-affix-build build \
   --manifest config/item_mapping.json \
   --out-dir result/affixes \
   --report result/build_report.json
+```
+
+For contributor debugging, `build` can also write the same categorized unresolved diagnostics:
+
+```bash
+uv run poe-affix-build build \
+  --diagnostics result/build_diagnostics.json
 ```
 
 Validate mapping coverage against source data:
@@ -76,91 +96,7 @@ uv run poe-affix-build validate-mapping \
 
 ## Unresolved Groups
 
-The rebuild and build reports can still contain unresolved modifier matches. That is expected with the current data sources and does not automatically mean the generated output is wrong.
-
-### What "unresolved" means
-
-An unresolved entry means:
-
-- poe2db exposed a modifier row in one of the saved `modifier_sections`
-- the builder preserved that row in the snapshot / mapping / final output
-- but the matcher could not find a confident corresponding entry in `data/poe2/data/mods.json` to attach canonical local stat ids
-
-So "unresolved" here is primarily a source-alignment problem, not a data-loss problem.
-
-### What was already fixed
-
-Composite family keys such as `Strength|Intelligence`, `Strength|Dexterity`, and `Dexterity|Intelligence` used to be unresolved because `mods.json` families were being truncated to only the first group entry.
-
-That has been fixed:
-
-- poe2db family keys are matched against the full joined `groups` list from `mods.json`
-- those composite stat-pair families now resolve correctly
-
-### What is still unresolved
-
-Most remaining unresolved groups come from non-`normal` modifier sections, especially:
-
-- `socketable`
-- `bonded`
-- some other special-purpose poe2db-only sections
-
-Typical unresolved family keys currently include:
-
-- `AdeptRune`
-- `ResolveRune`
-- `RobustRune`
-- `BodyRune`
-- `DesertRune`
-- `GlacialRune`
-- `InspirationRune`
-- `IronRune`
-- `MindRune`
-- `RebirthRune`
-- `StoneRune`
-- `StormRune`
-- `VisionRune`
-- `TemperedRune`
-- `RuneofAlacrity`
-- `RuneofLeadership`
-- `RuneofNobility`
-- `RuneofTithing`
-- `SoulCoreofAtmohua`
-- `SoulCoreofCholotl`
-
-These are largely rune / soul-core / socket-style modifiers that poe2db surfaces on item pages, but they do not line up cleanly with `mods.json` in the same way ordinary prefix and suffix affixes do.
-
-### Why these remain unresolved
-
-In practice, these unresolved groups usually differ from regular affixes in one or more of these ways:
-
-- the poe2db section is not `normal`
-- the poe2db generation kind is often `gen0` instead of a regular `prefix` / `suffix`
-- the poe2db family key has no straightforward one-to-one equivalent in `mods.json`
-- the poe2db row may represent socketed rune or soul-core behavior that is modeled differently upstream
-- multiple poe2db rows can collapse onto the same visible text pattern while still not mapping cleanly to one canonical local mod entry
-
-Because of that, the matcher often has enough information to preserve the displayed modifier text, but not enough to safely assign canonical local stat ids from `mods.json`.
-
-### Why this does not invalidate the normal affix output
-
-The important distinction is:
-
-- `modifier_sections.normal` is the regular affix surface most downstream consumers care about
-- the remaining unresolved groups are concentrated in extra sections such as rune/socket/soul-core style data
-
-That means:
-
-- the main affix dataset can still be correct
-- the unresolved report should be read as a compatibility / coverage report for extended modifier sections
-- the report is useful for future improvement work, but it is not proof that the normal affix files are broken
-
-### Current interpretation
-
-At the moment, the safest interpretation is:
-
-- unresolved `normal` modifiers deserve close attention
-- unresolved non-`normal` rune/soul-core/socket-style modifiers are expected until a dedicated matching strategy is implemented for those section types
+The rebuild and build reports can still contain unresolved modifier matches, mostly from non-`normal` rune/socket/soul-core style sections. The detailed interpretation lives in [docs/unresolved-groups.md](./docs/unresolved-groups.md).
 
 ## Architecture
 

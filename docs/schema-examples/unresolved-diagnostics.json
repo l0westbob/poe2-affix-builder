@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "summary": {
+    "normal_unresolved": 1,
+    "expected_non_normal_unresolved": 0,
+    "unknown_unresolved": 0
+  },
+  "unresolved_matches": {
+    "normal_unresolved": [
+      {
+        "slug": "Claws",
+        "section": "normal",
+        "family_key": "ExampleFamily",
+        "kind": "prefix",
+        "level": 1,
+        "reason_code": "normal_unresolved",
+        "match_explanation": [
+          "no-candidates"
+        ]
+      }
+    ],
+    "expected_non_normal_unresolved": [],
+    "unknown_unresolved": []
+  }
+}

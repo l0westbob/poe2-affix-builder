@@ -167,6 +167,57 @@ class RebuildMappingTests(unittest.TestCase):
             self.assertTrue(report["ok"])
             self.assertEqual(report["unresolved_mod_matches"], [])
 
+    def test_rebuild_mapping_writes_categorized_unresolved_diagnostics(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            mods_path = root / "mods.json"
+            snapshot_path = root / "snapshot.json"
+            out_path = root / "mapping.json"
+            report_path = root / "report.json"
+            diagnostics_path = root / "diagnostics.json"
+
+            mods_path.write_text("{}", encoding="utf-8")
+            snapshot_path.write_text(
+                json.dumps(
+                    {
+                        "version": 1,
+                        "items": [
+                            {
+                                "slug": "Claws",
+                                "category": "Weapons",
+                                "label": "Claws",
+                                "modifier_sections": {
+                                    "socketable": [
+                                        {
+                                            "kind": "gen0",
+                                            "family_key": "AdeptRune",
+                                            "template": "+# to maximum Life",
+                                            "tiers": [{"level": 1, "name": "Adept Rune", "text": "+(1-2) to maximum Life"}],
+                                        }
+                                    ]
+                                },
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            rebuild_mapping(
+                mods_json_path=mods_path,
+                snapshot_path=snapshot_path,
+                out_path=out_path,
+                report_path=report_path,
+                diagnostics_path=diagnostics_path,
+            )
+
+            diagnostics = json.loads(diagnostics_path.read_text(encoding="utf-8"))
+            self.assertEqual(diagnostics["summary"]["expected_non_normal_unresolved"], 1)
+            self.assertEqual(
+                diagnostics["unresolved_matches"]["expected_non_normal_unresolved"][0]["family_key"],
+                "AdeptRune",
+            )
+
     def test_refresh_snapshot_extracts_item_bases_and_tiers(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
